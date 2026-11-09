@@ -27,6 +27,8 @@ REPORT = ROOT / "data" / "refresh-report.md"
 # Yahoo tickers to try, in order, where the default (<SYMBOL>.NS, or .BO for BSE codes) is wrong.
 OVERRIDES: dict[str, list[str]] = {
     "LTM": ["LTM.NS", "LTIM.NS"],
+    "504093": ["PANAENERG.BO"],  # Panasonic Energy India
+    "504176": ["HIGHENE.BO"],  # High Energy Batteries (India)
 }
 MOVE_FLAG = 0.25  # flag weekly price moves bigger than this
 STALE_DAYS = 7  # skip a ticker whose last price is older than this
