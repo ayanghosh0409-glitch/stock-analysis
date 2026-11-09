@@ -4,7 +4,7 @@ A personal, sector-wise stock screener. It gives a first-pass view of whether a 
 
 **Rule:** a stock is *considered* when its ROE is greater than the industry ROE (the median of the stocks listed in its
 sector, or your own override). It is rated **Strong** when ROCE also passes, **Moderate** when only ROE passes, and
-**Skip** otherwise. A "Below" mode flips the direction. Comparison is strict, so a stock exactly at the benchmark fails.
+**Skip** otherwise. Comparison is strict, so a stock exactly at the benchmark fails.
 
 **Profit consistency** (five years of net profit) is a *separate flag* and never changes the verdict:
 Consistent, Recovering, Mixed, Weak, or Insufficient data.

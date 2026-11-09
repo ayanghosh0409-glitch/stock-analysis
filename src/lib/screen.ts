@@ -1,6 +1,5 @@
 import type { Stock } from "./types";
 
-export type Direction = "Above" | "Below";
 export type Verdict = "CONSIDER – Strong" | "CONSIDER – Moderate" | "SKIP" | "n/a";
 export type Consistency =
   | "Consistent"
@@ -38,13 +37,13 @@ export function benchmarks(stocks: Stock[], o?: Override): Benchmarks {
   };
 }
 
-/** Strict comparison, same as the Excel: a stock exactly at the benchmark fails. */
-const passes = (x: number, bench: number, dir: Direction) => (dir === "Below" ? x < bench : x > bench);
+/** Strict comparison: a stock exactly at the benchmark fails. */
+const passes = (x: number, bench: number) => x > bench;
 
-export function verdict(s: Stock, b: Benchmarks, dir: Direction): Verdict {
+export function verdict(s: Stock, b: Benchmarks): Verdict {
   if (!isNum(s.roe) || !isNum(s.roce) || !isNum(b.roe) || !isNum(b.roce)) return "n/a";
-  if (!passes(s.roe, b.roe, dir)) return "SKIP";
-  return passes(s.roce, b.roce, dir) ? "CONSIDER – Strong" : "CONSIDER – Moderate";
+  if (!passes(s.roe, b.roe)) return "SKIP";
+  return passes(s.roce, b.roce) ? "CONSIDER – Strong" : "CONSIDER – Moderate";
 }
 
 export type ProfitTrend = {
@@ -87,12 +86,12 @@ export function profitTrend(s: Stock): ProfitTrend {
   return { cagr, growthYears, steps, hasLoss, consistency };
 }
 
-export function explain(s: Stock, b: Benchmarks, dir: Direction): string {
+export function explain(s: Stock, b: Benchmarks): string {
   if (!isNum(s.roe) || !isNum(s.roce)) return "ROE or ROCE is missing, so no verdict can be given.";
   if (!isNum(b.roe) || !isNum(b.roce)) return "The sector has no benchmark yet.";
-  const word = dir === "Below" ? "below" : "above";
-  const roeOk = passes(s.roe, b.roe, dir);
-  const roceOk = passes(s.roce, b.roce, dir);
+  const word = "above";
+  const roeOk = passes(s.roe, b.roe);
+  const roceOk = passes(s.roce, b.roce);
   const pct = (x: number) => (x * 100).toFixed(1) + "%";
   if (!roeOk)
     return `ROE ${pct(s.roe)} is not ${word} the industry ${pct(b.roe)}, so the stock is skipped.`;

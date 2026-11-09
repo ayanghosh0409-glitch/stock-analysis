@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Dataset } from "@/lib/types";
-import { benchmarks, profitTrend, verdict, type Direction, type Verdict } from "@/lib/screen";
+import { benchmarks, profitTrend, verdict, type Verdict } from "@/lib/screen";
 import StockTable, { sortValue, type Row, type SortKey } from "./StockTable";
 import StockDetail from "./StockDetail";
 import { RoeRoceScatter } from "./Charts";
@@ -21,7 +21,6 @@ const toFraction = (s: string | undefined): number | null => {
 
 export default function Dashboard({ data }: { data: Dataset }) {
   const [tab, setTab] = useState(OVERVIEW);
-  const [dir, setDir] = useState<Direction>("Above");
   const [overrides, setOverrides] = useState<Overrides>({});
   const [verdictFilter, setVerdictFilter] = useState<"all" | "consider" | "strong">("all");
   const [trendFilter, setTrendFilter] = useState<"all" | "good">("all");
@@ -38,7 +37,6 @@ export default function Dashboard({ data }: { data: Dataset }) {
       const raw = window.localStorage.getItem(STORE);
       if (raw) {
         const v = JSON.parse(raw);
-        if (v.dir === "Above" || v.dir === "Below") setDir(v.dir);
         if (v.overrides && typeof v.overrides === "object") setOverrides(v.overrides);
       }
     } catch {}
@@ -48,9 +46,9 @@ export default function Dashboard({ data }: { data: Dataset }) {
   useEffect(() => {
     if (!loaded) return;
     try {
-      window.localStorage.setItem(STORE, JSON.stringify({ dir, overrides }));
+      window.localStorage.setItem(STORE, JSON.stringify({ overrides }));
     } catch {}
-  }, [dir, overrides, loaded]);
+  }, [overrides, loaded]);
 
   const allRows: Row[] = useMemo(() => {
     const out: Row[] = [];
@@ -59,11 +57,11 @@ export default function Dashboard({ data }: { data: Dataset }) {
       const bench = benchmarks(sec.stocks, o ? { roe: toFraction(o.roe), roce: toFraction(o.roce) } : undefined);
       for (const stock of sec.stocks) {
         const t = profitTrend(stock);
-        out.push({ stock, sector: sec.name, verdict: verdict(stock, bench, dir), consistency: t.consistency, cagr: t.cagr, bench });
+        out.push({ stock, sector: sec.name, verdict: verdict(stock, bench), consistency: t.consistency, cagr: t.cagr, bench });
       }
     }
     return out;
-  }, [data, overrides, dir]);
+  }, [data, overrides]);
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -121,19 +119,12 @@ export default function Dashboard({ data }: { data: Dataset }) {
       <header className="mb-5">
         <h1 className="text-2xl font-semibold">Stock Analysis</h1>
         <p className="mt-1 max-w-3xl text-sm text-muted">
-          A first-pass screen. A stock is considered when its ROE is {dir === "Above" ? "greater than" : "less than"} the
+          A first-pass screen. A stock is considered when its ROE is greater than the
           industry ROE (the median of the stocks listed in its sector). It is rated Strong when ROCE also passes and
           Moderate when only ROE passes. Profit
           consistency over five years is shown as a separate flag. Data as of {data.asOf}, from public Screener.in pages.
         </p>
       </header>
-
-      {dir === "Below" && (
-        <div role="status" className="mb-4 flex flex-wrap items-center gap-3 rounded-lg border px-3 py-2 text-sm" style={{ background: "var(--warn-bg)", color: "var(--warn)", borderColor: "var(--warn)" }}>
-          <strong>Below mode is on:</strong> stocks are considered when ROE is below the industry figure, so stocks with higher ROE show as SKIP.
-          <button type="button" onClick={() => setDir("Above")} className="rounded border border-current px-2 py-0.5 font-semibold">Switch back to Above</button>
-        </div>
-      )}
 
       <nav aria-label="Sectors" className="mb-4 flex flex-wrap gap-2">
         {[OVERVIEW, ...data.sectors.map((s) => s.name)].map((t) => (
@@ -144,13 +135,6 @@ export default function Dashboard({ data }: { data: Dataset }) {
       </nav>
 
       <section aria-label="Controls" className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-lg border border-line bg-surface p-3">
-        <label className="flex items-center gap-2 text-sm">
-          <span className="text-muted">ROE/ROCE must be</span>
-          <select value={dir} onChange={(e) => setDir(e.target.value as Direction)} className="rounded border border-line bg-surface px-2 py-1">
-            <option value="Above">Above industry</option>
-            <option value="Below">Below industry</option>
-          </select>
-        </label>
         <label className="flex items-center gap-2 text-sm">
           <span className="text-muted">Search</span>
           <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Name or symbol" className="w-40 rounded border border-line bg-surface px-2 py-1" />
@@ -246,7 +230,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
         <p>Consistency: Consistent = profit grew in at least 3 of 4 year-on-year steps with no loss year. Recovering = an early loss year, then growth every year since. Weak = a loss year, or FY26 profit not above FY22. Mixed = everything else.</p>
       </footer>
 
-      {selectedRow && <StockDetail row={selectedRow} dir={dir} onClose={() => setSelected(null)} />}
+      {selectedRow && <StockDetail row={selectedRow} onClose={() => setSelected(null)} />}
     </div>
   );
 }

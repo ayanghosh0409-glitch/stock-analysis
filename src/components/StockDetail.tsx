@@ -5,7 +5,7 @@ import { ProfitBars, RoceLine } from "./Charts";
 import { ConsistencyBadge, VerdictBadge } from "./Badges";
 import { fmtCr, fmtPct, fmtPrice, fmtX } from "./format";
 import type { Row } from "./StockTable";
-import { explain, profitTrend, type Direction } from "@/lib/screen";
+import { explain, profitTrend } from "@/lib/screen";
 
 const DEFAULT_LABELS = ["FY22", "FY23", "FY24", "FY25", "FY26"];
 
@@ -18,7 +18,7 @@ function Metric({ label, value }: { label: string; value: string }) {
   );
 }
 
-export default function StockDetail({ row, dir, onClose }: { row: Row; dir: Direction; onClose: () => void }) {
+export default function StockDetail({ row, onClose }: { row: Row; onClose: () => void }) {
   useEffect(() => {
     const h = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", h);
@@ -46,7 +46,7 @@ export default function StockDetail({ row, dir, onClose }: { row: Row; dir: Dire
           <VerdictBadge v={row.verdict} />
           <ConsistencyBadge c={row.consistency} />
         </div>
-        <p className="text-sm">{explain(s, row.bench, dir)}</p>
+        <p className="text-sm">{explain(s, row.bench)}</p>
         <p className="text-xs text-muted">
           The profit consistency flag is shown separately and never changes the verdict.
         </p>
