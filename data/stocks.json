@@ -1,0 +1,1914 @@
+{
+ "asOf": "2026-11-09",
+ "units": "INR crore unless stated; ROE/ROCE as fractions",
+ "sectors": [
+  {
+   "name": "IT",
+   "title": "IT",
+   "stocks": [
+    {
+     "name": "Tata Consultancy Services",
+     "symbol": "TCS",
+     "marketCap": 904088,
+     "revenue": 283248,
+     "profit": 51858,
+     "roe": 0.518,
+     "roce": 0.63,
+     "pe": 16.5,
+     "price": 2499,
+     "high52": 3350,
+     "low52": 1976,
+     "profitHistory": [
+      38449,
+      42303,
+      46099,
+      48797,
+      49454
+     ],
+     "roe5y": 0.49,
+     "roceHistory": [
+      0.54,
+      0.59,
+      0.64,
+      0.65,
+      0.63
+     ],
+     "notes": []
+    },
+    {
+     "name": "Infosys",
+     "symbol": "INFY",
+     "marketCap": 475772,
+     "revenue": 189336,
+     "profit": 30788,
+     "roe": 0.319,
+     "roce": 0.4,
+     "pe": 15.0,
+     "price": 1172,
+     "high52": 1728,
+     "low52": 980,
+     "profitHistory": [
+      22146,
+      24108,
+      26248,
+      26750,
+      29474
+     ],
+     "roe5y": 0.31,
+     "roceHistory": [
+      0.37,
+      0.4,
+      0.4,
+      0.38,
+      0.4
+     ],
+     "notes": []
+    },
+    {
+     "name": "HCL Technologies",
+     "symbol": "HCLTECH",
+     "marketCap": 391311,
+     "revenue": 138052,
+     "profit": 18330,
+     "roe": 0.238,
+     "roce": 0.304,
+     "pe": 20.6,
+     "price": 1442,
+     "high52": 1780,
+     "low52": 1030,
+     "profitHistory": [
+      13523,
+      14845,
+      15710,
+      17399,
+      16652
+     ],
+     "roe5y": 0.23,
+     "roceHistory": [
+      0.25,
+      0.28,
+      0.3,
+      0.32,
+      0.3
+     ],
+     "notes": []
+    },
+    {
+     "name": "Wipro",
+     "symbol": "WIPRO",
+     "marketCap": 194549,
+     "revenue": 97023,
+     "profit": 13223,
+     "roe": 0.155,
+     "roce": 0.178,
+     "pe": 14.8,
+     "price": 196,
+     "high52": 273,
+     "low52": 157,
+     "profitHistory": [
+      12243,
+      11366,
+      11112,
+      13218,
+      13266
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      0.21,
+      0.18,
+      0.17,
+      0.2,
+      0.18
+     ],
+     "notes": [
+      "Price is intraday 9 Nov 2026; others are the last close shown (6-8 Nov)."
+     ]
+    },
+    {
+     "name": "Tech Mahindra",
+     "symbol": "TECHM",
+     "marketCap": 179368,
+     "revenue": 61361,
+     "profit": 5571,
+     "roe": 0.175,
+     "roce": 0.231,
+     "pe": 31.4,
+     "price": 1830,
+     "high52": 1860,
+     "low52": 1304,
+     "profitHistory": [
+      5630,
+      4857,
+      2397,
+      4253,
+      4806
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      0.26,
+      0.22,
+      0.12,
+      0.19,
+      0.23
+     ],
+     "notes": []
+    },
+    {
+     "name": "LTM Ltd (formerly LTIMindtree)",
+     "symbol": "LTM",
+     "marketCap": 128274,
+     "revenue": 45488,
+     "profit": 5195,
+     "roe": 0.231,
+     "roce": 0.296,
+     "pe": 22.9,
+     "price": 4324,
+     "high52": 6430,
+     "low52": 3528,
+     "profitHistory": [
+      3950,
+      4410,
+      4585,
+      4602,
+      4983
+     ],
+     "roe5y": 0.26,
+     "roceHistory": [
+      0.48,
+      0.38,
+      0.32,
+      0.28,
+      0.3
+     ],
+     "notes": [
+      "Formerly LTIMindtree (same BSE code 540005)."
+     ]
+    },
+    {
+     "name": "Persistent Systems",
+     "symbol": "PERSISTENT",
+     "marketCap": 99500,
+     "revenue": 16801,
+     "profit": 1803,
+     "roe": 0.272,
+     "roce": 0.344,
+     "pe": 53.2,
+     "price": 6000,
+     "high52": 6599,
+     "low52": 4243,
+     "profitHistory": [
+      690,
+      921,
+      1093,
+      1400,
+      1865
+     ],
+     "roe5y": 0.25,
+     "roceHistory": [
+      0.26,
+      0.3,
+      0.29,
+      0.31,
+      0.34
+     ],
+     "notes": [
+      "Price is intraday 9 Nov 2026."
+     ]
+    },
+    {
+     "name": "Coforge",
+     "symbol": "COFORGE",
+     "marketCap": 91803,
+     "revenue": 20380,
+     "profit": 2100,
+     "roe": 0.214,
+     "roce": 0.235,
+     "pe": 42.3,
+     "price": 2072,
+     "high52": 2128,
+     "low52": 1008,
+     "profitHistory": [
+      715,
+      745,
+      836,
+      936,
+      1745
+     ],
+     "roe5y": 0.22,
+     "roceHistory": [
+      0.32,
+      0.31,
+      0.29,
+      0.2,
+      0.24
+     ],
+     "notes": []
+    },
+    {
+     "name": "Mphasis",
+     "symbol": "MPHASIS",
+     "marketCap": 48119,
+     "revenue": 17210,
+     "profit": 2002,
+     "roe": 0.185,
+     "roce": 0.221,
+     "pe": 23.7,
+     "price": 2520,
+     "high52": 2978,
+     "low52": 2013,
+     "profitHistory": [
+      1431,
+      1638,
+      1555,
+      1702,
+      1863
+     ],
+     "roe5y": 0.2,
+     "roceHistory": [
+      0.27,
+      0.29,
+      0.24,
+      0.22,
+      0.22
+     ],
+     "notes": []
+    },
+    {
+     "name": "Oracle Financial Services Software",
+     "symbol": "OFSS",
+     "marketCap": 88283,
+     "revenue": 9063,
+     "profit": 3569,
+     "roe": 0.326,
+     "roce": 0.453,
+     "pe": 24.7,
+     "price": 10136,
+     "high52": 12540,
+     "low52": 6232,
+     "profitHistory": [
+      1889,
+      1806,
+      2219,
+      2380,
+      2639
+     ],
+     "roe5y": 0.29,
+     "roceHistory": [
+      0.36,
+      0.35,
+      0.4,
+      0.41,
+      0.45
+     ],
+     "notes": []
+    },
+    {
+     "name": "L&T Technology Services",
+     "symbol": "LTTS",
+     "marketCap": 45193,
+     "revenue": 11626,
+     "profit": 1542,
+     "roe": 0.215,
+     "roce": 0.267,
+     "pe": 32.4,
+     "price": 4260,
+     "high52": 4747,
+     "low52": 3010,
+     "profitHistory": [
+      961,
+      1174,
+      1306,
+      1264,
+      1281
+     ],
+     "roe5y": 0.23,
+     "roceHistory": [
+      0.31,
+      0.33,
+      0.32,
+      0.27,
+      0.27
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "name": "Auto",
+   "title": "Auto",
+   "stocks": [
+    {
+     "name": "Maruti Suzuki India",
+     "symbol": "MARUTI",
+     "marketCap": 402907,
+     "revenue": 208192,
+     "profit": 13451,
+     "roe": 0.143,
+     "roce": 0.189,
+     "pe": 30.0,
+     "price": 12815,
+     "high52": 17372,
+     "low52": 10984,
+     "profitHistory": [
+      3880,
+      8264,
+      13488,
+      14500,
+      14680
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.06,
+      0.16,
+      0.22,
+      0.22,
+      0.19
+     ],
+     "notes": []
+    },
+    {
+     "name": "Mahindra & Mahindra",
+     "symbol": "M&M",
+     "marketCap": 405398,
+     "revenue": 222822,
+     "profit": 21446,
+     "roe": 0.203,
+     "roce": 0.151,
+     "pe": 20.2,
+     "price": 3268,
+     "high52": 3840,
+     "low52": 2743,
+     "profitHistory": [
+      7253,
+      11374,
+      12270,
+      14073,
+      18622
+     ],
+     "roe5y": 0.18,
+     "roceHistory": [
+      0.11,
+      0.13,
+      0.14,
+      0.14,
+      0.15
+     ],
+     "notes": []
+    },
+    {
+     "name": "Bajaj Auto",
+     "symbol": "BAJAJ-AUTO",
+     "marketCap": 298110,
+     "revenue": 80851,
+     "profit": 12815,
+     "roe": 0.292,
+     "roce": 0.282,
+     "pe": 22.8,
+     "price": 10848,
+     "high52": 12470,
+     "low52": 8624,
+     "profitHistory": [
+      6166,
+      6060,
+      7708,
+      7325,
+      10574
+     ],
+     "roe5y": 0.24,
+     "roceHistory": [
+      0.23,
+      0.27,
+      0.34,
+      0.28,
+      0.28
+     ],
+     "notes": []
+    },
+    {
+     "name": "Hero MotoCorp",
+     "symbol": "HEROMOTOCO",
+     "marketCap": 110349,
+     "revenue": 53562,
+     "profit": 6028,
+     "roe": 0.281,
+     "roce": 0.352,
+     "pe": 18.1,
+     "price": 5513,
+     "high52": 6390,
+     "low52": 4672,
+     "profitHistory": [
+      2329,
+      2800,
+      3742,
+      4376,
+      5776
+     ],
+     "roe5y": 0.21,
+     "roceHistory": [
+      0.18,
+      0.23,
+      0.29,
+      0.3,
+      0.35
+     ],
+     "notes": []
+    },
+    {
+     "name": "Eicher Motors",
+     "symbol": "EICHERMOT",
+     "marketCap": 210037,
+     "revenue": 24998,
+     "profit": 5773,
+     "roe": 0.24,
+     "roce": 0.305,
+     "pe": 36.1,
+     "price": 7651,
+     "high52": 8233,
+     "low52": 6439,
+     "profitHistory": [
+      1677,
+      2914,
+      4001,
+      4734,
+      5515
+     ],
+     "roe5y": 0.22,
+     "roceHistory": [
+      0.18,
+      0.27,
+      0.31,
+      0.3,
+      0.31
+     ],
+     "notes": [
+      "TTM to Jun 2026 (Sep 2026 quarter not yet on page)."
+     ]
+    },
+    {
+     "name": "TVS Motor Company",
+     "symbol": "TVSMOTOR",
+     "marketCap": 212604,
+     "revenue": 65578,
+     "profit": 3988,
+     "roe": 0.336,
+     "roce": 0.174,
+     "pe": 55.1,
+     "price": 4475,
+     "high52": 4524,
+     "low52": 3228,
+     "profitHistory": [
+      731,
+      1309,
+      1779,
+      2380,
+      3186
+     ],
+     "roe5y": 0.28,
+     "roceHistory": [
+      0.11,
+      0.13,
+      0.15,
+      0.15,
+      0.17
+     ],
+     "notes": []
+    },
+    {
+     "name": "Ashok Leyland",
+     "symbol": "ASHOKLEY",
+     "marketCap": 101083,
+     "revenue": 57723,
+     "profit": 3731,
+     "roe": 0.274,
+     "roce": 0.136,
+     "pe": 27.2,
+     "price": 172,
+     "high52": 215,
+     "low52": 138,
+     "profitHistory": [
+      -285,
+      1362,
+      2696,
+      3383,
+      3721
+     ],
+     "roe5y": 0.22,
+     "roceHistory": [
+      0.06,
+      0.11,
+      0.15,
+      0.14,
+      0.14
+     ],
+     "notes": [
+      "TTM to Jun 2026."
+     ]
+    },
+    {
+     "name": "Hyundai Motor India",
+     "symbol": "HYUNDAI",
+     "marketCap": 173510,
+     "revenue": 73920,
+     "profit": 4575,
+     "roe": 0.299,
+     "roce": 0.384,
+     "pe": 37.9,
+     "price": 2135,
+     "high52": 2464,
+     "low52": 1658,
+     "profitHistory": [
+      2902,
+      4709,
+      6060,
+      5640,
+      5432
+     ],
+     "roe5y": 0.3,
+     "roceHistory": [
+      0.23,
+      0.33,
+      0.51,
+      0.54,
+      0.38
+     ],
+     "notes": []
+    },
+    {
+     "name": "Escorts Kubota",
+     "symbol": "ESCORTS",
+     "marketCap": 27336,
+     "revenue": 12700,
+     "profit": 1315,
+     "roe": 0.187,
+     "roce": 0.139,
+     "pe": 20.2,
+     "price": 2443,
+     "high52": 3999,
+     "low52": 2376,
+     "profitHistory": [
+      736,
+      637,
+      1077,
+      1265,
+      2394
+     ],
+     "roe5y": 0.13,
+     "roceHistory": [
+      0.16,
+      0.11,
+      0.14,
+      0.11,
+      0.14
+     ],
+     "notes": []
+    },
+    {
+     "name": "Force Motors",
+     "symbol": "FORCEMOT",
+     "marketCap": 24962,
+     "revenue": 10043,
+     "profit": 1195,
+     "roe": 0.292,
+     "roce": 0.36,
+     "pe": 23.9,
+     "price": 18945,
+     "high52": 26486,
+     "low52": 16184,
+     "profitHistory": [
+      -91,
+      134,
+      388,
+      801,
+      1212
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      -0.03,
+      0.05,
+      0.24,
+      0.3,
+      0.36
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "name": "Auto Components",
+   "title": "Auto Components",
+   "stocks": [
+    {
+     "name": "Suprajit Engineering",
+     "symbol": "SUPRAJIT",
+     "marketCap": 6507,
+     "revenue": 4226,
+     "profit": 189,
+     "roe": 0.133,
+     "roce": 0.155,
+     "pe": 34.2,
+     "price": 474,
+     "high52": 559,
+     "low52": 390,
+     "profitHistory": [
+      173,
+      152,
+      167,
+      99,
+      183
+     ],
+     "roe5y": 0.12,
+     "roceHistory": [
+      0.17,
+      0.15,
+      0.12,
+      0.11,
+      0.15
+     ],
+     "notes": [
+      "Automotive control cables, lighting and sensors (component supplier)."
+     ]
+    },
+    {
+     "name": "Bosch",
+     "symbol": "BOSCHLTD",
+     "marketCap": 149840,
+     "revenue": 25273,
+     "profit": 2757,
+     "roe": 0.146,
+     "roce": 0.215,
+     "pe": 56.3,
+     "price": 50800,
+     "high52": 52650,
+     "low52": 28610,
+     "profitHistory": [
+      1218,
+      1426,
+      2491,
+      2015,
+      2773
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.15,
+      0.17,
+      0.21,
+      0.21,
+      0.22
+     ],
+     "notes": [
+      "Other income is ~22% of TTM pre-tax profit, which lifts reported profit above operating profit."
+     ]
+    },
+    {
+     "name": "Sona BLW Precision Forgings",
+     "symbol": "SONACOMS",
+     "marketCap": 56546,
+     "revenue": 4834,
+     "profit": 778,
+     "roe": 0.117,
+     "roce": 0.151,
+     "pe": 70.0,
+     "price": 908,
+     "high52": 919,
+     "low52": 438,
+     "profitHistory": [
+      354,
+      388,
+      484,
+      580,
+      646
+     ],
+     "roe5y": 0.15,
+     "roceHistory": [
+      0.21,
+      0.22,
+      0.24,
+      0.18,
+      0.15
+     ],
+     "notes": [
+      "Standalone figures."
+     ]
+    },
+    {
+     "name": "Uno Minda",
+     "symbol": "UNOMINDA",
+     "marketCap": 76035,
+     "revenue": 22567,
+     "profit": 1409,
+     "roe": 0.193,
+     "roce": 0.196,
+     "pe": 56.8,
+     "price": 1317,
+     "high52": 1355,
+     "low52": 994,
+     "profitHistory": [
+      413,
+      700,
+      925,
+      1021,
+      1284
+     ],
+     "roe5y": 0.18,
+     "roceHistory": [
+      0.14,
+      0.18,
+      0.2,
+      0.19,
+      0.2
+     ],
+     "notes": []
+    },
+    {
+     "name": "Samvardhana Motherson International",
+     "symbol": "MOTHERSON",
+     "marketCap": 170842,
+     "revenue": 139242,
+     "profit": 4927,
+     "roe": 0.112,
+     "roce": 0.134,
+     "pe": 34.9,
+     "price": 160,
+     "high52": 173,
+     "low52": 101,
+     "profitHistory": [
+      1182,
+      1670,
+      3020,
+      4146,
+      4086
+     ],
+     "roe5y": 0.1,
+     "roceHistory": [
+      0.06,
+      0.09,
+      0.14,
+      0.14,
+      0.13
+     ],
+     "notes": [
+      "Price is intraday 9 Nov 2026. Equity capital rose sharply in FY26 and promoter holding fell - check filings before per-share comparisons."
+     ]
+    },
+    {
+     "name": "Endurance Technologies",
+     "symbol": "ENDURANCE",
+     "marketCap": 35571,
+     "revenue": 16795,
+     "profit": 1017,
+     "roe": 0.15,
+     "roce": 0.178,
+     "pe": 35.4,
+     "price": 2530,
+     "high52": 3075,
+     "low52": 2143,
+     "profitHistory": [
+      461,
+      480,
+      680,
+      836,
+      952
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.14,
+      0.14,
+      0.17,
+      0.17,
+      0.18
+     ],
+     "notes": []
+    },
+    {
+     "name": "Schaeffler India",
+     "symbol": "SCHAEFFLER",
+     "marketCap": 56467,
+     "revenue": 10837,
+     "profit": 1355,
+     "roe": 0.208,
+     "roce": 0.279,
+     "pe": 41.7,
+     "price": 3610,
+     "high52": 4468,
+     "low52": 3419,
+     "profitHistory": [
+      629,
+      879,
+      909,
+      978,
+      1196
+     ],
+     "roe5y": 0.2,
+     "roceHistory": [
+      0.25,
+      0.29,
+      0.27,
+      0.26,
+      0.28
+     ],
+     "notes": [
+      "Standalone figures.",
+      "History: December year-end - FY22..FY26 columns show CY2021..CY2025."
+     ],
+     "historyLabels": [
+      "CY2021",
+      "CY2022",
+      "CY2023",
+      "CY2024",
+      "CY2025"
+     ]
+    },
+    {
+     "name": "Sundram Fasteners",
+     "symbol": "SUNDRMFAST",
+     "marketCap": 22947,
+     "revenue": 7065,
+     "profit": 633,
+     "roe": 0.149,
+     "roce": 0.176,
+     "pe": 35.7,
+     "price": 1093,
+     "high52": 1347,
+     "low52": 730,
+     "profitHistory": [
+      462,
+      500,
+      526,
+      542,
+      593
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      0.2,
+      0.19,
+      0.19,
+      0.17,
+      0.18
+     ],
+     "notes": []
+    },
+    {
+     "name": "Gabriel India",
+     "symbol": "GABRIEL",
+     "marketCap": 24366,
+     "revenue": 5593,
+     "profit": 406,
+     "roe": 0.202,
+     "roce": 0.256,
+     "pe": 58.8,
+     "price": 1375,
+     "high52": 1600,
+     "low52": 796,
+     "profitHistory": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "roe5y": null,
+     "roceHistory": null,
+     "notes": [
+      "Price is 6 Nov close.",
+      "History left blank: Screener's consolidated page shows only 3 annual columns and figures that don't reconcile with its trailing numbers."
+     ]
+    },
+    {
+     "name": "Bharat Forge",
+     "symbol": "BHARATFORG",
+     "marketCap": 85215,
+     "revenue": 18381,
+     "profit": 695,
+     "roe": 0.12,
+     "roce": 0.126,
+     "pe": 85.1,
+     "price": 1739,
+     "high52": 2295,
+     "low52": 1304,
+     "profitHistory": [
+      1077,
+      508,
+      910,
+      913,
+      1089
+     ],
+     "roe5y": 0.12,
+     "roceHistory": [
+      0.11,
+      0.08,
+      0.13,
+      0.12,
+      0.13
+     ],
+     "notes": [
+      "History: trailing profit includes a Jun 2026 quarterly loss, so TTM is below FY26."
+     ]
+    },
+    {
+     "name": "Craftsman Automation",
+     "symbol": "CRAFTSMAN",
+     "marketCap": 27607,
+     "revenue": 9660,
+     "profit": 527,
+     "roe": 0.125,
+     "roce": 0.139,
+     "pe": 52.0,
+     "price": 10575,
+     "high52": 11999,
+     "low52": 6252,
+     "profitHistory": [
+      163,
+      251,
+      337,
+      201,
+      384
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.18,
+      0.21,
+      0.2,
+      0.12,
+      0.14
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "name": "Auto Batteries",
+   "title": "Auto Batteries & Storage (closest listed peers) – Primary Stock Screen",
+   "stocks": [
+    {
+     "name": "Exide Industries",
+     "symbol": "EXIDEIND",
+     "marketCap": 30375,
+     "revenue": 19756,
+     "profit": 1050,
+     "roe": 0.0597,
+     "roce": 0.0854,
+     "pe": 28.9,
+     "price": 357,
+     "high52": 496,
+     "low52": 287,
+     "profitHistory": [
+      4357,
+      823,
+      883,
+      800,
+      860
+     ],
+     "roe5y": 0.13,
+     "roceHistory": [
+      0.11,
+      0.1,
+      0.1,
+      0.09,
+      0.09
+     ],
+     "notes": [
+      "Lead-acid and lithium-ion batteries.",
+      "History: FY22 profit includes ~Rs 3,725 Cr one-off other income, so growth looks sharply negative."
+     ]
+    },
+    {
+     "name": "Amara Raja Energy & Mobility",
+     "symbol": "ARE&M",
+     "marketCap": 13505,
+     "revenue": 14695,
+     "profit": 865,
+     "roe": 0.0999,
+     "roce": 0.134,
+     "pe": 17.7,
+     "price": 738,
+     "high52": 1017,
+     "low52": 670,
+     "profitHistory": [
+      511,
+      731,
+      906,
+      964,
+      970
+     ],
+     "roe5y": 0.12,
+     "roceHistory": [
+      0.16,
+      0.2,
+      0.19,
+      0.17,
+      0.13
+     ],
+     "notes": [
+      "Screener standalone figures (consolidated page not fetched)."
+     ]
+    },
+    {
+     "name": "HBL Engineering",
+     "symbol": "HBLENGINE",
+     "marketCap": 22212,
+     "revenue": 2988,
+     "profit": 586,
+     "roe": 0.453,
+     "roce": 0.593,
+     "pe": 38.4,
+     "price": 801,
+     "high52": 1122,
+     "low52": 603,
+     "profitHistory": [
+      94,
+      98,
+      280,
+      276,
+      814
+     ],
+     "roe5y": 0.27,
+     "roceHistory": [
+      0.13,
+      0.14,
+      0.36,
+      0.27,
+      0.59
+     ],
+     "notes": [
+      "Specialty batteries plus defence/rail electronics; battery share of revenue not visible on page."
+     ]
+    },
+    {
+     "name": "Eveready Industries India",
+     "symbol": "EVEREADY",
+     "marketCap": 2249,
+     "revenue": 1530,
+     "profit": 218,
+     "roe": 0.27,
+     "roce": 0.172,
+     "pe": 12.9,
+     "price": 310,
+     "high52": 379,
+     "low52": 260,
+     "profitHistory": [
+      46,
+      28,
+      67,
+      82,
+      172
+     ],
+     "roe5y": 0.2,
+     "roceHistory": [
+      0.14,
+      0.13,
+      0.16,
+      0.17,
+      0.17
+     ],
+     "notes": [
+      "Dry-cell/consumer batteries. Price is 5 Nov close.",
+      "History: FY26 profit lifted by other income and a tax credit."
+     ]
+    },
+    {
+     "name": "Indo National (Nippo)",
+     "symbol": "NIPPOBATRY",
+     "marketCap": 241,
+     "revenue": 449,
+     "profit": -26,
+     "roe": -0.0695,
+     "roce": -0.0533,
+     "pe": null,
+     "price": 322,
+     "high52": 472,
+     "low52": 255,
+     "profitHistory": [
+      13,
+      -8,
+      15,
+      122,
+      -27
+     ],
+     "roe5y": 0.08,
+     "roceHistory": [
+      0.07,
+      0.01,
+      0.08,
+      0.33,
+      -0.05
+     ],
+     "notes": [
+      "Dry-cell batteries (Nippo). Micro-cap, loss-making: P/E not meaningful. TTM to Jun 2026.",
+      "History: FY25 profit came from other income; operations are loss-making."
+     ]
+    },
+    {
+     "name": "Panasonic Energy India",
+     "symbol": "504093",
+     "marketCap": 169,
+     "revenue": 276,
+     "profit": 4,
+     "roe": 0.0519,
+     "roce": 0.0948,
+     "pe": 24.6,
+     "price": 225,
+     "high52": 399,
+     "low52": 216,
+     "profitHistory": [
+      9,
+      -11,
+      12,
+      12,
+      3
+     ],
+     "roe5y": 0.07,
+     "roceHistory": [
+      0.11,
+      -0.07,
+      0.16,
+      0.18,
+      0.09
+     ],
+     "notes": [
+      "Dry-cell batteries. Micro-cap. Price is 26 Oct close, TTM to Jun 2026, basis not stated. NSE symbol not confirmed - BSE code shown."
+     ]
+    },
+    {
+     "name": "High Energy Batteries (India)",
+     "symbol": "504176",
+     "marketCap": 495,
+     "revenue": 90,
+     "profit": 16,
+     "roe": 0.154,
+     "roce": 0.204,
+     "pe": 28.4,
+     "price": 552,
+     "high52": 675,
+     "low52": 470,
+     "profitHistory": [
+      18,
+      20,
+      17,
+      15,
+      15
+     ],
+     "roe5y": 0.23,
+     "roceHistory": [
+      0.36,
+      0.37,
+      0.28,
+      0.23,
+      0.2
+     ],
+     "notes": [
+      "Defence/aerospace batteries (silver-zinc, Ni-Cd). Micro-cap. Basis not stated. BSE code shown."
+     ]
+    },
+    {
+     "name": "Goldstar Power",
+     "symbol": "GOLDSTAR",
+     "marketCap": 333,
+     "revenue": 22.76,
+     "profit": 0.48,
+     "roe": 0.018,
+     "roce": 0.0357,
+     "pe": 695,
+     "price": 11.6,
+     "high52": 13.4,
+     "low52": 4.5,
+     "profitHistory": [
+      0.71,
+      3.73,
+      4.05,
+      2.28,
+      1.01
+     ],
+     "roe5y": 0.08,
+     "roceHistory": [
+      0.0649,
+      0.1733,
+      0.1754,
+      0.1155,
+      0.0357
+     ],
+     "notes": [
+      "Lead-acid batteries. NSE SME listing, micro-cap, standalone. P/E of 695 reflects near-zero profit."
+     ]
+    },
+    {
+     "name": "Exicom Tele-Systems",
+     "symbol": "EXICOM",
+     "marketCap": 1906,
+     "revenue": 1384,
+     "profit": -253,
+     "roe": -0.408,
+     "roce": -0.147,
+     "pe": null,
+     "price": 137,
+     "high52": 189,
+     "low52": 75.6,
+     "profitHistory": [
+      5,
+      8,
+      64,
+      -110,
+      -274
+     ],
+     "roe5y": -0.13,
+     "roceHistory": [
+      0.17,
+      0.15,
+      0.2,
+      -0.06,
+      -0.15
+     ],
+     "notes": [
+      "EV chargers + lithium-ion batteries for telecom/data centres. Loss-making: P/E not meaningful."
+     ]
+    },
+    {
+     "name": "Ola Electric Mobility",
+     "symbol": "OLAELEC",
+     "marketCap": 17230,
+     "revenue": 1880,
+     "profit": -1741,
+     "roe": -0.432,
+     "roce": -0.199,
+     "pe": null,
+     "price": 34.5,
+     "high52": 48.2,
+     "low52": 20.8,
+     "profitHistory": [
+      -784,
+      -1472,
+      -1584,
+      -2276,
+      -1833
+     ],
+     "roe5y": null,
+     "roceHistory": [
+      -0.24,
+      -0.3,
+      -0.32,
+      -0.28,
+      -0.2
+     ],
+     "notes": [
+      "EV maker with in-house cell plans, not a pure battery maker. Loss-making: P/E not meaningful."
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pharma",
+   "title": "Pharma",
+   "stocks": [
+    {
+     "name": "Sun Pharmaceutical Industries",
+     "symbol": "SUNPHARMA",
+     "marketCap": 446276,
+     "revenue": 61631,
+     "profit": 10987,
+     "roe": 0.16,
+     "roce": 0.205,
+     "pe": 36.3,
+     "price": 1860,
+     "high52": 2048,
+     "low52": 1584,
+     "profitHistory": [
+      3389,
+      8513,
+      9610,
+      10965,
+      11509
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      0.17,
+      0.16,
+      0.17,
+      0.2,
+      0.21
+     ],
+     "notes": []
+    },
+    {
+     "name": "Cipla",
+     "symbol": "CIPLA",
+     "marketCap": 113573,
+     "revenue": 28139,
+     "profit": 2854,
+     "roe": 0.116,
+     "roce": 0.155,
+     "pe": 36.6,
+     "price": 1406,
+     "high52": 1540,
+     "low52": 1166,
+     "profitHistory": [
+      2547,
+      2833,
+      4154,
+      5269,
+      3862
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.17,
+      0.18,
+      0.23,
+      0.23,
+      0.15
+     ],
+     "notes": []
+    },
+    {
+     "name": "Dr. Reddy's Laboratories",
+     "symbol": "DRREDDY",
+     "marketCap": 114683,
+     "revenue": 33097,
+     "profit": 2760,
+     "roe": 0.112,
+     "roce": 0.13,
+     "pe": 41.0,
+     "price": 1373,
+     "high52": 1415,
+     "low52": 1080,
+     "profitHistory": [
+      2182,
+      4507,
+      5578,
+      5725,
+      4158
+     ],
+     "roe5y": 0.16,
+     "roceHistory": [
+      0.14,
+      0.27,
+      0.27,
+      0.23,
+      0.13
+     ],
+     "notes": []
+    },
+    {
+     "name": "Divi's Laboratories",
+     "symbol": "DIVISLAB",
+     "marketCap": 294590,
+     "revenue": 12191,
+     "profit": 3363,
+     "roe": 0.165,
+     "roce": 0.22,
+     "pe": 86.2,
+     "price": 11097,
+     "high52": 11196,
+     "low52": 5648,
+     "profitHistory": [
+      2960,
+      1823,
+      1600,
+      2191,
+      2568
+     ],
+     "roe5y": 0.17,
+     "roceHistory": [
+      0.35,
+      0.19,
+      0.16,
+      0.2,
+      0.22
+     ],
+     "notes": []
+    },
+    {
+     "name": "Lupin",
+     "symbol": "LUPIN",
+     "marketCap": 91234,
+     "revenue": 30746,
+     "profit": 5221,
+     "roe": 0.287,
+     "roce": 0.299,
+     "pe": 16.2,
+     "price": 1997,
+     "high52": 2530,
+     "low52": 1893,
+     "profitHistory": [
+      -1528,
+      448,
+      1936,
+      3306,
+      5355
+     ],
+     "roe5y": 0.13,
+     "roceHistory": [
+      -0.07,
+      0.06,
+      0.16,
+      0.21,
+      0.3
+     ],
+     "notes": []
+    },
+    {
+     "name": "Torrent Pharmaceuticals",
+     "symbol": "TORNTPHARM",
+     "marketCap": 181550,
+     "revenue": 17400,
+     "profit": 2099,
+     "roe": 0.274,
+     "roce": 0.152,
+     "pe": 83.6,
+     "price": 4773,
+     "high52": 5250,
+     "low52": 3602,
+     "profitHistory": [
+      777,
+      1245,
+      1656,
+      1911,
+      2138
+     ],
+     "roe5y": 0.24,
+     "roceHistory": [
+      0.19,
+      0.2,
+      0.23,
+      0.27,
+      0.15
+     ],
+     "notes": []
+    },
+    {
+     "name": "Zydus Lifesciences",
+     "symbol": "ZYDUSLIFE",
+     "marketCap": 119941,
+     "revenue": 30378,
+     "profit": 4302,
+     "roe": 0.212,
+     "roce": 0.211,
+     "pe": 26.5,
+     "price": 1200,
+     "high52": 1267,
+     "low52": 836,
+     "profitHistory": [
+      4618,
+      2092,
+      3973,
+      4673,
+      5124
+     ],
+     "roe5y": 0.21,
+     "roceHistory": [
+      0.13,
+      0.15,
+      0.22,
+      0.24,
+      0.21
+     ],
+     "notes": [
+      "History: FY22 profit includes ~Rs 2,581 Cr other income (likely one-off)."
+     ]
+    },
+    {
+     "name": "Mankind Pharma",
+     "symbol": "MANKIND",
+     "marketCap": 104913,
+     "revenue": 15379,
+     "profit": 2264,
+     "roe": 0.131,
+     "roce": 0.135,
+     "pe": 45.0,
+     "price": 2540,
+     "high52": 2642,
+     "low52": 1910,
+     "profitHistory": [
+      1453,
+      1310,
+      1942,
+      2011,
+      1938
+     ],
+     "roe5y": 0.17,
+     "roceHistory": [
+      0.32,
+      0.22,
+      0.26,
+      0.17,
+      0.14
+     ],
+     "notes": []
+    },
+    {
+     "name": "Aurobindo Pharma",
+     "symbol": "AUROPHARMA",
+     "marketCap": 103899,
+     "revenue": 36913,
+     "profit": 3987,
+     "roe": 0.101,
+     "roce": 0.129,
+     "pe": 25.6,
+     "price": 1806,
+     "high52": 1813,
+     "low52": 1106,
+     "profitHistory": [
+      2647,
+      1928,
+      3169,
+      3484,
+      3503
+     ],
+     "roe5y": 0.1,
+     "roceHistory": [
+      0.13,
+      0.09,
+      0.14,
+      0.14,
+      0.13
+     ],
+     "notes": []
+    },
+    {
+     "name": "Alkem Laboratories",
+     "symbol": "ALKEM",
+     "marketCap": 63334,
+     "revenue": 15081,
+     "profit": 2204,
+     "roe": 0.189,
+     "roce": 0.212,
+     "pe": 27.9,
+     "price": 5297,
+     "high52": 5934,
+     "low52": 4811,
+     "profitHistory": [
+      1680,
+      1007,
+      1811,
+      2215,
+      2351
+     ],
+     "roe5y": 0.18,
+     "roceHistory": [
+      0.18,
+      0.14,
+      0.2,
+      0.2,
+      0.21
+     ],
+     "notes": [
+      "TTM to Jun 2026."
+     ]
+    }
+   ]
+  },
+  {
+   "name": "FMCG",
+   "title": "FMCG",
+   "stocks": [
+    {
+     "name": "Hindustan Unilever",
+     "symbol": "HINDUNILVR",
+     "marketCap": 469448,
+     "revenue": 68359,
+     "profit": 15073,
+     "roe": 0.31,
+     "roce": 0.284,
+     "pe": 41.9,
+     "price": 1998,
+     "high52": 2480,
+     "low52": 1758,
+     "profitHistory": [
+      8892,
+      10143,
+      10282,
+      10671,
+      15059
+     ],
+     "roe5y": 0.22,
+     "roceHistory": [
+      0.25,
+      0.27,
+      0.27,
+      0.28,
+      0.28
+     ],
+     "notes": [
+      "History: FY26 profit includes ~Rs 4,900 Cr other income (likely one-off)."
+     ]
+    },
+    {
+     "name": "ITC",
+     "symbol": "ITC",
+     "marketCap": 355405,
+     "revenue": 77255,
+     "profit": 19226,
+     "roe": 0.293,
+     "roce": 0.389,
+     "pe": 18.8,
+     "price": 283,
+     "high52": 412,
+     "low52": 253,
+     "profitHistory": [
+      15503,
+      19477,
+      20751,
+      35052,
+      21018
+     ],
+     "roe5y": 0.32,
+     "roceHistory": [
+      0.33,
+      0.39,
+      0.36,
+      0.37,
+      0.39
+     ],
+     "notes": [
+      "History: FY25 profit includes ~Rs 17,800 Cr other income (likely one-off); FY26 is back to normal."
+     ]
+    },
+    {
+     "name": "Nestle India",
+     "symbol": "NESTLEIND",
+     "marketCap": 246166,
+     "revenue": 25581,
+     "profit": 4134,
+     "roe": 0.732,
+     "roce": 0.841,
+     "pe": 61.1,
+     "price": 1274,
+     "high52": 1553,
+     "low52": 1147,
+     "profitHistory": [
+      null,
+      2391,
+      2999,
+      3314,
+      3545
+     ],
+     "roe5y": 0.98,
+     "roceHistory": [
+      1.38,
+      1.53,
+      1.69,
+      0.96,
+      0.84
+     ],
+     "notes": [
+      "Screener standalone figures.",
+      "History: year-end changed Dec to Mar. FY23/FY24 shown are calendar 2022/2023; the 15-month FY24 (Rs 3,933 Cr) is excluded; FY22 not comparable. Treat growth as approximate. 5Y ROCE average mixes these periods."
+     ]
+    },
+    {
+     "name": "Britannia Industries",
+     "symbol": "BRITANNIA",
+     "marketCap": 115255,
+     "revenue": 20286,
+     "profit": 2681,
+     "roe": 0.535,
+     "roce": 0.56,
+     "pe": 43.2,
+     "price": 4785,
+     "high52": 6271,
+     "low52": 4500,
+     "profitHistory": [
+      1516,
+      2316,
+      2134,
+      2178,
+      2537
+     ],
+     "roe5y": 0.56,
+     "roceHistory": [
+      0.41,
+      0.49,
+      0.49,
+      0.53,
+      0.56
+     ],
+     "notes": []
+    },
+    {
+     "name": "Dabur India",
+     "symbol": "DABUR",
+     "marketCap": 66731,
+     "revenue": 13924,
+     "profit": 2000,
+     "roe": 0.17,
+     "roce": 0.203,
+     "pe": 32.8,
+     "price": 376,
+     "high52": 534,
+     "low52": 354,
+     "profitHistory": [
+      1742,
+      1701,
+      1811,
+      1740,
+      1869
+     ],
+     "roe5y": 0.19,
+     "roceHistory": [
+      0.27,
+      0.23,
+      0.22,
+      0.2,
+      0.2
+     ],
+     "notes": []
+    },
+    {
+     "name": "Godrej Consumer Products",
+     "symbol": "GODREJCP",
+     "marketCap": 87471,
+     "revenue": 16537,
+     "profit": 1977,
+     "roe": 0.161,
+     "roce": 0.188,
+     "pe": 41.2,
+     "price": 853,
+     "high52": 1275,
+     "low52": 777,
+     "profitHistory": [
+      1783,
+      1702,
+      -561,
+      1852,
+      1861
+     ],
+     "roe5y": 0.14,
+     "roceHistory": [
+      0.19,
+      0.17,
+      0.19,
+      0.19,
+      0.19
+     ],
+     "notes": [
+      "History: FY24 loss driven by ~Rs 2,200 Cr negative other income (one-off), not operations."
+     ]
+    },
+    {
+     "name": "Marico",
+     "symbol": "MARICO",
+     "marketCap": 116726,
+     "revenue": 14692,
+     "profit": 2078,
+     "roe": 0.429,
+     "roce": 0.47,
+     "pe": 57.8,
+     "price": 898,
+     "high52": 899,
+     "low52": 707,
+     "profitHistory": [
+      1255,
+      1322,
+      1502,
+      1658,
+      1813
+     ],
+     "roe5y": 0.39,
+     "roceHistory": [
+      0.43,
+      0.42,
+      0.43,
+      0.45,
+      0.47
+     ],
+     "notes": []
+    },
+    {
+     "name": "Colgate-Palmolive India",
+     "symbol": "COLPAL",
+     "marketCap": 46074,
+     "revenue": 6391,
+     "profit": 1362,
+     "roe": 0.827,
+     "roce": 1.08,
+     "pe": 33.3,
+     "price": 1694,
+     "high52": 2302,
+     "low52": 1564,
+     "profitHistory": [
+      1078,
+      1047,
+      1324,
+      1437,
+      1325
+     ],
+     "roe5y": 0.75,
+     "roceHistory": [
+      0.92,
+      0.79,
+      0.97,
+      1.05,
+      1.08
+     ],
+     "notes": [
+      "Standalone figures (Screener shows no consolidated view)."
+     ]
+    },
+    {
+     "name": "Tata Consumer Products",
+     "symbol": "TATACONSUM",
+     "marketCap": 107511,
+     "revenue": 21556,
+     "profit": 1706,
+     "roe": 0.0735,
+     "roce": 0.0924,
+     "pe": 62.5,
+     "price": 1086,
+     "high52": 1283,
+     "low52": 916,
+     "profitHistory": [
+      1015,
+      1320,
+      1215,
+      1287,
+      1547
+     ],
+     "roe5y": 0.07,
+     "roceHistory": [
+      0.09,
+      0.09,
+      0.11,
+      0.09,
+      0.09
+     ],
+     "notes": []
+    },
+    {
+     "name": "Varun Beverages",
+     "symbol": "VBL",
+     "marketCap": 146953,
+     "revenue": 25931,
+     "profit": 3479,
+     "roe": 0.164,
+     "roce": 0.197,
+     "pe": 42.5,
+     "price": 434,
+     "high52": 556,
+     "low52": 381,
+     "profitHistory": [
+      746,
+      1550,
+      2102,
+      2634,
+      3062
+     ],
+     "roe5y": 0.23,
+     "roceHistory": [
+      0.17,
+      0.27,
+      0.29,
+      0.25,
+      0.2
+     ],
+     "notes": [
+      "History: December year-end - FY22..FY26 columns show CY2021..CY2025."
+     ],
+     "historyLabels": [
+      "CY2021",
+      "CY2022",
+      "CY2023",
+      "CY2024",
+      "CY2025"
+     ]
+    }
+   ]
+  }
+ ]
+}
