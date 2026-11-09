@@ -128,6 +128,13 @@ export default function Dashboard({ data }: { data: Dataset }) {
         </p>
       </header>
 
+      {dir === "Below" && (
+        <div role="status" className="mb-4 flex flex-wrap items-center gap-3 rounded-lg border px-3 py-2 text-sm" style={{ background: "var(--warn-bg)", color: "var(--warn)", borderColor: "var(--warn)" }}>
+          <strong>Below mode is on:</strong> stocks are considered when ROE is below the industry figure, so stocks with higher ROE show as SKIP.
+          <button type="button" onClick={() => setDir("Above")} className="rounded border border-current px-2 py-0.5 font-semibold">Switch back to Above</button>
+        </div>
+      )}
+
       <nav aria-label="Sectors" className="mb-4 flex flex-wrap gap-2">
         {[OVERVIEW, ...data.sectors.map((s) => s.name)].map((t) => (
           <button key={t} type="button" onClick={() => setTab(t)} aria-pressed={tab === t} className={chip(tab === t)}>
