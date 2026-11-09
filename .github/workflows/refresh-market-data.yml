@@ -26,4 +26,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/stocks.json data/refresh-report.md
           git diff --cached --quiet || git commit -m "Refresh market data $(date -u +%F)"
+          git pull --rebase origin main
           git push
