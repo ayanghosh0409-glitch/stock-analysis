@@ -1,8 +1,8 @@
 "use client";
 
 import type { Stock } from "@/lib/types";
-import type { Benchmarks, Consistency, Verdict } from "@/lib/screen";
-import { ConsistencyBadge, VerdictBadge } from "./Badges";
+import { BORDERLINE_BAND, type Benchmarks, type Consistency, type Verdict } from "@/lib/screen";
+import { ConsistencyBadge, NearCutoffBadge, VerdictBadge } from "./Badges";
 import Sparkline from "./Sparkline";
 import { fmtCr, fmtPct, fmtPrice, fmtX } from "./format";
 
@@ -12,11 +12,15 @@ export type Row = {
   verdict: Verdict;
   consistency: Consistency;
   cagr: number | "n/m" | null;
+  /** The benchmark this stock is judged against: its sector peers, without the stock itself. */
   bench: Benchmarks;
+  /** ROE minus the ROE cut-off, as a fraction; positive means the stock clears it. */
+  margin: number | null;
+  borderline: boolean;
 };
 
 export type SortKey =
-  | "name" | "price" | "marketCap" | "revenue" | "profit" | "roe" | "roce" | "pe" | "verdict" | "consistency" | "cagr";
+  | "name" | "price" | "marketCap" | "revenue" | "profit" | "roe" | "margin" | "roce" | "pe" | "verdict" | "consistency" | "cagr";
 
 export const sortValue = (r: Row, k: SortKey): number | string | null => {
   switch (k) {
@@ -26,6 +30,7 @@ export const sortValue = (r: Row, k: SortKey): number | string | null => {
     case "revenue": return r.stock.revenue;
     case "profit": return r.stock.profit;
     case "roe": return r.stock.roe;
+    case "margin": return r.margin;
     case "roce": return r.stock.roce;
     case "pe": return r.stock.pe;
     case "cagr": return typeof r.cagr === "number" ? r.cagr : null;
@@ -62,6 +67,31 @@ function Delta({ value, bench }: { value: number | null; bench: number | null })
   );
 }
 
+function RoeCell({ value, cutoff }: { value: number | null; cutoff: number | null }) {
+  if (value == null) return <span className="text-muted">–</span>;
+  return (
+    <div className="num">
+      <div>{fmtPct(value)}</div>
+      <div className="text-[10px] text-muted">{cutoff == null ? "no cut-off" : `cut-off ${fmtPct(cutoff)}`}</div>
+    </div>
+  );
+}
+
+function MarginCell({ margin, borderline }: { margin: number | null; borderline: boolean }) {
+  if (margin == null) return <span className="text-muted">–</span>;
+  const pts = margin * 100;
+  const rounded = Math.round(pts * 10) / 10; // avoid showing "-0.0"
+  return (
+    <div className="flex flex-col items-end gap-0.5">
+      <span className="num" style={{ color: rounded > 0 ? "var(--good)" : rounded < 0 ? "var(--bad)" : "var(--muted)" }}>
+        {rounded > 0 ? "+" : ""}
+        {rounded.toFixed(1)} pts
+      </span>
+      {borderline && <NearCutoffBadge points={Math.round(BORDERLINE_BAND * 100)} />}
+    </div>
+  );
+}
+
 export default function StockTable({
   rows, sort, onSort, onPick, showSector, selected,
 }: {
@@ -83,7 +113,7 @@ export default function StockTable({
 
   return (
     <div className="overflow-x-auto rounded-lg border border-line bg-surface">
-      <table className="w-full min-w-[1100px] border-collapse text-sm">
+      <table className="w-full min-w-[1200px] border-collapse text-sm">
         <thead className="bg-surface2 text-xs uppercase tracking-wide text-muted">
           <tr>
             {th("name", "Stock")}
@@ -93,6 +123,7 @@ export default function StockTable({
             {th("revenue", "Revenue (₹ Cr)", true)}
             {th("profit", "Profit (₹ Cr)", true)}
             {th("roe", "ROE", true)}
+            {th("margin", "ROE vs cut-off", true)}
             {th("roce", "ROCE", true)}
             {th("pe", "P/E", true)}
             {th("verdict", "Verdict (ROE/ROCE)")}
@@ -120,7 +151,8 @@ export default function StockTable({
                 <td className="num px-3 py-2 text-right">{fmtCr(s.marketCap)}</td>
                 <td className="num px-3 py-2 text-right">{fmtCr(s.revenue)}</td>
                 <td className="num px-3 py-2 text-right">{fmtCr(s.profit)}</td>
-                <td className="px-3 py-2 text-right"><Delta value={s.roe} bench={r.bench.roe} /></td>
+                <td className="px-3 py-2 text-right"><RoeCell value={s.roe} cutoff={r.bench.threshold} /></td>
+                <td className="px-3 py-2 text-right"><MarginCell margin={r.margin} borderline={r.borderline} /></td>
                 <td className="px-3 py-2 text-right"><Delta value={s.roce} bench={r.bench.roce} /></td>
                 <td className="num px-3 py-2 text-right">{fmtX(s.pe)}</td>
                 <td className="px-3 py-2"><VerdictBadge v={r.verdict} /></td>
@@ -135,7 +167,7 @@ export default function StockTable({
             );
           })}
           {rows.length === 0 && (
-            <tr><td colSpan={12} className="px-3 py-8 text-center text-muted">No stocks match these filters.</td></tr>
+            <tr><td colSpan={13} className="px-3 py-8 text-center text-muted">No stocks match these filters.</td></tr>
           )}
         </tbody>
       </table>

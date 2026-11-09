@@ -2,10 +2,10 @@
 
 import { useEffect } from "react";
 import { ProfitBars, RoceLine } from "./Charts";
-import { ConsistencyBadge, VerdictBadge } from "./Badges";
+import { ConsistencyBadge, NearCutoffBadge, VerdictBadge } from "./Badges";
 import { fmtCr, fmtPct, fmtPrice, fmtX } from "./format";
 import type { Row } from "./StockTable";
-import { explain, profitTrend } from "@/lib/screen";
+import { BORDERLINE_BAND, explain, profitTrend } from "@/lib/screen";
 
 const DEFAULT_LABELS = ["FY22", "FY23", "FY24", "FY25", "FY26"];
 
@@ -44,11 +44,13 @@ export default function StockDetail({ row, onClose }: { row: Row; onClose: () =>
       <div className="mt-4 space-y-3">
         <div className="flex flex-wrap items-center gap-2">
           <VerdictBadge v={row.verdict} />
+          {row.borderline && <NearCutoffBadge points={Math.round(BORDERLINE_BAND * 100)} />}
           <ConsistencyBadge c={row.consistency} />
         </div>
         <p className="text-sm">{explain(s, row.bench)}</p>
         <p className="text-xs text-muted">
-          The profit consistency flag is shown separately and never changes the verdict.
+          The industry figures come from {row.bench.peers} other profitable stocks in {row.sector}; this stock and
+          loss-making companies are left out. The profit consistency flag is shown separately and never changes the verdict.
         </p>
       </div>
 
@@ -59,7 +61,7 @@ export default function StockDetail({ row, onClose }: { row: Row; onClose: () =>
         <Metric label="Market cap" value={"₹" + fmtCr(s.marketCap) + " Cr"} />
         <Metric label="Revenue (TTM)" value={"₹" + fmtCr(s.revenue) + " Cr"} />
         <Metric label="Profit (TTM)" value={"₹" + fmtCr(s.profit) + " Cr"} />
-        <Metric label="ROE" value={`${fmtPct(s.roe)} (ind. ${fmtPct(row.bench.roe)})`} />
+        <Metric label="ROE" value={`${fmtPct(s.roe)} (cut-off ${fmtPct(row.bench.threshold)})`} />
         <Metric label="ROCE" value={`${fmtPct(s.roce)} (ind. ${fmtPct(row.bench.roce)})`} />
         <Metric label="P/E" value={fmtX(s.pe)} />
       </div>
