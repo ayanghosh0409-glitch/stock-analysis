@@ -109,6 +109,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
       rec: count((r) => r.consistency === "Recovering"),
       mixed: count((r) => r.consistency === "Mixed"),
       weak: count((r) => r.consistency === "Weak"),
+      nodata: count((r) => r.consistency === "Insufficient data"),
     };
   });
 
@@ -121,7 +122,8 @@ export default function Dashboard({ data }: { data: Dataset }) {
         <h1 className="text-2xl font-semibold">Stock Analysis</h1>
         <p className="mt-1 max-w-3xl text-sm text-muted">
           A first-pass screen. A stock is considered when its ROE is {dir === "Above" ? "greater than" : "less than"} the
-          industry ROE (the median of the stocks listed in its sector), and rated Strong when ROCE also passes. Profit
+          industry ROE (the median of the stocks listed in its sector). It is rated Strong when ROCE also passes and
+          Moderate when only ROE passes. Profit
           consistency over five years is shown as a separate flag. Data as of {data.asOf}, from public Screener.in pages.
         </p>
       </header>
@@ -165,7 +167,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
           <table className="w-full min-w-[820px] border-collapse text-sm">
             <thead className="bg-surface2 text-xs uppercase tracking-wide text-muted">
               <tr>
-                {["Sector", "Stocks", "Industry ROE", "Industry ROCE", "Strong", "Moderate", "Skip", "Consistent", "Recovering", "Mixed", "Weak"].map((h, i) => (
+                {["Sector", "Stocks", "Industry ROE", "Industry ROCE", "Strong", "Moderate", "Skip", "Consistent", "Recovering", "Mixed", "Weak", "No data"].map((h, i) => (
                   <th key={h} scope="col" className={`px-3 py-2 font-medium ${i === 0 ? "text-left" : "text-right"}`}>{h}</th>
                 ))}
               </tr>
@@ -174,7 +176,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
               {summary.map((s) => (
                 <tr key={s.name} className="border-t border-line">
                   <td className="px-3 py-2"><button type="button" onClick={() => setTab(s.name)} className="text-left font-medium text-accent hover:underline">{s.name}</button></td>
-                  {[s.n, fmtPct(s.bench?.roe), fmtPct(s.bench?.roce), s.strong, s.moderate, s.skip, s.cons, s.rec, s.mixed, s.weak].map((v, i) => (
+                  {[s.n, fmtPct(s.bench?.roe), fmtPct(s.bench?.roce), s.strong, s.moderate, s.skip, s.cons, s.rec, s.mixed, s.weak, s.nodata].map((v, i) => (
                     <td key={i} className="num px-3 py-2 text-right">{v}</td>
                   ))}
                 </tr>
