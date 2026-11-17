@@ -151,7 +151,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
   });
 
   const chip = (active: boolean) =>
-    `rounded-full border px-3 py-1 text-xs ${active ? "border-accent bg-accent text-bg font-semibold" : "border-line bg-surface hover:bg-surface2"}`;
+    `rounded-full border px-3 py-1 text-xs ${active ? "border-primary bg-primary text-on-primary font-semibold" : "border-line bg-surface hover:bg-surface2"}`;
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-6 sm:px-6">
