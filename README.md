@@ -15,6 +15,11 @@ thresholds are constants at the top of `src/lib/screen.ts`.
 **Profit consistency** (five years of net profit) is a *separate flag* and never changes the verdict:
 Consistent, Recovering, Mixed, Weak, or Insufficient data.
 
+**Recent searches:** clicking the search box lists the searches you made in the last 7 days (up to 8, newest first);
+choosing one runs it. A search is saved when you press Enter, pick it from the list or leave the box. They are kept only
+in your browser (`localStorage`), never sent anywhere, and can be cleared from the list. The limits are constants in
+`src/lib/recent.ts`.
+
 Screening aid only, not investment advice.
 
 ## Run locally

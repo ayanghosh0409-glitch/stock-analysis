@@ -18,6 +18,7 @@ import {
 import StockTable, { sortValue, type Row, type SortKey } from "./StockTable";
 import StockDetail from "./StockDetail";
 import { PeerBadge } from "./Badges";
+import RecentSearch from "./RecentSearch";
 import { RoeRoceScatter } from "./Charts";
 import { fmtPct } from "./format";
 
@@ -173,10 +174,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
       </nav>
 
       <section aria-label="Controls" className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-lg border border-line bg-surface p-3">
-        <label className="flex items-center gap-2 text-sm">
-          <span className="text-muted">Search</span>
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Name or symbol" className="w-40 rounded border border-line bg-surface px-2 py-1" />
-        </label>
+        <RecentSearch value={query} onChange={setQuery} />
         <div className="flex items-center gap-1.5 text-sm" role="group" aria-label="Verdict filter">
           <span className="text-muted">Verdict</span>
           {([["all", "All"], ["consider", "Consider"], ["strong", "Strong only"]] as const).map(([k, l]) => (
