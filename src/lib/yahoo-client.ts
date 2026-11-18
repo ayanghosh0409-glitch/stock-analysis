@@ -54,7 +54,11 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
     raw.name = str(q.longName) ?? str(q.shortName) ?? ticker;
     raw.currency = str(q.currency);
     raw.price = num(q.regularMarketPrice);
-    raw.marketCap = num(q.marketCap);
+    // Yahoo sometimes leaves marketCap out of a quote it has otherwise filled in; price times shares is the same number.
+    raw.marketCap = num(q.marketCap) ?? (raw.price !== undefined && num(q.sharesOutstanding) !== undefined ? raw.price * num(q.sharesOutstanding)! : undefined);
+    if (raw.price === undefined || raw.marketCap === undefined) {
+      console.error(`[yahoo] ${ticker}: quote without ${raw.price === undefined ? "a price" : "a market cap"} (fields: ${Object.keys(q).slice(0, 40).join(",")})`);
+    }
     raw.high52 = num(q.fiftyTwoWeekHigh);
     raw.low52 = num(q.fiftyTwoWeekLow);
     raw.pe = num(q.trailingPE);
