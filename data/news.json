@@ -1,5 +1,456 @@
 {
- "fetchedAt": null,
+ "fetchedAt": "2026-11-18T04:41:08.179829Z",
  "windowDays": 7,
- "sectors": {}
+ "sectors": {
+  "IT": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "IT Stocks Fall: Wipro, Infosys, Mphasis, LTM, Others Trade Lower; Nifty IT Drops Over 1%",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcmowWlBRWDdhVHdoTjJ3WkVZVzdtek84RF9TNFJZdy1UUHZiQ2Y0TGJTVlMzd2dDNWdWQmxIWktxdHp0MDI0aG9WWGROTGFpUWxEWE9BQTRHZktubG9lbENUeDN0QU9fZGZyLU40aHJrbGFVNTBnR09NdTRBd0lURHVtUklzT0w3dmFDQ29TZFlNaHlsZFU4TG50U1FRWVJwbjNLWlVNVzlxU0hHckUtaHJUdUJ5WkFVUFJYakhySVc3UjDSAcsBQVVfeXFMTVVPaTQxNkZPSFNUdDVaYnBZUkxTUnRqZElOdEV4SGozYy0wRl94NzZ6NU9McEoxWmZnZjV2S2Z4TFM4NHNhX3RiOVpFbkE4Sll2ODluTmotazV0MDRQRVVPOXRZckdxVmprZjVYT1g5WUpINjhMUEpRaVc0d1hLVXpEdjdmWlNDUm5JaHFXRzZrdzVsZUk4dEEyNnVaS2lNdnhRa2EzNll0OHZvZnNZT20zNHRGZGRvdlpUNmJoRElrVFNwU3FrRUxrRFE?oc=5",
+     "source": "NDTV Profit",
+     "publishedAt": "2026-11-18T04:20:16Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Cognizant beats TCS, HCLTech and two global rivals to win $175-million UK data centre deal",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPcjdHWnV1cnFiVjA3QjJrZExSc1ZSVGw3U3REb0U5Q2VLRi1lRWVjTWw1SUxqYUVEZUhmTExvZlpXV0VSemVJRU4teTJCcXNYbUFkeUhsYkVQWDNfdW5uZVNDRGpYRGdMaEVzdWg1eHRORGIwdmJZb3ZQMHBqdmV2MEJ6dnBMM1pjNS0wRXU0eXloVGVXYWlxSXZwMHpWZGxBTDRheVVwTGlNbDRzX29QN2hFZHNibUFMRWItVXRrTlBJS3VmY1NNTmFIcmF4amNBb2o1OVBpRURUcWMzendDVXdPRzBxM1VVZzFfSzg0U01IT3FPTWV1emZxelY?oc=5",
+     "source": "Moneycontrol.com",
+     "publishedAt": "2026-11-18T03:57:27Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Sensex, Nifty open in red; IT stocks drag markets, TCS falls over 2%",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR1U5UWNrb3hrODBkbjZIRlNEdnpTcnZtU2RWbDBTNnBrV0cxQ2pPU3A1d2t5UUtUZ2dYTEVDWTRvQTRhNUktbVpJUTFGU1JKWlRQZFRibWhMdUoxTlJneUhLa3ZLZjRFbHN4MDhYU0RucUpLUXQ0bUtMRE5kQ293US1TczhzdTVFZTZSYWlNWXlUV2Y4ZlltMXF5TVJvb0wwbnRNQnlHbFZkajZfTUREYg?oc=5",
+     "source": "Zee Business",
+     "publishedAt": "2026-11-18T03:48:47Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "TCS, Infosys, other IT stocks in focus after Nvidia earnings beat eases AI fears; South Korea’s KOSPI rise",
+     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMnBxeVhGel81Wi1jLTQ3V1ZVdGxPejVOQnRtOGNBTGEzMWI4LXBuTUNzLTkzSkI2THlvZDU3OXpFQU0wTlNfNG9YejhUNWZxSTJzYU5hMDBseTdVWWR6c19HWm5pb2dkT1p4ZXF5NjgzeUo1Y0VaZ1FrdUJpMTZvRjRpMEl6QVdPb3BhTUp6Xy1GZXNnRXQ0MGx3ZjRESjBIdG53eWoya0Rub2Z4R2J2SzN0TGRzT1VBWlVudVhpd1J5akRFNk0wcDE1a2R1cVo1ZGV5M3o0ekJNMVI2a0QxTk1fcW5DOFNNbktyazB1bzMxcGlzM3BkRHNEWXl0SDRHQ3VuMmZtVmt1N0JEc1AxLWtB0gGXAkFVX3lxTE9pYUJSMm1KX3pINVJqMThYMFpoRWJrYk1aMU9xSFRVcFpFVmlPcmJKV2FjT0QyaGFzX3ltZjhRQmt1eFc2ZnQ4bWJ0MGNKSloxREVMOHVMUDlQQjc3Z1YxdVF0SjNqa1JMZXc0R1ZodjFoMEcwSjRQS18tR2V5MWJQNWQ5dl96VE9JbHJZZHVHNlZWdnRkRWx6eFctbEREdC1UcHZ2SkF2QW9VWHhiWXI1S1laTVVadnFFMmhzUU9lVHNJS0hxbTF4VUg4c0JaUlgtMHFjb3AxSGtRMFZmVGVVUDVYaEs5SEYza3NvMVA0dUZwNTB1dlBrVktXUDI2dkh5YWg0OVg3THNHamVfYllPZThIR3pHZw?oc=5",
+     "source": "The Economic Times",
+     "publishedAt": "2026-11-18T03:43:49Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Stocks to Watch Today: HCLTech, IIFL Finance, Ashoka",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQc3JNd1VlR3RjLWM1ZzJURTdGNVlCQzlqOXg4bkh5eEZxOTIteGVDck45UWRRbW5xbXhPaVhQM25fbnUxZlNFeGlwQ0ZrZnJyVHV0SlZoRjNsbHBuQzNCQkEyQ0JkUzNnZW1wY05zUWhWV3F3UEtpdTJrRjBXOEd6OTdBYU9UaVphN0ZHVnV3cXE2RmtJMG9OUURwN0UzZzN3UzhfYzA1UGE4a3FnQVJ3QXd5UlZDM0lkSzZHRUlwUTRrSnp0d1RteUxQS2lET0k4N0ZwUnM1ZXlLOG5rekpkU0V5T3paM09sWFFxdzgtX3NETWc?oc=5",
+     "source": "HDFC Sky",
+     "publishedAt": "2026-11-18T03:38:33Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "TCS in race for Bosch's India tech operations in potential 3,000-employee deal: Report",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNV1J3Q0J1OGpmbU5vNmlkTGJodElZRzVWZGhtSzI1ekJia1ljUlViNFBSa2hHeC1zXzFsdWdiRWNJdjdGd2RnQ0dXVHk5dE9hSEZ4NkVoZkdoTVJBVlh2RzlYMFU2OFg4bDh4QmQ3UDVMUWJtT1VZaGV0VjlJbF80MmZYTllYamRtWTlpNkJNZV9DMnRuaE1maVYyMmQ1UGlOMGo3N2Y1VWFqb1d6TlhyOGR6dmh2dXJtQXZHeV9ZeHdMTUh5d3JzMFRKSXp1TEkyUVo4R2tORkE2QQ?oc=5",
+     "source": "Moneycontrol.com",
+     "publishedAt": "2026-11-18T03:33:57Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Stocks to watch, Nov 18: Prime Focus, IIFL Finance, HCLTech, Prestige Estate, Ashoka Buildcon, Glenmark Pharma, IMFA",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZ0JETFdlSW5sT1VtbFR5ZldkSEo1UW5Bd2prS0k5SHNodHFoMnd0QnU2a2xueWNNQ3dHOC1KOUp3NDZoRFZTZnpEZnVRbTJsamVJMTRuR3lkTlYwT25qajJNeUFnMzZwWTg2SVpmQXVrMER3dmpXYmlCaDlXZmtCdmVFUmdpRkJOalY0bTlMb1JuZlBLZ3FsQUVhX3A2ZDZFUlZjQzZDdDJWQjRZaGZpbFEtX1prOEtualhteFRyaHVFTGI0dHFBVDdNV0ROZlJkYjAyMkFYMVpfdmdIdkZTbFR4azBWV0pGVnV3?oc=5",
+     "source": "Upstox",
+     "publishedAt": "2026-11-18T02:52:01Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOOFFObXdCUkpCQ0ttMlpGelpPUlpVQWpsdXRPYmJCNEhWWEhlRHdaOHJsS0FIOS1wcWo0b1JUeDFmSTB2TUY5T2h0bE8yeGtqcVJuc3BMLXBrTFVXcEY0X3h5d2FCRlQ1X016SUxrMy03d2FWUmRRY3VrakFCd3hYQjBxelNQSW84Y0ZuZHlkd0V2OEl2a2t4eFV3RVBDV3Jjd0EzTVdMNzdOdS1aNUlNcTVMM2I5TVJQNDBQNGRDc3lGRWN1eFFkZFV5WWR3YzJ1d2xmVE9MR2dFLXpCaHYtS2ZhUUtmMmpNeFZ0Ujkwd0hjc3dQN1hKNWlVeUpEbWVs0gGGAkFVX3lxTE5NS01JeTRKNmNhVlNwRHhidi1pMUMya2JwRDI3U1BqeEh4dV9iZDNvTkFDcWE2VXJka0U1bkJGMXZYZmRIb29fQjhlUWFMaGUyMl9ickxUQU9VdDROemstM0luNXBsakh4YXBWVFctV01RYVVESE14dUZlZGllZzliUjl4TVRBSmFEcFI3UTlLd3ZrcHBtdEhfY1pmaFJ6MzRTaTBUMGZXWVVPejFkNHM0aXRUeHpTVVN0a2lYdnpsMmc2Y0hqeTdKdHZ3RnF2dWhBZTM2ZlRfeXJTTzcycGVwQWRENDlzaTdLcEVkaUdHZE0yQzlFVlJGTUJ6UC10QzZxWWk4Z1E?oc=5",
+     "source": "Livemint",
+     "publishedAt": "2026-11-18T02:43:46Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Bharti Airtel, HCLTech and 3 Other Stocks With Golden Crossover to Keep on Your Radar",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWTVkNGVkV0xobTVYa3RCNzFlcVUwYzJGOEFmeVJSWml5TmRwNV9wa0lGQU8xdFNEdnF2THNOb0VPcVktQ0l0R2xYNDhnU3FETzJWaUdyLVlLTFBsaGY5cjNPaE5jeGZ2WGxXX05TMW81YVhlZHUydVh1bTVOZnF3STB1dlVhWTdQeXBrNW9yVjdjdVp3MWhBNW44MXBGRElQQlhiUlJnb2dLU0E5bXVZdVNkYnVLbGNYMTd6aU4zLXlmUW1FMnRjYU4wUQ?oc=5",
+     "source": "Trade Brains",
+     "publishedAt": "2026-11-18T02:00:37Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Bosch may sell part of Indian tech arm to TCS",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVnI2WklrX0pIa0hKSmRyNERVN085ZkhuTTVPRGo3UWRvbWVNMmxkNUpRNjh0UVdGUnE0WC1pNUU1WTlHdEZpTDZFaHdMWHBsQ2NVNFdDM29DLVAtaTlfTGh0Z2pBU2tnYk5LZFhpRjQtSlFUX28zZFJvak9HNFVZVnU2b3M0NUw1Ykg2czVKOWhUUmdKMjhZdw?oc=5",
+     "source": "NewsBytes",
+     "publishedAt": "2026-11-18T00:44:52Z",
+     "date": "2026-11-18"
+    }
+   ]
+  },
+  "Auto": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "Mahindra & Mahindra Ltd is Rated Hold",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNalNJRnM0b3N1b0RCU3dOUjNhZDFKdTZsR1d0eFR6dlVWRGszVE9jQm9GYWtXQjJ6UHpNaG1ObzlreDJMVGJtaUI3VWxFSTNWTFFGaktFN0I2M3lMSnZMa1pSMGoyNFl2dzRtalBaT1FOMXVidmh4ZUg0SmxzeGVRNkJHdzhiNkQzbkl0VUpuWGx6d0Q4RVkwWmJQSDZMdw?oc=5",
+     "source": "MarketsMojo",
+     "publishedAt": "2026-11-17T15:23:08Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "5,604 Call Contracts at Rs 7,800 Strike on Eicher Motors Ltd Signal Near-Term Upside Interest",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSnZ0VFIzWGRkWldRQzRzVFZvMHBNa3V3QVRyRHhCUkNtU3lxRHM5WFlnZnRfaUZCOGRJLS1Hd3BIWk04TXI1bHpqZWZ4cW5PQUZ2Wmt6NmpvNWJCNnlPaFJicHFHeFZVX195QUhGcHREWks1dnFYeklFOV9FT2k3TnM4Wk5XaklmRVlpQzVKVWR4ZHZoTVpxblZ1OGhmNTlSekRjMFJLODAxMXBLWFNaU3AtN2JFSERJdnJQR0hJNjJpU0w1RkpoakpZUWYtZw?oc=5",
+     "source": "MarketsMojo",
+     "publishedAt": "2026-11-17T14:04:47Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Eicher Motors Ltd rises 3.01% in Tuesday's session",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZDQxZjZjNHBkcUV6TFZGUHBHMFJyOWZuUy1UdXhmVkVUeDVNR3MyS0tnMEJLOFJ5TjRTU1dDNnAySXdacEtFRnotZmJlZG53UGtJOGtIa0pEYnhkZzJpdDZRSU9Ja0QxWndQdGVOTzVIUjRxVFVLMFd4MGJ1ejd4aUdldFRfWDBWMnhiY0F3Z2t3UQ?oc=5",
+     "source": "Global Banking & Finance Review",
+     "publishedAt": "2026-11-17T14:04:42Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Eicher Motors : Transcript of Conference Call held on November 13, 2026",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMkdRcjhnVGNpVDNXZlR2Qms5YUhwYVJLclFVUmNPVXhKd2g4dTU4SEdLbzkybEMwNlQxRTlmWmh5b0FoTTN1eE1OckxOQkZPNUd1eTNqeS05TnBPaDZNY1NhaldTaGk0ejlZQzZ4THFvT1dOS0szbGMyN25POGd0QmhhcnJtTUl3VlVjVHhSSkllWkU2RHFzamtrQThERUVidFBwVFo2djNsWm1kV1RsYmFJYi1ZR2FZazEyck9B?oc=5",
+     "source": "www.marketscreener.com",
+     "publishedAt": "2026-11-17T13:30:08Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "VinFast VF5 India Launch Confirmed, Here’s A Closer Look At The Tata Nexon EV Rival",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOW9Ta3NEZlpEU0ZWemZzdHU5WVJ1ZnZDTEVGaGtPLTFjWG1fZkJab2FoTVY3WG9tVS1DbEVjTXpQcTVLeFpuemtjdGZUTUZWbWRNS2Y3cWRIdmJrQS14U3BGX19yMDVHbklZQmk0MWduMGNaVmQ2dWxCX3YyUVRUV0N6amJjTnROQ3MxcHB5Ym95ZEZ4OF9hM3pjUF9mSUh1UHVCaFMyZDFmcXVXTUpjLWNqTHpSR0NibHFHS05oZEYxUkxTNkFmadIB0AFBVV95cUxOd1FaaUZaOW1uUUY5TkZSUS1RMmxVOHQ2SVRXaGV2U1J6MzBHMmtQRzZvYVFaLUpwS3ktMzhoejVham9TMFpSRU4yZ1R3Q2pKalE1ZUJnanA2LXp6bTBjbVlwTjMxeWE3WnQwZHdEVGNvLTRiRW5IS3VxbkFPbGdGdFduRGNnY29faXJnekNkbFB2a1k3Y3c2Y2pYZFM0bjJCeU9BSExwaE4wTVVKX1NscTBkOFBVZDJhU253bVdFaFpqVGRtMXFlMjgxRUR6bVlK?oc=5",
+     "source": "CarDekho",
+     "publishedAt": "2026-11-17T13:30:00Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "EICHERMOT Share Price Today - Eicher Motors on NSE/BSE",
+     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBhSWhtZGlqcEFienFqeDRkbmtMbjJqb29JM3c3RjRxV1FrakR3VE5ucVdVM2dWX2JsVFFUX2E4aFpZZzRzLW53WGVNNkNyTGJCMVIyWjBtTy0?oc=5",
+     "source": "scanx.trade",
+     "publishedAt": "2026-11-17T13:21:23Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "3-Cylinder Vs 4-Cylinder Engines: Mileage, Performance And Vibration",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa0hhZk44Yk0zMTBlZkxwX3VpX3ZOVGZEc240R3lDZUd1MUhFRW96b2twS0hjQ3Z6b19KbEQtdkZBcUdHUDJpQ0RfYzVvMkVPMUtUaGRlc1VGTUhxeTVvalB1bXR4TVlhc3czUkdDTGxaRTZxZ0FvS1V3VFBkTGdmeUhGMlEzXzR2YzRUNjZFMlVhRjFBcUxFZmFSdmhJVmNWLVVuYXNzUdIBrwFBVV95cUxNYlhJS09oU1FCX3BMYVRRdHRoUTJHdUt3ZG9PZHJRY3hoVVhDalREWDg1RFFRMGVRRzhwMGhwaU5CSUppSXUwYlBKcHlVRGRDWE9vN0lzWnhfV1oxbUhQRF8xdzhKTXN6YlRFaFBYaDRJbTdBSmZid2tWcUFYZ2pDcUN6T2pXLXNMeWF5b0h1OGJsd0ZHV29KZHQ5dkdnb3ZTVTlGZTBGU1ZRcThhMjFv?oc=5",
+     "source": "CarAndBike",
+     "publishedAt": "2026-11-17T12:48:21Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "TVS Motor family feud: Lakshmi Venu seeks partition of family stakes in group companies",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMnU0NVNKTTNlM0hoYmtfX2t4UHppdkY3VjhzYjdGRzVRT2ZVbzN6S2pHT05vdzNiVENadnM1U25JWElnT3ZhYmFoMlVwaVBUV3p1VWkyZ1hhRGNxNy1ZMWhLRmJULUVJTTRyZlA0MnlMY2VQQy1xOG4yY3pONzJuTkdLZFdnM2hPNE5BdGRCRXBHNmRnTzZqQkxpSVlpcGJsNVBFeHZUUVl1VmRBMlBnTEVjQW8wSFRwR3JkdmlaZjVfM0JVYVJOTG5xX0NXRXVWYmZ5RjJmVmdSaUdxMFVWVXZuVE1vUjjSAewBQVVfeXFMTl9iVElYcHh0LTFaVVg3ZTdKcXBVMzJ1QnZwcmdzN2ZCUlh1UTZOTVBaM0RRMGg5bXdVSG9XT2tQYTVPdU5zeWJUN2JXOTB2RTBvTGFhX0Y4aWNCU2V4WGNKRkxoMU5XbHVXUW5CaV81RDZVenhWZTNhT0lHU3VlZzRzSlY2cWdsNi1WcWp2SC0tR0FSVi1jc2NPRkZDVFI5OFY5VDNTcFZoaEJpakY5RE41RUxILTNFZ3NkMVdqR1lua1J3ZXgydGlMeXBXQ2doakhZakp0aThBTXlBRjFkOGZSNTJVckFXUWNPcU4?oc=5",
+     "source": "ET Auto",
+     "publishedAt": "2026-11-17T11:42:24Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Maruti Suzuki Brezza Sales Cross 15 Lakh Units Milestone, Brezza Facelift Garners 1 Lakh Bookings",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQb2Zpb2hTMG5hcG9TT0U0Y0d6U25NUFlnaE1kamZLZExzVUlmckY5dTEzVmdaa3gweTBpMzhMWlNnYWVVZXp5U2xiRkxEbURpR2JiNWd2ZEdMTGx4d0pXVmo1cklRSDBldWNPcmxWTjNjZlk5SmlwV2h1cElidFBfdFgyUldibTdCWW5iX1pGQS14YW1NZVZLSm9qdjlZM1pSV0w1TnFPdE9hMHBLLWxUMmtSTzZIVVhQM1IwWm1PQk1ydw?oc=5",
+     "source": "ACKO Drive",
+     "publishedAt": "2026-11-17T10:41:56Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Top gainers and losers, Nov 17: Adani Ent, Eicher Motors jump 3%, HCLTech, Power Grid fall 2%; check list",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQVEIzdzk2dGFUOS0zX3AtZ2RsR3ZyZUhOOXVXYnFOMldvelN0Rks0SXc1TnJUd29ablJwcmNsRF81ZlVzbFItQ0dpMmUxTmROU1UtY3lTd2xwMGRvd2U0SGhPcVJIYkZXdVB3M0cxSzBFSTA2Y0EtbEFXWWpteFo4YjFUbll6Rm9EaDRObkhhdEE4N0VudHgtNmZaNnZSNTlRbWN4cnBsdjVhbkpZSWZ6dHpfdFhCcGdIYlNvOXQtTWJfSE9zVVpRWDdMNE5idmRhWnRaSnI4LURMTkF0SG5ZY1ZRendCWTZWcEpBdmJR?oc=5",
+     "source": "Upstox",
+     "publishedAt": "2026-11-17T10:38:58Z",
+     "date": "2026-11-17"
+    }
+   ]
+  },
+  "Auto Components": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "Toyota Kirloskar Auto Parts Invests ₹460 Crore in New E-Drive Manufacturing Line",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ0pxX0czalVLMGluVl9EdWs2NmROdEZGZmtLYjdzQnpCazJRTzh5RTVOX2ZPVU9yZHpZMi1YWV9tY0kzZFVhck4tRGNQdUJXOE85Mzl5SklRTTFYNEJobmYtRjlpNjBCYzk0Ry1ZS0c0cTREUHllZDR0WFZaVVBkYnR3QjdZRzNaRS1odV9hZDd3YlRGeE9nZ3JaX3VjRUY0RDVWYm5SUGREbGdiTmhJaWFn?oc=5",
+     "source": "EVreporter",
+     "publishedAt": "2026-11-18T04:04:54Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "New Bharat Forge rifles for UP’s mafia hunters as former police chief calls them ‘game changers’",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1penhGcHA3NmoySk5hSFNqZHVGYkEyY3VpTDRQVWs5LVZFU2ZqQ0NhdFRNTDdwZVBfSHc3TDl6bkZhcUFSaUFBZnYxeVlqeUFHTXhB?oc=5",
+     "source": "شبكة تواصل الإخبارية",
+     "publishedAt": "2026-11-18T03:50:01Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "HM Amit Shah Visits Kalyani-Bharat Forge, Reviews India’s Defence Manufacturing Capabilities",
+     "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQWGRPOF96ZXNqRXN1NmhCRHBhWXNfYk81eXByXy0yN09qS3N1dkRtTUQ0XzIxVTBsZjdUd2NSWExoeU5wNDB6YmtjTHZQQWFJbXNEZ3lxcEtsTnFaOHZUenY5UEdoRk44dWg2WWp6X0wtbnBlaGFzY2hUb05vMUNvbVNlSVFSb1R0aFVXVjV4RnFWRTlEdFVEZjY1cnpoSS0tTU84c0xPcTQ3REw4Nk0tdnhUVW84OHRhRk0wSDJQd00wWk1ka3VoUDJrcFM5Y0E0UEJBX0FfMEt6WHkyUUZia2hwekRIUUJvTkFOaG56SG5TT0ZycXpOMA?oc=5",
+     "source": "Business Today",
+     "publishedAt": "2026-11-17T19:16:45Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Amit Shah Inspects Military Weapons And Vehicles At Kalyani-Bharat Forge Manufacturing Plant | Videos",
+     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZllNNDhtZmVaaVBwblVOd3hHUnZsdVh6QlozVFo4MUp5bFFVS2JzWFhWRDhnTkpkVENaak1UeV9vNEE5U0hLcG9CRzYzM0ZrWC1PSWVIN1FyeFFBVzZzeEQ1dnRSc2Y3cE85LWZMbmpSNVlTYkd0YlduaEltZnVFdlBZNEJXc2EwYUVOb1JoMWJVX0xRUWdrTld5ajMxRGh6ZlNnTk5mTjE3X0RQUmkzOGVXeUlZdHFGNTBnVzVPN1E3Mnd0UGdaVjhjdFR2WDVYZkl1cWhjYlJ1dTlFVXExamZpMlJLUdIB6wFBVV95cUxQVVpCU1lnMDRISUxTMkk1Rm4xX0hIdnpuRWREVkVTTTZ0d2dGc3RrSGJyMXZmX0FWS094TURpenRPVmkyeVE0RUU1MDJLOGI1c2RjUXlSZFppQWR1NEZIZW41MlNyNEw5UmFSV1lsazQ2eElLeWxTU1dYZnNlUFYwempSTE9zbVR6Y0t0cmlJMXJHT1pXeHM2YjJlYVczRy1FYXZKQUoxb3F4Nkg5dHR1VDRqWkprOFZ3aTFsNHQ5SjJDY0hITmFrcEFkYmJHdTZJa3IyQ21Wb1Y4R1NwQ2pTNVpsbWV6M0dRQ0tF?oc=5",
+     "source": "Hindustan Times",
+     "publishedAt": "2026-11-17T16:47:30Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Indian billionaire Baba Kalyani's Bharat Forge ships first rifles to police task force",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVk42TnoyVXR4V1lxY2dWUS1zeXRhaUQyN0dJdGlNYjh2Q3ZxcklKRXFaNnUxdjJxQmFpTWJIQzlmXy1XVUlaZDFEdTZ3eEQ4MXg2c1cxa09xVDgya3JnV0ZzNmptT3ROR1RIREtkQVVoWE02TE1udWVtTVl6YUdUNkdndTZ2VzNVckltVndzcXdOZDhNUkpKR04tZDlVeGdUak5pYnVuMFRUYjE4MlVEM1JWLXh3bVE1UWJkeVVvamNYTENXS09rYQ?oc=5",
+     "source": "Billionaires.Africa",
+     "publishedAt": "2026-11-17T15:42:52Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Toyota Kirloskar: New Rs 460 Crore E-Drive Line",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQ1RlM2ZlMlZnQjBhS0VjeDVLb3VzZnpkc2MzOHVLc01KOVhONlNDNjdBR1pJMl91dGJFQUliQU1aa0RxeTEybnFZdlp2STZGTjFKN0VERnllNDR0QXR0OW5JQklJZ3FNQUFubUFiQTZHVk1oOUhVZVk3Nks2V3Y5Z1BucUtqUE04azd6bi1vQ3NPdDBvTlhTeU5DYnpWUHBlME8tY01JMmZUSkJPTS1qeDJpampzdw?oc=5",
+     "source": "Kalkine India",
+     "publishedAt": "2026-11-17T13:47:00Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Bharat Forge subsidiary merger approved by Regional Director",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVUQybkR6XzAyNk5vckpCVVZxcFVjM2Vpdk5LV29tYlc3VjZVRTBmX0hCQjlHV3FSejV0azRQSXZWQ0t0REFhUXBiLVY1dTZTdHVvakxScjFNUTlkdzNtQmRqeFpjZXJ4ZTRjRUtVaHNSVzBFT25FcnpHY0pZWTlWSVdIemV6WlNsQmY1eWRmY01sRlpiSFMxNmF4SEI2YjJMNkRBSWVoWlFmUUZfRDlZZzJEN0M?oc=5",
+     "source": "scanx.trade",
+     "publishedAt": "2026-11-17T12:53:02Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Sona Comstar wins 2026 Deming Prize for Driveline Division",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdGNCQmd0ODNaTjNsTndWTTduRDVpaXd2SGdUZGw3N1c0SDl0WFEyVnJBR3l1akZJaEY4TmxTblljNGxJQTQxbWtzR2cyRlZGMHR4UTIyMGlmMEQwZkNVaktfclAxNThpbThpajVyZlB0YmxtRTl5TXJfeTNBME1LT2JaZUVpZEJXdTdNdlQyOGFmWGhuY2dNOHBHOEhqbXJla0dXY1NVX0pWTlhjN1piVWoxcktUampJakdpYkVUT1FrdFVucVE2TXRKY9IB0AFBVV95cUxNT2F5eEw3N2JBdjVDUHJJaV9CcWNxZTZwZkFFZU43UVFnTEF3dldBSzZwOElYSURyUFJuWE1GdXNHTmZnQ2tjcGxPS2FYQ2R2LURMQ2ZYWWhNbnpCYWpMaGUxdHNtSGwxbGdXblpUOUh5cjBDb1A2MW1tMWNGbHE4dFNHUE1CZnhfVVVibTNuR2g4dEJBaDF0UF9oejFxN3lWRWJmcU04UUYtR2RDYlU3d0VHV21oWWdaMEdUZ0FyUWdjdFplMHdJNndUZGhDZ0I2?oc=5",
+     "source": "ET Auto",
+     "publishedAt": "2026-11-17T10:13:08Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "PLI's 50% domestic value addition norm remains key hurdle for auto component OEMs",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVXNfdE1BbzlPOGtIWGc5VHNBbm5YYTBkMU1VNElxZHJ5MUYtMXVlNndZRjFmT2k5Qm1TNklsTmhVN0NtN3FJY0k3dTF3ZWExQTBuYzdUS2UzYmhrcEhoN0wwWU9IQmRDVnRCVzlLSUVMelpJVXlZWDZqdXJVaWxzV1ZHY0ZoVmtOSWtjNVpqd0hUTFU3dWJydU5FSHhNUFhqTzRfMlNsV0Z2YXR4YTdyT1dnVlR1RDhEeGhDYlhYN0tPeWV5ak9US3J5cVNiQk03Qkk2a2lHUUZkNGdfaVFMT3JlX3JMXzTSAewBQVVfeXFMUGVVampTR2E2TFhFYlM1T1JZb0R3akpnSVBPRDE0a0tvajhDQVFWQjNtX19TdGdCeHZNMWdtRkltTi1Za2g2b0h3aldiWW90b0puQkNnbTd3VG00ZUozUjJvTFgzM2JaNEp0dUpvbHY2akQzQ19lX3hyNVlEWWlkTVN0WjlhNmo4TG40Umw2T2s2ODhWLU5FbThXRDdKM1Fyd2I3NThYbUR1STl1am82eVFwVjBaV3hnSjRQamZCcE1ZQlFvODI5bnFhaUtEemg3ZXJZTWRUQXpJelQzakplR2VlY1VOR2lzUmNLRlQ?oc=5",
+     "source": "ET Auto",
+     "publishedAt": "2026-11-17T10:09:33Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Bharat Forge Showcases Indigenous Defence Products",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTXUxZjJTZWxnazkzc21IWjdjMFFXZndQazRGbm9iU3FkLThRUVNzWDBoa1l5Z3dxWWJXeFFUN096TFpoczR2TVVTZ08xbTREV1VwaU5oY1RHWXVsczVFNEtDTmRrOElYRkJNeHZaSzlpZ28zU2NJRGtJMWVFNVNUQ1ZYZ1B5VUhNTTVSMEdJNUlRUQ?oc=5",
+     "source": "SMEStreet",
+     "publishedAt": "2026-11-17T09:34:37Z",
+     "date": "2026-11-17"
+    }
+   ]
+  },
+  "Auto Batteries": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "Exide Industries Lowers Ulric Renewables Stake To 26.07% Following 10.5 MW Wind Project Delay",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSHVyNWItQmZxZTcwVGk5c3ZPcmpzRWJQaTc4eHhkT3JEb1B3MUtuZDNrRUhiSXFsSUo2YXBqZFhzanN1M2g1cnRNVm9KY2hKVU9YYXAxaU9ZZnlISWo2aGRsZW10NktUSlBLNHV5X3RyRmZWa05Pak8yYS1IWjdvX09vYzhDNGhNZnliNGtEeFRmVGFYQ0dFWGFnRFdEcC04bjdsRzZCc3RWUHU3MzAtUHNwS1l6NVlFNXc?oc=5",
+     "source": "Sahi",
+     "publishedAt": "2026-11-18T03:15:40Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Stylework Appoints Former Ola Electric and Acko Product Leader Himanshu Agarwal as Chief Product Officer",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOVMyZ3k4c1RVM24xNkU3cjhacVdTUDd3aEZCVk1ZbWFIR2xCZW1QNTVSdGxLWXdwdnRwWEk2STBMTmRwWjBNTFg1WnBZck9WNmFvM0JDWDc0SVJrUmk3cmhDa3FSQ2IzajJLcGx5cU9JektfT00tdWs1NktvTjh0QlJUQlNqLWRjRE5nbkFCQlV3OElJX3pSWWlnZzV4ckhDS1I3c2ROWmc5WHM3UDFfcTRiWF9kZk1uN0ZpRHctS1RjNGN0MnJZb2NaREVydXA0dlI4eGRubFNYa1F5aVg2VlIyTkIxVnA3WEdN?oc=5",
+     "source": "People Matters - HR News",
+     "publishedAt": "2026-11-18T02:00:57Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Why India wants to keep discarded lithium-ion batteries at home?",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUnV4SkJYUzhKd1dfWHdIdDFNOHQtTklUaG0tRDFaMTItWEVob1JocEF4RDN5QmpTVndBOUtQa01sRmVGdTBkaFNnNXNwLXdTZ05FVVJNNVVDeWVFRjd5UmpESmF5SWd1T3V1N0hFUnQ1MjczS0lYZ290TmFvZTZrbm5TWUpvdHZtZUxXTGtNT3dDcWtRcFFWb1ZDeEMtUWoyM2d5bjNoNXVYX2NCUzloWUhFd3VZUGZTU1l30gHIAUFVX3lxTE1KbTlwMUZGMy0yVEhmT2I0WFcyMUNrenVJanJFd1AtR0JWVV9Oc1poX1BReGwzN3puSFZ6a3VQcVNMaC02RjBaZTRUc2ktTHVKVkZYd0lzd296aGd3TmpZeG94MlZsN0pzZmxGYTdvcVBLQ1BNRFh3UmpzVWVZdkFjbXFMTHp5VVJRYjZUblJmMml5WWg3ZERMbUFEQ1FwUnlBZURHYi1kNUdHZWg5QXdKLXVXbnNPa2d6MEJtZW5xYl9KY3J4MFF4?oc=5",
+     "source": "The New Indian Express",
+     "publishedAt": "2026-11-17T14:05:03Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Eveready Industries receives reclassification requests from promoter entities",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTFN3cmpaSjlscXFXOFZWY0hRMkdpTGp1MnRCMkFvMktyMHhiWllGOFZtLTFBVHdOUkRmNk9rbFoxaXNqTTA3c2JRaHlPblVKWVpOMEZBd2xQYWlGTU96ZzRJdWM1a2ZqUVM4X0ZQN1RzbUpsdjF1RTdiUmduZTUtMHY5RXJjTEpjc2RCSTlMblJrdE1wa0t3MjBBcm5ac3Y4SUtndGpvcl9OZGVlM1pYODhvSVVhYl8wTU54QQ?oc=5",
+     "source": "scanx.trade",
+     "publishedAt": "2026-11-17T10:50:24Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Why is Ola Electric shutting its own stores and switching to dealers?",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNkJKODduaG80SWhZc19UNklnbFJOZkxTSUp5WXJiUDBMbnpQUHphQVhPNHlDdzJ5a2c3X051OXFfaDl6ZmY2VGNwMlBGNkVTMHpsT2ZLUFIteGJfalNaX04zcG1fY0R4ekszcnhsQTVGVUc4d1dMcXpWX0o4SE91M0Q1RjB5a05mZktBeTRuRVRkUEsxVUpTWUpleVczTW11TndGbUZYdzhIay14b1I2bXVCWi1aMERranM2ajBpRV9CbDdRVVNNWFFXLWc0UdIB0wFBVV95cUxPRlNuZE5xb01tdC11NmJUU2tjZmZDckVEclpVNFJwUDlQVzd3QWl2QkdOX1hNRDRSTHplb0JvajlDRU14Yk55aWtPamxOM19VNno0MGQ0Undic09PM0ZLQnNoVXk3VHE5czZiX3lheXQyZHlINlhlM1J4MUZrWlhtejFjV2VQbjh0aU1leW9CVDhzckRVUzBtYXlUeHA3UTJ6RXh5ODVqLWVPNXBuRXhaUVZLSW5zdkpxNUJsbVoyZzN5THFzTUlEamhwMlZ5VGIzMXE4?oc=5",
+     "source": "Business Standard",
+     "publishedAt": "2026-11-17T08:24:00Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Ola Electric’s comeback strategy shifts to cost control, scale and wider distribution",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeHNXRHJraHdSUkNQeFQyM2pibTlzeVF5ZWNsWTR5Q2FmNS1WOVRmODlMWlgwdVNreDdzd3A3TTJjYXZtak4zNVJ3eG15YThwellFVmJ0TFlrQTZDX2tHN3FURml5MlgyTzJCV1BWbVdUdmhRaG9ySVlVbTJSeW5GSDk3YzRuRDN0S2sxSk8zN1lJMjRIYVRwOU1rZjVSU29mWE5xeFhxa3NsR2V5TzRSSjVkZWw4SGJIbW1qemVkTzZNYl9vM1JpTWhVdVpSTkVfTUJTMEZ6bS05Y3N2Z2xJWDd6SEZIZkxC0gHuAUFVX3lxTE5XaGEybjhReUVZdWU2ZXE4bThOZk4wSnFpUkZSNTdmRkxxMElpdFVLb3NMbzRfOGdySzRaTm5FZUhFNWVfUkNteFFlTURxaEJPMTVOQm9GSDQ3R3NxSEtCSUJhVGdXMl9LVTNEZ1c3c3l6a0I3ZFNyblNRZW05bTBtXzZ2NnN3b1o3UzBHNHRmM3pGTnhaRjY2a0VKZzRyOTMxcU16UEh3cXhFT1BHcVIyQzlYc0p0UUw4b0dDMjFXQ0gzYjRIV0dlOHRab2lzMWZLWDhPUVBiZ3FWenRUS2dMekhTMVBVekJ2RDAzTFE?oc=5",
+     "source": "ET Auto",
+     "publishedAt": "2026-11-17T08:20:58Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Ola Electric Shifts Away From D2C Model, Targets 700+ Dealerships By March 2027",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWmJRa3J5bDFJeGR2QWIwN3daRTdjaWFsN2xuTlVQaWhxY3ZLdld0bFVMWGxqcGRka1V5RUV0SWFjQVVGMHJFR2x3NGRCYVFfbHNpOVhHQnp2SW1OalluU21HdWlydU41cTdFOV9oWGJNejRRYmp4LU5lWV83ZURIdTd6VldmcTBITFRnYW5IZ2ZtMDZrUzRFRllZS3NFQTZOT1hWTTdBakxLbkw0MmtCYmNWNXVuUdIBvgFBVV95cUxNM3UyRDZ2LWFQRTlOWWhKSXhPbVpPVEF0ZnNCZFE0RVI1RVFULVVLTENYVXExZkswZ3laTE93ekR0ZmxHYWdFVGNoanJPMFRES2dZVnRsWUV3eEhlT1NqRG1RLVdNelR1dVZlcGlaZnhmY2IwMDE3Ukhxc1d1V2tWS3B0WWRrZkVJcHZFbUdhWjd4NF95MDF0ZGFzNVRXb0MyWFZtbndBUDNFQjRnOEV1c2piVEdhVnAwNkZGbVZn?oc=5",
+     "source": "Autocar Professional",
+     "publishedAt": "2026-11-17T08:15:57Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Ola Electric and the Changing Expectations from Electric Scooters",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR1ZKX2kzWU90Y2lTWUp1Yzd4UlFxeDdvV1ZlTmRta3Q3R19FdDdJUF81YkJaZldYWkpabWZZY0ROMzhBOHRqaTBCWmlNUXpVYTNqTl90eF9HVHJzNVh6ZHNXVEk2QV9ZLTFkbFNnZS1XNHdSQk9zblFCdjlfS0VwSnZSUy1EcHgyQVQxRFlBck5GMmx2eDNrdXRaYzY?oc=5",
+     "source": "MarkHub24",
+     "publishedAt": "2026-11-17T03:08:02Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Ola Electric’s dealer-led model reset; Menopause in India’s public health agenda",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV01fUl9XN3E1eGVWTl9PVTMyMDdVZ2s2RTVxampCWEdkdDdOWUswU3Z5V3pLX21LOU91NzVmb0xFWlpXVEhFNjBxTzVRZVhqNkgzYk0yeF84SU52bnhMUXdyNENUNW9sT19iMVlBWk9IM3Z2NTF1d3U0THNSd2VQZzVBa2k2dDhWNXVmclhCd21HSkdaOXZTWXI2eWZYcU9IanN5RXA4UXBNQjQ?oc=5",
+     "source": "YourStory.com",
+     "publishedAt": "2026-11-17T02:44:50Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Ola Electric vs Ather Energy: Ather shines, Ola struggles in Q2; which EV stock offers better upside?",
+     "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPQVgwb2RhM3F5ZTdFNWZIOEdXcGNSem9OczdEVXFPWmVsMUphTkI2eExnbHpPS1d1dWZLSjRYYjZyTHhnTXNsY2VOcldlbVNTdU0wVGpEdFJqRS11OWtQNGo3bzNwWTk5MHV4Xy0wMFlQWHFZVGk2dWJFWWtvbjRtYmhHQl94MkwwckZIaXZSMGRhRVdYNUFMenJWTkFTLXoyVVpaRjNvdUZudHJJaFRkaXJ3cTBGNmdsVUx1Z2ROOEVWcTEzdUNPNmF4eHdJTVMxYUhLeWV0elpuUHpDTnQyVEVMc3Noa3BiZmVMS3pnTjRIdGFmT0pNa3dfc9IBgAJBVV95cUxObkF2dlpDTWtQWEhHaXlDa0pSQUh1T3pUSEl0MDJjQVFWazFJdG5VM1RkbXVLNG94LUs4LUFzZDRVSl81T01qbk5SN2tRak1Gd0t5SWRmU2ZxUkctOW1XU0lpeUxvVDFaUDdVZWRucUVZd00xbnp4d3ZBclBsRVoxS1M1TFhLZkk2Vi1TeVpTb2dyU1VOc0JrSXdmV0xuLTdnUTNKN3BvNnpzVXF5R01FRlgxOXBBTGdhcHdnd1RESGM4ek9WVC00b1ozWVhJMjRiRS1ZbXBXbDQzeWdpbXotZHV1QWtqMFRyV3M3Q0JMVVhBbzRHVUpXZkF5ZE13UGlM?oc=5",
+     "source": "Livemint",
+     "publishedAt": "2026-11-16T09:48:15Z",
+     "date": "2026-11-16"
+    }
+   ]
+  },
+  "Pharma": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "Cipla Receives USFDA NAI Status For InvaGen Manufacturing Facility",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcEZZTDk0X3pYNmRhQ0RhdUFGS0Z2QXdZVjg3UTlIWVpUZ3BnWE56WHB2U0NJTGRxYUsxM1llazJCdzhhMjNQWFNuSWNfT3RfVFdMRWVhMlFVWDJBSXpXMl8xWDZXRURNWmU3VGhITEFScEQxRmtFU25hNTE0U2hULXNqZk9GNkJPMy15S1lDWFotUGpwMDZV?oc=5",
+     "source": "Sahi",
+     "publishedAt": "2026-11-18T03:54:30Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Stocks to watch today, November 18: HCLTech, Cipla, IIFL Finance, Ashoka Buildcon, Glenmark Pharma, Groww and more",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQOTN1aUlkbXhhcXRtZHprLWxQbFhjZm9OdXh3eWJYd1NRZmhVd3BQY21oNDJEY09nUEU4ZVBfa2xOZmVzazhFSzVfTUFmRG1JWkpKRlA0cmR2RVNyMWdQeDg1eVo2d0puN2gxMWJ4SzZyQUU3S3dQV09NOVBETmRvX0Z2NEVLOUZHTUtFb3o5NXRCTmhkLWltV2ZzNXAzRHV1M0IzMGlLQlFXbWhQQ2V5cmh5MTZwb3JNZ3dhcGFrRDVuSVFoVDFxSGlYZGZIdkUtbFBraWlPdnRJZUZNUmVmc3c2dzNzSWprMTlZWQ?oc=5",
+     "source": "Business Upturn",
+     "publishedAt": "2026-11-18T02:47:41Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Cipla's InvaGen New York facility gets USFDA's No Action Indicated classification",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPa1hGLWZ3TDExdFR0V1E4cmFZQkUyaGlzcXBIQzVyV1NIMmY0TnRhcmxkN016QkVBRF9BdzBqU0NZZUhZTjN2eUdIVzI1aks5dmhKMGJGeDd5bVhfcG40WDl6OUk5cWJ1djhSMHMzOENqZFdMRllIckg3d0k3cFU3eHZ6S29XVEc2UHljcTBXU2IxS3BUN1F1Vl82X0FtNXo2TWpOakxNLXJja0oxRDdFTEZOR1VKZmQ0R2xCZHh6NGZqSmthTVdJN0Q0MHNnbmdNUVBtMzVPbjBKZ9IB3wFBVV95cUxNdjdCZFJRMTRsX3BYa3VBdVp4SFZsVEtsUlhQTkF6cm90TXROOUpVcjV2aEw0Z2lEMFRsc3l2QXVONUM2MXdBenFpaWtpd0R2MnNROTNqZTZ5MGt4MUszbWhMcmR0cExHaXNRVVVkN3h0S3RXaEh5Yk05eENndEJObktfbnhwcm1YMFdDVEZjNTlHQ1pSM2I0SURTbmIzOU1KTVFYUEpLZ0RrcFRCSVR1YW55VFZqVVRPZzJVZE5HRWI1cExiay16UndpZjVtc0pQb0cydkx6bWFXVnRrNWw4?oc=5",
+     "source": "CNBC TV18",
+     "publishedAt": "2026-11-17T18:08:39Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Cipla reports 'No Action Indicated' classification from USFDA for InvaGen facility inspection",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbnNvazQ1QnJINjM4NWhtV0hxU2hGN056dUgwRFo1c1dPUFNDVS1ZdnY4ZEtpLVdiSWM3Y1hfZDhQWU9aeHVKTm9ualZ4WGFINXctSVFXTV9wMml0MWdlNENpNjdlWm0tS3JSZnpLdW1GRlAwOXpoM19uZUlvU3NrdC12Z2l3MWZMMlNNODZNWE84N3J5cExmZ2xKZXV5UUZuQmtlWjIwM0xDQUthSGVid3NxTE1aTi1sT3Zzd1dKbXA0c0FXODZN?oc=5",
+     "source": "Business Upturn",
+     "publishedAt": "2026-11-17T18:01:01Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "DRI searches Cipla’s Mumbai office and Bhiwandi depot over imported drug classification",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOVhTOFczdzVwLS1qVmRaaHhfQXk2SFlSZm9TVkpNVnFRSjc0Wm1OUlBPZ2NCWDgyeFNraUhyMnlsS2QzT3dzOUw3aFNycTIyUHRMVzFycjlmdG0tT1dJUzJYRC16VzZra0FNRm1sSV9WSDBta3NBdGpMT1MyZ2ZVRFkwU210b3IySFZYdzFhMU1aNWZpSTRUaFIxMXB0SnFYbS1HUFktQWVwOXRYdUtuWmhDUVlrTllSbHJYNS1zUy1qNmZCbWZndGNJMGxlWXVkY3QxX1RuSdIB3gFBVV95cUxNZDVNQ0FLUC01ajl4SG1hd3FFUkpxSThNVWpBVmx6ajF2WjBqMU55Ri1aS25EVl9yQjFQem5tc2dRSHlfSHREU1ZENG5JNjNZTl9kM3RZNVNPVXpZenQzU2tKdnN6clEtMC14cGk3MHJBQWE1RnJvZ0Y4RTZ6cVRKQTJSM1U3WnJvX2VzbHh6aTJXMmVnbUlaNzNQaTF2Y3hOd0l2UkpwSEN5SW9XdzdwcUFJc1JqU2dqek1GQlhhTFU0NjRQa01vV292N1JDMVROekttR00xRVlodzNmcUE?oc=5",
+     "source": "The Hindu",
+     "publishedAt": "2026-11-17T17:56:26Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Dr Reddy's v Boehringer Ingelheim: empagliflozin SPC falls for lack of plausibility",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYnFVZFRqNGhfVmpEWEVXU3dSUDFlN2w2MzhXMVhycnpwc0ZuM1JlUnFJTl90Z3RhWjVvZXloMzRFaWlPaGhRUkZmOVNFUU9QTDR2R2pQZjM4SkN5QTdZb0JJUHBuNkRIUnB3b3RHa2UyOUk2OTZHU3ZudGV5N2NaOFBNMVlKSnhjWmYyek1TR3lXVmFpV2Z3RHJPOVZzS0xXRVVvaXlYUF9qQjEyQkktbGJVOURRRG9aTTJJMkhVWnpvOTE3cHpTLUdZS2VJUGRlbDh0bkZR?oc=5",
+     "source": "Solicitors Journal",
+     "publishedAt": "2026-11-17T17:50:00Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Wockhardt turns to scientific publications to accelerate Zaynich adoption in US",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNW5CZHY3VVNvcEZkRkZPZ3hwLXNqZ3dsVDA1dGxuSUNzUjFET1dwS1N0U2dDakQtNnlnV01oR3FmNkdsY18yNDVmNTN1bWw0S0lTN2Q5NXg0Y1lVZnl2WFBmU0U0cHFQa194ZVlTRlRzc25GNzkzd2hsWi1WMWktVGpJX2tRMkhkM1E4blFadzlGTHRscGFfb1FLbkJZd2tpYXowcVZHZWFrQk90MEJJeEZtQUMzemx5S1RGLUlrR05LLWlFcFdmTEt3NHlveXBRS3fSAdcBQVVfeXFMTlZjdFlBZWlLNmswdXFvb0FibDF1dDdSWU9rSFBMU290Q2ZDSnJaUjdVdy1kcENOY3FkbUhxMjVlT1dQTnhQck45SzQtZjlDUmY2MVd1b1Jsd2MyWkh5RHdNaWJkc1lPRU9Nd2RzUm1DNTEwZ09zTmhlUUdXeFREdm02X0syZi1yZjE3RGEyZFRhZHR6OEFJNW84ampHV2ZtdGc0M3NiQU5uOUxyZDhadUdhR1hKallXc1B0b19TejhpZlFfM0FBU3FtZzloTktmR2kwdlZON0U?oc=5",
+     "source": "Moneycontrol.com",
+     "publishedAt": "2026-11-17T15:26:06Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Mayur Sangwai Elevated to Vice President Business Development – Innovation and Global Biologics at Dr. Reddy’s Laboratories",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObVlwcnZ1cXd1c3J2OTRBMnJyb0R0ZnVmRk5hcEp5aV9aNHNPVUlreXJaa080U0xwUWkzeEZDc0VjQnZJMWw1U2FINGVWSEY1cmpXc2hXcFJnS20zdU9WSXZsRC1COXN3ZXltWG9uQ2xYY05wMGNlSzVqZ1Uwbkl3eGFWQ1FsYXBoWUI5RHdZYWRYdUtBLWdmcTFfMF9KbVJoT2tYcUxRUEJNel9SQm5Hak5CNFgxVkQ3WGROQ3ZlbFhsWTJqZlNwX3AxczYwOUlGVnVCZlBB?oc=5",
+     "source": "https://hrtoday.in/",
+     "publishedAt": "2026-11-17T15:20:38Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Cipla faces DRI scrutiny over imported finished product",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcnNCeHJCNm9RbnFNTXIxd1RCVExFeEdGNFpGTHN2ckYxQlNQazJiZzZBRmJySUNubVR2ZU9tMWtLaTJobC1vcUFoUE9uVlBzcnRSUW1PRDFNcjZaSHhtWkJjaFVrSThMakZCcjlQc2xtUno3cks4RE1sR0NLZUtTTTlvS1lYbnFkcjZsc2RnUHJxclVnLWFManhGMTRicjZRVlRab0VzQURYREN3WjVraUhPcTVnRk0ya05VR2ZFQkZqSC1ST1FCSE9R0gHOAUFVX3lxTE5lUmZYU2lvcHd0d3RULTRickJmOF9keFBwQU5hU2I3LUFqdHBibmFxd2RIWUJ1VjR1WDlxQnVmdWVVWFdaNU1ZaGNSdmhaUU1OZUctWm1PZnpkeVUwYXVSRDdyOVVYaDdLcUVIMDhWenlydVpMdVk2a2hvb19zQlU3VnpjU295RVhyM1FneFdKNFRCT29TRHl0b1ItXzc5aHp6NUNMcF8xLUUyV1NBTTBhWVMzTlNZSDlvWW1pMllYMHBuXzc2YnJ4V2lheERB?oc=5",
+     "source": "pharma.economictimes.indiatimes.com",
+     "publishedAt": "2026-11-17T11:20:45Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Cipla (NSE:CIPLA) Issues Postal Ballot Notice in Newspapers: Key Details and Compliance Update",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNms3eUs0elFmQ0lKTFg0NDFFa1p1TVpLRHJ4TnNZWjM0Z1FqVXI4U0xfYzEtOVdHV1BiVXlCM2xUWXZIcUE2cWtSWDc0N0QtREJVUGgzcHhYOGRENHRBNHh4cXBqeVZOc1ByNEVKNFVpSzdsbjVheUFJNzlSS1RIUlFiUzMxeWh6UlZZV2ZTMDdBc1RLTjhJQTNFMjNGbEtvbXBSY0lmdlV5ZnV2RUtiY2hEZklZMk85aXptRkNxd0JEeFRxd2dzT19PV2VGRzVtQjBj?oc=5",
+     "source": "Kalkine Media",
+     "publishedAt": "2026-11-17T11:10:00Z",
+     "date": "2026-11-17"
+    }
+   ]
+  },
+  "FMCG": {
+   "status": "ok",
+   "items": [
+    {
+     "title": "ITC Foods Introduces Sunfeast 25g Protein Drink With 5.8g Fibre Combining Plant Protein And Digestive Wellness",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOcE5CTUZHdlBFQjhzdnpNS0hoWkVZMkFXTGFPMjM2WjI2MFVCLURIbnBnUGFKbUdySDJQY29GMUNsNWJsNkpzaHM0ZEI0OHVWblBoTms4M3VJSmJNRzZzdE1zdi1YUUNtX0lfbktDU25BWUI4YUlibTc2ZXg4bXpEVW5hX01PUWhUZzhDdVp2Y29mYk9wOGpiUnhtclpfdzloSVZPM09YQnV5bzFldFNxX2s3WHhkNUk4dXRRenB2bnl5SWg4RmsyYWVtR0NoYXRnRU9OZGZnX2xDem53TmdZLVJzdDlhR3U5TmtBaGNONjk?oc=5",
+     "source": "Telugu Times",
+     "publishedAt": "2026-11-18T04:15:57Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "ITC leads mutual fund buying in October",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTTBETm5jU0ZQcG1pRTBRNUVvNVZhQ0w3cVF0eUdSOTRmcDc1MGxKeHI1aG1nNDhtMlpOdlpwaWRtUnlWQTVVb19BS3p2WDEyUXBnUmMwVTNJWVVYTEhpT3NYRmdUZjlja0k5eU13M3dMblhOTVdRMzJrY0hFVVVydDUtZEpsY3lfWDhpNTlieVJGbEliYzdUNNIBpgFBVV95cUxOSmE3ZlBnd0hoaXUtd2I2T2xCelFNM2g4RU5jNGtKOG11ay1mSWNBb2pkQjlyX29rUDJxV3R1WDU1QVViZVQzN0VhN1phRW45LWZWQUFlbG42N1N1ZXFzZ2VLdDZIM0NrY1VVekVtMnFOaUwwUnJlMVRvYTdLOWdDZ2NnbDJkNnd1alRtTmx1c09EbC1wV05kOWtmUzAxME1Od2dWWlNR?oc=5",
+     "source": "The New Indian Express",
+     "publishedAt": "2026-11-18T02:47:06Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Want to stay like MS Dhoni? ITC Grand Chola has the perfect room for you",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSDR4TTlScjNoZ2NPU3lRMmhTc0hmc09jb2VTX3UzM0szOGw3QWVpQkNHYld3SHBmb21LbnUzVFFZY3ItMnZ4MDJkZEozVGc5ZTVnZks4dFdoNjlLMGVFU3kwNTZpUjRfeGcxckRxbF80WTR2Ym00dTFtYWpmZnF0OEVGWmpOcklJZjk4bVlYZXlKUGtCS3dFUFdKVi00MDFyQXUxbERLb2VzRXVhdzBLLUN2ZmZ6dGc?oc=5",
+     "source": "t2ONLINE",
+     "publishedAt": "2026-11-18T02:18:00Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "ITC launches dairy-free Sunfeast drink with 25g protein and 5.8g fibre",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObGJRR2E2SEV2WG12ZDVXMi1WNjZZZDNxUzBSb3lnZWhqNnBNZlk0TW1IZ1Q2eHcyNnp1UGFaLS1yMDRlVzZKQktyaGRHZ3hHMkZtbkdmREJtbHQ2MFhlbFdkSGJGZ3MwM3NPRUU4VlB3bHJHa3RYRVNtN0ZtRjZCbmZnblFxQ19taEkteXVFY2NUWFBHYkN3OEw5RGdXejEwZEZQa2tETTRSZmFDb3VVcGdfWlNIalJSVDNz?oc=5",
+     "source": "DairyNews.today",
+     "publishedAt": "2026-11-17T23:18:47Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "ITC's Sunfeast Targets Health-Conscious Consumers With New Protein Drink",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNnBVUnNXOWwxeVdXVnJ2Rk8tTTJGTGYtRXVCV1FaWUNicmstVEFleWtpN3hFdDF6NlpWNzVGbXpmeGlCaFg1aEtaY1RXVUtIWE9fR1V2TUJ4bW1QSEFKSGVnYWFMNW53anROdHUxZnRmUEFWS2IxdmNtc09wcUYzaDlRd2pTYjJoeld0bEg1Q3k4eFZlQ0NfRGdFemFwUnl0eGZKM1l3aHA0SU9MZlp0ZTNqV0xLMkVXcjRoTG9xb3JXSXRu?oc=5",
+     "source": "Indian Retailer",
+     "publishedAt": "2026-11-17T19:32:08Z",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "FMCG, paints demand to remain resilient despite input cost pressures; margins seen improving in H2FY27: Repo..",
+     "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNdXVhaGVoQldIeEhSM2toYWxnZndBc3JQXzhMRkpVek9NMXRyN3R0TnNzS3lnaXNqS2pDV3R1aVUwZnVJOUhPeTY5TllRRF9RWVR3QXRoOWxneS1XRmlWTHN5dldiZkFXSzdOeEwzWkFaSTdjMUt2N1c4c1ZsWmw2ZThHREhHcEF1eFFhTzFzQlh4M3RobklMVHlreE8tR0RJUDFkMjE5R3lGRXFhQWlZb1lfczJRYm5Mb1U3T2VoakxsYnZmRGx2TjlQX0syc1RTT3RySjFBR1R6MHpnWWdKZkpfNlFhS2lyejZaVWFjNjhmOEROa3RPVGhtZGt5ZFJrVWlJQVZR0gGKAkFVX3lxTE9ZLTVMR0lETi0wbmNpWFZtY1NlXy16eGV2LUJBbFNEbmhvdFZsZTdwUlpBSlhrb3pCVktwWDVqTXQzUm03T01zX1Ftd1pNMzZnbmxJWG0wWGU4LTFVcGJPeURUdHBQdUZ3MXBkS0NBMlBlcG1TM0ptOFVBNjktWDdUd3hxR2ZwLUZPb3hSQlFlMmt1bVppeEtEQkY3QVRYbHNCaVg3d0VKNFE1WnByY0lGOHdBd1NaZDJrbVRlSi1kMmcxWGQ4T0l2aWluaGhOcWdFdmtSZVBCbkNpcU9kTV9sOV9zT2pQOElFaEM4MkNYU3I0amxYNmpQUjB3NWczZXFrNS1JSFpuYWRR?oc=5",
+     "source": "ET Retail",
+     "publishedAt": "2026-11-17T18:18:31Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Sunfeast Launches Plant-Based Protein Drink at Rs 125",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN1hkbktHODVOYlpnbXFUVXlVSkhUT0c0MHhQRzIwVFJydnNOcWpZTTFCM3N2eXFKR0xiUHltZXdkcWh1cnVxY1FfVG5NR3RoZ25QZExFUUxjamlMQWJLOHZGV3ZGUzZJRERpUnU2TkFnUng0eGhKb0lsWWFMcExYNmpNUkc?oc=5",
+     "source": "The Eastern Herald",
+     "publishedAt": "2026-11-17T15:49:44Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "The New ITC: What Five New Commissioners Mean for Patent Holders - Transcript",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3pqQWcxbFRXbTd6WUU1N0lQQWJWQktkM3ZCTUQ1UmNFUFVob0QzN2hUZGVrcEhaQ1R3VWZwZzJXVHNYWHBLRlRyVjgzSGxLZi1pVDk4djQ0LWgxeDBlRC1XVENxa0xiaXFMWXJUdld1clVUTlBQSTZncG1qYkhEbWg2T1E3Wk13dkE?oc=5",
+     "source": "JD Supra",
+     "publishedAt": "2026-11-17T14:39:40Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "ITC, HDFC Bank, Vodafone Idea among retail favourites seeing MF buying; Suzlon shares face selloff",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcUhXMkdFemk4N2MzNFRKNk1CYl8yUTFtOW9fa3VTSzZ0ZUhRM1F3RUlaTURvclJzb29uSFduZVZ2V0UzT0JXVXNCUnZCdWtqZzZick5XbWVzUUZpSVFoZGoyNGV3VkF2OUZiUUw0SjFhdGxfYXNpdmwtMEI0WlhWd3VEb0ZuTjNuM3ZjWGJYRGtvSmRzWEdLVS1jU1ZFcUtsSEpTVEtBdk1xR0cxVWZhSTdwdm8tMlp6OFpkcktzeF9nRDBqRi12TTkyaw?oc=5",
+     "source": "IndiaIPO",
+     "publishedAt": "2026-11-17T14:31:12Z",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "ITC Foods’ Sunfeast launches protein drink with 5.8g fibre",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQk15R2hlc0JpSk5FTzI4MGFDMFVwMGlneERIVjZRSFNDdXk1MUYxSjBIcE9PNW41VHp4Nm9pbUkwbGpBSE1vbS1QeEFQaDA4Y1BOTUl1eDVQTnpkeU11THFmY0t1dHJhdjE0dTVVeWM3WEQxRXJ1RXVrNHlnNDlMak0zenk5T2VNWnpWNGJYVjZQZ1p3Y2V5Z29RZUlSU2E2NkYxck5SMl9wRWoySTVrMXRn?oc=5",
+     "source": "IMPACT Magazine",
+     "publishedAt": "2026-11-17T13:47:04Z",
+     "date": "2026-11-17"
+    }
+   ]
+  }
+ }
 }
