@@ -20,6 +20,10 @@ choosing one runs it. A search is saved when you press Enter, pick it from the l
 in your browser (`localStorage`), never sent anywhere, and can be cleared from the list. The limits are constants in
 `src/lib/recent.ts`.
 
+**Look and feel:** the colours and the Inter typeface follow a fintech reference design. All colours are CSS tokens at the
+top of `src/app/globals.css` (light and dark), checked for WCAG AA contrast; the font is self-hosted through
+`@fontsource-variable/inter`, so the page makes no font requests to other sites.
+
 Screening aid only, not investment advice.
 
 ## Run locally
