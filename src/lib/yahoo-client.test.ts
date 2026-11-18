@@ -5,7 +5,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const yf = vi.hoisted(() => ({ search: vi.fn(), quote: vi.fn(), quoteSummary: vi.fn(), fundamentalsTimeSeries: vi.fn() }));
 vi.mock("yahoo-finance2", () => ({ default: class { search = yf.search; quote = yf.quote; quoteSummary = yf.quoteSummary; fundamentalsTimeSeries = yf.fundamentalsTimeSeries; } }));
 
-import { NotIndianListing, NothingFound, YahooUnreachable, fetchPreview, fetchRaw, searchCandidates } from "./yahoo-client";
+import { ForeignReporting, NotIndianListing, NothingFound, YahooUnreachable, fetchPreview, fetchRaw, searchCandidates } from "./yahoo-client";
 
 const CR = 1e7;
 const SECTORS = ["IT", "Auto", "Auto Components", "Auto Batteries", "Pharma", "FMCG"];
@@ -102,6 +102,13 @@ describe("fetchPreview", () => {
     yf.quoteSummary.mockResolvedValue(goodProfile);
     yf.fundamentalsTimeSeries.mockResolvedValue(goodSeries);
     await expect(fetchPreview("ABC.NS", SECTORS)).rejects.toBeInstanceOf(NotIndianListing);
+  });
+
+  it("refuses a rupee-listed company whose statements are in dollars, because its amounts would be ~90x too small", async () => {
+    yf.quote.mockResolvedValue(goodQuote);
+    yf.quoteSummary.mockResolvedValue({ ...goodProfile, financialData: { ...goodProfile.financialData, financialCurrency: "USD" } });
+    yf.fundamentalsTimeSeries.mockResolvedValue(goodSeries);
+    await expect(fetchPreview("ABC.NS", SECTORS)).rejects.toBeInstanceOf(ForeignReporting);
   });
 
   it("says Yahoo was unreachable when every call fails, not that the ticker has no data", async () => {

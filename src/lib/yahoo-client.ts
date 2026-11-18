@@ -67,6 +67,7 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
     const p = profile.value as Record<string, Record<string, unknown> | undefined>;
     raw.sector = str(p.summaryProfile?.sector);
     raw.industry = str(p.summaryProfile?.industry);
+    raw.financialCurrency = str(p.financialData?.financialCurrency);
     raw.yahooRoe = num(p.financialData?.returnOnEquity);
     raw.revenueTTM = num(p.financialData?.totalRevenue);
     raw.trailingProfit = num(p.defaultKeyStatistics?.netIncomeToCommon);
@@ -96,6 +97,8 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
 }
 
 export class NotIndianListing extends Error {}
+/** Listed in rupees but reports its statements in another currency, so Yahoo's amounts cannot be shown as rupees crore. */
+export class ForeignReporting extends Error {}
 /** Yahoo answered but has nothing for this ticker. */
 export class NothingFound extends Error {}
 /** Every Yahoo call failed, so the problem is reaching Yahoo, not the ticker. */
@@ -107,6 +110,7 @@ export async function fetchPreview(ticker: string, siteSectors: string[]): Promi
   if (raw.errors.length) console.error(`[yahoo] ${ticker}: ${raw.errors.join(" | ")}`); // visible in the host's logs, never sent to the browser
   if (raw.errors.length >= 3) throw new YahooUnreachable(raw.errors.join("; "));
   if (raw.currency && raw.currency !== "INR") throw new NotIndianListing(`${ticker} is priced in ${raw.currency}`);
+  if (raw.financialCurrency && raw.financialCurrency !== "INR") throw new ForeignReporting(`${ticker} reports its statements in ${raw.financialCurrency}`);
   const gotNothing = raw.price === undefined && raw.marketCap === undefined && raw.years.length === 0;
   if (gotNothing) throw new NothingFound(raw.errors.join("; ") || "Yahoo returned nothing for this ticker");
   return buildPreview(raw, siteSectors);

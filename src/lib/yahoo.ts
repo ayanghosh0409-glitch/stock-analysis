@@ -106,6 +106,8 @@ export type RawYahoo = {
   ticker: string;
   name: string;
   currency?: string;
+  /** The currency the company reports its statements in. Some rupee-listed companies (Infosys, HCL) report in dollars. */
+  financialCurrency?: string;
   price?: number;
   marketCap?: number; // rupees
   sharesQuote?: number; // shares outstanding from the quote, only used to work out a missing market cap
