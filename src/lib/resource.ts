@@ -20,6 +20,19 @@ export function tickersFor(symbol: string): string[] {
   return [/^\d+$/.test(symbol) ? `${symbol}.BO` : `${symbol}.NS`];
 }
 
+/**
+ * Stocks kept on their old figures on purpose, with the reason. Yahoo has figures for them, but they look wrong or need
+ * checking by hand first. Remove the entry to let Yahoo's figures in on the next run.
+ */
+export const HOLD_BACK: Record<string, string> = {
+  GOLDSTAR: "Yahoo's profit jumps from ₹2 cr to ₹29 cr in the latest year, which moves ROE from 1.8% to 29.8% and lifts the Auto Batteries cut-off; check it against the company's results first",
+};
+
+/** The stock kept exactly as it was, with the reason it was held back. */
+export function holdBack(old: Stock, reason: string): Merge {
+  return { stock: old, fromYahoo: false, missing: [`held back on purpose: ${reason}`], dropped: [], recheck: [], yahooNotes: [] };
+}
+
 const isNum = (x: unknown): x is number => typeof x === "number" && Number.isFinite(x);
 export const MIN_YEARS = 4;
 
@@ -172,7 +185,7 @@ export function report(args: {
   }
 
   const kept = rows.filter((r) => !r.fromYahoo);
-  out.push("", "## Kept as they were (Yahoo did not supply everything)", "");
+  out.push("", "## Kept as they were (Yahoo lacked a figure, or held back on purpose)", "");
   if (!kept.length) out.push("None.");
   for (const r of kept) out.push(`- **${r.symbol}** (${r.sector}): ${merges.get(r.symbol)?.missing.join("; ") ?? "unknown"}`);
 

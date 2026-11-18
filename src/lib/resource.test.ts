@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { cleanNotes, compare, mergeStock, report, tickersFor } from "./resource";
+import { HOLD_BACK, cleanNotes, compare, holdBack, mergeStock, report, tickersFor } from "./resource";
 import type { Dataset, Stock } from "./types";
 import { buildPreview, type RawYahoo, type StatementYear } from "./yahoo";
 
@@ -89,6 +89,17 @@ describe("mergeStock", () => {
     const m = mergeStock(old(), null, "ABC.NS: YahooUnreachable: timed out");
     expect(m).toMatchObject({ fromYahoo: false, missing: ["ABC.NS: YahooUnreachable: timed out"] });
     expect(m.stock).toEqual(old());
+  });
+});
+
+describe("holdBack", () => {
+  it("keeps the stock exactly as it was and says it was on purpose", () => {
+    const m = holdBack(old(), "check it first");
+    expect(m).toMatchObject({ fromYahoo: false, missing: ["held back on purpose: check it first"] });
+    expect(m.stock).toEqual(old());
+  });
+  it("lists Gold Star, whose Yahoo figures need checking by hand", () => {
+    expect(Object.keys(HOLD_BACK)).toContain("GOLDSTAR");
   });
 });
 

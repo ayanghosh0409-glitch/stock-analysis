@@ -8,7 +8,7 @@
  * supply everything the screen needs keeps its old figures and is listed in the report.
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { compare, mergeStock, report, tickersFor, type Merge } from "../src/lib/resource";
+import { HOLD_BACK, compare, holdBack, mergeStock, report, tickersFor, type Merge } from "../src/lib/resource";
 import type { Dataset } from "../src/lib/types";
 import type { Preview } from "../src/lib/yahoo";
 import { fetchPreview } from "../src/lib/yahoo-client";
@@ -54,12 +54,13 @@ async function main() {
   for (const sec of before.sectors) {
     const stocks = [];
     for (const s of sec.stocks) {
-      const { p, failure } = await previewFor(s.symbol, sectorNames);
-      const m = mergeStock(s, p, failure);
+      const held = HOLD_BACK[s.symbol];
+      const { p, failure } = held ? { p: null, failure: undefined } : await previewFor(s.symbol, sectorNames);
+      const m = held ? holdBack(s, held) : mergeStock(s, p, failure);
       merges.set(s.symbol, m);
       stocks.push(m.stock);
       console.log(`${m.fromYahoo ? "yahoo" : "KEPT "} ${s.symbol}${m.missing.length ? ` — ${m.missing.join("; ")}` : ""}`);
-      await pause(500);
+      if (!held) await pause(500);
     }
     after.sectors.push({ ...sec, stocks });
   }
