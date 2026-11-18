@@ -1,0 +1,15 @@
+{
+ "windowDays": 7,
+ "excludeSources": [
+  "LinkedIn"
+ ],
+ "_note": "Search queries (Google News syntax) per sector. Edit freely; the job also searches the sector's six largest companies by market cap. Keys must match the sector names in stocks.json. excludeSources drops headlines from those outlets (LinkedIn re-posts other outlets' stories).",
+ "themes": {
+  "IT": "(\"IT services\" OR \"Nifty IT\" OR \"Indian IT sector\" OR \"IT hiring\") India",
+  "Auto": "(\"auto sales\" OR \"Nifty Auto\" OR \"passenger vehicle\" OR \"two-wheeler sales\") India",
+  "Auto Components": "(\"auto component\" OR \"auto ancillary\" OR \"auto parts\") India",
+  "Auto Batteries": "(\"battery makers\" OR \"lithium-ion battery\" OR \"EV battery\" OR \"lead-acid\") India",
+  "Pharma": "(\"Indian pharma\" OR \"Nifty Pharma\" OR \"USFDA\" OR \"US generics\") India",
+  "FMCG": "(\"FMCG\" OR \"Nifty FMCG\" OR \"rural demand\" OR \"consumer staples\") India"
+ }
+}

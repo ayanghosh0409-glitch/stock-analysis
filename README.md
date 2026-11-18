@@ -51,6 +51,21 @@ npm test         # unit tests for the screening logic
 - The industry benchmark is built from the stocks listed here, so it is only as good as the peer set. Check the Peer set
   grade for each sector (Auto Batteries is thin and has loss-making companies).
 
+## Sector news
+
+Each sector tab shows a **Latest news** panel: headlines from the last 7 days, each tagged with the sector's stocks it names
+(click a tag to open the stock). `.github/workflows/refresh-news.yml` runs every morning (IST), runs
+`scripts/refresh_news.py` (standard library only), and commits `data/news.json`; a push redeploys the site. The website only
+reads that file, so a failed fetch never breaks the page: the previous headlines stay, marked as earlier.
+
+- Source: Google News RSS searches. The search terms per sector are in `data/news-queries.json` (edit freely); the job also
+  searches the six largest companies of each sector.
+- Tagging uses the names in `data/stock-aliases.json` (whole-word, case-insensitive). Add an entry there when you add a stock;
+  a test fails if one is missing or if two stocks share a name.
+- It shows headlines only. A tag means the company is named, not that the news is good or bad for it. The headlines are collected
+  automatically and not reviewed.
+- Run the job's tests with `python -m unittest discover -s scripts -p "test_*.py"`.
+
 ## Weekly refresh
 
 `.github/workflows/refresh-market-data.yml` runs every Monday at 07:00 IST (and on demand from the Actions tab). It runs
