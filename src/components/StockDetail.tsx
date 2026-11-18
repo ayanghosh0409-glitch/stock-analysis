@@ -66,7 +66,7 @@ export default function StockDetail({ row, onClose }: { row: Row; onClose: () =>
         <Metric label="P/E" value={fmtX(s.pe)} />
       </div>
 
-      <h3 className="mt-6 text-[11px] font-medium uppercase tracking-wider text-muted">Net profit, 5 years (₹ Cr)</h3>
+      <h3 className="mt-6 text-[11px] font-medium uppercase tracking-wider text-muted">Net profit by year (₹ Cr)</h3>
       {s.profitHistory ? (
         <ProfitBars labels={labels} values={s.profitHistory} />
       ) : (
@@ -80,7 +80,7 @@ export default function StockDetail({ row, onClose }: { row: Row; onClose: () =>
 
       {s.roceHistory && (
         <>
-          <h3 className="mt-6 text-[11px] font-medium uppercase tracking-wider text-muted">ROCE by year (5Y average {fmtPct(avg)}; 5Y avg ROE {fmtPct(s.roe5y)})</h3>
+          <h3 className="mt-6 text-[11px] font-medium uppercase tracking-wider text-muted">ROCE by year (average {fmtPct(avg)}; average ROE {fmtPct(s.roe5y)})</h3>
           <RoceLine labels={labels} values={s.roceHistory} />
         </>
       )}

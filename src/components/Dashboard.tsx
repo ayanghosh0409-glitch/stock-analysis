@@ -166,8 +166,8 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         <p className="mt-1 max-w-3xl text-sm text-muted">
           A first-pass screen. A stock is considered when its ROE is greater than the industry ROE (the median of the
           other profitable stocks listed in its sector) and also above a {fmtPct(ROE_FLOOR, 0)} minimum. It is rated Strong
-          when ROCE also passes and Moderate when only ROE passes. Profit consistency over five years is shown as a
-          separate flag. Figures come from public Screener.in pages.
+          when ROCE also passes and Moderate when only ROE passes. Profit consistency over the last four years is shown as a
+          separate flag. Figures come from Yahoo Finance.
         </p>
       </header>
 
@@ -255,7 +255,7 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
           companies and the stock itself are left out. That is still a small hand-picked peer set, so check the Peer set
           grade for each sector. Several companies carry one-off items; open a stock for its data notes.
         </p>
-        <p>Consistency: Consistent = profit grew in at least 3 of 4 year-on-year steps with no loss year. Recovering = an early loss year, then growth every year since. Weak = a loss year, or FY26 profit not above FY22. Mixed = everything else.</p>
+        <p>Consistency: Consistent = profit grew in at least 2 of 3 year-on-year steps with no loss year. Recovering = an early loss year, then growth every year since. Weak = a loss year, or the latest year&apos;s profit not above the first year shown. Mixed = everything else.</p>
       </footer>
 
       {selectedRow && <StockDetail row={selectedRow} onClose={() => setSelected(null)} />}

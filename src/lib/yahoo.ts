@@ -222,6 +222,20 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     roceDetail = "operating profit over year-end capital employed (only one year)";
   }
 
+  // ROE and ROCE for each year that has a prior year to average with, so a four-year history gives three points.
+  const yearlyRoe: (number | null)[] = [];
+  const yearlyRoce: (number | null)[] = [];
+  years.forEach((y, i) => {
+    const p = years[i - 1];
+    yearlyRoe.push(p ? ratio(y.netIncome, avg2(y.equity, p.equity) ?? undefined) : null);
+    yearlyRoce.push(p ? ratio(y.ebit, avg2(capital(y), capital(p)) ?? undefined) : null);
+  });
+  const rounded = (xs: (number | null)[]) => xs.map((x) => (x === null ? null : Math.round(x * 1000) / 1000));
+  const mean = (xs: (number | null)[]): number | null => {
+    const v = xs.filter(isNum);
+    return v.length >= 2 ? Math.round((v.reduce((a, b) => a + b, 0) / v.length) * 1000) / 1000 : null;
+  };
+
   const trailing = toCrore(raw.trailingProfit);
   const latestProfit = toCrore(last?.netIncome);
   const profit = trailing ?? latestProfit;
@@ -301,8 +315,9 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     high52: figures.high52 ?? 0,
     low52: figures.low52 ?? 0,
     profitHistory: profitHistory.length ? profitHistory : null,
-    roe5y: null,
-    roceHistory: null,
+    // Averages over the years Yahoo gives (three for four years of statements), not the five Screener showed.
+    roe5y: mean(yearlyRoe),
+    roceHistory: yearlyRoce.filter(isNum).length >= 2 ? rounded(yearlyRoce) : null,
     notes: [],
     historyLabels,
   };

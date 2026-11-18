@@ -79,6 +79,23 @@ describe("profitTrend", () => {
     expect(profitTrend(stock({ profitHistory: [100, 110, 121, 133.1, 146.41] })).cagr).toBeCloseTo(0.1, 6);
     expect(profitTrend(stock({ profitHistory: [100, 110, 121, 133.1] })).cagr).toBeCloseTo(0.1, 6);
   });
+  it("rates a four-year history Consistent when profit grew in 2 of its 3 steps and there was no loss", () => {
+    expect(profitTrend(stock({ profitHistory: [100, 120, 110, 130] }))).toMatchObject({ consistency: "Consistent", steps: 3, growthYears: 2 });
+    expect(profitTrend(stock({ profitHistory: [100, 90, 120, 130] })).consistency).toBe("Consistent");
+  });
+  it("rates a four-year history Mixed when profit grew in only 1 of 3 steps but ended higher", () => {
+    expect(profitTrend(stock({ profitHistory: [100, 95, 90, 120] })).consistency).toBe("Mixed");
+  });
+  it("rates a four-year history Weak when it ended no higher than it started", () => {
+    expect(profitTrend(stock({ profitHistory: [100, 120, 110, 100] })).consistency).toBe("Weak");
+  });
+  it("keeps the five-year bar at 3 of 4 steps", () => {
+    expect(profitTrend(stock({ profitHistory: [100, 120, 110, 130, 150] })).consistency).toBe("Consistent");
+    expect(profitTrend(stock({ profitHistory: [100, 120, 110, 130, 125] })).consistency).toBe("Mixed");
+  });
+  it("a loss year still stops a four-year history being Consistent", () => {
+    expect(profitTrend(stock({ profitHistory: [100, -5, 120, 130] })).consistency).toBe("Weak");
+  });
   it("still rates a four-year history, with three year-on-year steps", () => {
     const t = profitTrend(stock({ profitHistory: [100, 120, 140, 160] }));
     expect(t).toMatchObject({ consistency: "Consistent", steps: 3, growthYears: 3 });
