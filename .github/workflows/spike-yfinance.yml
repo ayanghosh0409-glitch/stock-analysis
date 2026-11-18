@@ -1,0 +1,44 @@
+name: Spike - yfinance fundamentals
+
+# A dry run to judge whether Yahoo's fundamentals match the figures on the site. It only reads
+# data/stocks.json and prints a comparison; it never commits or changes data. Run it from
+# Actions > Spike - yfinance fundamentals > Run workflow, or it runs on its own pull request.
+
+on:
+  pull_request:
+    paths:
+      - scripts/spike_yfinance_fundamentals.py
+      - scripts/test_spike_yfinance.py
+      - .github/workflows/spike-yfinance.yml
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: "Space-separated symbols from data/stocks.json (leave empty for the default five)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Unit tests
+        run: python -m unittest discover -s scripts -p "test_spike*.py"
+      - name: Compare yfinance with the site's figures
+        env:
+          SYMBOLS: ${{ github.event.inputs.symbols }}
+        run: |
+          # shellcheck disable=SC2086 - the symbols are meant to split on spaces
+          python scripts/spike_yfinance_fundamentals.py --out report.md ${SYMBOLS:+--symbols $SYMBOLS}
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f report.md ] && cat report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
