@@ -219,3 +219,21 @@ describe("buildPreview: gaps", () => {
     expect(p.figures.profitHistory).toEqual([300, 400, 500, 600, 700]);
   });
 });
+
+describe("a fifth, oldest year with no profit", () => {
+  it("is left off the profit history so growth can still be worked out", () => {
+    const base = healthy();
+    const withEmptyYear = healthy({ years: [year("2022-03-31", { equity: 8_000 * CR, totalAssets: 13_000 * CR, currentLiabilities: 3_500 * CR }), ...base.years] });
+    const p = buildPreview(withEmptyYear, SECTORS, NOW);
+    expect(p.figures.profitHistory).toEqual([1500, 1800, 2100, 2400]);
+    expect(p.figures.historyLabels).toEqual(["FY23", "FY24", "FY25", "FY26"]);
+    expect(p.stock.profitHistory).toEqual([1500, 1800, 2100, 2400]);
+    expect(p.checks.find((c) => c.key === "history")?.ok).toBe(true);
+  });
+  it("still uses that year's balance sheet to average with the next year", () => {
+    const withEmptyYear = healthy({ years: [year("2022-03-31", { equity: 8_000 * CR, totalAssets: 13_000 * CR, currentLiabilities: 3_500 * CR }), ...healthy().years] });
+    const p = buildPreview(withEmptyYear, SECTORS, NOW);
+    expect(p.stock.roceHistory).toHaveLength(4);
+    expect(p.stock.roceHistory![0]).not.toBeNull(); // FY23 now has a prior year to average with
+  });
+});

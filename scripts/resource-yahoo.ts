@@ -21,20 +21,28 @@ const MIN_SHARE = 0.5; // refuse to overwrite the data if Yahoo gave usable figu
 const pause = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const why = (e: unknown) => (e instanceof Error ? `${e.constructor.name}: ${e.message}` : String(e)).slice(0, 160);
 
+/** Yahoo now and then answers without a price or market cap for a stock it has just served; asking again a few seconds later fixes it. */
+const incomplete = (p: Preview) => p.figures.price === null || p.figures.marketCap === null;
+
 async function previewFor(symbol: string, sectors: string[]): Promise<{ p: Preview | null; failure?: string }> {
   let failure = "no ticker worked";
+  let last: Preview | null = null;
   for (const t of tickersFor(symbol)) {
-    for (let attempt = 0; attempt < 2; attempt++) {
+    for (let attempt = 0; attempt < 3; attempt++) {
       try {
-        return { p: await fetchPreview(t, sectors) };
+        const p = await fetchPreview(t, sectors);
+        if (!incomplete(p) || attempt === 2) return { p };
+        last = p;
+        failure = `${t}: Yahoo answered without a price or market cap`;
+        await pause(4000);
       } catch (e) {
         failure = `${t}: ${why(e)}`;
-        if (e instanceof Error && e.constructor.name === "YahooUnreachable") await pause(3000);
+        if (e instanceof Error && e.constructor.name === "YahooUnreachable") await pause(4000);
         else break; // nothing found / not Indian: retrying will not change it
       }
     }
   }
-  return { p: null, failure };
+  return last ? { p: last } : { p: null, failure };
 }
 
 async function main() {

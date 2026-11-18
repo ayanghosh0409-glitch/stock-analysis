@@ -187,9 +187,12 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
   const prev = years[years.length - 2];
   const notes: string[] = [];
 
-  // Profit history: oldest first, in crore, a hole where Yahoo has no figure for that year.
-  const profitHistory = years.map((y) => toCrore(y.netIncome));
-  const historyLabels = years.map((y) => yearLabel(y.date));
+  // Profit history: oldest first, in crore, a hole where Yahoo has no figure for that year. Yahoo often sends a fifth,
+  // oldest year with balance-sheet items but no profit; that empty year would blank the growth rate, so it is left off.
+  const firstProfit = Math.max(0, years.findIndex((y) => isNum(y.netIncome)));
+  const shown = years.slice(firstProfit);
+  const profitHistory = shown.map((y) => toCrore(y.netIncome));
+  const historyLabels = shown.map((y) => yearLabel(y.date));
   const profitYears = profitHistory.filter(isNum).length;
 
   // ROE: latest annual profit over the average of the last two year-end equities. One year of equity is used as is.
@@ -230,7 +233,7 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     yearlyRoe.push(p ? ratio(y.netIncome, avg2(y.equity, p.equity) ?? undefined) : null);
     yearlyRoce.push(p ? ratio(y.ebit, avg2(capital(y), capital(p)) ?? undefined) : null);
   });
-  const rounded = (xs: (number | null)[]) => xs.map((x) => (x === null ? null : Math.round(x * 1000) / 1000));
+  const rounded = (xs: (number | null)[]) => xs.slice(firstProfit).map((x) => (x === null ? null : Math.round(x * 1000) / 1000));
   const mean = (xs: (number | null)[]): number | null => {
     const v = xs.filter(isNum);
     return v.length >= 2 ? Math.round((v.reduce((a, b) => a + b, 0) / v.length) * 1000) / 1000 : null;
@@ -316,8 +319,8 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     low52: figures.low52 ?? 0,
     profitHistory: profitHistory.length ? profitHistory : null,
     // Averages over the years Yahoo gives (three for four years of statements), not the five Screener showed.
-    roe5y: mean(yearlyRoe),
-    roceHistory: yearlyRoce.filter(isNum).length >= 2 ? rounded(yearlyRoce) : null,
+    roe5y: mean(yearlyRoe.slice(firstProfit)),
+    roceHistory: yearlyRoce.slice(firstProfit).filter(isNum).length >= 2 ? rounded(yearlyRoce) : null,
     notes: [],
     historyLabels,
   };
