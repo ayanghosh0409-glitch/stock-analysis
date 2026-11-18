@@ -66,6 +66,8 @@ export type Merge = {
   recheck: string[];
   /** What the preview said about the figures (for example, Yahoo's own ROE sitting far from the one worked out), for the report. */
   yahooNotes: string[];
+  /** Yahoo gave no market cap, so the old one was scaled by the price change. */
+  rescaledMarketCap?: boolean;
 };
 
 /**
@@ -77,7 +79,12 @@ export function mergeStock(old: Stock, p: Preview | null, failure?: string): Mer
   if (!p) return { stock: old, fromYahoo: false, missing: [failure ?? "Yahoo returned nothing"], dropped: [], recheck: [], yahooNotes: [] };
   const f = p.figures;
   const missing: string[] = [];
-  if (f.price === null || f.marketCap === null) missing.push("price or market cap");
+  // Yahoo leaves market cap out for a few large companies (TCS, Bosch...) even though it quotes a price. Shares do not change
+  // between results, so the old market cap scaled by the price move is the same number the weekly refresh would give.
+  let marketCap = f.marketCap;
+  const rescaled = marketCap === null && f.price !== null && old.price > 0 && old.marketCap > 0;
+  if (rescaled) marketCap = Math.round((old.marketCap * f.price!) / old.price);
+  if (f.price === null || marketCap === null) missing.push("price or market cap");
   if (f.profit === null) missing.push("profit");
   if (f.revenue === null) missing.push("revenue");
   if (f.roe === null) missing.push(p.checks.find((c) => c.key === "roe")?.detail ? `ROE (${p.checks.find((c) => c.key === "roe")!.detail})` : "ROE");
@@ -85,12 +92,16 @@ export function mergeStock(old: Stock, p: Preview | null, failure?: string): Mer
   if (f.profitHistory.filter(isNum).length < MIN_YEARS) missing.push(`annual profit (only ${f.profitHistory.filter(isNum).length} years)`);
   if (missing.length) return { stock: old, fromYahoo: false, missing, dropped: [], recheck: [], yahooNotes: [] };
   return {
-    stock: { ...p.stock, name: old.name, symbol: old.symbol, notes: kept.kept },
+    stock: { ...p.stock, name: old.name, symbol: old.symbol, marketCap: marketCap ?? 0, notes: kept.kept },
     fromYahoo: true,
     missing: [],
     dropped: kept.dropped,
     recheck: kept.recheck,
-    yahooNotes: p.notes.filter((n) => !n.startsWith("Worked out from Yahoo Finance's annual statements")),
+    yahooNotes: [
+      ...(rescaled ? ["Market cap is the old figure scaled by the price move, because Yahoo's quote left it out."] : []),
+      ...p.notes.filter((n) => !n.startsWith("Worked out from Yahoo Finance's annual statements")),
+    ],
+    rescaledMarketCap: rescaled,
   };
 }
 
@@ -183,6 +194,9 @@ export function report(args: {
       out.push(`| ${r.symbol} | ${pct(r.before.roe)} → ${pct(r.after.roe)} | ${pct(r.before.roce)} → ${pct(r.after.roce)} | ${Math.round(r.oldStock.profit)} → ${Math.round(r.newStock.profit)} | ${hist} | ${merges.get(r.symbol)?.yahooNotes.join(" ") || "–"} |`);
     }
   }
+
+  const rescaled = [...merges].filter(([, m]) => m.rescaledMarketCap).map(([k]) => k);
+  out.push("", "## Market cap taken from the old figure", "", rescaled.length ? `Yahoo quoted a price but no market cap for ${rescaled.join(", ")}, so the old market cap was scaled by the price change (as the weekly refresh does). It is shown on the page but never used in the verdict.` : "None.");
 
   const kept = rows.filter((r) => !r.fromYahoo);
   out.push("", "## Kept as they were (Yahoo lacked a figure, or held back on purpose)", "");

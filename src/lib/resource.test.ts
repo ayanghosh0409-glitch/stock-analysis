@@ -66,6 +66,16 @@ describe("mergeStock", () => {
     expect(m.stock.profitHistory).toEqual([1500, 1800, 2100, 2400]);
     expect(m.stock.historyLabels).toEqual(["FY23", "FY24", "FY25", "FY26"]);
   });
+  it("scales the old market cap by the price move when Yahoo gives a price but no market cap", () => {
+    const m = mergeStock(old({ price: 100, marketCap: 5000 }), buildPreview(raw({ marketCap: undefined, price: 120 }), SECTORS, NOW));
+    expect(m.fromYahoo).toBe(true);
+    expect(m.stock.marketCap).toBe(6000);
+    expect(m.rescaledMarketCap).toBe(true);
+    expect(m.yahooNotes.join(" ")).toContain("scaled by the price move");
+  });
+  it("still keeps the old stock when there is no price at all", () => {
+    expect(mergeStock(old(), buildPreview(raw({ marketCap: undefined, price: undefined }), SECTORS, NOW)).fromYahoo).toBe(false);
+  });
   it("works out yearly ROCE and average ROE over the years Yahoo allows", () => {
     const s = mergeStock(old(), buildPreview(raw(), SECTORS, NOW)).stock;
     expect(s.roceHistory).toHaveLength(4);
