@@ -103,7 +103,7 @@ export default function StockTable({
   selected: string | null;
 }) {
   const th = (k: SortKey, label: string, right = false) => (
-    <th scope="col" aria-sort={sort.key === k ? (sort.asc ? "ascending" : "descending") : "none"} className={`px-3 py-2 font-medium ${right ? "text-right" : "text-left"}`}>
+    <th scope="col" aria-sort={sort.key === k ? (sort.asc ? "ascending" : "descending") : "none"} className={`px-3 py-3 font-semibold ${right ? "text-right" : "text-left"}`}>
       <button type="button" onClick={() => onSort(k)} className="inline-flex items-center gap-1 hover:text-ink">
         {label}
         <span aria-hidden className="text-[10px]">{sort.key === k ? (sort.asc ? "▲" : "▼") : ""}</span>
@@ -114,11 +114,11 @@ export default function StockTable({
   return (
     <div className="overflow-x-auto rounded-xl border border-line bg-surface shadow-sm">
       <table className="w-full min-w-[1200px] border-collapse text-sm">
-        <thead className="bg-surface2 text-xs uppercase tracking-wide text-muted">
+        <thead className="bg-surface2 text-[11px] font-semibold uppercase tracking-wider text-muted">
           <tr>
             {th("name", "Stock")}
             {th("price", "Price (₹)", true)}
-            <th scope="col" className="px-3 py-2 text-left font-medium">52W position</th>
+            <th scope="col" className="px-3 py-3 text-left font-semibold">52W position</th>
             {th("marketCap", "Mkt cap (₹ Cr)", true)}
             {th("revenue", "Revenue (₹ Cr)", true)}
             {th("profit", "Profit (₹ Cr)", true)}
@@ -137,7 +137,7 @@ export default function StockTable({
             return (
               <tr key={s.symbol} className={`border-t border-line ${selected === s.symbol ? "bg-surface2" : "hover:bg-surface2"}`}>
                 <td className="px-3 py-2">
-                  <button type="button" onClick={() => onPick(s.symbol)} className="text-left font-medium text-accent hover:underline">
+                  <button type="button" onClick={() => onPick(s.symbol)} className="text-left font-semibold text-accent hover:underline">
                     {s.name}
                   </button>
                   <div className="text-[11px] text-muted">

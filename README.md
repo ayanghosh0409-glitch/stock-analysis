@@ -25,6 +25,9 @@ below it are two stock-level breakdowns, labelled with how many stocks they cove
 in a ring) and profit consistency (a segmented bar). A stat strip above the cards totals all sectors. The search and filters
 sit with the stock table because they only filter that table. The counting logic is in `src/lib/overview.ts`.
 
+**Sector tabs** use the same card look: headline numbers for the sector, the screen-result ring and consistency bar, the ROE vs
+ROCE chart, and a collapsible panel with the benchmark workings and your overrides. The stock table sits below with its filters.
+
 **Look and feel:** the colours and the Inter typeface follow a fintech reference design. All colours are CSS tokens at the
 top of `src/app/globals.css` (light and dark), checked for WCAG AA contrast; the font is self-hosted through
 `@fontsource-variable/inter`, so the page makes no font requests to other sites.

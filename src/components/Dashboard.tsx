@@ -17,9 +17,8 @@ import {
 } from "@/lib/screen";
 import StockTable, { sortValue, type Row, type SortKey } from "./StockTable";
 import StockDetail from "./StockDetail";
-import { PeerBadge } from "./Badges";
 import RecentSearch from "./RecentSearch";
-import { RoeRoceScatter } from "./Charts";
+import SectorView from "./SectorView";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
 import { tally } from "@/lib/overview";
 import { fmtPct } from "./format";
@@ -178,64 +177,18 @@ export default function Dashboard({ data }: { data: Dataset }) {
         </>
       ) : (
         sector && o && info && (
-          <section aria-label={`${sector.name} benchmark`} className="mb-5 grid gap-4 lg:grid-cols-[320px_1fr]">
-            <div className="rounded-xl border border-line bg-surface shadow-sm p-4">
-              <h2 className="text-sm font-semibold">{sector.title}</h2>
-              <dl className="mt-3 space-y-1 text-sm">
-                <div className="flex justify-between"><dt className="text-muted">Median ROE (profitable stocks)</dt><dd className="num">{fmtPct(info.bench.medianRoe)}</dd></div>
-                <div className="flex justify-between"><dt className="text-muted">Median ROCE</dt><dd className="num">{fmtPct(info.bench.medianRoce)}</dd></div>
-                <div className="flex justify-between"><dt className="text-muted">Minimum ROE</dt><dd className="num">{fmtPct(info.bench.floor)}</dd></div>
-                <div className="flex justify-between"><dt className="text-muted">ROE cut-off used</dt><dd className="num font-semibold">{fmtPct(info.bench.threshold)}</dd></div>
-                <div className="flex justify-between"><dt className="text-muted">ROCE used</dt><dd className="num font-semibold">{fmtPct(info.bench.roce)}</dd></div>
-              </dl>
-              <div className="mt-3 flex items-center justify-between text-sm">
-                <span className="text-muted">Peer set</span>
-                <PeerBadge health={info.health} />
-              </div>
-              {info.health.reasons.length > 0 && (
-                <ul className="mt-1 list-disc space-y-0.5 pl-5 text-xs text-muted">
-                  {info.health.reasons.map((r) => <li key={r}>{r}</li>)}
-                </ul>
-              )}
-              <p className="mt-3 text-xs text-muted">
-                Each stock is compared with its sector peers without itself, so its own figures are not in its benchmark. The
-                cut-off is the higher of the industry ROE and the minimum. Optionally override either with your own figures (in %); leave
-                blank to use the defaults.
-              </p>
-              <div className="mt-2 grid grid-cols-2 gap-2">
-                {(
-                  [
-                    ["roe", "ROE override %", "col-span-1", ""],
-                    ["roce", "ROCE override %", "col-span-1", ""],
-                    ["floor", "Minimum ROE %", "col-span-2", String(ROE_FLOOR * 100)],
-                  ] as const
-                ).map(([k, label, span, placeholder]) => (
-                  <label key={k} className={`text-xs text-muted ${span}`}>
-                    {label}
-                    <input
-                      inputMode="decimal"
-                      value={o[k] ?? ""}
-                      placeholder={placeholder}
-                      onChange={(e) => setOverrides((p) => ({ ...p, [sector.name]: { ...o, [k]: e.target.value } }))}
-                      className="mt-1 w-full rounded border border-line bg-surface px-2 py-1 text-sm text-ink"
-                    />
-                  </label>
-                ))}
-              </div>
-            </div>
-            <div className="rounded-xl border border-line bg-surface shadow-sm p-4">
-              <h2 className="text-sm font-semibold">ROE vs ROCE (dashed lines = sector cut-offs; click a point for details)</h2>
-              <RoeRoceScatter
-                points={sectorRows
-                  .filter((r) => r.stock.roe != null && r.stock.roce != null)
-                  .map((r) => ({ symbol: r.stock.symbol, roe: r.stock.roe as number, roce: r.stock.roce as number, verdict: r.verdict as Verdict }))}
-                roeBench={info.bench.threshold}
-                roceBench={info.bench.roce}
-                onPick={setSelected}
-              />
-              <p className="text-xs text-muted">Green = Strong, amber = Moderate, red = Skip.</p>
-            </div>
-          </section>
+          <SectorView
+            name={sector.name}
+            bench={info.bench}
+            health={info.health}
+            t={tally(sectorRows)}
+            points={sectorRows
+              .filter((r) => r.stock.roe != null && r.stock.roce != null)
+              .map((r) => ({ symbol: r.stock.symbol, roe: r.stock.roe as number, roce: r.stock.roce as number, verdict: r.verdict as Verdict }))}
+            override={o}
+            onOverride={(k, v) => setOverrides((p) => ({ ...p, [sector.name]: { ...o, [k]: v } }))}
+            onPick={setSelected}
+          />
         )
       )}
 
