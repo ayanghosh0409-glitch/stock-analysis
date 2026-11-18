@@ -20,6 +20,8 @@ import StockDetail from "./StockDetail";
 import { PeerBadge } from "./Badges";
 import RecentSearch from "./RecentSearch";
 import { RoeRoceScatter } from "./Charts";
+import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
+import { tally } from "@/lib/overview";
 import { fmtPct } from "./format";
 
 const OVERVIEW = "Overview";
@@ -131,24 +133,15 @@ export default function Dashboard({ data }: { data: Dataset }) {
   const o = sector ? overrides[sector.name] ?? { roe: "", roce: "", floor: "" } : null;
   const info = sector ? sectorInfo[sector.name] : null;
 
-  const summary = data.sectors.map((sec) => {
-    const rs = allRows.filter((r) => r.sector === sec.name);
-    const count = (f: (r: Row) => boolean) => rs.filter(f).length;
-    return {
-      name: sec.name,
-      n: rs.length,
-      bench: sectorInfo[sec.name].bench,
-      health: sectorInfo[sec.name].health,
-      strong: count((r) => r.verdict === "CONSIDER – Strong"),
-      moderate: count((r) => r.verdict === "CONSIDER – Moderate"),
-      skip: count((r) => r.verdict === "SKIP"),
-      cons: count((r) => r.consistency === "Consistent"),
-      rec: count((r) => r.consistency === "Recovering"),
-      mixed: count((r) => r.consistency === "Mixed"),
-      weak: count((r) => r.consistency === "Weak"),
-      nodata: count((r) => r.consistency === "Insufficient data"),
-    };
-  });
+  // Stock-level counts are tallied per sector for the cards; the sector-level benchmark comes from sectorInfo.
+  const summary: SectorSummary[] = data.sectors.map((sec) => ({
+    name: sec.name,
+    bench: sectorInfo[sec.name].bench,
+    health: sectorInfo[sec.name].health,
+    t: tally(allRows.filter((r) => r.sector === sec.name)),
+  }));
+  const total = useMemo(() => tally(allRows), [allRows]);
+  const nearCount = allRows.filter((r) => r.borderline).length;
 
   const chip = (active: boolean) =>
     `rounded-full border px-3 py-1 text-xs ${active ? "border-primary bg-primary text-on-primary font-semibold" : "border-line bg-surface hover:bg-surface2"}`;
@@ -156,12 +149,17 @@ export default function Dashboard({ data }: { data: Dataset }) {
   return (
     <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-6 sm:px-6">
       <header className="mb-5">
-        <h1 className="text-2xl font-semibold">Stock Analysis</h1>
+        <span className="inline-block rounded-full border border-line bg-surface px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-muted">
+          Sector screener · data as of {data.asOf}
+        </span>
+        <h1 className="mt-3 text-3xl sm:text-4xl">
+          Stock Analysis<span className="text-accent"> by sector</span>
+        </h1>
         <p className="mt-1 max-w-3xl text-sm text-muted">
           A first-pass screen. A stock is considered when its ROE is greater than the industry ROE (the median of the
           other profitable stocks listed in its sector) and also above a {fmtPct(ROE_FLOOR, 0)} minimum. It is rated Strong
           when ROCE also passes and Moderate when only ROE passes. Profit consistency over five years is shown as a
-          separate flag. Data as of {data.asOf}, from public Screener.in pages.
+          separate flag. Figures come from public Screener.in pages.
         </p>
       </header>
 
@@ -173,48 +171,15 @@ export default function Dashboard({ data }: { data: Dataset }) {
         ))}
       </nav>
 
-      <section aria-label="Controls" className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-lg border border-line bg-surface p-3">
-        <RecentSearch value={query} onChange={setQuery} />
-        <div className="flex items-center gap-1.5 text-sm" role="group" aria-label="Verdict filter">
-          <span className="text-muted">Verdict</span>
-          {([["all", "All"], ["consider", "Consider"], ["strong", "Strong only"]] as const).map(([k, l]) => (
-            <button key={k} type="button" onClick={() => setVerdictFilter(k)} aria-pressed={verdictFilter === k} className={chip(verdictFilter === k)}>{l}</button>
-          ))}
-        </div>
-        <div className="flex items-center gap-1.5 text-sm" role="group" aria-label="Profit trend filter">
-          <span className="text-muted">Profit trend</span>
-          {([["all", "Any"], ["good", "Consistent or recovering"]] as const).map(([k, l]) => (
-            <button key={k} type="button" onClick={() => setTrendFilter(k)} aria-pressed={trendFilter === k} className={chip(trendFilter === k)}>{l}</button>
-          ))}
-        </div>
-      </section>
-
       {tab === OVERVIEW ? (
-        <section aria-label="Sector summary" className="mb-5 overflow-x-auto rounded-lg border border-line bg-surface">
-          <table className="w-full min-w-[960px] border-collapse text-sm">
-            <thead className="bg-surface2 text-xs uppercase tracking-wide text-muted">
-              <tr>
-                {["Sector", "Stocks", "Industry ROE", "ROE cut-off", "Industry ROCE", "Peer set", "Strong", "Moderate", "Skip", "Consistent", "Recovering", "Mixed", "Weak", "No data"].map((h, i) => (
-                  <th key={h} scope="col" className={`px-3 py-2 font-medium ${i === 0 ? "text-left" : "text-right"}`}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {summary.map((s) => (
-                <tr key={s.name} className="border-t border-line">
-                  <td className="px-3 py-2"><button type="button" onClick={() => setTab(s.name)} className="text-left font-medium text-accent hover:underline">{s.name}</button></td>
-                  {[s.n, fmtPct(s.bench.roe), fmtPct(s.bench.threshold), fmtPct(s.bench.roce), <PeerBadge key="peer" health={s.health} />, s.strong, s.moderate, s.skip, s.cons, s.rec, s.mixed, s.weak, s.nodata].map((v, i) => (
-                    <td key={i} className="num px-3 py-2 text-right">{v}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </section>
+        <>
+          <OverviewStats total={total} sectors={data.sectors.length} near={nearCount} />
+          <SectorCards sectors={summary} onOpen={setTab} />
+        </>
       ) : (
         sector && o && info && (
           <section aria-label={`${sector.name} benchmark`} className="mb-5 grid gap-4 lg:grid-cols-[320px_1fr]">
-            <div className="rounded-lg border border-line bg-surface p-4">
+            <div className="rounded-xl border border-line bg-surface shadow-sm p-4">
               <h2 className="text-sm font-semibold">{sector.title}</h2>
               <dl className="mt-3 space-y-1 text-sm">
                 <div className="flex justify-between"><dt className="text-muted">Median ROE (profitable stocks)</dt><dd className="num">{fmtPct(info.bench.medianRoe)}</dd></div>
@@ -258,7 +223,7 @@ export default function Dashboard({ data }: { data: Dataset }) {
                 ))}
               </div>
             </div>
-            <div className="rounded-lg border border-line bg-surface p-4">
+            <div className="rounded-xl border border-line bg-surface shadow-sm p-4">
               <h2 className="text-sm font-semibold">ROE vs ROCE (dashed lines = sector cut-offs; click a point for details)</h2>
               <RoeRoceScatter
                 points={sectorRows
@@ -273,6 +238,23 @@ export default function Dashboard({ data }: { data: Dataset }) {
           </section>
         )
       )}
+
+      <h2 className="mb-3 mt-2 text-xl font-semibold tracking-tight">{tab === OVERVIEW ? "All stocks" : `${tab} stocks`}</h2>
+      <section aria-label="Controls" className="mb-3 flex flex-wrap items-center gap-x-5 gap-y-3 rounded-xl border border-line bg-surface shadow-sm p-3">
+        <RecentSearch value={query} onChange={setQuery} />
+        <div className="flex items-center gap-1.5 text-sm" role="group" aria-label="Verdict filter">
+          <span className="text-muted">Verdict</span>
+          {([["all", "All"], ["consider", "Consider"], ["strong", "Strong only"]] as const).map(([k, l]) => (
+            <button key={k} type="button" onClick={() => setVerdictFilter(k)} aria-pressed={verdictFilter === k} className={chip(verdictFilter === k)}>{l}</button>
+          ))}
+        </div>
+        <div className="flex items-center gap-1.5 text-sm" role="group" aria-label="Profit trend filter">
+          <span className="text-muted">Profit trend</span>
+          {([["all", "Any"], ["good", "Consistent or recovering"]] as const).map(([k, l]) => (
+            <button key={k} type="button" onClick={() => setTrendFilter(k)} aria-pressed={trendFilter === k} className={chip(trendFilter === k)}>{l}</button>
+          ))}
+        </div>
+      </section>
 
       <div className="mb-2 text-xs text-muted">{rows.length} stock{rows.length === 1 ? "" : "s"} shown</div>
       <StockTable rows={rows} sort={sort} onSort={onSort} onPick={setSelected} showSector={tab === OVERVIEW} selected={selected} />
