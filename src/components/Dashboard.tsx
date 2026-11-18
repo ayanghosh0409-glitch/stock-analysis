@@ -19,6 +19,8 @@ import StockTable, { sortValue, type Row, type SortKey } from "./StockTable";
 import StockDetail from "./StockDetail";
 import RecentSearch from "./RecentSearch";
 import SectorView from "./SectorView";
+import NewsPanel from "./NewsPanel";
+import type { NewsFile } from "@/lib/news";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
 import { tally } from "@/lib/overview";
 import { fmtPct } from "./format";
@@ -38,7 +40,7 @@ const toFraction = (s: string | undefined): number | null => {
 const toOverride = (o: Overrides[string] | undefined): Override | undefined =>
   o ? { roe: toFraction(o.roe), roce: toFraction(o.roce), floor: toFraction(o.floor) } : undefined;
 
-export default function Dashboard({ data }: { data: Dataset }) {
+export default function Dashboard({ data, news }: { data: Dataset; news: NewsFile }) {
   const [tab, setTab] = useState(OVERVIEW);
   const [overrides, setOverrides] = useState<Overrides>({});
   const [verdictFilter, setVerdictFilter] = useState<"all" | "consider" | "strong">("all");
@@ -188,7 +190,16 @@ export default function Dashboard({ data }: { data: Dataset }) {
             override={o}
             onOverride={(k, v) => setOverrides((p) => ({ ...p, [sector.name]: { ...o, [k]: v } }))}
             onPick={setSelected}
-          />
+          >
+            <NewsPanel
+              sector={sector.name}
+              news={news.sectors[sector.name]}
+              fetchedAt={news.fetchedAt}
+              windowDays={news.windowDays}
+              stocks={sectorRows.map((r) => ({ symbol: r.stock.symbol, name: r.stock.name, verdict: r.verdict }))}
+              onPick={setSelected}
+            />
+          </SectorView>
         )
       )}
 
