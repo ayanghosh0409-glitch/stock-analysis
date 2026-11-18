@@ -72,7 +72,7 @@ Rules that keep an open form safe (all in `src/lib/figures.ts`, covered by tests
 - Entries are only added, never overwritten, so a bad one can be found and deleted (`db/schema.sql`).
 - One caller can add 20 entries an hour (counted in the database from a salted hash of the IP; the IP itself is not stored).
 
-**Setup.** The site works without a database: until one is connected, the box simply does not appear. To switch it on, add a Postgres database to the Vercel project (Storage tab, Neon or Supabase, connect it to all environments). The integration sets `DATABASE_URL` or `POSTGRES_URL`, which is all the site needs; the table is created on first use. Optionally set `FIGURES_SALT` to any random string so the stored hashes cannot be matched to an IP by guessing.
+**Setup.** The site works without a database: until one is connected, the box simply does not appear. To switch it on, add a Postgres database to the Vercel project (Storage tab, Neon or Supabase, connect it to all environments). The integration sets `DATABASE_URL` or `POSTGRES_URL` (a prefix such as `STORAGE_POSTGRES_URL` is fine too), which is all the site needs; the table is created on first use. Optionally set `FIGURES_SALT` to any random string so the stored hashes cannot be matched to an IP by guessing.
 
 ## Sector news
 
