@@ -22,6 +22,7 @@ import SectorView from "./SectorView";
 import NewsPanel from "./NewsPanel";
 import type { NewsFile } from "@/lib/news";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
+import LookupPanel from "./LookupPanel";
 import { tally } from "@/lib/overview";
 import { fmtPct } from "./format";
 
@@ -144,6 +145,12 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const total = useMemo(() => tally(allRows), [allRows]);
   const nearCount = allRows.filter((r) => r.borderline).length;
 
+  // A search that matches no stock anywhere on the list (not merely none under the current tab or filters) offers a Yahoo lookup.
+  const q = query.trim();
+  const inList = allRows.some((r) => r.stock.name.toLowerCase().includes(q.toLowerCase()) || r.stock.symbol.toLowerCase().includes(q.toLowerCase()));
+  const showLookup = q.length >= 2 && !inList;
+  const knownSymbols = useMemo(() => new Set(allRows.map((r) => r.stock.symbol)), [allRows]);
+
   const chip = (active: boolean) =>
     `rounded-full border px-3 py-1 text-xs ${active ? "border-primary bg-primary text-on-primary font-semibold" : "border-line bg-surface hover:bg-surface2"}`;
 
@@ -220,8 +227,25 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         </div>
       </section>
 
-      <div className="mb-2 text-xs text-muted">{rows.length} stock{rows.length === 1 ? "" : "s"} shown</div>
-      <StockTable rows={rows} sort={sort} onSort={onSort} onPick={setSelected} showSector={tab === OVERVIEW} selected={selected} />
+      {showLookup ? (
+        <LookupPanel
+          key={q.toLowerCase()}
+          query={q}
+          known={knownSymbols}
+          total={allRows.length}
+          sectors={data.sectors.map((s) => s.name)}
+          benchFor={(name) => sectorInfo[name]?.bench ?? null}
+          onShowExisting={(symbol) => {
+            setQuery(symbol);
+            setSelected(symbol);
+          }}
+        />
+      ) : (
+        <>
+          <div className="mb-2 text-xs text-muted">{rows.length} stock{rows.length === 1 ? "" : "s"} shown</div>
+          <StockTable rows={rows} sort={sort} onSort={onSort} onPick={setSelected} showSector={tab === OVERVIEW} selected={selected} />
+        </>
+      )}
 
       <footer className="mt-8 max-w-3xl space-y-2 text-xs text-muted">
         <p>

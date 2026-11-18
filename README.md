@@ -51,6 +51,15 @@ npm test         # unit tests for the screening logic
 - The industry benchmark is built from the stocks listed here, so it is only as good as the peer set. Check the Peer set
   grade for each sector (Auto Batteries is thin and has loss-making companies).
 
+## Look up a company that is not on the list
+
+Search for a name that matches none of the listed stocks and the page offers to look it up on Yahoo Finance (NSE and BSE). Pick the company and the page shows a **preview**: its ROE, ROCE, profit trend and the screen's verdict against a sector you choose (the one Yahoo's industry maps to is suggested). Nothing is saved: the preview never changes the list or any sector's benchmark.
+
+- Two small server routes do the work, `/api/lookup` (search) and `/api/stock` (figures), through the open-source `yahoo-finance2` package. They validate their input, are limited per caller and send cache headers, so repeated lookups do not hit Yahoo again.
+- Yahoo does not publish ROCE, and its own ROE is a trailing figure, so both are worked out from its annual statements (`src/lib/yahoo.ts`). They can differ from Screener.in's by around 10%, and Yahoo returns four years of annual profit where the list holds five. The preview says so, and lists which of the needed figures Yahoo did and did not supply.
+- Banks and lenders usually have no ROCE from Yahoo, so they get no verdict.
+- The workflow **Live check: Yahoo lookup** runs the real fetch for a spread of companies and prints a report in its run summary. It is the only place the real Yahoo calls are exercised, because the build environment cannot reach Yahoo.
+
 ## Sector news
 
 Each sector tab shows a **Latest news** panel: headlines from the last 7 days, each tagged with the sector's stocks it names

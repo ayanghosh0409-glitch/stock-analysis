@@ -1,0 +1,34 @@
+name: Live check - Yahoo lookup
+
+# Runs the real Yahoo Finance fetch (no mocks) for a spread of companies and prints a report of what Yahoo supplies and
+# what it does not. It changes nothing in the repository. Open the run's job summary to read the report.
+
+on:
+  pull_request:
+    paths:
+      - src/lib/yahoo.ts
+      - src/lib/yahoo-client.ts
+      - src/lib/yahoo.live.test.ts
+      - .github/workflows/live-yahoo-check.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch from Yahoo Finance and build the report
+        env:
+          LIVE_YAHOO: "1"
+        run: npx vitest run src/lib/yahoo.live.test.ts
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f live-report.md ] && cat live-report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
