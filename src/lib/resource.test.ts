@@ -115,14 +115,16 @@ describe("compare and report", () => {
   it("writes a report that names the change, the kept stocks and the notes", () => {
     const { rows, sectors } = compare(before, after, new Set(["ABC"]));
     const merges = new Map([
-      ["ABC", { stock: afterStock, fromYahoo: true, missing: [], dropped: ["Price is intraday."], recheck: ["History: FY22 one-off."] }],
-      ["P0", { stock: before.sectors[0].stocks[1], fromYahoo: false, missing: ["ROCE (Yahoo gives no current liabilities)"], dropped: [], recheck: [] }],
+      ["ABC", { stock: afterStock, fromYahoo: true, missing: [], dropped: ["Price is intraday."], recheck: ["History: FY22 one-off."], yahooNotes: ["Yahoo's own ROE is 40.0% against 12.0%."] }],
+      ["P0", { stock: before.sectors[0].stocks[1], fromYahoo: false, missing: ["ROCE (Yahoo gives no current liabilities)"], dropped: [], recheck: [], yahooNotes: [] }],
     ]);
     const text = report({ rows, sectors, merges, total: rows.length, when: "now" });
     expect(text).toContain("1 of 6 stocks now use Yahoo's figures");
     expect(text).toContain("| ABC | IT | 30.0% → 12.0% | 30.0% → 30.0% | Strong → **Skip** |");
     expect(text).toContain("**P0** (IT): ROCE (Yahoo gives no current liabilities)");
     expect(text).toContain("Price is intraday.");
+    expect(text).toContain("more than 5 points");
+    expect(text).toContain("| ABC | 30.0% → 12.0% | 30.0% → 30.0% | 1 → 1 | 1, 2, 3, 4 | Yahoo's own ROE is 40.0% against 12.0%. |");
     expect(text).toContain("History: FY22 one-off.");
   });
 });

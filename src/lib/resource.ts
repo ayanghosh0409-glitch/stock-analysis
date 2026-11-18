@@ -51,6 +51,8 @@ export type Merge = {
   missing: string[];
   dropped: string[];
   recheck: string[];
+  /** What the preview said about the figures (for example, Yahoo's own ROE sitting far from the one worked out), for the report. */
+  yahooNotes: string[];
 };
 
 /**
@@ -59,7 +61,7 @@ export type Merge = {
  */
 export function mergeStock(old: Stock, p: Preview | null, failure?: string): Merge {
   const kept = cleanNotes(old.notes);
-  if (!p) return { stock: old, fromYahoo: false, missing: [failure ?? "Yahoo returned nothing"], dropped: [], recheck: [] };
+  if (!p) return { stock: old, fromYahoo: false, missing: [failure ?? "Yahoo returned nothing"], dropped: [], recheck: [], yahooNotes: [] };
   const f = p.figures;
   const missing: string[] = [];
   if (f.price === null || f.marketCap === null) missing.push("price or market cap");
@@ -68,20 +70,21 @@ export function mergeStock(old: Stock, p: Preview | null, failure?: string): Mer
   if (f.roe === null) missing.push(p.checks.find((c) => c.key === "roe")?.detail ? `ROE (${p.checks.find((c) => c.key === "roe")!.detail})` : "ROE");
   if (f.roce === null) missing.push(p.checks.find((c) => c.key === "roce")?.detail ? `ROCE (${p.checks.find((c) => c.key === "roce")!.detail})` : "ROCE");
   if (f.profitHistory.filter(isNum).length < MIN_YEARS) missing.push(`annual profit (only ${f.profitHistory.filter(isNum).length} years)`);
-  if (missing.length) return { stock: old, fromYahoo: false, missing, dropped: [], recheck: [] };
+  if (missing.length) return { stock: old, fromYahoo: false, missing, dropped: [], recheck: [], yahooNotes: [] };
   return {
     stock: { ...p.stock, name: old.name, symbol: old.symbol, notes: kept.kept },
     fromYahoo: true,
     missing: [],
     dropped: kept.dropped,
     recheck: kept.recheck,
+    yahooNotes: p.notes.filter((n) => !n.startsWith("Worked out from Yahoo Finance's annual statements")),
   };
 }
 
 // ---- before / after -------------------------------------------------------------------------------------------
 
 export type Side = { roe: number | null; roce: number | null; verdict: Verdict; consistency: Consistency };
-export type Row = { sector: string; symbol: string; name: string; fromYahoo: boolean; before: Side; after: Side; changed: boolean };
+export type Row = { sector: string; symbol: string; name: string; fromYahoo: boolean; before: Side; after: Side; changed: boolean; oldStock: Stock; newStock: Stock };
 export type SectorSummary = { sector: string; before: Record<Verdict, number>; after: Record<Verdict, number>; cutoffBefore: number | null; cutoffAfter: number | null; rocePeerBefore: number | null; rocePeerAfter: number | null };
 
 const VERDICTS: Verdict[] = ["CONSIDER – Strong", "CONSIDER – Moderate", "SKIP", "n/a"];
@@ -106,7 +109,7 @@ export function compare(before: Dataset, after: Dataset, fromYahoo: Set<string>)
   for (const [symbol, x] of a) {
     const y = b.get(symbol);
     if (!y) continue;
-    rows.push({ sector: x.sector, symbol, name: x.s.name, fromYahoo: fromYahoo.has(symbol), before: x.side, after: y.side, changed: x.side.verdict !== y.side.verdict });
+    rows.push({ sector: x.sector, symbol, name: x.s.name, fromYahoo: fromYahoo.has(symbol), before: x.side, after: y.side, changed: x.side.verdict !== y.side.verdict, oldStock: x.s, newStock: y.s });
   }
   const sectors: SectorSummary[] = before.sectors.map((sec) => {
     const other = after.sectors.find((s) => s.name === sec.name)!;
@@ -126,6 +129,8 @@ export function compare(before: Dataset, after: Dataset, fromYahoo: Set<string>)
 
 // ---- report ---------------------------------------------------------------------------------------------------
 
+const BIG_GAP = 0.05;
+const gap = (a: number | null, b: number | null) => (a === null || b === null ? 0 : Math.abs(a - b));
 const pct = (x: number | null) => (x === null ? "–" : `${(x * 100).toFixed(1)}%`);
 const short = (v: Verdict) => (v === "CONSIDER – Strong" ? "Strong" : v === "CONSIDER – Moderate" ? "Moderate" : v === "SKIP" ? "Skip" : "n/a");
 
@@ -153,6 +158,17 @@ export function report(args: {
   else {
     out.push("| Stock | Sector | ROE (Screener → Yahoo) | ROCE (Screener → Yahoo) | Verdict |", "| --- | --- | --- | --- | --- |");
     for (const r of changed) out.push(`| ${r.symbol} | ${r.sector} | ${pct(r.before.roe)} → ${pct(r.after.roe)} | ${pct(r.before.roce)} → ${pct(r.after.roce)} | ${short(r.before.verdict)} → **${short(r.after.verdict)}** |`);
+  }
+
+  const big = rows.filter((r) => r.fromYahoo && (gap(r.before.roe, r.after.roe) > BIG_GAP || gap(r.before.roce, r.after.roce) > BIG_GAP));
+  out.push("", `## Figures that moved by more than ${BIG_GAP * 100} points (check these by eye)`, "");
+  if (!big.length) out.push("None.");
+  else {
+    out.push("| Stock | ROE | ROCE | Profit, trailing (₹ cr) | Annual profit from Yahoo (₹ cr, oldest first) | What Yahoo's data says |", "| --- | --- | --- | --- | --- | --- |");
+    for (const r of big) {
+      const hist = (r.newStock.profitHistory ?? []).map((x) => (x === null ? "–" : Math.round(x))).join(", ");
+      out.push(`| ${r.symbol} | ${pct(r.before.roe)} → ${pct(r.after.roe)} | ${pct(r.before.roce)} → ${pct(r.after.roce)} | ${Math.round(r.oldStock.profit)} → ${Math.round(r.newStock.profit)} | ${hist} | ${merges.get(r.symbol)?.yahooNotes.join(" ") || "–"} |`);
+    }
   }
 
   const kept = rows.filter((r) => !r.fromYahoo);
