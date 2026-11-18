@@ -53,12 +53,26 @@ npm test         # unit tests for the screening logic
 
 ## Look up a company that is not on the list
 
-Search for a name that matches none of the listed stocks and the page offers to look it up on Yahoo Finance (NSE and BSE). Pick the company and the page shows a **preview**: its ROE, ROCE, profit trend and the screen's verdict against a sector you choose (the one Yahoo's industry maps to is suggested). Nothing is saved: the preview never changes the list or any sector's benchmark.
+Search for a name that matches none of the listed stocks and the page offers to look it up on Yahoo Finance (NSE and BSE). Pick the company and the page shows a **preview**: its ROE, ROCE, profit trend and the screen's verdict against a sector you choose (the one Yahoo's industry maps to is suggested). The preview never changes the list or any sector's benchmark (the only thing that can be saved is a missing figure, see below).
 
 - Two small server routes do the work, `/api/lookup` (search) and `/api/stock` (figures), through the open-source `yahoo-finance2` package. They validate their input, are limited per caller and send cache headers, so repeated lookups do not hit Yahoo again.
 - Yahoo does not publish ROCE, and its own ROE is a trailing figure, so both are worked out from its annual statements (`src/lib/yahoo.ts`). They can differ from Screener.in's by around 10%, and Yahoo returns four years of annual profit where the list holds five. The preview says so, and lists which of the needed figures Yahoo did and did not supply.
 - Banks and lenders usually have no ROCE from Yahoo, so they get no verdict.
 - The workflow **Live check: Yahoo lookup** runs the real fetch for a spread of companies and prints a report in its run summary. It is the only place the real Yahoo calls are exercised, because the build environment cannot reach Yahoo.
+
+## Figures visitors enter (shared database)
+
+When Yahoo Finance has no ROE or ROCE for a company (banks usually have no ROCE), the preview shows a box beside the missing figure. Whatever a visitor types is saved in a shared Postgres database and shown to everyone who previews that company, marked "entered by visitors" and unverified.
+
+Rules that keep an open form safe (all in `src/lib/figures.ts`, covered by tests that run the real SQL on an in-process Postgres):
+
+- Only ROE and ROCE can be entered, between -100% and 200%.
+- An entered figure only fills a gap. If Yahoo has the figure, Yahoo's wins.
+- The figure shown is the median of the last 5 entries, so one wrong or hostile value cannot decide it.
+- Entries are only added, never overwritten, so a bad one can be found and deleted (`db/schema.sql`).
+- One caller can add 20 entries an hour (counted in the database from a salted hash of the IP; the IP itself is not stored).
+
+**Setup.** The site works without a database: until one is connected, the box simply does not appear. To switch it on, add a Postgres database to the Vercel project (Storage tab, Neon or Supabase, connect it to all environments). The integration sets `DATABASE_URL` or `POSTGRES_URL`, which is all the site needs; the table is created on first use. Optionally set `FIGURES_SALT` to any random string so the stored hashes cannot be matched to an IP by guessing.
 
 ## Sector news
 
