@@ -77,7 +77,8 @@ describe.skipIf(!live)("live Yahoo Finance check", () => {
       if (failures.length) out.push("", "Why figures were missing:", ...failures);
 
       // 3. Would the screen reach the same verdict on Yahoo's figures as on the figures the site holds today?
-      out.push("", "## Same screen, Yahoo's figures vs the site's figures", "", "| Stock | Sector | Site ROE | Yahoo ROE | Site ROCE | Yahoo ROCE | Site verdict | Yahoo verdict | Agree |", "| --- | --- | --- | --- | --- | --- | --- | --- | --- |");
+      out.push("", "## Same screen, Yahoo's figures vs the site's figures", "", "| Stock | Sector | Site ROE | Yahoo ROE | Site ROCE | Yahoo ROCE | Site verdict | Yahoo verdict | Agree | Yahoo industry → suggested sector |", "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |");
+      let sectorRight = 0;
       let agree = 0;
       let compared = 0;
       for (const sym of LISTED) {
@@ -93,13 +94,14 @@ describe.skipIf(!live)("live Yahoo Finance check", () => {
           const yv = verdict({ ...p.stock, symbol: site.symbol }, bench);
           compared++;
           if (sv === yv) agree++;
-          out.push(`| ${sym} | ${sec.name} | ${pct(site.roe)} | ${pct(p.figures.roe)} | ${pct(site.roce)} | ${pct(p.figures.roce)} | ${sv} | ${yv} | ${sv === yv ? "✓" : "✗"} |`);
+          if (p.suggestedSector === sec.name) sectorRight++;
+          out.push(`| ${sym} | ${sec.name} | ${pct(site.roe)} | ${pct(p.figures.roe)} | ${pct(site.roce)} | ${pct(p.figures.roce)} | ${sv} | ${yv} | ${sv === yv ? "✓" : "✗"} | ${p.yahooIndustry ?? "–"} → ${p.suggestedSector ?? "none"} ${p.suggestedSector === sec.name ? "✓" : "✗"} |`);
         } catch (e) {
           out.push(`| ${sym} | ${sec.name} | Yahoo failed: ${(e as Error).message.slice(0, 80)} |`);
         }
         await pause(400);
       }
-      out.push("", `**Verdicts agreeing: ${agree} of ${compared}.**`);
+      out.push("", `**Verdicts agreeing: ${agree} of ${compared}. Sector suggestion matching the sector the stock sits in: ${sectorRight} of ${compared}.**`);
 
       // 4. Profit trend on the shorter history
       out.push("", "## Profit consistency with Yahoo's four years", "", "| Stock | Site (5 years) | Yahoo (4 years) |", "| --- | --- | --- |");

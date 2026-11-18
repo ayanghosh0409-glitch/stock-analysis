@@ -18,6 +18,7 @@ const toCrore = (x: number | null | undefined): number | null => (isNum(x) ? Mat
 export type Candidate = { ticker: string; name: string; exchange: "NSE" | "BSE" };
 
 const TICKER = /^[A-Z0-9&-]{1,20}\.(NS|BO)$/;
+const FUND_NAME = /\b(ETF|FOF|BeES|Index Fund|Mutual Fund|Liquid Fund)\b/i;
 
 /** A Yahoo ticker for an Indian listing, upper-cased, or null. Anything else is refused before it reaches Yahoo. */
 export function cleanTicker(input: unknown): string | null {
@@ -44,6 +45,7 @@ export function toCandidates(quotes: unknown, max = 6): Candidate[] {
     const ticker = cleanTicker(r.symbol);
     if (!ticker || r.quoteType !== "EQUITY") continue;
     const name = String(r.longname ?? r.shortname ?? ticker).trim();
+    if (FUND_NAME.test(name)) continue; // Yahoo files some NSE exchange-traded funds under EQUITY
     const exchange = ticker.endsWith(".NS") ? "NSE" : "BSE";
     const key = name.toLowerCase();
     const at = seen.get(key);
@@ -245,7 +247,12 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
 
   const checks: FieldCheck[] = [
     { key: "price", label: "Price and market cap", ok: figures.price !== null && figures.marketCap !== null, detail: figures.price !== null && figures.marketCap !== null ? "from Yahoo's quote" : missing("quote", "quote") },
-    { key: "roe", label: "ROE", ok: roe !== null, detail: roe !== null ? roeDetail : missing("statements", "statements") },
+    {
+      key: "roe",
+      label: "ROE",
+      ok: roe !== null,
+      detail: roe !== null ? roeDetail : isNum(last?.equity) && last.equity <= 0 ? "shareholders' equity is negative, so ROE is not meaningful" : missing("statements", "statements"),
+    },
     {
       key: "roce",
       label: "ROCE",

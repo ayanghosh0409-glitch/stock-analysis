@@ -63,6 +63,10 @@ describe("toCandidates", () => {
       { ticker: "HDFCLIFE.NS", name: "HDFC Life Insurance Company Limited", exchange: "NSE" },
     ]);
   });
+  it("leaves out exchange-traded funds that Yahoo files under equities", () => {
+    const out = toCandidates([q("HDFCSILVER.NS", "HDFC Silver ETF"), q("NIFTYBEES.NS", "Nippon India ETF Nifty 50 BeES"), q("HDFCBANK.NS", "HDFC Bank Limited")]);
+    expect(out.map((c) => c.ticker)).toEqual(["HDFCBANK.NS"]);
+  });
   it("falls back to the short name, caps the list and survives junk", () => {
     expect(toCandidates([{ symbol: "ABC.NS", shortname: "ABC", quoteType: "EQUITY" }])[0].name).toBe("ABC");
     expect(toCandidates(Array.from({ length: 20 }, (_, i) => q(`S${i}.NS`, `Company ${i}`)), 3)).toHaveLength(3);
@@ -185,9 +189,11 @@ describe("buildPreview: gaps", () => {
     expect(buildPreview(healthy({ years: y }), SECTORS, NOW).figures.profitHistory).toEqual([1_500, null, 2_100, 2_400]);
   });
 
-  it("does not divide by zero or negative equity", () => {
+  it("does not divide by zero or negative equity, and says why ROE is missing", () => {
     const y = healthy().years.map((s) => ({ ...s, equity: -5 * CR }));
-    expect(buildPreview(healthy({ years: y, yahooRoe: undefined }), SECTORS, NOW).figures.roe).toBeNull();
+    const p = buildPreview(healthy({ years: y, yahooRoe: undefined }), SECTORS, NOW);
+    expect(p.figures.roe).toBeNull();
+    expect(p.checks.find((c) => c.key === "roe")!.detail).toContain("equity is negative");
   });
 
   it("uses the latest annual profit when there is no trailing figure", () => {
