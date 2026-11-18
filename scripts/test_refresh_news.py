@@ -54,6 +54,16 @@ class ParseFeed(unittest.TestCase):
         self.assertEqual(it["title"], "<b>Bold</b> & more")  # kept as plain text; the site escapes it when rendering
 
 
+class ExcludeSources(unittest.TestCase):
+    def test_drops_listed_outlets_whatever_their_letter_case(self):
+        xml = feed(
+            item("Story one - LinkedIn", "https://x.test/1", "Tue, 17 Nov 2026 05:30:00 GMT", "LinkedIn"),
+            item("Story two - Mint", "https://x.test/2", "Tue, 17 Nov 2026 05:30:00 GMT", "Mint"),
+        )
+        out = rn.parse_feed(xml, NOW, 7, frozenset({"linkedin"}))
+        self.assertEqual([i["source"] for i in out], ["Mint"])
+
+
 class Merge(unittest.TestCase):
     def test_newest_first_and_one_entry_per_headline(self):
         a = {"title": "Auto sales jump", "publishedAt": "2026-11-16T05:00:00Z"}
@@ -61,6 +71,12 @@ class Merge(unittest.TestCase):
         c = {"title": "Something else", "publishedAt": "2026-11-15T05:00:00Z"}
         out = rn.merge([a, c, b])
         self.assertEqual([i["title"] for i in out], ["AUTO sales jump!", "Something else"])
+
+    def test_syndicated_copies_with_a_different_ending_count_as_one(self):
+        base = "Cognizant beats TCS, HCLTech and two global rivals to win $175-million UK data centre deal"
+        a = {"title": base, "publishedAt": "2026-11-18T01:00:00Z"}
+        b = {"title": base + "- Moneycontrol", "publishedAt": "2026-11-18T00:00:00Z"}
+        self.assertEqual(len(rn.merge([a, b])), 1)
 
     def test_caps_the_list(self):
         many = [{"title": f"Story {i}", "publishedAt": f"2026-11-{10 + i:02d}T00:00:00Z"} for i in range(8)]

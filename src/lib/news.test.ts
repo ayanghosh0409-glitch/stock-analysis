@@ -39,6 +39,37 @@ describe("tagStocks", () => {
   });
 });
 
+describe("tagStocks on real headlines from the first live fetch (18 Nov 2026)", () => {
+  const sector = (name: string) => stocks.sectors.find((x) => x.name === name)!.stocks.map((x) => x.symbol);
+  const t = (title: string, name: string) => tagStocks(title, sector(name), A);
+
+  it("tags companies named in market news", () => {
+    expect(t("Cognizant beats TCS, HCLTech and two global rivals to win $175-million UK data centre deal", "IT")).toEqual(["TCS", "HCLTECH"]);
+    expect(t("Sensex, Nifty open in red; IT stocks drag markets, TCS falls over 2%", "IT")).toEqual(["TCS"]);
+    expect(t("Mahindra & Mahindra Ltd is Rated Hold", "Auto")).toEqual(["M&M"]);
+    expect(t("Eicher Motors Ltd rises 3.01% in Tuesday's session", "Auto")).toEqual(["EICHERMOT"]);
+    expect(t("Exide Industries Lowers Ulric Renewables Stake To 26.07%", "Auto Batteries")).toEqual(["EXIDEIND"]);
+    expect(t("HM Amit Shah Visits Kalyani-Bharat Forge, Reviews Defence Manufacturing", "Auto Components")).toEqual(["BHARATFORG"]);
+    expect(t("Cipla Receives USFDA NAI Status For InvaGen Manufacturing Facility", "Pharma")).toEqual(["CIPLA"]);
+  });
+
+  it("tags each company only in its own sector's list", () => {
+    const title = "Stocks to watch today: HCLTech, Cipla, IIFL Finance, Ashoka Buildcon, Glenmark Pharma";
+    expect(t(title, "IT")).toEqual(["HCLTECH"]);
+    expect(t(title, "Pharma")).toEqual(["CIPLA"]);
+  });
+
+  it("leaves sector-wide stories untagged", () => {
+    expect(t("Why India wants to keep discarded lithium-ion batteries at home?", "Auto Batteries")).toEqual([]);
+    expect(t("Toyota Kirloskar Auto Parts Invests ₹460 Crore in New E-Drive Manufacturing Line", "Auto Components")).toEqual([]);
+  });
+
+  it("tags on the name alone, so a passing mention is tagged too (a known limit: a tag is not a relevance score)", () => {
+    expect(t("Want to stay like MS Dhoni? ITC Grand Chola has the perfect room for you", "FMCG")).toEqual(["ITC"]);
+    expect(t("Stylework Appoints Former Ola Electric and Acko Product Leader as Chief Product Officer", "Auto Batteries")).toEqual(["OLAELEC"]);
+  });
+});
+
 describe("alias data", () => {
   it("covers every stock in the dataset, so a newly added stock is not forgotten", () => {
     expect(allSymbols.filter((s) => !(A[s]?.length > 0))).toEqual([]);

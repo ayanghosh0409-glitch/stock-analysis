@@ -64,10 +64,12 @@ def clean_title(title: str, source: str | None) -> str:
 
 
 def norm_key(title: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+    """Letters and digits only, cut to the first 60 characters, so the same story syndicated with a different
+    ending (for example 'deal- Moneycontrol' and 'deal') counts as one."""
+    return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()[:60].strip()
 
 
-def parse_feed(xml_text: str, now: datetime, window_days: int) -> list[dict]:
+def parse_feed(xml_text: str, now: datetime, window_days: int, exclude_sources: frozenset[str] = frozenset()) -> list[dict]:
     """Headlines from one RSS document that are recent, dated, and have a web link."""
     root = ET.fromstring(xml_text)
     oldest = now - timedelta(days=window_days)
@@ -90,7 +92,7 @@ def parse_feed(xml_text: str, now: datetime, window_days: int) -> list[dict]:
         if when < oldest or when > now + timedelta(days=1):
             continue
         title = clean_title(raw_title, source or None)
-        if not title:
+        if not title or source.lower() in exclude_sources:
             continue
         if not source and " - " in raw_title:
             source = raw_title.rsplit(" - ", 1)[1].strip()
@@ -134,14 +136,14 @@ def load_json(path: Path, default):
         return default
 
 
-def refresh_sector(name: str, queries: list[str], window_days: int, now: datetime, fetcher=None) -> tuple[list[dict], list[str]]:
+def refresh_sector(name: str, queries: list[str], window_days: int, now: datetime, fetcher=None, exclude_sources: frozenset[str] = frozenset()) -> tuple[list[dict], list[str]]:
     """Returns (headlines, errors). All queries failing is signalled by headlines being empty and errors being as long as queries."""
     fetcher = fetcher or fetch  # looked up at call time so tests can replace fetch
     items: list[dict] = []
     errors: list[str] = []
     for q in queries:
         try:
-            items += parse_feed(fetcher(feed_url(q, window_days)), now, window_days)
+            items += parse_feed(fetcher(feed_url(q, window_days)), now, window_days, exclude_sources)
         except Exception as e:  # noqa: BLE001
             errors.append(f"{name}: {e}")
     return merge(items), errors
@@ -157,6 +159,7 @@ def main(argv: list[str] | None = None) -> int:
     aliases = load_json(DATA / "stock-aliases.json", {})
     cfg = load_json(DATA / "news-queries.json", {"windowDays": 7, "themes": {}})
     window = int(cfg.get("windowDays", 7))
+    exclude = frozenset(str(x).lower() for x in cfg.get("excludeSources", []))
     previous = load_json(DATA / "news.json", {"sectors": {}}).get("sectors", {})
     now = datetime.now(timezone.utc)
 
@@ -166,7 +169,7 @@ def main(argv: list[str] | None = None) -> int:
     for sec in stocks["sectors"]:
         name = sec["name"]
         queries = [q for q in (cfg.get("themes", {}).get(name, ""), company_query(sec, aliases)) if q]
-        items, errors = refresh_sector(name, queries, window, now)
+        items, errors = refresh_sector(name, queries, window, now, exclude_sources=exclude)
         if queries and len(errors) == len(queries):
             kept = [i for i in previous.get(name, {}).get("items", []) if i.get("publishedAt", "") >= (now - timedelta(days=window)).isoformat()]
             sectors[name] = {"status": "stale" if kept else "error", "items": kept}
