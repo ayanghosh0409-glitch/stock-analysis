@@ -108,6 +108,7 @@ export type RawYahoo = {
   currency?: string;
   price?: number;
   marketCap?: number; // rupees
+  sharesQuote?: number; // shares outstanding from the quote, only used to work out a missing market cap
   high52?: number;
   low52?: number;
   pe?: number;
@@ -167,6 +168,17 @@ export function yearLabel(date: string): string {
   if (m === 3) return `FY${String(y).slice(-2)}`;
   const mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1];
   return `${mon} ${String(y).slice(-2)}`;
+}
+
+/**
+ * Market cap in rupees. Yahoo's quote sometimes leaves it out for large companies, so fall back to the summary's figure,
+ * then to price times a share count (whichever of the quote's and the key statistics' counts is present).
+ */
+export function marketCapFrom(o: { quote?: number; summary?: number; price?: number; shares?: (number | undefined)[] }): number | undefined {
+  if (isNum(o.quote) && o.quote > 0) return o.quote;
+  if (isNum(o.summary) && o.summary > 0) return o.summary;
+  const shares = o.shares?.find((x): x is number => isNum(x) && x > 0);
+  return isNum(o.price) && o.price > 0 && shares !== undefined ? o.price * shares : undefined;
 }
 
 const ratio = (num: number | null | undefined, den: number | null | undefined): number | null =>

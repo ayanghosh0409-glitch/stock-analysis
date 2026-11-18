@@ -16,7 +16,7 @@
      "roce": 0.63,
      "pe": 15.9,
      "price": 2400.6,
-     "high52": 3350,
+     "high52": 3350.0,
      "low52": 1976.8,
      "profitHistory": [
       38449,
@@ -38,334 +38,298 @@
     {
      "name": "Infosys",
      "symbol": "INFY",
-     "marketCap": 449105.8,
-     "revenue": 2036.7,
-     "profit": 330.3,
-     "roe": 0.31565909199180603,
-     "roce": 0.39019582637014183,
-     "pe": 14.764316,
-     "price": 1108.8,
-     "high52": 1728,
+     "marketCap": 455272,
+     "revenue": 189336,
+     "profit": 30788,
+     "roe": 0.319,
+     "roce": 0.4,
+     "pe": 14.4,
+     "price": 1121.5,
+     "high52": 1728.0,
      "low52": 980.4,
      "profitHistory": [
-      298.1,
-      316.7,
-      315.8,
-      331.3
+      22146,
+      24108,
+      26248,
+      26750,
+      29474
      ],
-     "roe5y": 0.309,
+     "roe5y": 0.31,
      "roceHistory": [
-      null,
-      0.393,
       0.37,
-      0.39
+      0.4,
+      0.4,
+      0.38,
+      0.4
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "HCL Technologies",
      "symbol": "HCLTECH",
-     "marketCap": 363959.9,
-     "revenue": 1484.9,
-     "profit": 196.7,
-     "roe": 0.2298301339593979,
-     "roce": 0.2837029215065118,
-     "pe": 19.894955,
-     "price": 1344.7,
+     "marketCap": 366698,
+     "revenue": 138052,
+     "profit": 18330,
+     "roe": 0.238,
+     "roce": 0.304,
+     "pe": 19.2,
+     "price": 1351.3,
      "high52": 1780.1,
-     "low52": 1030,
+     "low52": 1030.0,
      "profitHistory": [
-      14851,
-      15702,
-      17390,
-      16642
+      13523,
+      14845,
+      15710,
+      17399,
+      16652
      ],
-     "roe5y": 0.239,
+     "roe5y": 0.23,
      "roceHistory": [
-      null,
-      0.289,
-      0.309,
-      0.284
+      0.25,
+      0.28,
+      0.3,
+      0.32,
+      0.3
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Wipro",
      "symbol": "WIPRO",
-     "marketCap": 183174.7,
-     "revenue": 97023.4,
-     "profit": 13173.4,
-     "roe": 0.1540243581491728,
-     "roce": 0.1798653670565398,
-     "pe": 14.543598,
-     "price": 185.14,
+     "marketCap": 186459,
+     "revenue": 97023,
+     "profit": 13223,
+     "roe": 0.155,
+     "roce": 0.178,
+     "pe": 14.1,
+     "price": 187.85,
      "high52": 273.1,
      "low52": 156.79,
      "profitHistory": [
-      11350,
-      11045.2,
-      13135.4,
-      13197.4
+      12243,
+      11366,
+      11112,
+      13218,
+      13266
      ],
-     "roe5y": 0.155,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.172,
-      0.194,
+      0.21,
+      0.18,
+      0.17,
+      0.2,
       0.18
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "Price is intraday 9 Nov 2026; others are the last close shown (6-8 Nov)."
      ]
     },
     {
      "name": "Tech Mahindra",
      "symbol": "TECHM",
-     "marketCap": 155044.6,
-     "revenue": 61361.4,
-     "profit": 5526.5,
-     "roe": 0.16887194635018754,
-     "roce": 0.20723500728718713,
-     "pe": 28.126003,
-     "price": 1750,
-     "high52": 1860,
+     "marketCap": 172498,
+     "revenue": 61361,
+     "profit": 5571,
+     "roe": 0.175,
+     "roce": 0.231,
+     "pe": 30.3,
+     "price": 1759.9,
+     "high52": 1860.0,
      "low52": 1304.1,
      "profitHistory": [
-      4831.3,
-      2357.8,
-      4251.5,
-      4810.9
+      5630,
+      4857,
+      2397,
+      4253,
+      4806
      ],
-     "roe5y": 0.138,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.114,
-      0.191,
-      0.207
+      0.26,
+      0.22,
+      0.12,
+      0.19,
+      0.23
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "LTM Ltd (formerly LTIMindtree)",
      "symbol": "LTM",
-     "marketCap": 120822.5,
-     "revenue": 45488.3,
-     "profit": 5227.1,
-     "roe": 0.2148007525153403,
-     "roce": 0.26733798803296693,
-     "pe": 23.131067,
-     "price": 4075,
+     "marketCap": 122418,
+     "revenue": 45488,
+     "profit": 5195,
+     "roe": 0.231,
+     "roce": 0.296,
+     "pe": 21.9,
+     "price": 4126.6,
      "high52": 6429.5,
-     "low52": 3528,
+     "low52": 3528.0,
      "profitHistory": [
-      4408.3,
-      4582.1,
-      4598.7,
-      5018.1
+      3950,
+      4410,
+      4585,
+      4602,
+      4983
      ],
-     "roe5y": 0.227,
+     "roe5y": 0.26,
      "roceHistory": [
-      null,
-      0.315,
-      0.275,
-      0.267
+      0.48,
+      0.38,
+      0.32,
+      0.28,
+      0.3
      ],
      "notes": [
       "Formerly LTIMindtree (same BSE code 540005)."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Persistent Systems",
      "symbol": "PERSISTENT",
-     "marketCap": 96402,
-     "revenue": 16801.3,
-     "profit": 1803.3,
-     "roe": 0.2634923415545189,
-     "roce": 0.3299514742081242,
-     "pe": 51.23338,
-     "price": 5857,
-     "high52": 6599,
+     "marketCap": 97386,
+     "revenue": 16801,
+     "profit": 1803,
+     "roe": 0.272,
+     "roce": 0.344,
+     "pe": 52.1,
+     "price": 5872.5,
+     "high52": 6599.0,
      "low52": 4244.5,
      "profitHistory": [
-      921.1,
-      1093.5,
-      1400.2,
-      1865.1
+      690,
+      921,
+      1093,
+      1400,
+      1865
      ],
-     "roe5y": 0.252,
+     "roe5y": 0.25,
      "roceHistory": [
-      null,
-      0.303,
-      0.32,
-      0.33
+      0.26,
+      0.3,
+      0.29,
+      0.31,
+      0.34
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "Price is intraday 9 Nov 2026."
      ]
     },
     {
      "name": "Coforge",
      "symbol": "COFORGE",
-     "marketCap": 90783.6,
-     "revenue": 20380.4,
-     "profit": 1969.2,
-     "roe": 0.19547899075190994,
-     "roce": 0.19986904175847287,
-     "pe": 40.200115,
-     "price": 2049,
+     "marketCap": 90876,
+     "revenue": 20380,
+     "profit": 2100,
+     "roe": 0.214,
+     "roce": 0.235,
+     "pe": 41.9,
+     "price": 2051.1,
      "high52": 2127.9,
      "low52": 1008.1,
      "profitHistory": [
-      693.8,
-      808,
-      812.1,
-      1555.7
+      715,
+      745,
+      836,
+      936,
+      1745
      ],
-     "roe5y": 0.2,
+     "roe5y": 0.22,
      "roceHistory": [
-      null,
-      0.279,
+      0.32,
+      0.31,
+      0.29,
       0.2,
-      0.2
+      0.24
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Mphasis",
      "symbol": "MPHASIS",
-     "marketCap": 45788.3,
-     "revenue": 17210.2,
-     "profit": 2002.5,
-     "roe": 0.1828580527847192,
-     "roce": 0.24411041275974185,
-     "pe": 22.88087,
-     "price": 2397,
-     "high52": 2975,
-     "low52": 2013,
+     "marketCap": 45879,
+     "revenue": 17210,
+     "profit": 2002,
+     "roe": 0.185,
+     "roce": 0.221,
+     "pe": 22.6,
+     "price": 2402.7,
+     "high52": 2975.0,
+     "low52": 2013.0,
      "profitHistory": [
-      1637.9,
-      1554.8,
-      1702.1,
-      1862.6
+      1431,
+      1638,
+      1555,
+      1702,
+      1863
      ],
-     "roe5y": 0.185,
+     "roe5y": 0.2,
      "roceHistory": [
-      null,
-      0.238,
-      0.238,
-      0.244
+      0.27,
+      0.29,
+      0.24,
+      0.22,
+      0.22
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Oracle Financial Services Software",
      "symbol": "OFSS",
-     "marketCap": 84474.6,
-     "revenue": 9062.9,
-     "profit": 3569.2,
-     "roe": 0.3260629196548252,
-     "roce": 0.42087940344561586,
-     "pe": 23.741245,
-     "price": 9694.5,
-     "high52": 12540,
+     "marketCap": 84663,
+     "revenue": 9063,
+     "profit": 3569,
+     "roe": 0.326,
+     "roce": 0.453,
+     "pe": 23.7,
+     "price": 9720.5,
+     "high52": 12540.0,
      "low52": 6234.5,
      "profitHistory": [
-      1806.1,
-      2219.4,
-      2379.6,
-      2639.3
+      1889,
+      1806,
+      2219,
+      2380,
+      2639
      ],
-     "roe5y": 0.303,
+     "roe5y": 0.29,
      "roceHistory": [
-      null,
-      0.362,
-      0.376,
-      0.421
+      0.36,
+      0.35,
+      0.4,
+      0.41,
+      0.45
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "L&T Technology Services",
      "symbol": "LTTS",
-     "marketCap": 43453.2,
-     "revenue": 11625.5,
-     "profit": 1342.6,
-     "roe": 0.20381272554908506,
-     "roce": 0.25003595363419334,
-     "pe": 32.125656,
-     "price": 4095.7,
-     "high52": 4726,
-     "low52": 3010,
+     "marketCap": 43663,
+     "revenue": 11626,
+     "profit": 1542,
+     "roe": 0.215,
+     "roce": 0.267,
+     "pe": 31.3,
+     "price": 4115.8,
+     "high52": 4726.0,
+     "low52": 3010.0,
      "profitHistory": [
-      1212.1,
-      1303.7,
-      1266.7,
-      1279.2
+      961,
+      1174,
+      1306,
+      1264,
+      1281
      ],
-     "roe5y": 0.231,
+     "roe5y": 0.23,
      "roceHistory": [
-      null,
-      0.342,
-      0.269,
-      0.25
+      0.31,
+      0.33,
+      0.32,
+      0.27,
+      0.27
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     }
    ]
   },
@@ -376,166 +340,148 @@
     {
      "name": "Maruti Suzuki India",
      "symbol": "MARUTI",
-     "marketCap": 397153.3,
-     "revenue": 208191.9,
-     "profit": 13451.1,
-     "roe": 0.14434389629698097,
-     "roce": 0.18107586408178405,
-     "pe": 29.525057,
-     "price": 12632,
-     "high52": 17370,
-     "low52": 10985,
+     "marketCap": 398725,
+     "revenue": 208192,
+     "profit": 13451,
+     "roe": 0.143,
+     "roce": 0.189,
+     "pe": 29.7,
+     "price": 12682.0,
+     "high52": 17370.0,
+     "low52": 10985.0,
      "profitHistory": [
-      8263.7,
-      13488.2,
-      14500.2,
-      14679.5
+      3880,
+      8264,
+      13488,
+      14500,
+      14680
      ],
-     "roe5y": 0.157,
+     "roe5y": 0.14,
      "roceHistory": [
-      null,
-      0.211,
-      0.208,
-      0.181
+      0.06,
+      0.16,
+      0.22,
+      0.22,
+      0.19
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Mahindra & Mahindra",
      "symbol": "M&M",
-     "marketCap": 403348,
-     "revenue": 226585.9,
-     "profit": 19384.6,
-     "roe": 0.2010030727913405,
-     "roce": 0.17766764298611468,
-     "pe": 19.456127,
-     "price": 3359.1,
+     "marketCap": 419416,
+     "revenue": 222822,
+     "profit": 21446,
+     "roe": 0.203,
+     "roce": 0.151,
+     "pe": 20.9,
+     "price": 3381.0,
      "high52": 3839.9,
      "low52": 2744.3,
      "profitHistory": [
-      10281.5,
-      11268.6,
-      12929.1,
-      17098.9
+      7253,
+      11374,
+      12270,
+      14073,
+      18622
      ],
-     "roe5y": 0.188,
+     "roe5y": 0.18,
      "roceHistory": [
-      null,
-      0.157,
-      0.161,
-      0.178
+      0.11,
+      0.13,
+      0.14,
+      0.14,
+      0.15
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Bajaj Auto",
      "symbol": "BAJAJ-AUTO",
-     "marketCap": 290467.7,
-     "revenue": 81727.9,
-     "profit": 13073.5,
-     "roe": 0.2903027300595387,
-     "roce": 0.3008795156758289,
-     "pe": 22.546928,
-     "price": 10570,
-     "high52": 12470,
-     "low52": 8624,
+     "marketCap": 292971,
+     "revenue": 80851,
+     "profit": 12815,
+     "roe": 0.292,
+     "roce": 0.282,
+     "pe": 22.4,
+     "price": 10661.0,
+     "high52": 12470.0,
+     "low52": 8624.0,
      "profitHistory": [
-      6060.2,
-      7708.2,
-      7324.7,
-      10744.2
+      6166,
+      6060,
+      7708,
+      7325,
+      10574
      ],
-     "roe5y": 0.261,
+     "roe5y": 0.24,
      "roceHistory": [
-      null,
-      0.336,
-      0.291,
-      0.301
+      0.23,
+      0.27,
+      0.34,
+      0.28,
+      0.28
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Hero MotoCorp",
      "symbol": "HEROMOTOCO",
-     "marketCap": 105145,
+     "marketCap": 105285,
      "revenue": 53562,
-     "profit": 6001.2,
-     "roe": 0.28088436261029276,
-     "roce": 0.33798518305272296,
-     "pe": 17.530453,
-     "price": 5253,
+     "profit": 6028,
+     "roe": 0.281,
+     "roce": 0.352,
+     "pe": 17.4,
+     "price": 5260.0,
      "high52": 6388.5,
      "low52": 4671.5,
      "profitHistory": [
-      2810,
-      3744.8,
-      4378.5,
-      5741.7
+      2329,
+      2800,
+      3742,
+      4376,
+      5776
      ],
-     "roe5y": 0.245,
+     "roe5y": 0.21,
      "roceHistory": [
-      null,
-      0.279,
+      0.18,
+      0.23,
+      0.29,
       0.3,
-      0.338
+      0.35
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Eicher Motors",
      "symbol": "EICHERMOT",
-     "marketCap": 211401.7,
-     "revenue": 26118.9,
-     "profit": 5976.4,
-     "roe": 0.23774264688132588,
-     "roce": 0.28666719549010844,
-     "pe": 35.41044,
-     "price": 7700,
-     "high52": 8230,
-     "low52": 6442,
+     "marketCap": 211725,
+     "revenue": 24998,
+     "profit": 5773,
+     "roe": 0.24,
+     "roce": 0.305,
+     "pe": 36.4,
+     "price": 7712.5,
+     "high52": 8230.0,
+     "low52": 6442.0,
      "profitHistory": [
-      2913.9,
+      1677,
+      2914,
       4001,
-      4734.4,
-      5515.2
+      4734,
+      5515
      ],
-     "roe5y": 0.24,
+     "roe5y": 0.22,
      "roceHistory": [
-      null,
-      0.296,
-      0.282,
-      0.287
+      0.18,
+      0.27,
+      0.31,
+      0.3,
+      0.31
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "TTM to Jun 2026 (Sep 2026 quarter not yet on page)."
      ]
     },
     {
@@ -547,9 +493,9 @@
      "roe": 0.336,
      "roce": 0.174,
      "pe": 54.2,
-     "price": 4399,
+     "price": 4399.0,
      "high52": 4636.1,
-     "low52": 3228,
+     "low52": 3228.0,
      "profitHistory": [
       731,
       1309,
@@ -575,8 +521,8 @@
      "profit": 3731,
      "roe": 0.274,
      "roce": 0.136,
-     "pe": 25,
-     "price": 158,
+     "pe": 25.0,
+     "price": 158.0,
      "high52": 215.42,
      "low52": 138.03,
      "profitHistory": [
@@ -601,101 +547,89 @@
     {
      "name": "Hyundai Motor India",
      "symbol": "HYUNDAI",
-     "marketCap": 170430.5,
-     "revenue": 74040.7,
-     "profit": 4574.8,
-     "roe": 0.2991626643285266,
-     "roce": 0.35539624285625515,
-     "pe": 37.25577,
-     "price": 2097.5,
+     "marketCap": 170486,
+     "revenue": 73920,
+     "profit": 4575,
+     "roe": 0.299,
+     "roce": 0.384,
+     "pe": 37.3,
+     "price": 2097.8,
      "high52": 2463.5,
-     "low52": 1658,
+     "low52": 1658.0,
      "profitHistory": [
-      4709.3,
+      2902,
+      4709,
       6060,
-      5640.2,
-      5431.5
+      5640,
+      5432
      ],
-     "roe5y": 0.371,
+     "roe5y": 0.3,
      "roceHistory": [
-      null,
-      0.468,
-      0.48,
-      0.355
+      0.23,
+      0.33,
+      0.51,
+      0.54,
+      0.38
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Escorts Kubota",
      "symbol": "ESCORTS",
-     "marketCap": 26417.8,
-     "revenue": 12699.6,
+     "marketCap": 26554,
+     "revenue": 12700,
      "profit": 1315,
-     "roe": 0.21056543136365896,
-     "roce": 0.15667733525945612,
-     "pe": 20.09122,
-     "price": 2400.7,
+     "roe": 0.187,
+     "roce": 0.139,
+     "pe": 19.6,
+     "price": 2373.2,
      "high52": 3987.8,
-     "low52": 2361,
+     "low52": 2361.0,
      "profitHistory": [
-      636.8,
-      1076.7,
-      1264.9,
-      2394.1
+      736,
+      637,
+      1077,
+      1265,
+      2394
      ],
-     "roe5y": 0.154,
+     "roe5y": 0.13,
      "roceHistory": [
-      null,
-      0.143,
-      0.136,
-      0.157
+      0.16,
+      0.11,
+      0.14,
+      0.11,
+      0.14
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Force Motors",
      "symbol": "FORCEMOT",
-     "marketCap": 26468.5,
-     "revenue": 10043.1,
-     "profit": 1195.1,
-     "roe": 0.3352703042981386,
-     "roce": 0.38440307413120867,
-     "pe": 22.14823,
-     "price": 20088,
-     "high52": 26450,
-     "low52": 16184,
+     "marketCap": 26031,
+     "revenue": 10043,
+     "profit": 1195,
+     "roe": 0.292,
+     "roce": 0.36,
+     "pe": 25.0,
+     "price": 19756.0,
+     "high52": 26450.0,
+     "low52": 16184.0,
      "profitHistory": [
-      133.6,
-      388.1,
-      800.7,
-      1211.6
+      -91,
+      134,
+      388,
+      801,
+      1212
      ],
-     "roe5y": 0.275,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.252,
-      0.409,
-      0.384
+      -0.03,
+      0.05,
+      0.24,
+      0.3,
+      0.36
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     }
    ]
   },
@@ -706,36 +640,32 @@
     {
      "name": "Suprajit Engineering",
      "symbol": "SUPRAJIT",
-     "marketCap": 6064,
-     "revenue": 4225.6,
-     "profit": 189.2,
-     "roe": 0.1344592184976102,
-     "roce": 0.20472242151349804,
-     "pe": 32.0791,
-     "price": 442.05,
+     "marketCap": 5985,
+     "revenue": 4226,
+     "profit": 189,
+     "roe": 0.133,
+     "roce": 0.155,
+     "pe": 31.4,
+     "price": 436.0,
      "high52": 559.25,
      "low52": 389.95,
      "profitHistory": [
-      152.1,
-      167.3,
-      99.3,
-      182.7
+      173,
+      152,
+      167,
+      99,
+      183
      ],
-     "roe5y": 0.113,
+     "roe5y": 0.12,
      "roceHistory": [
-      null,
-      0.169,
-      0.156,
-      0.205
+      0.17,
+      0.15,
+      0.12,
+      0.11,
+      0.15
      ],
      "notes": [
       "Automotive control cables, lighting and sensors (component supplier)."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
@@ -747,9 +677,9 @@
      "roe": 0.146,
      "roce": 0.215,
      "pe": 54.1,
-     "price": 48830,
-     "high52": 52475,
-     "low52": 28610,
+     "price": 48830.0,
+     "high52": 52475.0,
+     "low52": 28610.0,
      "profitHistory": [
       1218,
       1426,
@@ -772,305 +702,276 @@
     {
      "name": "Sona BLW Precision Forgings",
      "symbol": "SONACOMS",
-     "marketCap": 55615.6,
-     "revenue": 5294.3,
-     "profit": 746.6,
-     "roe": 0.11155126064404215,
-     "roce": 0.1373962441752045,
-     "pe": 74.083336,
-     "price": 889,
+     "marketCap": 55416,
+     "revenue": 4834,
+     "profit": 778,
+     "roe": 0.117,
+     "roce": 0.151,
+     "pe": 68.6,
+     "price": 889.85,
      "high52": 934.9,
      "low52": 437.7,
      "profitHistory": [
-      395.3,
-      517.3,
-      601.2,
-      640.2
+      354,
+      388,
+      484,
+      580,
+      646
      ],
-     "roe5y": 0.156,
+     "roe5y": 0.15,
      "roceHistory": [
-      null,
-      0.243,
-      0.179,
-      0.137
+      0.21,
+      0.22,
+      0.24,
+      0.18,
+      0.15
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "Standalone figures."
      ]
     },
     {
      "name": "Uno Minda",
      "symbol": "UNOMINDA",
-     "marketCap": 79113,
-     "revenue": 22566.7,
-     "profit": 1318,
-     "roe": 0.19067574229236797,
-     "roce": 0.2180273109269337,
-     "pe": 60.06138,
-     "price": 1370,
+     "marketCap": 80378,
+     "revenue": 22567,
+     "profit": 1409,
+     "roe": 0.193,
+     "roce": 0.196,
+     "pe": 60.1,
+     "price": 1392.2,
      "high52": 1406.5,
-     "low52": 994,
+     "low52": 994.0,
      "profitHistory": [
-      653.6,
-      875.4,
-      943,
-      1197.1
+      413,
+      700,
+      925,
+      1021,
+      1284
      ],
-     "roe5y": 0.186,
+     "roe5y": 0.18,
      "roceHistory": [
-      null,
-      0.216,
-      0.211,
-      0.218
+      0.14,
+      0.18,
+      0.2,
+      0.19,
+      0.2
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Samvardhana Motherson International",
      "symbol": "MOTHERSON",
-     "marketCap": 167156.2,
-     "revenue": 138487,
-     "profit": 4728.2,
-     "roe": 0.1017586366446568,
-     "roce": 0.125778004596651,
-     "pe": 35.098217,
-     "price": 157.24,
+     "marketCap": 170585,
+     "revenue": 139242,
+     "profit": 4927,
+     "roe": 0.112,
+     "roce": 0.134,
+     "pe": 34.8,
+     "price": 159.76,
      "high52": 173.27,
      "low52": 102.82,
      "profitHistory": [
-      1495.6,
-      2716.2,
-      3803,
-      3859.7
+      1182,
+      1670,
+      3020,
+      4146,
+      4086
      ],
-     "roe5y": 0.113,
+     "roe5y": 0.1,
      "roceHistory": [
-      null,
-      0.134,
-      0.146,
-      0.126
+      0.06,
+      0.09,
+      0.14,
+      0.14,
+      0.13
      ],
      "notes": [
-      "Equity capital rose sharply in FY26 and promoter holding fell - check filings before per-share comparisons."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+      "Price is intraday 9 Nov 2026. Equity capital rose sharply in FY26 and promoter holding fell - check filings before per-share comparisons."
      ]
     },
     {
      "name": "Endurance Technologies",
      "symbol": "ENDURANCE",
-     "marketCap": 34770.4,
-     "revenue": 16795.2,
-     "profit": 1016.9,
-     "roe": 0.15156753778199636,
-     "roce": 0.18213117552664823,
-     "pe": 34.194218,
-     "price": 2471.9,
-     "high52": 3072,
+     "marketCap": 34865,
+     "revenue": 16795,
+     "profit": 1017,
+     "roe": 0.15,
+     "roce": 0.178,
+     "pe": 34.6,
+     "price": 2479.8,
+     "high52": 3072.0,
      "low52": 2142.8,
      "profitHistory": [
-      479.6,
-      680.5,
-      836.4,
-      951.7
+      461,
+      480,
+      680,
+      836,
+      952
      ],
-     "roe5y": 0.151,
+     "roe5y": 0.14,
      "roceHistory": [
-      null,
-      0.178,
-      0.188,
-      0.182
+      0.14,
+      0.14,
+      0.17,
+      0.17,
+      0.18
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Schaeffler India",
      "symbol": "SCHAEFFLER",
-     "marketCap": 55594.1,
-     "revenue": 11159.8,
-     "profit": 1313.3,
-     "roe": 0.20212802407930144,
-     "roce": 0.27242092703920884,
-     "pe": 42.342857,
-     "price": 3556.8,
+     "marketCap": 56641,
+     "revenue": 10837,
+     "profit": 1355,
+     "roe": 0.208,
+     "roce": 0.279,
+     "pe": 41.8,
+     "price": 3621.1,
      "high52": 4467.7,
-     "low52": 3420,
+     "low52": 3420.0,
      "profitHistory": [
-      879.2,
-      899,
-      938.9,
-      1150.4
+      629,
+      879,
+      909,
+      978,
+      1196
      ],
-     "roe5y": 0.195,
+     "roe5y": 0.2,
      "roceHistory": [
-      null,
-      0.264,
       0.25,
-      0.272
+      0.29,
+      0.27,
+      0.26,
+      0.28
      ],
      "notes": [
+      "Standalone figures.",
       "History: December year-end - FY22..FY26 columns show CY2021..CY2025."
      ],
      "historyLabels": [
-      "Dec 22",
-      "Dec 23",
-      "Dec 24",
-      "Dec 25"
+      "CY2021",
+      "CY2022",
+      "CY2023",
+      "CY2024",
+      "CY2025"
      ]
     },
     {
      "name": "Sundram Fasteners",
      "symbol": "SUNDRMFAST",
-     "marketCap": 21645.3,
+     "marketCap": 21712,
      "revenue": 7065,
-     "profit": 632.5,
-     "roe": 0.14623485687076007,
-     "roce": 0.1913862076473872,
-     "pe": 34.22259,
-     "price": 1030.1,
+     "profit": 633,
+     "roe": 0.149,
+     "roce": 0.176,
+     "pe": 33.8,
+     "price": 1034.2,
      "high52": 1347.2,
      "low52": 730.1,
      "profitHistory": [
-      494.7,
-      521.7,
-      539.1,
-      591.2
+      462,
+      500,
+      526,
+      542,
+      593
      ],
-     "roe5y": 0.152,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.206,
-      0.192,
-      0.191
+      0.2,
+      0.19,
+      0.19,
+      0.17,
+      0.18
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Gabriel India",
      "symbol": "GABRIEL",
-     "marketCap": 28576.5,
-     "revenue": 5157.9,
-     "profit": 270.8,
-     "roe": 0.19761836655525208,
-     "roce": 0.25117448226885775,
-     "pe": 70.07518,
-     "price": 1491.2,
-     "high52": 1690,
+     "marketCap": 26392,
+     "revenue": 5593,
+     "profit": 406,
+     "roe": 0.202,
+     "roce": 0.256,
+     "pe": 63.6,
+     "price": 1489.3,
+     "high52": 1690.0,
      "low52": 795.7,
      "profitHistory": [
-      132.4,
-      178.7,
-      245,
-      252.2
-     ],
-     "roe5y": 0.204,
-     "roceHistory": [
       null,
-      0.254,
-      0.287,
-      0.251
+      null,
+      null,
+      null,
+      null
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "roe5y": null,
+     "roceHistory": null,
+     "notes": [
+      "Price is 6 Nov close.",
+      "History left blank: Screener's consolidated page shows only 3 annual columns and figures that don't reconcile with its trailing numbers."
      ]
     },
     {
      "name": "Bharat Forge",
      "symbol": "BHARATFORG",
-     "marketCap": 82316.6,
-     "revenue": 18380.9,
-     "profit": 682.9,
-     "roe": 0.11465523549031087,
-     "roce": 0.16445612892512362,
-     "pe": 117.96219,
-     "price": 1684.5,
-     "high52": 2295,
-     "low52": 1323.8,
+     "marketCap": 83367,
+     "revenue": 18381,
+     "profit": 695,
+     "roe": 0.12,
+     "roce": 0.126,
+     "pe": 83.2,
+     "price": 1701.3,
+     "high52": 2295.0,
+     "low52": 1347.5,
      "profitHistory": [
-      528.4,
-      951.1,
-      941.2,
-      1079.7
+      1077,
+      508,
+      910,
+      913,
+      1089
      ],
-     "roe5y": 0.122,
+     "roe5y": 0.12,
      "roceHistory": [
-      null,
-      0.189,
-      0.172,
-      0.164
+      0.11,
+      0.08,
+      0.13,
+      0.12,
+      0.13
      ],
      "notes": [
       "History: trailing profit includes a Jun 2026 quarterly loss, so TTM is below FY26."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Craftsman Automation",
      "symbol": "CRAFTSMAN",
-     "marketCap": 29672.2,
-     "revenue": 9660.5,
-     "profit": 527.3,
-     "roe": 0.1254705267285322,
-     "roce": 0.15555359270521288,
-     "pe": 52.927452,
-     "price": 11345,
-     "high52": 11999,
+     "marketCap": 29640,
+     "revenue": 9660,
+     "profit": 527,
+     "roe": 0.125,
+     "roce": 0.139,
+     "pe": 55.8,
+     "price": 11354.0,
+     "high52": 11999.0,
      "low52": 6451.5,
      "profitHistory": [
-      248.4,
-      304.5,
-      194.6,
+      163,
+      251,
+      337,
+      201,
       384
      ],
-     "roe5y": 0.137,
+     "roe5y": 0.14,
      "roceHistory": [
-      null,
-      0.214,
+      0.18,
+      0.21,
+      0.2,
       0.12,
-      0.156
+      0.14
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     }
    ]
   },
@@ -1081,247 +982,221 @@
     {
      "name": "Exide Industries",
      "symbol": "EXIDEIND",
-     "marketCap": 33069.2,
+     "marketCap": 33061,
      "revenue": 19756,
-     "profit": 1045.9,
-     "roe": 0.061412025811757934,
-     "roce": 0.08789051773543165,
-     "pe": 31.604385,
-     "price": 389.05,
+     "profit": 1050,
+     "roe": 0.0597,
+     "roce": 0.0854,
+     "pe": 31.5,
+     "price": 388.55,
      "high52": 496.4,
-     "low52": 287,
+     "low52": 287.0,
      "profitHistory": [
-      822.7,
-      876.7,
-      795,
-      854.2
+      4357,
+      823,
+      883,
+      800,
+      860
      ],
-     "roe5y": 0.065,
+     "roe5y": 0.13,
      "roceHistory": [
-      null,
-      0.106,
-      0.091,
-      0.088
+      0.11,
+      0.1,
+      0.1,
+      0.09,
+      0.09
      ],
      "notes": [
       "Lead-acid and lithium-ion batteries.",
       "History: FY22 profit includes ~Rs 3,725 Cr one-off other income, so growth looks sharply negative."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Amara Raja Energy & Mobility",
      "symbol": "ARE&M",
-     "marketCap": 13679.3,
-     "revenue": 15269.2,
-     "profit": 797.9,
-     "roe": 0.11567210676074326,
-     "roce": 0.14947635057561556,
-     "pe": 17.146135,
-     "price": 747.4,
+     "marketCap": 13706,
+     "revenue": 14695,
+     "profit": 865,
+     "roe": 0.0999,
+     "roce": 0.134,
+     "pe": 17.9,
+     "price": 748.9,
      "high52": 1017.3,
-     "low52": 670,
+     "low52": 670.0,
      "profitHistory": [
-      730.8,
-      934.4,
-      944.7,
-      895.8
+      511,
+      731,
+      906,
+      964,
+      970
      ],
-     "roe5y": 0.132,
+     "roe5y": 0.12,
      "roceHistory": [
-      null,
-      0.186,
-      0.172,
-      0.149
+      0.16,
+      0.2,
+      0.19,
+      0.17,
+      0.13
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "Screener standalone figures (consolidated page not fetched)."
      ]
     },
     {
      "name": "HBL Engineering",
      "symbol": "HBLENGINE",
-     "marketCap": 21844.3,
-     "revenue": 2987.7,
+     "marketCap": 21921,
+     "revenue": 2988,
      "profit": 586,
-     "roe": 0.44083971014257545,
-     "roce": 0.56093370158714,
-     "pe": 37.24244,
-     "price": 788.05,
-     "high52": 1007,
-     "low52": 613,
+     "roe": 0.453,
+     "roce": 0.593,
+     "pe": 37.8,
+     "price": 790.5,
+     "high52": 1045.0,
+     "low52": 613.0,
      "profitHistory": [
-      98.7,
-      280.9,
-      276.9,
-      814.9
+      94,
+      98,
+      280,
+      276,
+      814
      ],
-     "roe5y": 0.301,
+     "roe5y": 0.27,
      "roceHistory": [
-      null,
-      0.336,
-      0.268,
-      0.561
+      0.13,
+      0.14,
+      0.36,
+      0.27,
+      0.59
      ],
      "notes": [
       "Specialty batteries plus defence/rail electronics; battery share of revenue not visible on page."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Eveready Industries India",
      "symbol": "EVEREADY",
-     "marketCap": 2371.4,
-     "revenue": 1530.4,
-     "profit": 218.1,
-     "roe": 0.3164491256618131,
-     "roce": 0.259423884258436,
-     "pe": 10.875,
-     "price": 326.25,
+     "marketCap": 2314,
+     "revenue": 1530,
+     "profit": 218,
+     "roe": 0.27,
+     "roce": 0.172,
+     "pe": 13.3,
+     "price": 318.9,
      "high52": 379.2,
      "low52": 259.65,
      "profitHistory": [
-      27.6,
-      66.8,
-      82.4,
-      171.5
+      46,
+      28,
+      67,
+      82,
+      172
      ],
-     "roe5y": 0.233,
+     "roe5y": 0.2,
      "roceHistory": [
-      null,
-      0.202,
-      0.205,
-      0.259
+      0.14,
+      0.13,
+      0.16,
+      0.17,
+      0.17
      ],
      "notes": [
-      "Dry-cell/consumer batteries.",
+      "Dry-cell/consumer batteries. Price is 5 Nov close.",
       "History: FY26 profit lifted by other income and a tax credit."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Indo National (Nippo)",
      "symbol": "NIPPOBATRY",
-     "marketCap": 228.4,
-     "revenue": 449.2,
-     "profit": -25.2,
-     "roe": -0.07111945134463765,
-     "roce": -0.05450981317256811,
+     "marketCap": 224,
+     "revenue": 449,
+     "profit": -26,
+     "roe": -0.0695,
+     "roce": -0.0533,
      "pe": null,
-     "price": 304.6,
-     "high52": 469,
-     "low52": 257,
+     "price": 300.0,
+     "high52": 469.0,
+     "low52": 257.0,
      "profitHistory": [
-      -5.7,
-      9.6,
-      123.8,
-      -26.3
+      13,
+      -8,
+      15,
+      122,
+      -27
      ],
-     "roe5y": 0.112,
+     "roe5y": 0.08,
      "roceHistory": [
-      null,
-      0.092,
-      0.343,
-      -0.055
+      0.07,
+      0.01,
+      0.08,
+      0.33,
+      -0.05
      ],
      "notes": [
-      "Dry-cell batteries (Nippo). Micro-cap, loss-making: P/E not meaningful.",
+      "Dry-cell batteries (Nippo). Micro-cap, loss-making: P/E not meaningful. TTM to Jun 2026.",
       "History: FY25 profit came from other income; operations are loss-making."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Panasonic Energy India",
      "symbol": "504093",
-     "marketCap": 166.1,
-     "revenue": 261.6,
-     "profit": -13.1,
-     "roe": 0.03305432567725202,
-     "roce": 0.0551671473976463,
-     "pe": null,
-     "price": 221.5,
-     "high52": 399,
+     "marketCap": 167,
+     "revenue": 276,
+     "profit": 4,
+     "roe": 0.0519,
+     "roce": 0.0948,
+     "pe": 24.3,
+     "price": 221.9,
+     "high52": 399.0,
      "low52": 201.2,
      "profitHistory": [
-      -10.6,
-      11.6,
-      11.8,
-      3.5
+      9,
+      -11,
+      12,
+      12,
+      3
      ],
-     "roe5y": 0.088,
+     "roe5y": 0.07,
      "roceHistory": [
-      null,
-      0.154,
-      0.163,
-      0.055
+      0.11,
+      -0.07,
+      0.16,
+      0.18,
+      0.09
      ],
      "notes": [
-      "Dry-cell batteries. Micro-cap."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+      "Dry-cell batteries. Micro-cap. Price is 26 Oct close, TTM to Jun 2026, basis not stated. NSE symbol not confirmed - BSE code shown."
      ]
     },
     {
      "name": "High Energy Batteries (India)",
      "symbol": "504176",
-     "marketCap": 525.7,
-     "revenue": 89.9,
-     "profit": 16.5,
-     "roe": 0.14582306975193082,
-     "roce": 0.20100353610896318,
-     "pe": 31.85497,
-     "price": 586.45,
-     "high52": 675,
-     "low52": 470,
+     "marketCap": 514,
+     "revenue": 90,
+     "profit": 16,
+     "roe": 0.154,
+     "roce": 0.204,
+     "pe": 29.6,
+     "price": 574.0,
+     "high52": 675.0,
+     "low52": 470.0,
      "profitHistory": [
-      20.5,
-      17.2,
-      15.3,
-      15.4
+      18,
+      20,
+      17,
+      15,
+      15
      ],
-     "roe5y": 0.174,
+     "roe5y": 0.23,
      "roceHistory": [
-      null,
-      0.29,
-      0.221,
-      0.201
+      0.36,
+      0.37,
+      0.28,
+      0.23,
+      0.2
      ],
      "notes": [
-      "Defence/aerospace batteries (silver-zinc, Ni-Cd). Micro-cap."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+      "Defence/aerospace batteries (silver-zinc, Ni-Cd). Micro-cap. Basis not stated. BSE code shown."
      ]
     },
     {
@@ -1358,71 +1233,63 @@
     {
      "name": "Exicom Tele-Systems",
      "symbol": "EXICOM",
-     "marketCap": 1830.6,
-     "revenue": 1384.4,
-     "profit": -242.4,
-     "roe": -0.4333749144222931,
-     "roce": -0.20017583229110075,
+     "marketCap": 1892,
+     "revenue": 1384,
+     "profit": -253,
+     "roe": -0.408,
+     "roce": -0.147,
      "pe": null,
-     "price": 131.54,
+     "price": 136.0,
      "high52": 189.17,
      "low52": 75.6,
      "profitHistory": [
+      5,
       8,
-      63.9,
+      64,
       -110,
-      -274.1
+      -274
      ],
-     "roe5y": -0.155,
+     "roe5y": -0.13,
      "roceHistory": [
-      null,
-      0.197,
-      -0.072,
-      -0.2
+      0.17,
+      0.15,
+      0.2,
+      -0.06,
+      -0.15
      ],
      "notes": [
       "EV chargers + lithium-ion batteries for telecom/data centres. Loss-making: P/E not meaningful."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Ola Electric Mobility",
      "symbol": "OLAELEC",
-     "marketCap": 15602.4,
-     "revenue": 1611,
-     "profit": -1685,
-     "roe": -0.4315987756063103,
-     "roce": -0.23579454253611556,
+     "marketCap": 16455,
+     "revenue": 1880,
+     "profit": -1741,
+     "roe": -0.432,
+     "roce": -0.199,
      "pe": null,
-     "price": 32.58,
+     "price": 32.95,
      "high52": 49.05,
      "low52": 22.25,
      "profitHistory": [
-      -1472.1,
+      -784,
+      -1472,
       -1584,
       -2276,
       -1833
      ],
-     "roe5y": -0.597,
+     "roe5y": null,
      "roceHistory": [
-      null,
-      -0.402,
-      -0.34,
-      -0.236
+      -0.24,
+      -0.3,
+      -0.32,
+      -0.28,
+      -0.2
      ],
      "notes": [
       "EV maker with in-house cell plans, not a pure battery maker. Loss-making: P/E not meaningful."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     }
    ]
@@ -1434,333 +1301,295 @@
     {
      "name": "Sun Pharmaceutical Industries",
      "symbol": "SUNPHARMA",
-     "marketCap": 449035.5,
-     "revenue": 61630.9,
-     "profit": 10966.2,
-     "roe": 0.1473722224372579,
-     "roce": 0.1931384201429941,
-     "pe": 40.95186,
-     "price": 1871.5,
+     "marketCap": 448795,
+     "revenue": 61631,
+     "profit": 10987,
+     "roe": 0.16,
+     "roce": 0.205,
+     "pe": 36.6,
+     "price": 1870.5,
      "high52": 2046.9,
      "low52": 1583.7,
      "profitHistory": [
-      8473.6,
-      9576.4,
-      10929,
-      11479.4
+      3389,
+      8513,
+      9610,
+      10965,
+      11509
      ],
-     "roe5y": 0.156,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.175,
-      0.196,
-      0.193
+      0.17,
+      0.16,
+      0.17,
+      0.2,
+      0.21
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Cipla",
      "symbol": "CIPLA",
-     "marketCap": 114477.7,
-     "revenue": 27988.6,
-     "profit": 2897,
-     "roe": 0.11822343178098724,
-     "roce": 0.15646874615551395,
-     "pe": 39.53683,
-     "price": 1417,
+     "marketCap": 112345,
+     "revenue": 28139,
+     "profit": 2854,
+     "roe": 0.116,
+     "roce": 0.155,
+     "pe": 36.2,
+     "price": 1390.8,
      "high52": 1539.7,
      "low52": 1165.7,
      "profitHistory": [
-      2801.9,
-      4121.6,
-      5272.5,
-      3879.2
+      2547,
+      2833,
+      4154,
+      5269,
+      3862
      ],
-     "roe5y": 0.155,
+     "roe5y": 0.14,
      "roceHistory": [
-      null,
-      0.223,
-      0.231,
-      0.156
+      0.17,
+      0.18,
+      0.23,
+      0.23,
+      0.15
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Dr. Reddy's Laboratories",
      "symbol": "DRREDDY",
-     "marketCap": 116562.9,
-     "revenue": 32984.3,
-     "profit": 2798.6,
-     "roe": 0.12062760134055692,
-     "roce": 0.15123124782889988,
-     "pe": 41.62548,
-     "price": 1398.2,
+     "marketCap": 115426,
+     "revenue": 33097,
+     "profit": 2760,
+     "roe": 0.112,
+     "roce": 0.13,
+     "pe": 41.3,
+     "price": 1381.9,
      "high52": 1414.9,
-     "low52": 1101,
+     "low52": 1101.0,
      "profitHistory": [
-      4506.7,
-      5568.4,
-      5654.4,
-      4285
+      2182,
+      4507,
+      5578,
+      5725,
+      4158
      ],
-     "roe5y": 0.174,
+     "roe5y": 0.16,
      "roceHistory": [
-      null,
-      0.279,
-      0.243,
-      0.151
+      0.14,
+      0.27,
+      0.27,
+      0.23,
+      0.13
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Divi's Laboratories",
      "symbol": "DIVISLAB",
-     "marketCap": 293316.2,
+     "marketCap": 297005,
      "revenue": 12191,
      "profit": 3363,
-     "roe": 0.1618657421998109,
-     "roce": 0.203824320286824,
-     "pe": 87.185356,
-     "price": 11049,
-     "high52": 11824,
+     "roe": 0.165,
+     "roce": 0.22,
+     "pe": 86.9,
+     "price": 11188.0,
+     "high52": 11824.0,
      "low52": 5647.5,
      "profitHistory": [
-      1824,
+      2960,
+      1823,
       1600,
       2191,
       2568
      ],
-     "roe5y": 0.146,
+     "roe5y": 0.17,
      "roceHistory": [
-      null,
-      0.157,
-      0.197,
-      0.204
+      0.35,
+      0.19,
+      0.16,
+      0.2,
+      0.22
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Lupin",
      "symbol": "LUPIN",
-     "marketCap": 90173.6,
-     "revenue": 30746.3,
-     "profit": 5206.1,
-     "roe": 0.268983704888836,
-     "roce": 0.31703711375918575,
-     "pe": 17.37663,
-     "price": 1971.9,
+     "marketCap": 89393,
+     "revenue": 30746,
+     "profit": 5221,
+     "roe": 0.287,
+     "roce": 0.299,
+     "pe": 15.9,
+     "price": 1956.7,
      "high52": 2529.5,
      "low52": 1892.9,
      "profitHistory": [
-      430.1,
-      1914.5,
-      3281.6,
-      5332.8
+      -1528,
+      448,
+      1936,
+      3306,
+      5355
      ],
-     "roe5y": 0.207,
+     "roe5y": 0.13,
      "roceHistory": [
-      null,
-      0.185,
-      0.24,
-      0.317
+      -0.07,
+      0.06,
+      0.16,
+      0.21,
+      0.3
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Torrent Pharmaceuticals",
      "symbol": "TORNTPHARM",
-     "marketCap": 175376.2,
-     "revenue": 17399.7,
-     "profit": 2124.4,
-     "roe": 0.2707746108671817,
-     "roce": 0.14086491737451337,
-     "pe": 77.883446,
-     "price": 4610.7,
-     "high52": 5250,
+     "marketCap": 177708,
+     "revenue": 17400,
+     "profit": 2099,
+     "roe": 0.274,
+     "roce": 0.152,
+     "pe": 81.9,
+     "price": 4672.0,
+     "high52": 5250.0,
      "low52": 3672.3,
      "profitHistory": [
-      1245.2,
-      1656.4,
-      1911.3,
-      2163.4
+      777,
+      1245,
+      1656,
+      1911,
+      2138
      ],
-     "roe5y": 0.263,
+     "roe5y": 0.24,
      "roceHistory": [
-      null,
-      0.282,
-      0.294,
-      0.141
+      0.19,
+      0.2,
+      0.23,
+      0.27,
+      0.15
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Zydus Lifesciences",
      "symbol": "ZYDUSLIFE",
-     "marketCap": 119900,
-     "revenue": 30378.1,
-     "profit": 4198.2,
-     "roe": 0.19739740915900478,
-     "roce": 0.21543817882408087,
-     "pe": 28.721626,
-     "price": 1202,
+     "marketCap": 120150,
+     "revenue": 30378,
+     "profit": 4302,
+     "roe": 0.212,
+     "roce": 0.211,
+     "pe": 26.7,
+     "price": 1202.1,
      "high52": 1266.6,
      "low52": 835.5,
      "profitHistory": [
-      1960.3,
-      3859.5,
-      4525.5,
-      5040
+      4618,
+      2092,
+      3973,
+      4673,
+      5124
      ],
-     "roe5y": 0.204,
+     "roe5y": 0.21,
      "roceHistory": [
-      null,
+      0.13,
+      0.15,
       0.22,
-      0.235,
-      0.215
+      0.24,
+      0.21
      ],
      "notes": [
       "History: FY22 profit includes ~Rs 2,581 Cr other income (likely one-off)."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Mankind Pharma",
      "symbol": "MANKIND",
-     "marketCap": 108424.3,
-     "revenue": 15378.6,
-     "profit": 2242.6,
-     "roe": 0.12489451642083484,
-     "roce": 0.13584606665025506,
-     "pe": 48.396015,
-     "price": 2625,
-     "high52": 2705,
+     "marketCap": 108461,
+     "revenue": 15379,
+     "profit": 2264,
+     "roe": 0.131,
+     "roce": 0.135,
+     "pe": 46.6,
+     "price": 2625.9,
+     "high52": 2705.0,
      "low52": 1909.7,
      "profitHistory": [
-      1281.9,
-      1912.9,
-      1991,
-      1912.9
+      1453,
+      1310,
+      1942,
+      2011,
+      1938
      ],
-     "roe5y": 0.174,
+     "roe5y": 0.17,
      "roceHistory": [
-      null,
-      0.274,
-      0.184,
-      0.136
+      0.32,
+      0.22,
+      0.26,
+      0.17,
+      0.14
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Aurobindo Pharma",
      "symbol": "AUROPHARMA",
-     "marketCap": 103355.1,
-     "revenue": 36912.9,
-     "profit": 3990.2,
-     "roe": 0.09936310933174039,
-     "roce": 0.1446199780667887,
-     "pe": 26.014482,
-     "price": 1796.3,
+     "marketCap": 103214,
+     "revenue": 36913,
+     "profit": 3987,
+     "roe": 0.101,
+     "roce": 0.129,
+     "pe": 25.4,
+     "price": 1794.1,
      "high52": 1859.9,
-     "low52": 1106,
+     "low52": 1106.0,
      "profitHistory": [
-      1927.5,
-      3173,
-      3485.9,
-      3504.8
+      2647,
+      1928,
+      3169,
+      3484,
+      3503
      ],
-     "roe5y": 0.108,
+     "roe5y": 0.1,
      "roceHistory": [
-      null,
-      0.152,
-      0.162,
-      0.145
+      0.13,
+      0.09,
+      0.14,
+      0.14,
+      0.13
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Alkem Laboratories",
      "symbol": "ALKEM",
-     "marketCap": 62442.8,
-     "revenue": 15632.3,
-     "profit": 2067.8,
-     "roe": 0.1783997423752091,
-     "roce": 0.20036351549468864,
-     "pe": 30.200083,
-     "price": 5222.5,
+     "marketCap": 61918,
+     "revenue": 15081,
+     "profit": 2204,
+     "roe": 0.189,
+     "roce": 0.212,
+     "pe": 27.3,
+     "price": 5178.5,
      "high52": 5933.5,
-     "low52": 4811,
+     "low52": 4811.0,
      "profitHistory": [
-      984.2,
-      1795.8,
-      2165.5,
-      2301.8
+      1680,
+      1007,
+      1811,
+      2215,
+      2351
      ],
-     "roe5y": 0.186,
+     "roe5y": 0.18,
      "roceHistory": [
-      null,
-      0.196,
-      0.207,
-      0.2
+      0.18,
+      0.14,
+      0.2,
+      0.2,
+      0.21
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "TTM to Jun 2026."
      ]
     }
    ]
@@ -1772,71 +1601,63 @@
     {
      "name": "Hindustan Unilever",
      "symbol": "HINDUNILVR",
-     "marketCap": 468273.5,
+     "marketCap": 467662,
      "revenue": 68359,
-     "profit": 10585,
-     "roe": 0.3065009170572651,
-     "roce": 0.22300973766327442,
-     "pe": 44.249554,
-     "price": 1993,
-     "high52": 2488,
+     "profit": 15073,
+     "roe": 0.31,
+     "roce": 0.284,
+     "pe": 41.7,
+     "price": 1990.4,
+     "high52": 2488.0,
      "low52": 1758.2,
      "profitHistory": [
-      10120,
-      10277,
-      10649,
-      15040
+      8892,
+      10143,
+      10282,
+      10671,
+      15059
      ],
-     "roe5y": 0.24,
+     "roe5y": 0.22,
      "roceHistory": [
-      null,
-      0.225,
-      0.23,
-      0.223
+      0.25,
+      0.27,
+      0.27,
+      0.28,
+      0.28
      ],
      "notes": [
       "History: FY26 profit includes ~Rs 4,900 Cr other income (likely one-off)."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "ITC",
      "symbol": "ITC",
-     "marketCap": 371719.8,
+     "marketCap": 364824,
      "revenue": 77255,
-     "profit": 18881.7,
-     "roe": 0.29030243651927023,
-     "roce": 0.37277272797174205,
-     "pe": 19.681488,
-     "price": 296.6,
-     "high52": 409.5,
+     "profit": 19226,
+     "roe": 0.293,
+     "roce": 0.389,
+     "pe": 19.3,
+     "price": 290.5,
+     "high52": 409.8,
      "low52": 252.8,
      "profitHistory": [
-      19191.7,
-      20458.8,
-      34746.6,
-      20689.5
+      15503,
+      19477,
+      20751,
+      35052,
+      21018
      ],
-     "roe5y": 0.352,
+     "roe5y": 0.32,
      "roceHistory": [
-      null,
-      0.352,
-      0.355,
-      0.373
+      0.33,
+      0.39,
+      0.36,
+      0.37,
+      0.39
      ],
      "notes": [
       "History: FY25 profit includes ~Rs 17,800 Cr other income (likely one-off); FY26 is back to normal."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
@@ -1849,7 +1670,7 @@
      "roce": 0.841,
      "pe": 61.5,
      "price": 1282.9,
-     "high52": 1553,
+     "high52": 1553.0,
      "low52": 1147.4,
      "profitHistory": [
       null,
@@ -1874,236 +1695,217 @@
     {
      "name": "Britannia Industries",
      "symbol": "BRITANNIA",
-     "marketCap": 112562.6,
-     "revenue": 20225.6,
-     "profit": 2670.6,
-     "roe": 0.5354925028640032,
-     "roce": 0.6309792577959644,
-     "pe": 42.15027,
-     "price": 4673.2,
-     "high52": 6271,
+     "marketCap": 113592,
+     "revenue": 20286,
+     "profit": 2681,
+     "roe": 0.535,
+     "roce": 0.56,
+     "pe": 42.5,
+     "price": 4716.0,
+     "high52": 6271.0,
      "low52": 4499.9,
      "profitHistory": [
-      2321.8,
-      2139.8,
-      2178.7,
-      2533.5
+      1516,
+      2316,
+      2134,
+      2178,
+      2537
      ],
-     "roe5y": 0.544,
+     "roe5y": 0.56,
      "roceHistory": [
-      null,
-      0.603,
-      0.6,
-      0.631
+      0.41,
+      0.49,
+      0.49,
+      0.53,
+      0.56
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Dabur India",
      "symbol": "DABUR",
-     "marketCap": 67281.4,
-     "revenue": 13924.1,
-     "profit": 2024.9,
-     "roe": 0.17056814494552483,
-     "roce": 0.21079981635021303,
-     "pe": 33.29675,
-     "price": 379.25,
-     "high52": 534,
+     "marketCap": 67735,
+     "revenue": 13924,
+     "profit": 2000,
+     "roe": 0.17,
+     "roce": 0.203,
+     "pe": 33.3,
+     "price": 381.65,
+     "high52": 534.0,
      "low52": 354.3,
      "profitHistory": [
-      1707.2,
-      1842.7,
-      1767.6,
-      1895
+      1742,
+      1701,
+      1811,
+      1740,
+      1869
      ],
-     "roe5y": 0.179,
+     "roe5y": 0.19,
      "roceHistory": [
-      null,
-      0.233,
-      0.208,
-      0.211
+      0.27,
+      0.23,
+      0.22,
+      0.2,
+      0.2
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Godrej Consumer Products",
      "symbol": "GODREJCP",
-     "marketCap": 91748.3,
-     "revenue": 16536.9,
-     "profit": 1977.1,
-     "roe": 0.15098996750195787,
-     "roce": 0.22021153324622175,
-     "pe": 46.3761,
-     "price": 896.45,
+     "marketCap": 91127,
+     "revenue": 16537,
+     "profit": 1977,
+     "roe": 0.161,
+     "roce": 0.188,
+     "pe": 43.0,
+     "price": 888.65,
      "high52": 1273.9,
      "low52": 777.2,
      "profitHistory": [
-      1702.5,
-      -560.5,
-      1852.3,
-      1861.5
+      1783,
+      1702,
+      -561,
+      1852,
+      1861
      ],
-     "roe5y": 0.086,
+     "roe5y": 0.14,
      "roceHistory": [
-      null,
-      0.033,
-      0.233,
-      0.22
+      0.19,
+      0.17,
+      0.19,
+      0.19,
+      0.19
      ],
      "notes": [
       "History: FY24 loss driven by ~Rs 2,200 Cr negative other income (one-off), not operations."
-     ],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
      ]
     },
     {
      "name": "Marico",
      "symbol": "MARICO",
-     "marketCap": 117609,
-     "revenue": 14794,
-     "profit": 2018,
-     "roe": 0.43054367745876604,
-     "roce": 0.3906843304362501,
-     "pe": 58.22943,
-     "price": 906.05,
-     "high52": 925,
+     "marketCap": 118506,
+     "revenue": 14692,
+     "profit": 2078,
+     "roe": 0.429,
+     "roce": 0.47,
+     "pe": 58.7,
+     "price": 911.7,
+     "high52": 925.0,
      "low52": 707.25,
      "profitHistory": [
-      1302,
-      1481,
-      1629,
-      1762
+      1255,
+      1322,
+      1502,
+      1658,
+      1813
      ],
-     "roe5y": 0.412,
+     "roe5y": 0.39,
      "roceHistory": [
-      null,
-      0.418,
-      0.396,
-      0.391
+      0.43,
+      0.42,
+      0.43,
+      0.45,
+      0.47
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Colgate-Palmolive India",
      "symbol": "COLPAL",
-     "marketCap": 45922.1,
-     "revenue": 6390.6,
-     "profit": 1361.8,
-     "roe": 0.8159318840847386,
-     "roce": 1.0495833076478238,
-     "pe": 33.72079,
-     "price": 1688.4,
+     "marketCap": 45886,
+     "revenue": 6391,
+     "profit": 1362,
+     "roe": 0.827,
+     "roce": 1.08,
+     "pe": 33.2,
+     "price": 1687.1,
      "high52": 2301.6,
      "low52": 1563.9,
      "profitHistory": [
-      1047.1,
-      1323.7,
-      1436.8,
-      1325.3
+      1078,
+      1047,
+      1324,
+      1437,
+      1325
      ],
-     "roe5y": 0.788,
+     "roe5y": 0.75,
      "roceHistory": [
-      null,
-      0.951,
-      1.046,
-      1.05
+      0.92,
+      0.79,
+      0.97,
+      1.05,
+      1.08
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
+     "notes": [
+      "Standalone figures (Screener shows no consolidated view)."
      ]
     },
     {
      "name": "Tata Consumer Products",
      "symbol": "TATACONSUM",
-     "marketCap": 111926.5,
-     "revenue": 21555.6,
-     "profit": 1700,
-     "roe": 0.07381437190660325,
-     "roce": 0.08561715493772692,
-     "pe": 65.86488,
-     "price": 1130.9,
+     "marketCap": 110263,
+     "revenue": 21556,
+     "profit": 1706,
+     "roe": 0.0735,
+     "roce": 0.0924,
+     "pe": 64.2,
+     "price": 1113.8,
      "high52": 1282.7,
-     "low52": 916,
+     "low52": 916.0,
      "profitHistory": [
-      1203.8,
-      1150.3,
-      1278.5,
-      1542.3
+      1015,
+      1320,
+      1215,
+      1287,
+      1547
      ],
-     "roe5y": 0.072,
+     "roe5y": 0.07,
      "roceHistory": [
-      null,
       0.09,
-      0.086,
-      0.086
+      0.09,
+      0.11,
+      0.09,
+      0.09
      ],
-     "notes": [],
-     "historyLabels": [
-      "FY23",
-      "FY24",
-      "FY25",
-      "FY26"
-     ]
+     "notes": []
     },
     {
      "name": "Varun Beverages",
      "symbol": "VBL",
-     "marketCap": 143603.8,
-     "revenue": 25810.8,
-     "profit": 3470.5,
-     "roe": 0.16781498161309827,
-     "roce": 0.20832562965249968,
-     "pe": 146.9031,
-     "price": 424.55,
+     "marketCap": 145311,
+     "revenue": 25931,
+     "profit": 3479,
+     "roe": 0.164,
+     "roce": 0.197,
+     "pe": 42.0,
+     "price": 429.15,
      "high52": 555.8,
-     "low52": 381,
+     "low52": 381.0,
      "profitHistory": [
-      1497.4,
-      2055.9,
-      2594.6,
-      3036.5
+      746,
+      1550,
+      2102,
+      2634,
+      3062
      ],
-     "roe5y": 0.243,
+     "roe5y": 0.23,
      "roceHistory": [
-      null,
-      0.322,
-      0.262,
-      0.208
+      0.17,
+      0.27,
+      0.29,
+      0.25,
+      0.2
      ],
      "notes": [
       "History: December year-end - FY22..FY26 columns show CY2021..CY2025."
      ],
      "historyLabels": [
-      "Dec 22",
-      "Dec 23",
-      "Dec 24",
-      "Dec 25"
+      "CY2021",
+      "CY2022",
+      "CY2023",
+      "CY2024",
+      "CY2025"
      ]
     }
    ]

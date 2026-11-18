@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildPreview, cleanQuery, cleanTicker, completeness, mapSector, toCandidates, yearLabel, type RawYahoo, type StatementYear } from "./yahoo";
+import { buildPreview, marketCapFrom, cleanQuery, cleanTicker, completeness, mapSector, toCandidates, yearLabel, type RawYahoo, type StatementYear } from "./yahoo";
 
 const CR = 1e7;
 const SECTORS = ["IT", "Auto", "Auto Components", "Auto Batteries", "Pharma", "FMCG"];
@@ -235,5 +235,18 @@ describe("a fifth, oldest year with no profit", () => {
     const p = buildPreview(withEmptyYear, SECTORS, NOW);
     expect(p.stock.roceHistory).toHaveLength(4);
     expect(p.stock.roceHistory![0]).not.toBeNull(); // FY23 now has a prior year to average with
+  });
+});
+
+describe("marketCapFrom", () => {
+  it("prefers the quote's figure, then the summary's, then price times shares", () => {
+    expect(marketCapFrom({ quote: 5, summary: 6, price: 2, shares: [10] })).toBe(5);
+    expect(marketCapFrom({ summary: 6, price: 2, shares: [10] })).toBe(6);
+    expect(marketCapFrom({ price: 2, shares: [undefined, 10, 20] })).toBe(20);
+  });
+  it("is undefined when nothing can give it, and ignores zero or missing values", () => {
+    expect(marketCapFrom({ price: 2 })).toBeUndefined();
+    expect(marketCapFrom({ quote: 0, summary: Number.NaN, price: 0, shares: [10] })).toBeUndefined();
+    expect(marketCapFrom({})).toBeUndefined();
   });
 });
