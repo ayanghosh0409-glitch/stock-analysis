@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import type { EnteredMap, Field } from "@/lib/figures";
 import type { Benchmarks } from "@/lib/screen";
 import type { Candidate, Preview } from "@/lib/yahoo";
 import PreviewCard from "./PreviewCard";
@@ -10,8 +11,11 @@ type State =
   | { s: "searching" }
   | { s: "choose"; results: Candidate[] }
   | { s: "loading"; name: string; results: Candidate[] }
-  | { s: "preview"; preview: Preview; results: Candidate[] }
+  | { s: "preview"; preview: Preview; results: Candidate[]; shared: Shared }
   | { s: "error"; message: string; retry: () => void };
+
+/** Figures other visitors entered for this company. `configured` is false until the site has a database. */
+export type Shared = { configured: boolean; entered: EnteredMap };
 
 async function getJson<T>(url: string, signal: AbortSignal): Promise<T> {
   const res = await fetch(url, { signal });
@@ -69,10 +73,32 @@ export default function LookupPanel({
     setSt({ s: "loading", name: c.name, results });
     try {
       const { preview } = await getJson<{ preview: Preview }>(`/api/stock?ticker=${encodeURIComponent(c.ticker)}`, signal);
-      setSt({ s: "preview", preview, results });
+      // Visitors' figures are a bonus: if they cannot be fetched the preview still shows, just without them.
+      const shared = await getJson<Shared>(`/api/figures?ticker=${encodeURIComponent(preview.ticker)}`, signal).catch((): Shared => ({ configured: false, entered: {} }));
+      if (signal.aborted) return;
+      setSt({ s: "preview", preview, results, shared });
     } catch (e) {
       if (signal.aborted) return;
       setSt({ s: "error", message: e instanceof Error ? e.message : "Something went wrong.", retry: () => open(c, results) });
+    }
+  };
+
+  /** Sends one figure to the shared database. Resolves to an error message, or null when it was saved. */
+  const saveFigure = async (field: Field, percent: number): Promise<string | null> => {
+    if (st.s !== "preview") return "Something went wrong. Try again.";
+    const ticker = st.preview.ticker;
+    try {
+      const res = await fetch("/api/figures", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ticker, field, percent }),
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) return typeof body?.error === "string" ? body.error : "Could not save that. Try again.";
+      setSt((cur) => (cur.s === "preview" && cur.preview.ticker === ticker ? { ...cur, shared: { configured: true, entered: body.entered ?? {} } } : cur));
+      return null;
+    } catch {
+      return "Could not reach the site. Check your connection and try again.";
     }
   };
 
@@ -80,6 +106,8 @@ export default function LookupPanel({
     return (
       <PreviewCard
         preview={st.preview}
+        shared={st.shared}
+        onSave={saveFigure}
         sectors={sectors}
         benchFor={benchFor}
         onBack={st.results.length > 1 ? () => setSt({ s: "choose", results: st.results }) : undefined}

@@ -154,6 +154,8 @@ export type Preview = {
   latestYear: string | null; // e.g. "FY26"
   checks: FieldCheck[];
   notes: string[];
+  /** Figures filled in from visitors' entries because Yahoo had none (set by applyEntered in figures.ts). */
+  enteredFields?: ("roe" | "roce")[];
 };
 
 const MAX_YEARS = 5;
