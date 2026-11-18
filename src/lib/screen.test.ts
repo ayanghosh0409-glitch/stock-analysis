@@ -75,6 +75,14 @@ describe("profitTrend", () => {
   it("reports growth as not meaningful when the first or last year is not positive", () => {
     expect(profitTrend(stock({ profitHistory: [-10, 20, 40, 60, 80] })).cagr).toBe("n/m");
   });
+  it("measures growth over the years actually held: five figures span 4 years, four figures span 3", () => {
+    expect(profitTrend(stock({ profitHistory: [100, 110, 121, 133.1, 146.41] })).cagr).toBeCloseTo(0.1, 6);
+    expect(profitTrend(stock({ profitHistory: [100, 110, 121, 133.1] })).cagr).toBeCloseTo(0.1, 6);
+  });
+  it("still rates a four-year history, with three year-on-year steps", () => {
+    const t = profitTrend(stock({ profitHistory: [100, 120, 140, 160] }));
+    expect(t).toMatchObject({ consistency: "Consistent", steps: 3, growthYears: 3 });
+  });
 });
 
 describe("benchmark", () => {

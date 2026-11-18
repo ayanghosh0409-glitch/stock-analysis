@@ -144,7 +144,8 @@ export function profitTrend(s: Stock): ProfitTrend {
   const last = h[h.length - 1];
 
   let cagr: ProfitTrend["cagr"] = null;
-  if (isNum(first) && isNum(last)) cagr = first > 0 && last > 0 ? Math.pow(last / first, 1 / 4) - 1 : "n/m";
+  // Years between the first and last figure: 4 for the usual five-year history, 3 for a four-year one.
+  if (isNum(first) && isNum(last)) cagr = first > 0 && last > 0 ? Math.pow(last / first, 1 / (h.length - 1)) - 1 : "n/m";
 
   let growth = 0;
   let steps = 0;
