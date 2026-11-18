@@ -235,12 +235,13 @@ describe("real data", () => {
       ];
     });
     // Before the redesign this was IT 5/0/6, Auto 4/1/5, Auto Components 4/1/6,
-    // Auto Batteries 4/1/5, Pharma 4/1/5, FMCG 4/1/5 (30 of 62 passed).
+    // Auto Batteries 4/1/5, Pharma 4/1/5, FMCG 4/1/5 (30 of 62 passed). Then 6/0/5, 4/1/5, 3/0/8, 3/0/7, 4/1/5, 4/1/5 on the
+    // Screener figures; these are the counts after the listed stocks were re-sourced from Yahoo (US-7).
     expect(counts).toEqual([
-      ["IT", 6, 0, 5],
+      ["IT", 5, 0, 6],
       ["Auto", 4, 1, 5],
-      ["Auto Components", 3, 0, 8],
-      ["Auto Batteries", 3, 0, 7],
+      ["Auto Components", 4, 1, 6],
+      ["Auto Batteries", 2, 0, 8],
       ["Pharma", 4, 1, 5],
       ["FMCG", 4, 1, 5],
     ]);

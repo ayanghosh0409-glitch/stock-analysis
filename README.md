@@ -12,8 +12,9 @@ Each sector also gets a **Peer set** grade (Solid, Caution or Weak) from how man
 loss-making ones were left out, and how widely ROE varies. The minimum ROE, the borderline band and the peer-set
 thresholds are constants at the top of `src/lib/screen.ts`.
 
-**Profit consistency** (five years of net profit) is a *separate flag* and never changes the verdict:
-Consistent, Recovering, Mixed, Weak, or Insufficient data.
+**Profit consistency** (the last four years of annual net profit, as Yahoo supplies them) is a *separate flag* and never
+changes the verdict: Consistent (profit grew in at least 2 of 3 year-on-year steps, no loss year), Recovering, Mixed, Weak,
+or Insufficient data.
 
 **Recent searches:** clicking the search box lists the searches you made in the last 7 days (up to 8, newest first);
 choosing one runs it. A search is saved when you press Enter, pick it from the list or leave the box. They are kept only
@@ -45,11 +46,22 @@ npm test         # unit tests for the screening logic
 
 ## Data
 
-- `data/stocks.json` holds 62 stocks across IT, Auto, Auto Components, Auto Batteries, Pharma and FMCG, including notes on
-  one-off items. Fundamentals come from public Screener.in pages (as of the `asOf` date in the file).
-- Revenue and profit are trailing twelve months, in ₹ crore. ROE and ROCE are fractions.
+- `data/stocks.json` holds 62 stocks across IT, Auto, Auto Components, Auto Batteries, Pharma and FMCG. **The source is Yahoo
+  Finance**, the same as the company lookup, and ROE, ROCE and profit are worked out by the same code (`src/lib/yahoo.ts`).
+  Two stocks are still on their earlier Screener.in figures, and say so in their data notes: Nestlé India (Yahoo has no ROCE and
+  only three years of profit for it) and Gold Star Power (held back on purpose, see below).
+- Revenue and profit are trailing twelve months, in ₹ crore. ROE and ROCE are fractions, worked out from the latest annual
+  statements, so they can differ from Screener's by around 10%. Yahoo gives four annual years where Screener gave five.
 - The industry benchmark is built from the stocks listed here, so it is only as good as the peer set. Check the Peer set
   grade for each sector (Auto Batteries is thin and has loss-making companies).
+
+**Re-sourcing from Yahoo.** The workflow **Re-source stocks from Yahoo** (`.github/workflows/resource-yahoo.yml`, script
+`scripts/resource-yahoo.ts`) fetches every listed stock for real and prints a before/after report in its run summary: ROE and ROCE
+old and new, which verdicts change, which figures moved by more than 5 points, and which hand-written notes need a look. Run
+by hand with **apply** ticked, it also writes the new figures into `data/stocks.json`. A stock keeps its old figures, and is
+listed in the report, when Yahoo lacks a figure the screen needs, or when it is in `HOLD_BACK` in `src/lib/resource.ts` (remove
+the entry to let Yahoo's figures in on the next run). Notes that only described the old Screener page were removed; the rest
+are kept. `scripts/refresh_market_data.py` still refreshes price, 52-week range, market cap and P/E weekly.
 
 ## Look up a company that is not on the list
 
