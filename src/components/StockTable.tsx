@@ -112,7 +112,7 @@ export default function StockTable({
   );
 
   return (
-    <div className="overflow-x-auto rounded-lg border border-line bg-surface">
+    <div className="overflow-x-auto rounded-xl border border-line bg-surface shadow-sm">
       <table className="w-full min-w-[1200px] border-collapse text-sm">
         <thead className="bg-surface2 text-xs uppercase tracking-wide text-muted">
           <tr>
