@@ -5,7 +5,7 @@ import { fmtPct } from "./format";
 
 export type SectorSummary = { name: string; bench: Benchmarks; health: PeerHealth; t: Tally };
 
-const eyebrow = "text-[11px] font-medium uppercase tracking-wider text-muted";
+export const eyebrow = "text-[11px] font-medium uppercase tracking-wider text-muted";
 
 /** One row of big numbers across all sectors, like the stat strip in the reference design. */
 export function OverviewStats({ total, sectors, near }: { total: Tally; sectors: number; near: number }) {
@@ -30,7 +30,7 @@ export function OverviewStats({ total, sectors, near }: { total: Tally; sectors:
 
 const Dot = ({ colour }: { colour: string }) => <span aria-hidden className="inline-block size-2 shrink-0 rounded-full" style={{ background: colour }} />;
 
-function Donut({ t }: { t: Tally }) {
+export function Donut({ t }: { t: Tally }) {
   const parts = [
     { label: "Strong", count: t.strong, colour: "var(--good)" },
     { label: "Moderate", count: t.moderate, colour: "var(--warn)" },
@@ -78,7 +78,7 @@ function Donut({ t }: { t: Tally }) {
   );
 }
 
-function TrendBar({ t }: { t: Tally }) {
+export function TrendBar({ t }: { t: Tally }) {
   const parts = [
     { label: "Consistent", count: t.consistent, colour: "var(--good)" },
     { label: "Recovering", count: t.recovering, colour: "var(--info)" },
