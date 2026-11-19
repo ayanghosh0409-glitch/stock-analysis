@@ -74,6 +74,12 @@ describe("matchSector: words that start the name", () => {
   it("offers a choice, largest first, when several match", () => {
     expect(name(matchSector("auto", LISTS))).toEqual(["Auto Parts", "Auto Manufacturers", "Auto & Truck Dealerships"]);
   });
+  it("lets an everyday word and a name word be typed together", () => {
+    // Found by the live check: "it services" used to return only suggestions.
+    expect(name(matchSector("it services", LISTS))).toBe("Information Technology Services");
+    expect(name(matchSector("bank regional", LISTS))).toBe("Banks—Regional");
+    expect(name(matchSector("pharma generic", LISTS))).toBe("Drug Manufacturers—Specialty & Generic");
+  });
   it("does not match a word from the middle of another word", () => {
     expect(matchSector("ealth", LISTS).status).toBe("none");
   });

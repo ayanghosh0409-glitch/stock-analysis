@@ -101,11 +101,12 @@ export function matchSector(input: string, lists: SectorList[]): Match {
   const viaAlias = outcome(aliased);
   if (viaAlias) return viaAlias;
 
-  // 3. Every word typed starts a word of the name ("bank" finds "Banks—Regional"; "real est" finds "Real Estate").
+  // 3. Every word typed starts a word of the name ("bank" finds "Banks—Regional"; "real est" finds "Real Estate"), or is an
+  //    everyday word that points at this name ("it services" finds "Information Technology Services").
   const tokens = q.split(" ");
   const starts = lists.filter((l) => {
     const words = norm(l.name).split(" ");
-    return tokens.every((t) => words.some((w) => w.startsWith(t)));
+    return tokens.every((t) => words.some((w) => w.startsWith(t)) || (ALIASES[t] ?? []).includes(l.name));
   });
   const viaWords = outcome(starts);
   if (viaWords) return viaWords;
