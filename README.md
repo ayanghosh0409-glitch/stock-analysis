@@ -21,13 +21,24 @@ choosing one runs it. A search is saved when you press Enter, pick it from the l
 in your browser (`localStorage`), never sent anywhere, and can be cleared from the list. The limits are constants in
 `src/lib/recent.ts`.
 
-**Overview:** each sector is a card. The top part is the sector benchmark (ROE cut-off, industry ROCE, peer-set grade);
-below it are two stock-level breakdowns, labelled with how many stocks they cover: the screen result (Strong, Moderate, Skip
-in a ring) and profit consistency (a segmented bar). A stat strip above the cards totals all sectors. The search and filters
-sit with the stock table because they only filter that table. The counting logic is in `src/lib/overview.ts`.
+**Navigation:** a sidebar down the left (a slide-in menu on phones) lists the **Overview**, **All stocks** (every stock in one
+table, a company in two sectors once), then every sector: the listed ones, then the ones built from Yahoo. Each shows its stock
+count. A filter box narrows the sector list. Each page has its own address after a `#` (`#/`, `#/all`, `#/sector/IT`), so a page
+can be linked to and the back button works; the address logic is in `src/lib/route.ts`. A link to a sector a visitor built for
+their visit only stops working after they leave, and says so.
 
-**Sector tabs** use the same card look: headline numbers for the sector, the screen-result ring and consistency bar, the ROE vs
-ROCE chart, and a collapsible panel with the benchmark workings and your overrides. The stock table sits below with its filters.
+**Search:** the box at the top of every page (press `/` to jump to it) finds sectors and stocks on the site by name or ticker as
+you type, and opening a result goes to that sector or stock. It matches spelling, not meaning, and covers only what is on the
+page. When no stock fits, it offers a Yahoo Finance lookup. The matching is in `src/lib/siteSearch.ts`. The separate search
+with recent searches above the stock table only filters that table.
+
+**Overview:** a stat strip totals all sectors, then the sector builder, then every sector as a collapsible row: closed it shows
+the sector's name and stock count; open it shows the sector benchmark (ROE cut-off, industry ROCE, peer-set grade), the screen
+result (Strong, Moderate, Skip in a ring) and profit consistency (a segmented bar). The counting logic is in
+`src/lib/overview.ts`.
+
+**Sector pages** show headline numbers for the sector, the screen-result ring and consistency bar, the ROE vs ROCE chart, and a
+collapsible panel with the benchmark workings and your overrides. The stock table sits below with its filters.
 
 **Look and feel:** the colours and the Inter typeface follow a fintech reference design. All colours are CSS tokens at the
 top of `src/app/globals.css` (light and dark), checked for WCAG AA contrast; the font is self-hosted through
