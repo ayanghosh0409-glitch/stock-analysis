@@ -1,0 +1,54 @@
+name: Spike - sector lookup
+
+# Asks Yahoo Finance, for real, for the top Indian stocks in a few sectors and industries, and prints what came back.
+# It changes nothing in the repository. Open the run's job summary to read the report.
+
+on:
+  pull_request:
+    paths:
+      - scripts/spike-sector.ts
+      - .github/workflows/spike-sector.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  spike:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: List Yahoo's sectors and industries (from the yfinance package)
+        run: |
+          pip install --quiet yfinance
+          mkdir -p spike-out
+          python - <<'PY'
+          import json, yfinance.const as c
+          found = None
+          cands = [getattr(c, n) for n in dir(c)]
+          eq = getattr(c, "EQUITY_SCREENER_EQ_MAP", None)
+          if isinstance(eq, dict) and isinstance(eq.get("industry"), dict):
+              cands.insert(0, eq["industry"])
+          for v in cands:
+              if isinstance(v, dict) and "Financial Services" in v and "Banks" in str(v["Financial Services"]):
+                  found = v
+                  break
+          if found is None:
+              raise SystemExit("Could not find the sector and industry list in yfinance.const")
+          out = {k: sorted(x if isinstance(x, str) else x.get("name", str(x)) for x in (vv.keys() if isinstance(vv, dict) else vv)) for k, vv in found.items()}
+          json.dump(out, open("spike-out/taxonomy.json", "w"))
+          print(sum(len(x) for x in out.values()), "industries in", len(out), "sectors")
+          PY
+      - name: Ask Yahoo for the top stocks by sector
+        run: npx tsx scripts/spike-sector.ts
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f spike-out/sector-report.md ] && cat spike-out/sector-report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
