@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { donutArcs, share, tally } from "./overview";
+import { donutArcs, firstPerSymbol, share, tally } from "./overview";
 import type { Consistency, Verdict } from "./screen";
 
 const row = (verdict: Verdict, consistency: Consistency) => ({ verdict, consistency });
@@ -60,5 +60,18 @@ describe("donutArcs", () => {
 
   it("draws nothing for an empty group", () => {
     expect(donutArcs([0, 0, 0]).every((a) => a.dash === 0)).toBe(true);
+  });
+});
+
+describe("firstPerSymbol", () => {
+  const row = (symbol: string, sector: string) => ({ stock: { symbol }, sector });
+  it("keeps the first row of a company that sits in two sectors, so the listed sector wins", () => {
+    const out = firstPerSymbol([row("TCS", "IT"), row("INFY", "IT"), row("TCS", "Technology"), row("JPL", "Technology")]);
+    expect(out.map((r) => `${r.stock.symbol}:${r.sector}`)).toEqual(["TCS:IT", "INFY:IT", "JPL:Technology"]);
+  });
+  it("leaves rows alone when no company repeats, and handles none", () => {
+    const rows = [row("A", "X"), row("B", "Y")];
+    expect(firstPerSymbol(rows)).toEqual(rows);
+    expect(firstPerSymbol([])).toEqual([]);
   });
 });

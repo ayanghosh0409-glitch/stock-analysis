@@ -25,7 +25,7 @@ import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
 import LookupPanel from "./LookupPanel";
 import SectorBuilder from "./SectorBuilder";
 import BuiltBanner from "./BuiltBanner";
-import { tally } from "@/lib/overview";
+import { firstPerSymbol, tally } from "@/lib/overview";
 import { isFresh } from "@/lib/sharedSectors";
 import { fmtPct } from "./format";
 
@@ -63,7 +63,6 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     const mine = new Set(built.map((b) => b.built?.yahooName));
     return [...data.sectors, ...shared.filter((s) => !mine.has(s.built?.yahooName)), ...built];
   }, [data, shared, built]);
-  const listedNames = useMemo(() => new Set(data.sectors.map((s) => s.name)), [data]);
   const listedList = useMemo(() => data.sectors.map((s) => s.name), [data]);
   const upsert = (list: Sector[], sec: Sector) => [...list.filter((x) => x.built?.yahooName !== sec.built?.yahooName), sec];
   const setShare = (yahooName: string, v: string | null) =>
@@ -179,10 +178,12 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     [sectors, overrides],
   );
 
+  // The overview covers every sector on the page, listed or built, with each company counted once.
+  const overviewRows = useMemo(() => firstPerSymbol(allRows), [allRows]);
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const list = allRows.filter((r) => {
-      if (tab === OVERVIEW ? !listedNames.has(r.sector) : r.sector !== tab) return false;
+    const list = (tab === OVERVIEW ? overviewRows : allRows.filter((r) => r.sector === tab)).filter((r) => {
       if (q && !(r.stock.name.toLowerCase().includes(q) || r.stock.symbol.toLowerCase().includes(q))) return false;
       if (verdictFilter === "consider" && !r.verdict.startsWith("CONSIDER")) return false;
       if (verdictFilter === "strong" && r.verdict !== "CONSIDER – Strong") return false;
@@ -199,28 +200,28 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       const c = typeof x === "string" ? x.localeCompare(String(y)) : (x as number) - (y as number);
       return c * dirn || a.stock.name.localeCompare(b.stock.name);
     });
-  }, [allRows, tab, query, verdictFilter, trendFilter, sort, listedNames]);
+  }, [allRows, overviewRows, tab, query, verdictFilter, trendFilter, sort]);
 
   const onSort = (key: SortKey) =>
     setSort((s) => (s.key === key ? { key, asc: !s.asc } : { key, asc: key === "name" || key === "verdict" || key === "consistency" }));
 
   // A company can be in a listed sector and a built one, so the row in front of the person wins.
-  const selectedRow = selected ? allRows.find((r) => r.stock.symbol === selected && (tab === OVERVIEW ? listedNames.has(r.sector) : r.sector === tab)) ?? null : null;
+  const selectedRow = selected ? (tab === OVERVIEW ? overviewRows : allRows.filter((r) => r.sector === tab)).find((r) => r.stock.symbol === selected) ?? null : null;
   const sector = sectors.find((s) => s.name === tab);
   const sectorRows = sector ? allRows.filter((r) => r.sector === sector.name) : [];
   const o = sector ? overrides[sector.name] ?? { roe: "", roce: "", floor: "" } : null;
   const info = sector ? sectorInfo[sector.name] : null;
 
   // Stock-level counts are tallied per sector for the cards; the sector-level benchmark comes from sectorInfo.
-  const summary: SectorSummary[] = data.sectors.map((sec) => ({
+  const summary: SectorSummary[] = sectors.map((sec) => ({
     name: sec.name,
+    built: !!sec.built,
     bench: sectorInfo[sec.name].bench,
     health: sectorInfo[sec.name].health,
     t: tally(allRows.filter((r) => r.sector === sec.name)),
   }));
-  const listedRows = useMemo(() => allRows.filter((r) => listedNames.has(r.sector)), [allRows, listedNames]);
-  const total = useMemo(() => tally(listedRows), [listedRows]);
-  const nearCount = listedRows.filter((r) => r.borderline).length;
+  const total = useMemo(() => tally(overviewRows), [overviewRows]);
+  const nearCount = overviewRows.filter((r) => r.borderline).length;
 
   // A search that matches no stock anywhere on the list (not merely none under the current tab or filters) offers a Yahoo lookup.
   const q = query.trim();
@@ -260,7 +261,7 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
 
       {tab === OVERVIEW ? (
         <>
-          <OverviewStats total={total} sectors={data.sectors.length} near={nearCount} />
+          <OverviewStats total={total} sectors={sectors.length} near={nearCount} />
           <SectorCards sectors={summary} onOpen={setTab} />
         </>
       ) : (
