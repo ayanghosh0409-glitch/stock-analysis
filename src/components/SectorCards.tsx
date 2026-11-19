@@ -3,7 +3,7 @@ import { donutArcs, share, type Tally } from "@/lib/overview";
 import { PeerBadge } from "./Badges";
 import { fmtPct } from "./format";
 
-export type SectorSummary = { name: string; bench: Benchmarks; health: PeerHealth; t: Tally };
+export type SectorSummary = { name: string; bench: Benchmarks; health: PeerHealth; t: Tally; built?: boolean };
 
 export const eyebrow = "text-[11px] font-medium uppercase tracking-wider text-muted";
 
@@ -119,7 +119,10 @@ function SectorCard({ s, onOpen }: { s: SectorSummary; onOpen: (name: string) =>
               {s.name}
             </button>
           </h3>
-          <p className="text-xs text-muted">{t.n} stocks</p>
+          <p className="text-xs text-muted">
+            {t.n} stocks
+            {s.built && <span className="ml-2 rounded-full border border-line bg-surface2 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider">From Yahoo</span>}
+          </p>
         </div>
         <div className="relative z-10 flex flex-col items-end gap-1">
           <span className={eyebrow}>Peer set</span>
@@ -140,7 +143,11 @@ function SectorCard({ s, onOpen }: { s: SectorSummary; onOpen: (name: string) =>
           </div>
         </dl>
         <p className="mt-1.5 text-[11px] text-muted">
-          {floorApplies ? `Peer median ROE is ${fmtPct(bench.roe)}, so the ${fmtPct(bench.floor, 0)} minimum applies.` : "Median of the profitable peers in this sector."}
+          {floorApplies
+            ? `Peer median ROE is ${fmtPct(bench.roe)}, so the ${fmtPct(bench.floor, 0)} minimum applies.`
+            : s.built
+              ? `Median of the profitable stocks among these ${t.n}, not of the whole sector.`
+              : "Median of the profitable peers in this sector."}
         </p>
       </section>
 

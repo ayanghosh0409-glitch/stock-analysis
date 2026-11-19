@@ -56,3 +56,16 @@ export function donutArcs(counts: number[], gap = 0.8): Arc[] {
     return arc;
   });
 }
+
+/**
+ * The first row for each company. The overview counts a company once even when it sits in two sectors (TCS is in the listed
+ * IT sector and in a built Technology sector); rows come in tab order, so the listed sector wins over a built one.
+ */
+export function firstPerSymbol<T extends { stock: { symbol: string } }>(rows: T[]): T[] {
+  const seen = new Set<string>();
+  return rows.filter((r) => {
+    if (seen.has(r.stock.symbol)) return false;
+    seen.add(r.stock.symbol);
+    return true;
+  });
+}
