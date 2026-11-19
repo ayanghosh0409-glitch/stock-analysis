@@ -7,7 +7,7 @@
  *
  * Run by the "Spike - sector lookup" workflow, because the build sandbox cannot reach Yahoo.
  */
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import YahooFinance from "yahoo-finance2";
 
 const client = new YahooFinance();
@@ -85,6 +85,35 @@ async function main() {
     await new Promise((res) => setTimeout(res, 1500));
   }
   out.push(`**${worked} of ${CASES.length} queries returned rows.**`);
+
+  // Second pass: every sector and industry in Yahoo's list (dumped by the workflow from the yfinance package), tried
+  // with the hyphen spelling and with the long-dash spelling Yahoo's website uses, for Indian NSE listings.
+  if (existsSync("spike-out/taxonomy.json")) {
+    const tax = JSON.parse(readFileSync("spike-out/taxonomy.json", "utf8")) as Record<string, string[]>;
+    const found: { sector: { name: string; total: unknown }[]; industry: { name: string; sector: string; spelling: string; total: number; top: string[] }[] } = { sector: [], industry: [] };
+    out.push("", "## Taxonomy pass", "");
+    for (const sector of Object.keys(tax)) {
+      const r = await screen({ label: sector, field: "sector", value: sector, exchange: "NSI" }, 1);
+      found.sector.push({ name: sector, total: r.error ?? r.total });
+      await new Promise((res) => setTimeout(res, 400));
+      for (const name of tax[sector]) {
+        const variants = name.includes(" - ") ? [name, name.replace(" - ", "\u2014")] : [name];
+        let best: (typeof found.industry)[number] | null = null;
+        for (const v of variants) {
+          const q = await screen({ label: v, field: "industry", value: v, exchange: "NSI" }, 3);
+          const total = typeof q.total === "number" ? q.total : 0;
+          if (!best || total > best.total) best = { name, sector, spelling: v === name ? "hyphen" : "long-dash", total, top: q.rows.map((x) => String(x.symbol)) };
+          await new Promise((res) => setTimeout(res, 400));
+        }
+        if (best) found.industry.push(best);
+      }
+    }
+    out.push("| Sector | Indian NSE stocks |", "| --- | --- |", ...found.sector.map((x) => `| ${x.name} | ${String(x.total)} |`), "");
+    const hit = found.industry.filter((x) => x.total > 0);
+    out.push(`${hit.length} of ${found.industry.length} industries have Indian NSE stocks; long-dash spelling needed for ${hit.filter((x) => x.spelling === "long-dash").length}.`, "");
+    out.push("| Industry | Sector | Spelling | NSE stocks | Top by market cap |", "| --- | --- | --- | --- | --- |", ...hit.map((x) => `| ${x.name} | ${x.sector} | ${x.spelling} | ${x.total} | ${x.top.join(", ")} |`), "");
+    out.push("<!--JSON " + JSON.stringify(found) + " JSON-->");
+  }
   mkdirSync("spike-out", { recursive: true });
   writeFileSync("spike-out/sector-report.md", out.join("\n") + "\n");
   console.log(out.join("\n"));
