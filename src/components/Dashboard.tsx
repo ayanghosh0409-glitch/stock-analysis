@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { Dataset } from "@/lib/types";
+import type { Dataset, Sector } from "@/lib/types";
 import {
   BORDERLINE_BAND,
   ROE_FLOOR,
@@ -23,6 +23,8 @@ import NewsPanel from "./NewsPanel";
 import type { NewsFile } from "@/lib/news";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
 import LookupPanel from "./LookupPanel";
+import SectorBuilder from "./SectorBuilder";
+import BuiltBanner from "./BuiltBanner";
 import { tally } from "@/lib/overview";
 import { fmtPct } from "./format";
 
@@ -50,6 +52,21 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const [sort, setSort] = useState<{ key: SortKey; asc: boolean }>({ key: "verdict", asc: true });
   const [selected, setSelected] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(false);
+  // Sectors built from Yahoo during this visit. They sit beside the listed ones but are kept out of the overview totals.
+  const [built, setBuilt] = useState<Sector[]>([]);
+  const sectors = useMemo(() => [...data.sectors, ...built], [data, built]);
+  const listedNames = useMemo(() => new Set(data.sectors.map((s) => s.name)), [data]);
+  const onBuilt = (sec: Sector) => {
+    setBuilt((b) => [...b.filter((x) => x.built?.yahooName !== sec.built?.yahooName), sec]);
+    setTab(sec.name);
+    setSelected(null);
+    setQuery("");
+  };
+  const removeBuilt = (name: string) => {
+    setBuilt((b) => b.filter((x) => x.name !== name));
+    setTab(OVERVIEW);
+    setSelected(null);
+  };
 
   // Per-viewer conveniences only; the page works without storage. Read once after
   // mount so server and client render the same first paint.
@@ -76,7 +93,7 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   // sector-wide figures below are the reference shown in summaries and on the chart.
   const allRows: Row[] = useMemo(() => {
     const out: Row[] = [];
-    for (const sec of data.sectors) {
+    for (const sec of sectors) {
       const ov = toOverride(overrides[sec.name]);
       for (const stock of sec.stocks) {
         const bench = benchmarkFor(stock, sec.stocks, ov);
@@ -94,20 +111,20 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       }
     }
     return out;
-  }, [data, overrides]);
+  }, [sectors, overrides]);
 
   const sectorInfo = useMemo(
     () =>
       Object.fromEntries(
-        data.sectors.map((sec) => [sec.name, { bench: benchmarks(sec.stocks, toOverride(overrides[sec.name])), health: peerHealth(sec.stocks) }]),
+        sectors.map((sec) => [sec.name, { bench: benchmarks(sec.stocks, toOverride(overrides[sec.name])), health: peerHealth(sec.stocks) }]),
       ),
-    [data, overrides],
+    [sectors, overrides],
   );
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     const list = allRows.filter((r) => {
-      if (tab !== OVERVIEW && r.sector !== tab) return false;
+      if (tab === OVERVIEW ? !listedNames.has(r.sector) : r.sector !== tab) return false;
       if (q && !(r.stock.name.toLowerCase().includes(q) || r.stock.symbol.toLowerCase().includes(q))) return false;
       if (verdictFilter === "consider" && !r.verdict.startsWith("CONSIDER")) return false;
       if (verdictFilter === "strong" && r.verdict !== "CONSIDER – Strong") return false;
@@ -124,13 +141,14 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       const c = typeof x === "string" ? x.localeCompare(String(y)) : (x as number) - (y as number);
       return c * dirn || a.stock.name.localeCompare(b.stock.name);
     });
-  }, [allRows, tab, query, verdictFilter, trendFilter, sort]);
+  }, [allRows, tab, query, verdictFilter, trendFilter, sort, listedNames]);
 
   const onSort = (key: SortKey) =>
     setSort((s) => (s.key === key ? { key, asc: !s.asc } : { key, asc: key === "name" || key === "verdict" || key === "consistency" }));
 
-  const selectedRow = selected ? allRows.find((r) => r.stock.symbol === selected) ?? null : null;
-  const sector = data.sectors.find((s) => s.name === tab);
+  // A company can be in a listed sector and a built one, so the row in front of the person wins.
+  const selectedRow = selected ? allRows.find((r) => r.stock.symbol === selected && (tab === OVERVIEW ? listedNames.has(r.sector) : r.sector === tab)) ?? null : null;
+  const sector = sectors.find((s) => s.name === tab);
   const sectorRows = sector ? allRows.filter((r) => r.sector === sector.name) : [];
   const o = sector ? overrides[sector.name] ?? { roe: "", roce: "", floor: "" } : null;
   const info = sector ? sectorInfo[sector.name] : null;
@@ -142,8 +160,9 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     health: sectorInfo[sec.name].health,
     t: tally(allRows.filter((r) => r.sector === sec.name)),
   }));
-  const total = useMemo(() => tally(allRows), [allRows]);
-  const nearCount = allRows.filter((r) => r.borderline).length;
+  const listedRows = useMemo(() => allRows.filter((r) => listedNames.has(r.sector)), [allRows, listedNames]);
+  const total = useMemo(() => tally(listedRows), [listedRows]);
+  const nearCount = listedRows.filter((r) => r.borderline).length;
 
   // A search that matches no stock anywhere on the list (not merely none under the current tab or filters) offers a Yahoo lookup.
   const q = query.trim();
@@ -171,8 +190,10 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         </p>
       </header>
 
+      <SectorBuilder taken={sectors.map((s) => s.name)} onBuilt={onBuilt} />
+
       <nav aria-label="Sectors" className="mb-4 flex flex-wrap gap-2">
-        {[OVERVIEW, ...data.sectors.map((s) => s.name)].map((t) => (
+        {[OVERVIEW, ...sectors.map((s) => s.name)].map((t) => (
           <button key={t} type="button" onClick={() => setTab(t)} aria-pressed={tab === t} className={chip(tab === t)}>
             {t}
           </button>
@@ -186,6 +207,8 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         </>
       ) : (
         sector && o && info && (
+          <>
+          {sector.built && <BuiltBanner sector={sector} onRemove={() => removeBuilt(sector.name)} />}
           <SectorView
             name={sector.name}
             bench={info.bench}
@@ -198,15 +221,18 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
             onOverride={(k, v) => setOverrides((p) => ({ ...p, [sector.name]: { ...o, [k]: v } }))}
             onPick={setSelected}
           >
-            <NewsPanel
-              sector={sector.name}
-              news={news.sectors[sector.name]}
-              fetchedAt={news.fetchedAt}
-              windowDays={news.windowDays}
-              stocks={sectorRows.map((r) => ({ symbol: r.stock.symbol, name: r.stock.name, verdict: r.verdict }))}
-              onPick={setSelected}
-            />
+            {!sector.built && (
+              <NewsPanel
+                sector={sector.name}
+                news={news.sectors[sector.name]}
+                fetchedAt={news.fetchedAt}
+                windowDays={news.windowDays}
+                stocks={sectorRows.map((r) => ({ symbol: r.stock.symbol, name: r.stock.name, verdict: r.verdict }))}
+                onPick={setSelected}
+              />
+            )}
           </SectorView>
+          </>
         )
       )}
 

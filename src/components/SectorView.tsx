@@ -146,7 +146,11 @@ export default function SectorView({
             </ul>
           </div>
           <div className="mt-3">
-            <RoeRoceScatter points={points} roeBench={bench.threshold} roceBench={bench.roce} onPick={onPick} />
+            {points.length > 0 ? (
+              <RoeRoceScatter points={points} roeBench={bench.threshold} roceBench={bench.roce} onPick={onPick} />
+            ) : (
+              <p className="py-16 text-center text-sm text-muted">No stock here has both ROE and ROCE, so there is nothing to plot. Open a stock in the table below for its figures.</p>
+            )}
           </div>
         </section>
       </div>

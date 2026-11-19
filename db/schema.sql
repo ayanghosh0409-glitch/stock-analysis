@@ -1,4 +1,5 @@
--- The shared database holds one table: figures that visitors enter when Yahoo Finance has none.
+-- The shared database holds two tables: figures that visitors enter when Yahoo Finance has none, and a cache of what
+-- Yahoo returned for each company (preview_cache, at the end of this file).
 -- The site creates this itself the first time it needs it (src/lib/figures.ts, ensureSchema), so running this by hand is optional.
 -- Rows are only ever added. To remove a bad entry, delete its row.
 
@@ -13,3 +14,11 @@ create table if not exists entered_figures (
 
 create index if not exists entered_figures_lookup on entered_figures (ticker, field, entered_at desc);
 create index if not exists entered_figures_client on entered_figures (client_hash, entered_at desc);
+
+-- What Yahoo returned for a ticker, kept for a week so a company or sector is not fetched again for every visitor.
+-- Written only by the server (src/lib/previewCache.ts). Safe to empty at any time: the next request fetches it again.
+create table if not exists preview_cache (
+  ticker     text primary key,
+  payload    jsonb not null,
+  fetched_at timestamptz not null default now()
+);

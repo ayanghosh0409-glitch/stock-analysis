@@ -6,11 +6,6 @@ name: Refresh sector lists
 # Run it by hand with "apply" ticked to write the file on the branch it runs on.
 
 on:
-  push: # TEMPORARY: lets the first run on this branch write the file; removed before merge
-    branches: [sector-search]
-    paths:
-      - scripts/refresh-sector-lists.ts
-      - .github/workflows/refresh-sector-lists.yml
   schedule:
     - cron: "45 1 * * 1" # Mondays 07:15 IST (01:45 UTC), after the market-data refresh
   pull_request:
@@ -46,12 +41,12 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Fetch the lists from Yahoo Finance
-        run: npx tsx scripts/refresh-sector-lists.ts ${{ (github.event_name == 'schedule' || github.event_name == 'push' || inputs.apply) && '--apply' || '' }}
+        run: npx tsx scripts/refresh-sector-lists.ts ${{ (github.event_name == 'schedule' || inputs.apply) && '--apply' || '' }}
       - name: Show the report in the run summary
         if: always()
         run: '[ -f sector-out/report.md ] && cat sector-out/report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
       - name: Commit the lists
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.apply }}
+        if: ${{ github.event_name == 'schedule' || inputs.apply }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -85,6 +85,11 @@ export function benchmarkFor(s: Stock, stocks: Stock[], o?: Override): Benchmark
 const passes = (x: number, bench: number) => x > bench;
 
 export function verdict(s: Stock, b: Benchmarks): Verdict {
+  // Banks, lenders and insurers: ROCE means little for them, so ROE alone decides and the best result is Moderate.
+  if (s.roceNa) {
+    if (!isNum(s.roe) || !isNum(b.threshold)) return "n/a";
+    return passes(s.roe, b.threshold) ? "CONSIDER – Moderate" : "SKIP";
+  }
   if (!isNum(s.roe) || !isNum(s.roce) || !isNum(b.threshold) || !isNum(b.roce)) return "n/a";
   if (!passes(s.roe, b.threshold)) return "SKIP";
   return passes(s.roce, b.roce) ? "CONSIDER – Strong" : "CONSIDER – Moderate";
@@ -172,6 +177,16 @@ export function profitTrend(s: Stock): ProfitTrend {
 }
 
 export function explain(s: Stock, b: Benchmarks): string {
+  if (s.roceNa) {
+    if (!isNum(s.roe)) return "ROE is missing, so no verdict can be given.";
+    if (!isNum(b.threshold) || !isNum(b.roe)) return "The sector has no benchmark yet.";
+    const p = (x: number) => (x * 100).toFixed(1) + "%";
+    const lim = b.floor > b.roe ? `the ${p(b.floor)} minimum ROE (industry ROE is ${p(b.roe)})` : `the industry ROE of ${p(b.roe)}`;
+    const near = isBorderline(s, b) ? ` It is within ${(BORDERLINE_BAND * 100).toFixed(0)} points of the cut-off, so treat the call as close.` : "";
+    return passes(s.roe, b.threshold)
+      ? `ROE ${p(s.roe)} beats ${lim}. ROCE is not used for banks, lenders and insurers, so the best result is Moderate.${near}`
+      : `ROE ${p(s.roe)} does not beat ${lim}, so the stock is skipped.${near}`;
+  }
   if (!isNum(s.roe) || !isNum(s.roce)) return "ROE or ROCE is missing, so no verdict can be given.";
   if (!isNum(b.threshold) || !isNum(b.roe) || !isNum(b.roce)) return "The sector has no benchmark yet.";
   const pct = (x: number) => (x * 100).toFixed(1) + "%";
