@@ -59,7 +59,8 @@ const CASES: Q[] = [
   { label: "Sector: Financial Services (NSE)", field: "sector", value: "Financial Services", exchange: "NSI" },
   { label: "Sector: Technology (NSE)", field: "sector", value: "Technology", exchange: "NSI" },
   { label: "Sector: Healthcare (NSE)", field: "sector", value: "Healthcare", exchange: "NSI" },
-  { label: "Industry: Banks - Regional (no exchange filter, to see NSE and BSE duplicates)", field: "industry", value: "Banks - Regional" },
+  { label: "Industry: Banks\u2014Regional with the long dash (NSE)", field: "industry", value: "Banks\u2014Regional", exchange: "NSI" },
+  { label: "Industry: Drug Manufacturers\u2014Specialty & Generic with the long dash (NSE)", field: "industry", value: "Drug Manufacturers\u2014Specialty & Generic", exchange: "NSI" },
   { label: "Not a real industry: 'Banks'", field: "industry", value: "Banks", exchange: "NSI" },
   { label: "Not a real sector: 'Banking'", field: "sector", value: "Banking", exchange: "NSI" },
 ];
@@ -67,7 +68,17 @@ const CASES: Q[] = [
 async function main() {
   // The POST options would also be applied to the library's own cookie request and break it, so get the cookie and
   // crumb with an ordinary call first; the screener call then reuses them.
-  await client.quote("RELIANCE.NS", {}, { validateResult: false }).catch((e) => console.error("warm-up failed:", e));
+  // Yahoo answers 429 to the crumb request when a shared runner has made too many lately, so wait and try again.
+  for (let attempt = 1; attempt <= 6; attempt++) {
+    try {
+      await client.quote("RELIANCE.NS", {}, { validateResult: false });
+      console.log(`warm-up ok on attempt ${attempt}`);
+      break;
+    } catch (e) {
+      console.error(`warm-up attempt ${attempt} failed: ${e instanceof Error ? e.message : e}`);
+      await new Promise((res) => setTimeout(res, 90_000));
+    }
+  }
   const out: string[] = ["# Spike: top Indian stocks by sector or industry from Yahoo", "", `Run at ${new Date().toISOString()}`, ""];
   let worked = 0;
   for (const c of CASES) {
@@ -100,10 +111,11 @@ async function main() {
         const variants = name.includes(" - ") ? [name, name.replace(" - ", "\u2014")] : [name];
         let best: (typeof found.industry)[number] | null = null;
         for (const v of variants) {
+          if (best && best.total > 0) break;
           const q = await screen({ label: v, field: "industry", value: v, exchange: "NSI" }, 3);
           const total = typeof q.total === "number" ? q.total : 0;
           if (!best || total > best.total) best = { name, sector, spelling: v === name ? "hyphen" : "long-dash", total, top: q.rows.map((x) => String(x.symbol)) };
-          await new Promise((res) => setTimeout(res, 400));
+          await new Promise((res) => setTimeout(res, 600));
         }
         if (best) found.industry.push(best);
       }
