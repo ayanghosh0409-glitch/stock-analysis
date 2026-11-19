@@ -1,0 +1,36 @@
+name: Live check - build a sector
+
+# Runs the real "build a sector" path against Yahoo Finance for a few sectors (stored list -> Yahoo figures -> screen)
+# and prints the result in the run summary. It changes nothing in the repository.
+
+on:
+  pull_request:
+    paths:
+      - scripts/live-sector-check.ts
+      - src/lib/builtSector.ts
+      - src/lib/sectorMatch.ts
+      - src/lib/sectorLists.ts
+      - src/lib/yahoo.ts
+      - src/lib/yahoo-client.ts
+      - .github/workflows/live-sector-check.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build sectors from live Yahoo data
+        run: npx tsx scripts/live-sector-check.ts
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f sector-out/live-report.md ] && cat sector-out/live-report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
