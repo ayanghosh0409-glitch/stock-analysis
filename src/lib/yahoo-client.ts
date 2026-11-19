@@ -1,4 +1,5 @@
 import YahooFinance from "yahoo-finance2";
+import { screenerBody, toListedStocks, type ListedStock } from "./sectorLists";
 import { buildPreview, marketCapFrom, toCandidates, type Candidate, type Preview, type RawYahoo, type StatementYear } from "./yahoo";
 
 /**
@@ -114,4 +115,49 @@ export async function fetchPreview(ticker: string, siteSectors: string[]): Promi
   const gotNothing = raw.price === undefined && raw.marketCap === undefined && raw.years.length === 0;
   if (gotNothing) throw new NothingFound(raw.errors.join("; ") || "Yahoo returned nothing for this ticker");
   return buildPreview(raw, siteSectors);
+}
+
+// ---- top stocks by sector -------------------------------------------------------------------------------------------
+
+let crumbReady: Promise<void> | null = null;
+
+/**
+ * Yahoo's screener is a POST, and the POST options would also be applied to the library's own cookie request and break
+ * it. So the cookie and crumb are obtained first with an ordinary call; the screener call then reuses them.
+ */
+function warmUp(): Promise<void> {
+  crumbReady ??= yf.quote("RELIANCE.NS", {}, loose).then(
+    () => undefined,
+    (e) => {
+      crumbReady = null; // try again next time
+      throw e;
+    },
+  );
+  return crumbReady;
+}
+
+type Fetcher = (url: string, params: Record<string, string>, opts: Record<string, unknown>, kind: string, crumb: boolean) => Promise<unknown>;
+
+/**
+ * The largest NSE stocks in one Yahoo sector or industry, biggest first. The library has no sector module, so this
+ * calls the library's internal fetch (which handles Yahoo's cookie and crumb) with the custom screener query that
+ * Yahoo's own site uses. Yahoo answers an unknown name with zero stocks, not an error, so the caller must pass a name
+ * from the stored taxonomy. Throws YahooUnreachable when Yahoo cannot be reached.
+ */
+export async function fetchTopStocks(field: "sector" | "industry", name: string, size?: number): Promise<{ total: number; stocks: ListedStock[] }> {
+  try {
+    await warmUp();
+    const body = screenerBody(field, name, size);
+    const res = (await (yf as unknown as { _fetch: Fetcher })._fetch(
+      "https://${YF_QUERY_HOST}/v1/finance/screener",
+      { lang: "en-US", region: "US", formatted: "false", corsDomain: "finance.yahoo.com" },
+      { fetchOptions: { method: "POST", body: JSON.stringify(body), headers: { "content-type": "application/json" } } },
+      "json",
+      true,
+    )) as { finance?: { result?: { total?: number; quotes?: unknown[] }[] } };
+    const r = res.finance?.result?.[0];
+    return { total: typeof r?.total === "number" ? r.total : 0, stocks: toListedStocks(r?.quotes) };
+  } catch (e) {
+    throw new YahooUnreachable(msg(e));
+  }
 }

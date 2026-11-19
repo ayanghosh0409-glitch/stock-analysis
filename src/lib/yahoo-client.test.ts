@@ -2,10 +2,10 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 // Yahoo is replaced by canned answers shaped like the ones yahoo-finance2 returns, so the client's field mapping,
 // partial-failure handling and error classes are tested without the network.
-const yf = vi.hoisted(() => ({ search: vi.fn(), quote: vi.fn(), quoteSummary: vi.fn(), fundamentalsTimeSeries: vi.fn() }));
-vi.mock("yahoo-finance2", () => ({ default: class { search = yf.search; quote = yf.quote; quoteSummary = yf.quoteSummary; fundamentalsTimeSeries = yf.fundamentalsTimeSeries; } }));
+const yf = vi.hoisted(() => ({ search: vi.fn(), quote: vi.fn(), quoteSummary: vi.fn(), fundamentalsTimeSeries: vi.fn(), _fetch: vi.fn() }));
+vi.mock("yahoo-finance2", () => ({ default: class { search = yf.search; quote = yf.quote; quoteSummary = yf.quoteSummary; fundamentalsTimeSeries = yf.fundamentalsTimeSeries; _fetch = yf._fetch; } }));
 
-import { ForeignReporting, NotIndianListing, NothingFound, YahooUnreachable, fetchPreview, fetchRaw, searchCandidates } from "./yahoo-client";
+import { ForeignReporting, NotIndianListing, NothingFound, YahooUnreachable, fetchPreview, fetchRaw, fetchTopStocks, searchCandidates } from "./yahoo-client";
 
 const CR = 1e7;
 const SECTORS = ["IT", "Auto", "Auto Components", "Auto Batteries", "Pharma", "FMCG"];
@@ -131,5 +131,32 @@ describe("fetchPreview", () => {
     expect(p.figures.roce).toBeNull();
     expect(p.checks.find((c) => c.key === "history")!.ok).toBe(false);
     expect(p.checks.find((c) => c.key === "history")!.detail).toContain("request failed");
+  });
+});
+
+describe("fetchTopStocks", () => {
+  const reply = (quotes: unknown[], total = 41) => ({ finance: { result: [{ total, quotes }] } });
+  it("sends the screener query as a POST with the crumb, after warming the cookie with an ordinary call", async () => {
+    yf.quote.mockResolvedValue({});
+    yf._fetch.mockResolvedValue(reply([{ symbol: "HDFCBANK.NS", longName: "HDFC Bank Limited", marketCap: 1_248_124 * CR }]));
+    const r = await fetchTopStocks("industry", "Banks\u2014Regional");
+    expect(r).toEqual({ total: 41, stocks: [{ symbol: "HDFCBANK.NS", name: "HDFC Bank Limited", marketCap: 1248124 }] });
+    const [url, , opts, kind, crumb] = yf._fetch.mock.calls[0];
+    expect(url).toContain("/v1/finance/screener");
+    expect(kind).toBe("json");
+    expect(crumb).toBe(true);
+    expect(opts.fetchOptions.method).toBe("POST");
+    expect(JSON.parse(opts.fetchOptions.body).query.operands.at(-1)).toEqual({ operator: "eq", operands: ["industry", "Banks\u2014Regional"] });
+    expect(yf.quote.mock.invocationCallOrder[0]).toBeLessThan(yf._fetch.mock.invocationCallOrder[0]);
+  });
+  it("treats an unknown name as zero stocks, which is what Yahoo answers", async () => {
+    yf.quote.mockResolvedValue({});
+    yf._fetch.mockResolvedValue(reply([], 0));
+    expect(await fetchTopStocks("industry", "Banks")).toEqual({ total: 0, stocks: [] });
+  });
+  it("says Yahoo was unreachable when the call fails", async () => {
+    yf.quote.mockResolvedValue({});
+    yf._fetch.mockRejectedValue(new Error("Failed to get crumb, status 429"));
+    await expect(fetchTopStocks("sector", "Healthcare")).rejects.toBeInstanceOf(YahooUnreachable);
   });
 });

@@ -1,0 +1,61 @@
+name: Refresh sector lists
+
+# Fetches, for every Yahoo sector and industry, the ten largest NSE stocks by market cap and stores them in
+# data/sector-lists.json, so searching for a sector on the site needs no call to Yahoo.
+# On the schedule it writes the file and commits it to main. A pull request run only reports.
+# Run it by hand with "apply" ticked to write the file on the branch it runs on.
+
+on:
+  push: # TEMPORARY: lets the first run on this branch write the file; removed before merge
+    branches: [sector-search]
+    paths:
+      - scripts/refresh-sector-lists.ts
+      - .github/workflows/refresh-sector-lists.yml
+  schedule:
+    - cron: "45 1 * * 1" # Mondays 07:15 IST (01:45 UTC), after the market-data refresh
+  pull_request:
+    paths:
+      - scripts/refresh-sector-lists.ts
+      - src/lib/sectorLists.ts
+      - src/lib/yahoo-client.ts
+      - data/yahoo-taxonomy.json
+      - .github/workflows/refresh-sector-lists.yml
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Write data/sector-lists.json and commit it to this branch"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-sector-lists
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch the lists from Yahoo Finance
+        run: npx tsx scripts/refresh-sector-lists.ts ${{ (github.event_name == 'schedule' || github.event_name == 'push' || inputs.apply) && '--apply' || '' }}
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f sector-out/report.md ] && cat sector-out/report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
+      - name: Commit the lists
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.apply }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sector-lists.json
+          git diff --cached --quiet || git commit -m "Refresh sector lists $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
