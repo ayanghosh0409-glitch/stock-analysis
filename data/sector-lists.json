@@ -1,0 +1,6101 @@
+{
+ "fetchedAt": "2026-11-19",
+ "lists": [
+  {
+   "kind": "sector",
+   "name": "Basic Materials",
+   "sector": null,
+   "total": 431,
+   "stocks": [
+    {
+     "symbol": "ULTRACEMCO.NS",
+     "name": "UltraTech Cement Limited",
+     "marketCap": 368228
+    },
+    {
+     "symbol": "JSWSTEEL.NS",
+     "name": "JSW Steel Limited",
+     "marketCap": 322573
+    },
+    {
+     "symbol": "ASIANPAINT.NS",
+     "name": "Asian Paints Limited",
+     "marketCap": 247830
+    },
+    {
+     "symbol": "TATASTEEL.NS",
+     "name": "Tata Steel Limited",
+     "marketCap": 225703
+    },
+    {
+     "symbol": "HINDZINC.NS",
+     "name": "Hindustan Zinc Limited",
+     "marketCap": 219864
+    },
+    {
+     "symbol": "GRASIM.NS",
+     "name": "Grasim Industries Limited",
+     "marketCap": 211240
+    },
+    {
+     "symbol": "HINDALCO.NS",
+     "name": "Hindalco Industries Limited",
+     "marketCap": 200451
+    },
+    {
+     "symbol": "SOLARINDS.NS",
+     "name": "Solar Industries India Limited",
+     "marketCap": 169388
+    },
+    {
+     "symbol": "PIDILITIND.NS",
+     "name": "Pidilite Industries Limited",
+     "marketCap": 160145
+    },
+    {
+     "symbol": "VAML.NS",
+     "name": "Vedanta Aluminium Metal Limited",
+     "marketCap": 142521
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Agricultural Inputs",
+   "sector": "Basic Materials",
+   "total": 52,
+   "stocks": [
+    {
+     "symbol": "COROMANDEL.NS",
+     "name": "Coromandel International Limited",
+     "marketCap": 57765
+    },
+    {
+     "symbol": "FACT.NS",
+     "name": "The Fertilisers and Chemicals Travancore Limited",
+     "marketCap": 49977
+    },
+    {
+     "symbol": "UPL.NS",
+     "name": "UPL Limited",
+     "marketCap": 48287
+    },
+    {
+     "symbol": "PIIND.NS",
+     "name": "PI Industries Limited",
+     "marketCap": 24928
+    },
+    {
+     "symbol": "SUMICHEM.NS",
+     "name": "Sumitomo Chemical India Limited",
+     "marketCap": 16789
+    },
+    {
+     "symbol": "BAYERCROP.NS",
+     "name": "Bayer CropScience Limited",
+     "marketCap": 15048
+    },
+    {
+     "symbol": "CHAMBLFERT.NS",
+     "name": "Chambal Fertilisers and Chemicals Limited",
+     "marketCap": 14888
+    },
+    {
+     "symbol": "PARADEEP.NS",
+     "name": "Paradeep Phosphates Limited",
+     "marketCap": 14452
+    },
+    {
+     "symbol": "EIDPARRY.NS",
+     "name": "E.I.D.- Parry (India) Limited",
+     "marketCap": 11464
+    },
+    {
+     "symbol": "MBAPL.NS",
+     "name": "Madhya Bharat Agro Products Limited",
+     "marketCap": 8438
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Aluminum",
+   "sector": "Basic Materials",
+   "total": 13,
+   "stocks": [
+    {
+     "symbol": "HINDALCO.NS",
+     "name": "Hindalco Industries Limited",
+     "marketCap": 200451
+    },
+    {
+     "symbol": "VAML.NS",
+     "name": "Vedanta Aluminium Metal Limited",
+     "marketCap": 142521
+    },
+    {
+     "symbol": "NATIONALUM.NS",
+     "name": "National Aluminium Company Limited",
+     "marketCap": 55916
+    },
+    {
+     "symbol": "ARFIN.NS",
+     "name": "Arfin India Limited",
+     "marketCap": 1531
+    },
+    {
+     "symbol": "BELDING.NS",
+     "name": "Belding India Limited",
+     "marketCap": 1170
+    },
+    {
+     "symbol": "MMP.NS",
+     "name": "MMP Industries Limited",
+     "marketCap": 1151
+    },
+    {
+     "symbol": "BAHETI.NS",
+     "name": "Baheti Recycling Industries Limited",
+     "marketCap": 796
+    },
+    {
+     "symbol": "MAANALU.NS",
+     "name": "Maan Aluminium Limited",
+     "marketCap": 585
+    },
+    {
+     "symbol": "MANAKALUCO.NS",
+     "name": "Manaksia Aluminium Company Limited",
+     "marketCap": 186
+    },
+    {
+     "symbol": "CENTEXT.NS",
+     "name": "Century Extrusions Limited",
+     "marketCap": 134
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Building Materials",
+   "sector": "Basic Materials",
+   "total": 39,
+   "stocks": [
+    {
+     "symbol": "ULTRACEMCO.NS",
+     "name": "UltraTech Cement Limited",
+     "marketCap": 368228
+    },
+    {
+     "symbol": "GRASIM.NS",
+     "name": "Grasim Industries Limited",
+     "marketCap": 211240
+    },
+    {
+     "symbol": "AMBUJACEM.NS",
+     "name": "Ambuja Cements Limited",
+     "marketCap": 96808
+    },
+    {
+     "symbol": "SHREECEM.NS",
+     "name": "Shree Cement Limited",
+     "marketCap": 90220
+    },
+    {
+     "symbol": "JKCEMENT.NS",
+     "name": "J.K. Cement Limited",
+     "marketCap": 40352
+    },
+    {
+     "symbol": "DALBHARAT.NS",
+     "name": "Dalmia Bharat Limited",
+     "marketCap": 28606
+    },
+    {
+     "symbol": "ACC.NS",
+     "name": "ACC Limited",
+     "marketCap": 23447
+    },
+    {
+     "symbol": "RAMCOCEM.NS",
+     "name": "The Ramco Cements Limited",
+     "marketCap": 19561
+    },
+    {
+     "symbol": "JSWCEMENT.NS",
+     "name": "JSW Cement Limited",
+     "marketCap": 16769
+    },
+    {
+     "symbol": "INDIACEM.NS",
+     "name": "The India Cements Limited",
+     "marketCap": 14905
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Chemicals",
+   "sector": "Basic Materials",
+   "total": 48,
+   "stocks": [
+    {
+     "symbol": "NAVINFLUOR.NS",
+     "name": "Navin Fluorine International Limited",
+     "marketCap": 52682
+    },
+    {
+     "symbol": "DEEPAKNTR.NS",
+     "name": "Deepak Nitrite Limited",
+     "marketCap": 21264
+    },
+    {
+     "symbol": "DEEPAKFERT.NS",
+     "name": "Deepak Fertilisers And Petrochemicals Corporation Limited",
+     "marketCap": 18471
+    },
+    {
+     "symbol": "TATACHEM.NS",
+     "name": "Tata Chemicals Limited",
+     "marketCap": 16557
+    },
+    {
+     "symbol": "RPEL.NS",
+     "name": "Raghav Productivity Enhancers Limited",
+     "marketCap": 8595
+    },
+    {
+     "symbol": "GNFC.NS",
+     "name": "Gujarat Narmada Valley Fertilizers & Chemicals Limited",
+     "marketCap": 6872
+    },
+    {
+     "symbol": "ACI.NS",
+     "name": "Archean Chemical Industries Limited",
+     "marketCap": 5423
+    },
+    {
+     "symbol": "FOSECOIND.NS",
+     "name": "Foseco India Limited",
+     "marketCap": 4520
+    },
+    {
+     "symbol": "GUJALKALI.NS",
+     "name": "Gujarat Alkalies and Chemicals Limited",
+     "marketCap": 4233
+    },
+    {
+     "symbol": "GHCL.NS",
+     "name": "GHCL Limited",
+     "marketCap": 4191
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Copper",
+   "sector": "Basic Materials",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "HINDCOPPER.NS",
+     "name": "Hindustan Copper Limited",
+     "marketCap": 40354
+    },
+    {
+     "symbol": "CUBEXTUB.NS",
+     "name": "Cubex Tubings Limited",
+     "marketCap": 315
+    },
+    {
+     "symbol": "BHAGYANGR.NS",
+     "name": "Bhagyanagar India Limited",
+     "marketCap": 290
+    },
+    {
+     "symbol": "MCL.NS",
+     "name": "M Tek Copper Limited",
+     "marketCap": 139
+    },
+    {
+     "symbol": "RAJMET.NS",
+     "name": "Rajnandini Metal Limited",
+     "marketCap": 81
+    },
+    {
+     "symbol": "SAGARDEEP.NS",
+     "name": "Sagardeep Alloys Limited",
+     "marketCap": 45
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Gold",
+   "sector": "Basic Materials",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "DECNGOLD.NS",
+     "name": "Deccan Gold Mines Limited",
+     "marketCap": 3483
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Lumber & Wood Production",
+   "sector": "Basic Materials",
+   "total": 7,
+   "stocks": [
+    {
+     "symbol": "CENTURYPLY.NS",
+     "name": "Century Plyboards (India) Limited",
+     "marketCap": 14761
+    },
+    {
+     "symbol": "GREENLAM.NS",
+     "name": "Greenlam Industries Limited",
+     "marketCap": 6035
+    },
+    {
+     "symbol": "GREENPLY.NS",
+     "name": "Greenply Industries Limited",
+     "marketCap": 3368
+    },
+    {
+     "symbol": "GREENPANEL.NS",
+     "name": "Greenpanel Industries Limited",
+     "marketCap": 1897
+    },
+    {
+     "symbol": "IWP.NS",
+     "name": "The Indian Wood Products Company Limited",
+     "marketCap": 218
+    },
+    {
+     "symbol": "ARCHIDPLY.NS",
+     "name": "Archidply Industries Limited",
+     "marketCap": 163
+    },
+    {
+     "symbol": "WIPL.NS",
+     "name": "The Western India Plywoods Limited",
+     "marketCap": 144
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Other Industrial Metals & Mining",
+   "sector": "Basic Materials",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "HINDZINC.NS",
+     "name": "Hindustan Zinc Limited",
+     "marketCap": 219822
+    },
+    {
+     "symbol": "VEDL.NS",
+     "name": "Vedanta Limited",
+     "marketCap": 94922
+    },
+    {
+     "symbol": "VOGL.NS",
+     "name": "Vedanta Oil and Gas Limited",
+     "marketCap": 11506
+    },
+    {
+     "symbol": "JAINREC.NS",
+     "name": "Jain Resource Recycling Limited",
+     "marketCap": 9994
+    },
+    {
+     "symbol": "IMFA.NS",
+     "name": "Indian Metals and Ferro Alloys Limited",
+     "marketCap": 5486
+    },
+    {
+     "symbol": "MOIL.NS",
+     "name": "MOIL Limited",
+     "marketCap": 4286
+    },
+    {
+     "symbol": "ASHAPURMIN.NS",
+     "name": "Ashapura Minechem Limited",
+     "marketCap": 4003
+    },
+    {
+     "symbol": "JGCHEM.NS",
+     "name": "J.G. Chemicals Limited",
+     "marketCap": 2171
+    },
+    {
+     "symbol": "20MICRONS.NS",
+     "name": "20 Microns Limited",
+     "marketCap": 632
+    },
+    {
+     "symbol": "NILE.NS",
+     "name": "Nile Limited",
+     "marketCap": 362
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Other Precious Metals & Mining",
+   "sector": "Basic Materials",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "IGIL.NS",
+     "name": "International Gemological Institute Limited",
+     "marketCap": 19114
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Paper & Paper Products",
+   "sector": "Basic Materials",
+   "total": 23,
+   "stocks": [
+    {
+     "symbol": "JKPAPER.NS",
+     "name": "JK Paper Limited",
+     "marketCap": 6542
+    },
+    {
+     "symbol": "WSTCSTPAPR.NS",
+     "name": "West Coast Paper Mills Limited",
+     "marketCap": 4353
+    },
+    {
+     "symbol": "SESHAPAPER.NS",
+     "name": "Seshasayee Paper and Boards Limited",
+     "marketCap": 1331
+    },
+    {
+     "symbol": "ANDHRAPAP.NS",
+     "name": "Andhra Paper Limited",
+     "marketCap": 1252
+    },
+    {
+     "symbol": "NRAIL.NS",
+     "name": "N R Agarwal Industries Limited",
+     "marketCap": 1078
+    },
+    {
+     "symbol": "TNPL.NS",
+     "name": "Tamil Nadu Newsprint and Papers Limited",
+     "marketCap": 917
+    },
+    {
+     "symbol": "PDMJEPAPER.NS",
+     "name": "Pudumjee Paper Products Limited",
+     "marketCap": 876
+    },
+    {
+     "symbol": "EMAMIPAP.NS",
+     "name": "Emami Paper Mills Limited",
+     "marketCap": 689
+    },
+    {
+     "symbol": "VOITHPAPR.NS",
+     "name": "Voith Paper Fabrics India Limited",
+     "marketCap": 610
+    },
+    {
+     "symbol": "SATIA.NS",
+     "name": "Satia Industries Limited",
+     "marketCap": 591
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Specialty Chemicals",
+   "sector": "Basic Materials",
+   "total": 131,
+   "stocks": [
+    {
+     "symbol": "ASIANPAINT.NS",
+     "name": "Asian Paints Limited",
+     "marketCap": 247801
+    },
+    {
+     "symbol": "SOLARINDS.NS",
+     "name": "Solar Industries India Limited",
+     "marketCap": 169388
+    },
+    {
+     "symbol": "PIDILITIND.NS",
+     "name": "Pidilite Industries Limited",
+     "marketCap": 160186
+    },
+    {
+     "symbol": "LINDEINDIA.NS",
+     "name": "Linde India Limited",
+     "marketCap": 57789
+    },
+    {
+     "symbol": "BERGEPAINT.NS",
+     "name": "Berger Paints India Limited",
+     "marketCap": 54516
+    },
+    {
+     "symbol": "FLUOROCHEM.NS",
+     "name": "Gujarat Fluorochemicals Limited",
+     "marketCap": 53451
+    },
+    {
+     "symbol": "ACUTAAS.NS",
+     "name": "Acutaas Chemicals Limited",
+     "marketCap": 32627
+    },
+    {
+     "symbol": "HSCL.NS",
+     "name": "Himadri Speciality Chemical Limited",
+     "marketCap": 27890
+    },
+    {
+     "symbol": "AETHER.NS",
+     "name": "Aether Industries Limited",
+     "marketCap": 21955
+    },
+    {
+     "symbol": "GRWRHITECH.NS",
+     "name": "Garware Hi-Tech Films Limited",
+     "marketCap": 18070
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Steel",
+   "sector": "Basic Materials",
+   "total": 95,
+   "stocks": [
+    {
+     "symbol": "JSWSTEEL.NS",
+     "name": "JSW Steel Limited",
+     "marketCap": 322573
+    },
+    {
+     "symbol": "TATASTEEL.NS",
+     "name": "Tata Steel Limited",
+     "marketCap": 225690
+    },
+    {
+     "symbol": "JINDALSTEL.NS",
+     "name": "Jindal Steel Limited",
+     "marketCap": 113779
+    },
+    {
+     "symbol": "LLOYDSME.NS",
+     "name": "Lloyds Metals and Energy Limited",
+     "marketCap": 98057
+    },
+    {
+     "symbol": "SAIL.NS",
+     "name": "Steel Authority of India Limited",
+     "marketCap": 67955
+    },
+    {
+     "symbol": "APLAPOLLO.NS",
+     "name": "APL Apollo Tubes Limited",
+     "marketCap": 60696
+    },
+    {
+     "symbol": "JSL.NS",
+     "name": "Jindal Stainless Limited",
+     "marketCap": 60206
+    },
+    {
+     "symbol": "NMDC.NS",
+     "name": "NMDC Limited",
+     "marketCap": 60013
+    },
+    {
+     "symbol": "WELCORP.NS",
+     "name": "Welspun Corp Limited",
+     "marketCap": 58806
+    },
+    {
+     "symbol": "SHYAMMETL.NS",
+     "name": "Shyam Metalics and Energy Limited",
+     "marketCap": 36799
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Communication Services",
+   "sector": null,
+   "total": 82,
+   "stocks": [
+    {
+     "symbol": "BHARTIARTL.NS",
+     "name": "Bharti Airtel Limited",
+     "marketCap": 1335616
+    },
+    {
+     "symbol": "IDEA.NS",
+     "name": "Vodafone Idea Limited",
+     "marketCap": 130012
+    },
+    {
+     "symbol": "INDUSTOWER.NS",
+     "name": "Indus Towers Limited",
+     "marketCap": 102248
+    },
+    {
+     "symbol": "BHARTIHEXA.NS",
+     "name": "Bharti Hexacom Limited",
+     "marketCap": 81625
+    },
+    {
+     "symbol": "NAUKRI.NS",
+     "name": "Info Edge (India) Limited",
+     "marketCap": 75396
+    },
+    {
+     "symbol": "TATACOMM.NS",
+     "name": "Tata Communications Limited",
+     "marketCap": 50025
+    },
+    {
+     "symbol": "SUNTV.NS",
+     "name": "Sun TV Network Limited",
+     "marketCap": 27558
+    },
+    {
+     "symbol": "AFFLE.NS",
+     "name": "Affle 3i Limited",
+     "marketCap": 22860
+    },
+    {
+     "symbol": "PFOCUS.NS",
+     "name": "Prime Focus Limited",
+     "marketCap": 21685
+    },
+    {
+     "symbol": "NAZARA.NS",
+     "name": "Nazara Technologies Limited",
+     "marketCap": 17250
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Advertising Agencies",
+   "sector": "Communication Services",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "AFFLE.NS",
+     "name": "Affle 3i Limited",
+     "marketCap": 22860
+    },
+    {
+     "symbol": "BCG.NS",
+     "name": "Brightcom Group Limited",
+     "marketCap": 1786
+    },
+    {
+     "symbol": "SIGNPOST.NS",
+     "name": "Signpost India Limited",
+     "marketCap": 1191
+    },
+    {
+     "symbol": "PRAVEG.NS",
+     "name": "Praveg Limited",
+     "marketCap": 498
+    },
+    {
+     "symbol": "RKSWAMY.NS",
+     "name": "R K Swamy Limited",
+     "marketCap": 394
+    },
+    {
+     "symbol": "TOUCHWOOD.NS",
+     "name": "Touchwood Entertainment Limited",
+     "marketCap": 62
+    },
+    {
+     "symbol": "ODIGMA.NS",
+     "name": "Odigma Consultancy Solutions Limited",
+     "marketCap": 62
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Broadcasting",
+   "sector": "Communication Services",
+   "total": 12,
+   "stocks": [
+    {
+     "symbol": "SUNTV.NS",
+     "name": "Sun TV Network Limited",
+     "marketCap": 27558
+    },
+    {
+     "symbol": "ZEEL.NS",
+     "name": "Zee Entertainment Enterprises Limited",
+     "marketCap": 6816
+    },
+    {
+     "symbol": "NDTV.NS",
+     "name": "New Delhi Television Limited",
+     "marketCap": 734
+    },
+    {
+     "symbol": "TVTODAY.NS",
+     "name": "T.V. Today Network Limited",
+     "marketCap": 603
+    },
+    {
+     "symbol": "ZEEMEDIA.NS",
+     "name": "Zee Media Corporation Limited",
+     "marketCap": 459
+    },
+    {
+     "symbol": "ENIL.NS",
+     "name": "Entertainment Network (India) Limited",
+     "marketCap": 386
+    },
+    {
+     "symbol": "AQYLON.NS",
+     "name": "Aqylon Nexus Limited",
+     "marketCap": 301
+    },
+    {
+     "symbol": "RADIOCITY.NS",
+     "name": "Music Broadcast Limited",
+     "marketCap": 204
+    },
+    {
+     "symbol": "BAGFILMS.NS",
+     "name": "B.A.G. Films and Media Limited",
+     "marketCap": 85
+    },
+    {
+     "symbol": "RAJTV.NS",
+     "name": "Raj Television Network Limited",
+     "marketCap": 40
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Electronic Gaming & Multimedia",
+   "sector": "Communication Services",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "NAZARA.NS",
+     "name": "Nazara Technologies Limited",
+     "marketCap": 17250
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Entertainment",
+   "sector": "Communication Services",
+   "total": 30,
+   "stocks": [
+    {
+     "symbol": "PFOCUS.NS",
+     "name": "Prime Focus Limited",
+     "marketCap": 21685
+    },
+    {
+     "symbol": "PVRINOX.NS",
+     "name": "PVR INOX Limited",
+     "marketCap": 16755
+    },
+    {
+     "symbol": "SAREGAMA.NS",
+     "name": "Saregama India Limited",
+     "marketCap": 12829
+    },
+    {
+     "symbol": "TIPSMUSIC.NS",
+     "name": "Tips Music Limited",
+     "marketCap": 10431
+    },
+    {
+     "symbol": "NETWORK18.NS",
+     "name": "Network18 Media & Investments Limited",
+     "marketCap": 3982
+    },
+    {
+     "symbol": "IMAGICAA.NS",
+     "name": "Imagicaaworld Entertainment Limited",
+     "marketCap": 2356
+    },
+    {
+     "symbol": "MMWL.NS",
+     "name": "Media Matrix Worldwide Limited",
+     "marketCap": 2335
+    },
+    {
+     "symbol": "HATHWAY.NS",
+     "name": "Hathway Cable and Datacom Limited",
+     "marketCap": 1632
+    },
+    {
+     "symbol": "SUNSHINE.NS",
+     "name": "Sunshine Pictures Limited",
+     "marketCap": 1571
+    },
+    {
+     "symbol": "PANORAMA.NS",
+     "name": "Panorama Studios International Limited",
+     "marketCap": 1473
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Internet Content & Information",
+   "sector": "Communication Services",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "NAUKRI.NS",
+     "name": "Info Edge (India) Limited",
+     "marketCap": 75376
+    },
+    {
+     "symbol": "JUSTDIAL.NS",
+     "name": "Just Dial Limited",
+     "marketCap": 5636
+    },
+    {
+     "symbol": "MATRIMONY.NS",
+     "name": "Matrimony.com Limited",
+     "marketCap": 1093
+    },
+    {
+     "symbol": "DGCONTENT.NS",
+     "name": "Digicontent Limited",
+     "marketCap": 120
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Publishing",
+   "sector": "Communication Services",
+   "total": 11,
+   "stocks": [
+    {
+     "symbol": "MPSLTD.NS",
+     "name": "MPS Limited",
+     "marketCap": 3641
+    },
+    {
+     "symbol": "NAVNETEDUL.NS",
+     "name": "Navneet Education Limited",
+     "marketCap": 2696
+    },
+    {
+     "symbol": "DBCORP.NS",
+     "name": "D. B. Corp Limited",
+     "marketCap": 2656
+    },
+    {
+     "symbol": "JAGRAN.NS",
+     "name": "Jagran Prakashan Limited",
+     "marketCap": 1384
+    },
+    {
+     "symbol": "SANDESH.NS",
+     "name": "The Sandesh Limited",
+     "marketCap": 742
+    },
+    {
+     "symbol": "HMVL.NS",
+     "name": "Hindustan Media Ventures Limited",
+     "marketCap": 674
+    },
+    {
+     "symbol": "HTMEDIA.NS",
+     "name": "HT Media Limited",
+     "marketCap": 547
+    },
+    {
+     "symbol": "SCHAND.NS",
+     "name": "S Chand And Company Limited",
+     "marketCap": 431
+    },
+    {
+     "symbol": "SAMBHAAV.NS",
+     "name": "Sambhaav Media Limited",
+     "marketCap": 108
+    },
+    {
+     "symbol": "CYBERMEDIA.NS",
+     "name": "Cyber Media (India) Limited",
+     "marketCap": 34
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Telecom Services",
+   "sector": "Communication Services",
+   "total": 16,
+   "stocks": [
+    {
+     "symbol": "BHARTIARTL.NS",
+     "name": "Bharti Airtel Limited",
+     "marketCap": 1335679
+    },
+    {
+     "symbol": "IDEA.NS",
+     "name": "Vodafone Idea Limited",
+     "marketCap": 130120
+    },
+    {
+     "symbol": "INDUSTOWER.NS",
+     "name": "Indus Towers Limited",
+     "marketCap": 102248
+    },
+    {
+     "symbol": "BHARTIHEXA.NS",
+     "name": "Bharti Hexacom Limited",
+     "marketCap": 81625
+    },
+    {
+     "symbol": "TATACOMM.NS",
+     "name": "Tata Communications Limited",
+     "marketCap": 50000
+    },
+    {
+     "symbol": "RAILTEL.NS",
+     "name": "RailTel Corporation of India Limited",
+     "marketCap": 7907
+    },
+    {
+     "symbol": "TTML.NS",
+     "name": "Tata Teleservices (Maharashtra) Limited",
+     "marketCap": 7175
+    },
+    {
+     "symbol": "ROUTE.NS",
+     "name": "Route Mobile Limited",
+     "marketCap": 2651
+    },
+    {
+     "symbol": "STLNETWORK.NS",
+     "name": "STL Networks Limited",
+     "marketCap": 2123
+    },
+    {
+     "symbol": "MTNL.NS",
+     "name": "Mahanagar Telephone Nigam Limited",
+     "marketCap": 1570
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Consumer Cyclical",
+   "sector": null,
+   "total": 510,
+   "stocks": [
+    {
+     "symbol": "MARUTI.NS",
+     "name": "Maruti Suzuki India Limited",
+     "marketCap": 421142
+    },
+    {
+     "symbol": "M&M.NS",
+     "name": "Mahindra & Mahindra Limited",
+     "marketCap": 420435
+    },
+    {
+     "symbol": "TITAN.NS",
+     "name": "Titan Company Limited",
+     "marketCap": 413204
+    },
+    {
+     "symbol": "ETERNAL.NS",
+     "name": "Eternal Limited",
+     "marketCap": 333318
+    },
+    {
+     "symbol": "BAJAJ-AUTO.NS",
+     "name": "Bajaj Auto Limited",
+     "marketCap": 296544
+    },
+    {
+     "symbol": "EICHERMOT.NS",
+     "name": "Eicher Motors Limited",
+     "marketCap": 220956
+    },
+    {
+     "symbol": "TVSMOTOR.NS",
+     "name": "TVS Motor Company Limited",
+     "marketCap": 217079
+    },
+    {
+     "symbol": "HYUNDAI.NS",
+     "name": "Hyundai Motor India Limited",
+     "marketCap": 177930
+    },
+    {
+     "symbol": "MOTHERSON.NS",
+     "name": "Samvardhana Motherson International Limited",
+     "marketCap": 173088
+    },
+    {
+     "symbol": "TRENT.NS",
+     "name": "Trent Limited",
+     "marketCap": 170789
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Apparel Manufacturing",
+   "sector": "Consumer Cyclical",
+   "total": 31,
+   "stocks": [
+    {
+     "symbol": "PAGEIND.NS",
+     "name": "Page Industries Limited",
+     "marketCap": 34689
+    },
+    {
+     "symbol": "PGIL.NS",
+     "name": "Pearl Global Industries Limited",
+     "marketCap": 12826
+    },
+    {
+     "symbol": "MANYAVAR.NS",
+     "name": "Vedant Fashions Limited",
+     "marketCap": 11207
+    },
+    {
+     "symbol": "GOKEX.NS",
+     "name": "Gokaldas Exports Limited",
+     "marketCap": 5433
+    },
+    {
+     "symbol": "ABFRL.NS",
+     "name": "Aditya Birla Fashion and Retail Limited",
+     "marketCap": 4490
+    },
+    {
+     "symbol": "RAYMONDLSL.NS",
+     "name": "Raymond Lifestyle Limited",
+     "marketCap": 3440
+    },
+    {
+     "symbol": "LUXIND.NS",
+     "name": "Lux Industries Limited",
+     "marketCap": 3441
+    },
+    {
+     "symbol": "SBC.NS",
+     "name": "SBC Exports Limited",
+     "marketCap": 3299
+    },
+    {
+     "symbol": "KITEX.NS",
+     "name": "Kitex Garments Limited",
+     "marketCap": 2669
+    },
+    {
+     "symbol": "KKCL.NS",
+     "name": "Kewal Kiran Clothing Limited",
+     "marketCap": 2586
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Apparel Retail",
+   "sector": "Consumer Cyclical",
+   "total": 13,
+   "stocks": [
+    {
+     "symbol": "TRENT.NS",
+     "name": "Trent Limited",
+     "marketCap": 170789
+    },
+    {
+     "symbol": "METROBRAND.NS",
+     "name": "Metro Brands Limited",
+     "marketCap": 22445
+    },
+    {
+     "symbol": "ABLBL.NS",
+     "name": "Aditya Birla Lifestyle Brands Limited",
+     "marketCap": 9225
+    },
+    {
+     "symbol": "V2RETAIL.NS",
+     "name": "V2 Retail Limited",
+     "marketCap": 5063
+    },
+    {
+     "symbol": "ARVINDFASN.NS",
+     "name": "Arvind Fashions Limited",
+     "marketCap": 4794
+    },
+    {
+     "symbol": "STYLEBAAZA.NS",
+     "name": "Baazar Style Retail Limited",
+     "marketCap": 4269
+    },
+    {
+     "symbol": "GOCOLORS.NS",
+     "name": "Go Fashion (India) Limited",
+     "marketCap": 1492
+    },
+    {
+     "symbol": "KALAMANDIR.NS",
+     "name": "Sai Silks (Kalamandir) Limited",
+     "marketCap": 1330
+    },
+    {
+     "symbol": "MUFTI.NS",
+     "name": "Credo Brands Marketing Limited",
+     "marketCap": 484
+    },
+    {
+     "symbol": "SSDL.NS",
+     "name": "Saraswati Saree Depot Limited",
+     "marketCap": 265
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Auto & Truck Dealerships",
+   "sector": "Consumer Cyclical",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "CARTRADE.NS",
+     "name": "CarTrade Tech Limited",
+     "marketCap": 12873
+    },
+    {
+     "symbol": "LANDMARK.NS",
+     "name": "Landmark Cars Limited",
+     "marketCap": 1913
+    },
+    {
+     "symbol": "PVSL.NS",
+     "name": "Popular Vehicles and Services Limited",
+     "marketCap": 640
+    },
+    {
+     "symbol": "COMPEAU.NS",
+     "name": "Competent Automobiles Company Limited",
+     "marketCap": 224
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Auto Manufacturers",
+   "sector": "Consumer Cyclical",
+   "total": 17,
+   "stocks": [
+    {
+     "symbol": "MARUTI.NS",
+     "name": "Maruti Suzuki India Limited",
+     "marketCap": 421048
+    },
+    {
+     "symbol": "M&M.NS",
+     "name": "Mahindra & Mahindra Limited",
+     "marketCap": 420423
+    },
+    {
+     "symbol": "BAJAJ-AUTO.NS",
+     "name": "Bajaj Auto Limited",
+     "marketCap": 296544
+    },
+    {
+     "symbol": "EICHERMOT.NS",
+     "name": "Eicher Motors Limited",
+     "marketCap": 220942
+    },
+    {
+     "symbol": "TVSMOTOR.NS",
+     "name": "TVS Motor Company Limited",
+     "marketCap": 217079
+    },
+    {
+     "symbol": "HYUNDAI.NS",
+     "name": "Hyundai Motor India Limited",
+     "marketCap": 177930
+    },
+    {
+     "symbol": "TMCV.NS",
+     "name": "Tata Motors Limited",
+     "marketCap": 165157
+    },
+    {
+     "symbol": "HEROMOTOCO.NS",
+     "name": "Hero MotoCorp Limited",
+     "marketCap": 110089
+    },
+    {
+     "symbol": "TMPV.NS",
+     "name": "Tata Motors Passenger Vehicles Limited",
+     "marketCap": 96496
+    },
+    {
+     "symbol": "ATHERENERG.NS",
+     "name": "Ather Energy Limited",
+     "marketCap": 74896
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Auto Parts",
+   "sector": "Consumer Cyclical",
+   "total": 102,
+   "stocks": [
+    {
+     "symbol": "MOTHERSON.NS",
+     "name": "Samvardhana Motherson International Limited",
+     "marketCap": 173088
+    },
+    {
+     "symbol": "BOSCHLTD.NS",
+     "name": "Bosch Limited",
+     "marketCap": 145917
+    },
+    {
+     "symbol": "UNOMINDA.NS",
+     "name": "Uno Minda Limited",
+     "marketCap": 80844
+    },
+    {
+     "symbol": "SCHAEFFLER.NS",
+     "name": "Schaeffler India Limited",
+     "marketCap": 56485
+    },
+    {
+     "symbol": "SONACOMS.NS",
+     "name": "Sona BLW Precision Forgings Limited",
+     "marketCap": 56379
+    },
+    {
+     "symbol": "MRF.NS",
+     "name": "MRF Limited",
+     "marketCap": 54817
+    },
+    {
+     "symbol": "BALKRISIND.NS",
+     "name": "Balkrishna Industries Limited",
+     "marketCap": 44753
+    },
+    {
+     "symbol": "ENDURANCE.NS",
+     "name": "Endurance Technologies Limited",
+     "marketCap": 36235
+    },
+    {
+     "symbol": "EXIDEIND.NS",
+     "name": "Exide Industries Limited",
+     "marketCap": 34183
+    },
+    {
+     "symbol": "DHOOTTRANS.NS",
+     "name": "Dhoot Transmission Limited",
+     "marketCap": 33176
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Department Stores",
+   "sector": "Consumer Cyclical",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "VMM.NS",
+     "name": "Vishal Mega Mart Limited",
+     "marketCap": 42379
+    },
+    {
+     "symbol": "VMART.NS",
+     "name": "V-Mart Retail Limited",
+     "marketCap": 6199
+    },
+    {
+     "symbol": "SHOPERSTOP.NS",
+     "name": "Shoppers Stop Limited",
+     "marketCap": 4164
+    },
+    {
+     "symbol": "PATELRMART.NS",
+     "name": "Patel Retail Limited",
+     "marketCap": 770
+    },
+    {
+     "symbol": "SPENCERS.NS",
+     "name": "Spencer's Retail Limited",
+     "marketCap": 201
+    },
+    {
+     "symbol": "FELDVR.NS",
+     "name": "Future Enterprises Limited",
+     "marketCap": 94
+    },
+    {
+     "symbol": "OSIAHYPER.NS",
+     "name": "Osia Hyper Retail Limited",
+     "marketCap": 29
+    },
+    {
+     "symbol": "FEL.NS",
+     "name": "Future Enterprises Limited",
+     "marketCap": 14
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Footwear & Accessories",
+   "sector": "Consumer Cyclical",
+   "total": 18,
+   "stocks": [
+    {
+     "symbol": "BATAINDIA.NS",
+     "name": "Bata India Limited",
+     "marketCap": 7998
+    },
+    {
+     "symbol": "RELAXO.NS",
+     "name": "Relaxo Footwears Limited",
+     "marketCap": 6710
+    },
+    {
+     "symbol": "SAFARI.NS",
+     "name": "Safari Industries (India) Limited",
+     "marketCap": 6677
+    },
+    {
+     "symbol": "CAMPUS.NS",
+     "name": "Campus Activewear Limited",
+     "marketCap": 5901
+    },
+    {
+     "symbol": "REDTAPE.NS",
+     "name": "REDTAPE Limited",
+     "marketCap": 5744
+    },
+    {
+     "symbol": "VIPIND.NS",
+     "name": "V.I.P. Industries Limited",
+     "marketCap": 3505
+    },
+    {
+     "symbol": "BIL.NS",
+     "name": "Bhartiya International Ltd.",
+     "marketCap": 1345
+    },
+    {
+     "symbol": "SREEL.NS",
+     "name": "Sreeleathers Limited",
+     "marketCap": 646
+    },
+    {
+     "symbol": "KDGREEN.NS",
+     "name": "KD Green Industries Limited",
+     "marketCap": 432
+    },
+    {
+     "symbol": "LIBERTSHOE.NS",
+     "name": "Liberty Shoes Ltd.",
+     "marketCap": 389
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Furnishings, Fixtures & Appliances",
+   "sector": "Consumer Cyclical",
+   "total": 37,
+   "stocks": [
+    {
+     "symbol": "VOLTAS.NS",
+     "name": "Voltas Limited",
+     "marketCap": 40007
+    },
+    {
+     "symbol": "AMBER.NS",
+     "name": "Amber Enterprises India Limited",
+     "marketCap": 23472
+    },
+    {
+     "symbol": "CROMPTON.NS",
+     "name": "Crompton Greaves Consumer Electricals Limited",
+     "marketCap": 13992
+    },
+    {
+     "symbol": "WHIRLPOOL.NS",
+     "name": "Whirlpool of India Limited",
+     "marketCap": 10549
+    },
+    {
+     "symbol": "CELLO.NS",
+     "name": "Cello World Limited",
+     "marketCap": 8123
+    },
+    {
+     "symbol": "EUREKAFORB.NS",
+     "name": "Eureka Forbes Limited",
+     "marketCap": 7705
+    },
+    {
+     "symbol": "TTKPRESTIG.NS",
+     "name": "TTK Prestige Limited",
+     "marketCap": 7619
+    },
+    {
+     "symbol": "SFL.NS",
+     "name": "Sheela Foam Limited",
+     "marketCap": 6510
+    },
+    {
+     "symbol": "STYLAMIND.NS",
+     "name": "Stylam Industries Limited",
+     "marketCap": 5671
+    },
+    {
+     "symbol": "BOSCH-HCIL.NS",
+     "name": "Bosch Home Comfort India Limited",
+     "marketCap": 4745
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Home Improvement Retail",
+   "sector": "Consumer Cyclical",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "BUILDPRO.NS",
+     "name": "Shankara Buildpro Limited",
+     "marketCap": 2246
+    },
+    {
+     "symbol": "SHANKARA.NS",
+     "name": "Shankara Building Products Limited",
+     "marketCap": 279
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Internet Retail",
+   "sector": "Consumer Cyclical",
+   "total": 10,
+   "stocks": [
+    {
+     "symbol": "ETERNAL.NS",
+     "name": "Eternal Limited",
+     "marketCap": 333180
+    },
+    {
+     "symbol": "MEESHO.NS",
+     "name": "Meesho Limited",
+     "marketCap": 119341
+    },
+    {
+     "symbol": "NYKAA.NS",
+     "name": "FSN E-Commerce Ventures Limited",
+     "marketCap": 102493
+    },
+    {
+     "symbol": "SWIGGY.NS",
+     "name": "Swiggy Limited",
+     "marketCap": 47843
+    },
+    {
+     "symbol": "INDIAMART.NS",
+     "name": "IndiaMART InterMESH Limited",
+     "marketCap": 9347
+    },
+    {
+     "symbol": "FIRSTCRY.NS",
+     "name": "Brainbees Solutions Limited",
+     "marketCap": 8457
+    },
+    {
+     "symbol": "RTNINDIA.NS",
+     "name": "RattanIndia Enterprises Limited",
+     "marketCap": 3411
+    },
+    {
+     "symbol": "ACEVECTOR.NS",
+     "name": "AceVector Limited",
+     "marketCap": 1125
+    },
+    {
+     "symbol": "ISFT.NS",
+     "name": "IntraSoft Technologies Limited",
+     "marketCap": 188
+    },
+    {
+     "symbol": "DIGIDRIVE.NS",
+     "name": "Digidrive Distributors Limited",
+     "marketCap": 67
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Leisure",
+   "sector": "Consumer Cyclical",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "WONDERLA.NS",
+     "name": "Wonderla Holidays Limited",
+     "marketCap": 3213
+    },
+    {
+     "symbol": "NICCOPAR.NS",
+     "name": "Nicco Parks & Resorts Limited",
+     "marketCap": 321
+    },
+    {
+     "symbol": "CRAVATEX.NS",
+     "name": "Cravatex Limited",
+     "marketCap": 90
+    },
+    {
+     "symbol": "ATLASCYCLE.NS",
+     "name": "Atlas Cycles (Haryana) Limited",
+     "marketCap": 60
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Lodging",
+   "sector": "Consumer Cyclical",
+   "total": 36,
+   "stocks": [
+    {
+     "symbol": "INDHOTEL.NS",
+     "name": "The Indian Hotels Company Limited",
+     "marketCap": 126871
+    },
+    {
+     "symbol": "THELEELA.NS",
+     "name": "Leela Palaces Hotels & Resorts Limited",
+     "marketCap": 23025
+    },
+    {
+     "symbol": "EIHOTEL.NS",
+     "name": "EIH Limited",
+     "marketCap": 19468
+    },
+    {
+     "symbol": "VENTIVE.NS",
+     "name": "Ventive Hospitality Limited",
+     "marketCap": 12549
+    },
+    {
+     "symbol": "LEMONTREE.NS",
+     "name": "Lemon Tree Hotels Limited",
+     "marketCap": 9797
+    },
+    {
+     "symbol": "ITDC.NS",
+     "name": "India Tourism Development Corporation Limited",
+     "marketCap": 5687
+    },
+    {
+     "symbol": "ELEVATE.NS",
+     "name": "Elevate Campuses Limited",
+     "marketCap": 5221
+    },
+    {
+     "symbol": "JUNIPER.NS",
+     "name": "Juniper Hotels Limited",
+     "marketCap": 4309
+    },
+    {
+     "symbol": "SAMHI.NS",
+     "name": "SAMHI Hotels Limited",
+     "marketCap": 3513
+    },
+    {
+     "symbol": "ORIENTHOT.NS",
+     "name": "Oriental Hotels Limited",
+     "marketCap": 3156
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Luxury Goods",
+   "sector": "Consumer Cyclical",
+   "total": 43,
+   "stocks": [
+    {
+     "symbol": "TITAN.NS",
+     "name": "Titan Company Limited",
+     "marketCap": 413310
+    },
+    {
+     "symbol": "KALYANKJIL.NS",
+     "name": "Kalyan Jewellers India Limited",
+     "marketCap": 66747
+    },
+    {
+     "symbol": "LALITHAA.NS",
+     "name": "Lalithaa Jewellery Mart Limited",
+     "marketCap": 17533
+    },
+    {
+     "symbol": "SKYGOLD.NS",
+     "name": "Sky Gold and Diamonds Limited",
+     "marketCap": 14428
+    },
+    {
+     "symbol": "PCJEWELLER.NS",
+     "name": "PC Jeweller Limited",
+     "marketCap": 14260
+    },
+    {
+     "symbol": "THANGAMAYL.NS",
+     "name": "Thangamayil Jewellery Limited",
+     "marketCap": 12327
+    },
+    {
+     "symbol": "BLUESTONE.NS",
+     "name": "BlueStone Jewellery and Lifestyle Limited",
+     "marketCap": 10190
+    },
+    {
+     "symbol": "PNGJL.NS",
+     "name": "P N Gadgil Jewellers Limited",
+     "marketCap": 8502
+    },
+    {
+     "symbol": "ETHOSLTD.NS",
+     "name": "Ethos Limited",
+     "marketCap": 7599
+    },
+    {
+     "symbol": "KDDL.NS",
+     "name": "KDDL Limited",
+     "marketCap": 5871
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Packaging & Containers",
+   "sector": "Consumer Cyclical",
+   "total": 38,
+   "stocks": [
+    {
+     "symbol": "TIMETECHNO.NS",
+     "name": "Time Technoplast Limited",
+     "marketCap": 9421
+    },
+    {
+     "symbol": "EPL.NS",
+     "name": "EPL Limited",
+     "marketCap": 7539
+    },
+    {
+     "symbol": "UFLEX.NS",
+     "name": "Uflex Limited",
+     "marketCap": 4539
+    },
+    {
+     "symbol": "AGI.NS",
+     "name": "AGI Greenpac Limited",
+     "marketCap": 4295
+    },
+    {
+     "symbol": "TCPLPACK.NS",
+     "name": "TCPL Packaging Limited",
+     "marketCap": 4131
+    },
+    {
+     "symbol": "JINDALPOLY.NS",
+     "name": "Jindal Poly Films Limited",
+     "marketCap": 2910
+    },
+    {
+     "symbol": "KNACK.NS",
+     "name": "Knack Packaging Limited",
+     "marketCap": 2509
+    },
+    {
+     "symbol": "MOLDTKPAC.NS",
+     "name": "Mold-Tek Packaging Limited",
+     "marketCap": 2321
+    },
+    {
+     "symbol": "COSMOFIRST.NS",
+     "name": "Cosmo First Limited",
+     "marketCap": 2140
+    },
+    {
+     "symbol": "HUHTAMAKI.NS",
+     "name": "Huhtamaki India Limited",
+     "marketCap": 1615
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Resorts & Casinos",
+   "sector": "Consumer Cyclical",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "ITCHOTELS.NS",
+     "name": "ITC Hotels Limited",
+     "marketCap": 37908
+    },
+    {
+     "symbol": "MHRIL.NS",
+     "name": "Mahindra Holidays & Resorts India Limited",
+     "marketCap": 3932
+    },
+    {
+     "symbol": "DELTACORP.NS",
+     "name": "Delta Corp Limited",
+     "marketCap": 2113
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Restaurants",
+   "sector": "Consumer Cyclical",
+   "total": 10,
+   "stocks": [
+    {
+     "symbol": "JUBLFOOD.NS",
+     "name": "Jubilant FoodWorks Limited",
+     "marketCap": 27682
+    },
+    {
+     "symbol": "TRAVELFOOD.NS",
+     "name": "Travel Food Services Limited",
+     "marketCap": 15367
+    },
+    {
+     "symbol": "DEVYANI.NS",
+     "name": "Devyani International Limited",
+     "marketCap": 15166
+    },
+    {
+     "symbol": "WESTLIFE.NS",
+     "name": "Westlife Foodworld Limited",
+     "marketCap": 10854
+    },
+    {
+     "symbol": "RBA.NS",
+     "name": "Restaurant Brands Asia Limited",
+     "marketCap": 6667
+    },
+    {
+     "symbol": "SAPPHIRE.NS",
+     "name": "Sapphire Foods India Limited",
+     "marketCap": 6428
+    },
+    {
+     "symbol": "UFBL.NS",
+     "name": "United Foodbrands Limited",
+     "marketCap": 2144
+    },
+    {
+     "symbol": "SPECIALITY.NS",
+     "name": "Speciality Restaurants Limited",
+     "marketCap": 683
+    },
+    {
+     "symbol": "COFFEEDAY.NS",
+     "name": "Coffee Day Enterprises Limited",
+     "marketCap": 611
+    },
+    {
+     "symbol": "DANGEE.NS",
+     "name": "Dangee Dums Limited",
+     "marketCap": 50
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Specialty Retail",
+   "sector": "Consumer Cyclical",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "AVL.NS",
+     "name": "Aditya Vision Limited",
+     "marketCap": 7020
+    },
+    {
+     "symbol": "EMIL.NS",
+     "name": "Electronics Mart India Limited",
+     "marketCap": 5282
+    },
+    {
+     "symbol": "SSRETAIL.NS",
+     "name": "SS RETAIL LIMITED",
+     "marketCap": 4939
+    },
+    {
+     "symbol": "PRAXIS.NS",
+     "name": "Praxis Home Retail Limited",
+     "marketCap": 89
+    },
+    {
+     "symbol": "ARCHIES.NS",
+     "name": "Archies Limited",
+     "marketCap": 37
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Textile Manufacturing",
+   "sector": "Consumer Cyclical",
+   "total": 123,
+   "stocks": [
+    {
+     "symbol": "KPRMILL.NS",
+     "name": "K.P.R. Mill Limited",
+     "marketCap": 41651
+    },
+    {
+     "symbol": "WELSPUNLIV.NS",
+     "name": "Welspun Living Limited",
+     "marketCap": 23800
+    },
+    {
+     "symbol": "VTL.NS",
+     "name": "Vardhman Textiles Limited",
+     "marketCap": 15329
+    },
+    {
+     "symbol": "ARVIND.NS",
+     "name": "Arvind Limited",
+     "marketCap": 14194
+    },
+    {
+     "symbol": "TRIDENT.NS",
+     "name": "Trident Limited",
+     "marketCap": 11964
+    },
+    {
+     "symbol": "ICIL.NS",
+     "name": "Indo Count Industries Limited",
+     "marketCap": 11342
+    },
+    {
+     "symbol": "GARFIBRES.NS",
+     "name": "Garware Technical Fibres Limited",
+     "marketCap": 7201
+    },
+    {
+     "symbol": "FILATEX.NS",
+     "name": "Filatex India Limited",
+     "marketCap": 4985
+    },
+    {
+     "symbol": "SANATHAN.NS",
+     "name": "Sanathan Textiles Limited",
+     "marketCap": 4889
+    },
+    {
+     "symbol": "JINDWORLD.NS",
+     "name": "Jindal Worldwide Limited",
+     "marketCap": 4020
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Travel Services",
+   "sector": "Consumer Cyclical",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "IRCTC.NS",
+     "name": "Indian Railway Catering & Tourism Corporation Limited",
+     "marketCap": 35780
+    },
+    {
+     "symbol": "TBOTEK.NS",
+     "name": "TBO Tek Limited",
+     "marketCap": 17103
+    },
+    {
+     "symbol": "IXIGO.NS",
+     "name": "Le Travenues Technology Limited",
+     "marketCap": 7818
+    },
+    {
+     "symbol": "THOMASCOOK.NS",
+     "name": "Thomas Cook (India) Limited",
+     "marketCap": 5225
+    },
+    {
+     "symbol": "EASEMYTRIP.NS",
+     "name": "Easy Trip Planners Limited",
+     "marketCap": 2510
+    },
+    {
+     "symbol": "YATRA.NS",
+     "name": "Yatra Online Limited",
+     "marketCap": 1414
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Consumer Defensive",
+   "sector": null,
+   "total": 188,
+   "stocks": [
+    {
+     "symbol": "HINDUNILVR.NS",
+     "name": "Hindustan Unilever Limited",
+     "marketCap": 477578
+    },
+    {
+     "symbol": "ITC.NS",
+     "name": "ITC Limited",
+     "marketCap": 373412
+    },
+    {
+     "symbol": "NESTLEIND.NS",
+     "name": "Nestlé India Limited",
+     "marketCap": 250623
+    },
+    {
+     "symbol": "DMART.NS",
+     "name": "Avenue Supermarts Limited",
+     "marketCap": 228211
+    },
+    {
+     "symbol": "VBL.NS",
+     "name": "Varun Beverages Limited",
+     "marketCap": 141710
+    },
+    {
+     "symbol": "MARICO.NS",
+     "name": "Marico Limited",
+     "marketCap": 117875
+    },
+    {
+     "symbol": "BRITANNIA.NS",
+     "name": "Britannia Industries Limited",
+     "marketCap": 115135
+    },
+    {
+     "symbol": "TATACONSUM.NS",
+     "name": "Tata Consumer Products Limited",
+     "marketCap": 112134
+    },
+    {
+     "symbol": "UNITDSPR.NS",
+     "name": "United Spirits Limited",
+     "marketCap": 102234
+    },
+    {
+     "symbol": "GODREJCP.NS",
+     "name": "Godrej Consumer Products Limited",
+     "marketCap": 94056
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Beverages—Brewers",
+   "sector": "Consumer Defensive",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "UBL.NS",
+     "name": "United Breweries Limited",
+     "marketCap": 32464
+    },
+    {
+     "symbol": "SDBL.NS",
+     "name": "Som Distilleries & Breweries Limited",
+     "marketCap": 1571
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Beverages—Non-Alcoholic",
+   "sector": "Consumer Defensive",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "VBL.NS",
+     "name": "Varun Beverages Limited",
+     "marketCap": 141710
+    },
+    {
+     "symbol": "VINCOFE.NS",
+     "name": "Vintage Coffee and Beverages Limited",
+     "marketCap": 2232
+    },
+    {
+     "symbol": "RAMANEWS.NS",
+     "name": "Shree Rama Newsprint Limited",
+     "marketCap": 399
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Beverages—Wineries & Distilleries",
+   "sector": "Consumer Defensive",
+   "total": 13,
+   "stocks": [
+    {
+     "symbol": "UNITDSPR.NS",
+     "name": "United Spirits Limited",
+     "marketCap": 102177
+    },
+    {
+     "symbol": "RADICO.NS",
+     "name": "Radico Khaitan Limited",
+     "marketCap": 61153
+    },
+    {
+     "symbol": "ABDL.NS",
+     "name": "Allied Blenders and Distillers Limited",
+     "marketCap": 22545
+    },
+    {
+     "symbol": "TI.NS",
+     "name": "Tilaknagar Industries Ltd.",
+     "marketCap": 13334
+    },
+    {
+     "symbol": "IGLSPIRITS.NS",
+     "name": "IGL Spirits Limited",
+     "marketCap": 5691
+    },
+    {
+     "symbol": "PICCADIL.NS",
+     "name": "Piccadily Agro Industries Limited",
+     "marketCap": 5279
+    },
+    {
+     "symbol": "GLOBUSSPR.NS",
+     "name": "Globus Spirits Limited",
+     "marketCap": 2343
+    },
+    {
+     "symbol": "GMBREW.NS",
+     "name": "G.M. Breweries Limited",
+     "marketCap": 1951
+    },
+    {
+     "symbol": "SULA.NS",
+     "name": "Sula Vineyards Limited",
+     "marketCap": 1135
+    },
+    {
+     "symbol": "ASALCBR.NS",
+     "name": "Associated Alcohols & Breweries Limited",
+     "marketCap": 1085
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Confectioners",
+   "sector": "Consumer Defensive",
+   "total": 27,
+   "stocks": [
+    {
+     "symbol": "BALRAMCHIN.NS",
+     "name": "Balrampur Chini Mills Limited",
+     "marketCap": 13443
+    },
+    {
+     "symbol": "TRIVENI.NS",
+     "name": "Triveni Engineering & Industries Limited",
+     "marketCap": 5131
+    },
+    {
+     "symbol": "BAJAJHIND.NS",
+     "name": "Bajaj Hindusthan Sugar Limited",
+     "marketCap": 4059
+    },
+    {
+     "symbol": "BANARISUG.NS",
+     "name": "Bannari Amman Sugars Limited",
+     "marketCap": 3887
+    },
+    {
+     "symbol": "RENUKA.NS",
+     "name": "Shree Renuka Sugars Limited",
+     "marketCap": 3757
+    },
+    {
+     "symbol": "DALMIASUG.NS",
+     "name": "Dalmia Bharat Sugar and Industries Limited",
+     "marketCap": 3735
+    },
+    {
+     "symbol": "AVADHSUGAR.NS",
+     "name": "Avadh Sugar & Energy Limited",
+     "marketCap": 1639
+    },
+    {
+     "symbol": "UTTAMSUGAR.NS",
+     "name": "Uttam Sugar Mills Limited",
+     "marketCap": 1380
+    },
+    {
+     "symbol": "DHAMPURSUG.NS",
+     "name": "Dhampur Sugar Mills Limited",
+     "marketCap": 1045
+    },
+    {
+     "symbol": "DWARKESH.NS",
+     "name": "Dwarikesh Sugar Industries Limited",
+     "marketCap": 803
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Discount Stores",
+   "sector": "Consumer Defensive",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "DMART.NS",
+     "name": "Avenue Supermarts Limited",
+     "marketCap": 228244
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Education & Training Services",
+   "sector": "Consumer Defensive",
+   "total": 21,
+   "stocks": [
+    {
+     "symbol": "PWL.NS",
+     "name": "Physicswallah Limited",
+     "marketCap": 39636
+    },
+    {
+     "symbol": "SEIL.NS",
+     "name": "Shanti Educational Initiatives Limited",
+     "marketCap": 3126
+    },
+    {
+     "symbol": "CRIZAC.NS",
+     "name": "Crizac Limited",
+     "marketCap": 2624
+    },
+    {
+     "symbol": "NIITMTS.NS",
+     "name": "NIIT Learning Systems Limited",
+     "marketCap": 2351
+    },
+    {
+     "symbol": "NIITLTD.NS",
+     "name": "NIIT Limited",
+     "marketCap": 961
+    },
+    {
+     "symbol": "JARO.NS",
+     "name": "Jaro Institute of Technology Management and Research Limited",
+     "marketCap": 876
+    },
+    {
+     "symbol": "GLOBAL.NS",
+     "name": "Global Education Limited",
+     "marketCap": 715
+    },
+    {
+     "symbol": "APTECHT.NS",
+     "name": "Aptech Limited",
+     "marketCap": 487
+    },
+    {
+     "symbol": "CPEDU.NS",
+     "name": "Career Point Edutech Ltd.",
+     "marketCap": 333
+    },
+    {
+     "symbol": "CLEDUCATE.NS",
+     "name": "CL Educate Limited",
+     "marketCap": 283
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Farm Products",
+   "sector": "Consumer Defensive",
+   "total": 29,
+   "stocks": [
+    {
+     "symbol": "AEROPLANE.NS",
+     "name": "Amir Chand Jagdish Kumar (Exports) Limited",
+     "marketCap": 2421
+    },
+    {
+     "symbol": "VENKEYS.NS",
+     "name": "Venky's (India) Limited",
+     "marketCap": 2068
+    },
+    {
+     "symbol": "ANDREWYU.NS",
+     "name": "Andrew Yule & Company Limited",
+     "marketCap": 1130
+    },
+    {
+     "symbol": "APEX.NS",
+     "name": "Apex Frozen Foods Limited",
+     "marketCap": 908
+    },
+    {
+     "symbol": "DBOL.NS",
+     "name": "Dhampur Bio Organics Limited",
+     "marketCap": 856
+    },
+    {
+     "symbol": "SHINDL.NS",
+     "name": "Sharat Industries Limited",
+     "marketCap": 584
+    },
+    {
+     "symbol": "MGEL.NS",
+     "name": "Mangalam Global Enterprise Limited",
+     "marketCap": 582
+    },
+    {
+     "symbol": "KNAGRI.NS",
+     "name": "KN Agri Resources Limited",
+     "marketCap": 520
+    },
+    {
+     "symbol": "HALDER.NS",
+     "name": "Halder Venture Limited",
+     "marketCap": 386
+    },
+    {
+     "symbol": "HARRMALAYA.NS",
+     "name": "Harrisons Malayalam Limited",
+     "marketCap": 277
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Food Distribution",
+   "sector": "Consumer Defensive",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "DODLA.NS",
+     "name": "Dodla Dairy Limited",
+     "marketCap": 5906
+    },
+    {
+     "symbol": "VADILENT.NS",
+     "name": "Vadilal Enterprises Limited",
+     "marketCap": 802
+    },
+    {
+     "symbol": "ESSENTIA.NS",
+     "name": "Integra Essentia Limited",
+     "marketCap": 160
+    },
+    {
+     "symbol": "ANIKINDS.NS",
+     "name": "Anik Industries Limited",
+     "marketCap": 110
+    },
+    {
+     "symbol": "ASIANTNE.NS",
+     "name": "Asian Tea & Exports Limited",
+     "marketCap": 22
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Grocery Stores",
+   "sector": "Consumer Defensive",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "RETAIL.NS",
+     "name": "JHS Svendgaard Retail Ventures Limited",
+     "marketCap": 22
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Household & Personal Products",
+   "sector": "Consumer Defensive",
+   "total": 18,
+   "stocks": [
+    {
+     "symbol": "HINDUNILVR.NS",
+     "name": "Hindustan Unilever Limited",
+     "marketCap": 477578
+    },
+    {
+     "symbol": "MARICO.NS",
+     "name": "Marico Limited",
+     "marketCap": 117875
+    },
+    {
+     "symbol": "GODREJCP.NS",
+     "name": "Godrej Consumer Products Limited",
+     "marketCap": 94061
+    },
+    {
+     "symbol": "DABUR.NS",
+     "name": "Dabur India Limited",
+     "marketCap": 69393
+    },
+    {
+     "symbol": "CUPID.NS",
+     "name": "Cupid Limited",
+     "marketCap": 49221
+    },
+    {
+     "symbol": "COLPAL.NS",
+     "name": "Colgate-Palmolive (India) Limited",
+     "marketCap": 47951
+    },
+    {
+     "symbol": "GILLETTE.NS",
+     "name": "Gillette India Limited",
+     "marketCap": 23347
+    },
+    {
+     "symbol": "PGHH.NS",
+     "name": "Procter & Gamble Hygiene and Health Care Limited",
+     "marketCap": 22440
+    },
+    {
+     "symbol": "EMAMILTD.NS",
+     "name": "Emami Limited",
+     "marketCap": 17767
+    },
+    {
+     "symbol": "HONASA.NS",
+     "name": "Honasa Consumer Limited",
+     "marketCap": 17195
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Packaged Foods",
+   "sector": "Consumer Defensive",
+   "total": 62,
+   "stocks": [
+    {
+     "symbol": "NESTLEIND.NS",
+     "name": "Nestlé India Limited",
+     "marketCap": 250565
+    },
+    {
+     "symbol": "BRITANNIA.NS",
+     "name": "Britannia Industries Limited",
+     "marketCap": 115154
+    },
+    {
+     "symbol": "TATACONSUM.NS",
+     "name": "Tata Consumer Products Limited",
+     "marketCap": 112134
+    },
+    {
+     "symbol": "PATANJALI.NS",
+     "name": "Patanjali Foods Limited",
+     "marketCap": 43813
+    },
+    {
+     "symbol": "MILKYMIST.NS",
+     "name": "Milky Mist Dairy Food Limited",
+     "marketCap": 23669
+    },
+    {
+     "symbol": "HATSUN.NS",
+     "name": "Hatsun Agro Product Limited",
+     "marketCap": 23225
+    },
+    {
+     "symbol": "AWL.NS",
+     "name": "AWL Agri Business Limited",
+     "marketCap": 22000
+    },
+    {
+     "symbol": "LTFOODS.NS",
+     "name": "LT Foods Limited",
+     "marketCap": 15324
+    },
+    {
+     "symbol": "ZYDUSWELL.NS",
+     "name": "Zydus Wellness Limited",
+     "marketCap": 14565
+    },
+    {
+     "symbol": "CCL.NS",
+     "name": "CCL Products (India) Limited",
+     "marketCap": 12687
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Tobacco",
+   "sector": "Consumer Defensive",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "ITC.NS",
+     "name": "ITC Limited",
+     "marketCap": 373349
+    },
+    {
+     "symbol": "GODFRYPHLP.NS",
+     "name": "Godfrey Phillips India Limited",
+     "marketCap": 27575
+    },
+    {
+     "symbol": "VSTIND.NS",
+     "name": "VST Industries Limited",
+     "marketCap": 3291
+    },
+    {
+     "symbol": "ELITECON.NS",
+     "name": "Elitecon International Limited",
+     "marketCap": 687
+    },
+    {
+     "symbol": "NTCIND.NS",
+     "name": "ntc industries limited",
+     "marketCap": 206
+    },
+    {
+     "symbol": "GOLDENTOBC.NS",
+     "name": "Golden Tobacco Limited",
+     "marketCap": 38
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Energy",
+   "sector": null,
+   "total": 40,
+   "stocks": [
+    {
+     "symbol": "RELIANCE.NS",
+     "name": "Reliance Industries Limited",
+     "marketCap": 1841363
+    },
+    {
+     "symbol": "ADANIENT.NS",
+     "name": "Adani Enterprises Limited",
+     "marketCap": 365370
+    },
+    {
+     "symbol": "ONGC.NS",
+     "name": "Oil and Natural Gas Corporation Limited",
+     "marketCap": 282717
+    },
+    {
+     "symbol": "COALINDIA.NS",
+     "name": "Coal India Limited",
+     "marketCap": 240593
+    },
+    {
+     "symbol": "IOC.NS",
+     "name": "Indian Oil Corporation Limited",
+     "marketCap": 206693
+    },
+    {
+     "symbol": "BPCL.NS",
+     "name": "Bharat Petroleum Corporation Limited",
+     "marketCap": 133214
+    },
+    {
+     "symbol": "HINDPETRO.NS",
+     "name": "Hindustan Petroleum Corporation Limited",
+     "marketCap": 83049
+    },
+    {
+     "symbol": "OIL.NS",
+     "name": "Oil India Limited",
+     "marketCap": 70871
+    },
+    {
+     "symbol": "PETRONET.NS",
+     "name": "Petronet LNG Limited",
+     "marketCap": 49170
+    },
+    {
+     "symbol": "AEGISLOG.NS",
+     "name": "Aegis Logistics Limited",
+     "marketCap": 44394
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas Drilling",
+   "sector": "Energy",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "ABAN.NS",
+     "name": "Aban Offshore Limited",
+     "marketCap": 81
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas E&P",
+   "sector": "Energy",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "DEEPINDS.NS",
+     "name": "Deep Industries Limited",
+     "marketCap": 4073
+    },
+    {
+     "symbol": "PRABHA.NS",
+     "name": "Prabha Energy Limited",
+     "marketCap": 3046
+    },
+    {
+     "symbol": "ANTELOPUS.NS",
+     "name": "Antelopus Selan Energy Limited",
+     "marketCap": 2975
+    },
+    {
+     "symbol": "HINDOILEXP.NS",
+     "name": "Hindustan Oil Exploration Company Limited",
+     "marketCap": 2920
+    },
+    {
+     "symbol": "GNRL.NS",
+     "name": "Gujarat Natural Resources Limited",
+     "marketCap": 1695
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas Equipment & Services",
+   "sector": "Energy",
+   "total": 10,
+   "stocks": [
+    {
+     "symbol": "AEGISVOPAK.NS",
+     "name": "Aegis Vopak Terminals Limited",
+     "marketCap": 30607
+    },
+    {
+     "symbol": "DOLPHIN.NS",
+     "name": "Dolphin Offshore Enterprises (India) Limited",
+     "marketCap": 2564
+    },
+    {
+     "symbol": "ASIANENE.NS",
+     "name": "Asian Energy Services Limited",
+     "marketCap": 1826
+    },
+    {
+     "symbol": "JINDRILL.NS",
+     "name": "Jindal Drilling & Industries Limited",
+     "marketCap": 1485
+    },
+    {
+     "symbol": "LIKHITHA.NS",
+     "name": "Likhitha Infrastructure Limited",
+     "marketCap": 787
+    },
+    {
+     "symbol": "SOUTHWEST.NS",
+     "name": "South West Pinnacle Exploration Limited",
+     "marketCap": 530
+    },
+    {
+     "symbol": "OILCOUNTUB.NS",
+     "name": "Oil Country Tubular Limited",
+     "marketCap": 355
+    },
+    {
+     "symbol": "UNIDT.NS",
+     "name": "United Drilling Tools Limited",
+     "marketCap": 318
+    },
+    {
+     "symbol": "ALPHAGEO.NS",
+     "name": "Alphageo (India) Limited",
+     "marketCap": 145
+    },
+    {
+     "symbol": "AAKASH.NS",
+     "name": "Aakash Exploration Services Limited",
+     "marketCap": 75
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas Integrated",
+   "sector": "Energy",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "ONGC.NS",
+     "name": "Oil and Natural Gas Corporation Limited",
+     "marketCap": 282717
+    },
+    {
+     "symbol": "OIL.NS",
+     "name": "Oil India Limited",
+     "marketCap": 70871
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas Midstream",
+   "sector": "Energy",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "GSPLTRANS.NS",
+     "name": "GSPL Transmission Limited",
+     "marketCap": 3289
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Oil & Gas Refining & Marketing",
+   "sector": "Energy",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "RELIANCE.NS",
+     "name": "Reliance Industries Limited",
+     "marketCap": 1841363
+    },
+    {
+     "symbol": "IOC.NS",
+     "name": "Indian Oil Corporation Limited",
+     "marketCap": 206693
+    },
+    {
+     "symbol": "BPCL.NS",
+     "name": "Bharat Petroleum Corporation Limited",
+     "marketCap": 133149
+    },
+    {
+     "symbol": "HINDPETRO.NS",
+     "name": "Hindustan Petroleum Corporation Limited",
+     "marketCap": 83049
+    },
+    {
+     "symbol": "PETRONET.NS",
+     "name": "Petronet LNG Limited",
+     "marketCap": 49155
+    },
+    {
+     "symbol": "AEGISLOG.NS",
+     "name": "Aegis Logistics Limited",
+     "marketCap": 44417
+    },
+    {
+     "symbol": "MRPL.NS",
+     "name": "Mangalore Refinery and Petrochemicals Limited",
+     "marketCap": 30914
+    },
+    {
+     "symbol": "CHENNPETRO.NS",
+     "name": "Chennai Petroleum Corporation Limited",
+     "marketCap": 21132
+    },
+    {
+     "symbol": "CASTROLIND.NS",
+     "name": "Castrol India Limited",
+     "marketCap": 18817
+    },
+    {
+     "symbol": "TRUALT.NS",
+     "name": "TruAlt Bioenergy Limited",
+     "marketCap": 2868
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Thermal Coal",
+   "sector": "Energy",
+   "total": 7,
+   "stocks": [
+    {
+     "symbol": "ADANIENT.NS",
+     "name": "Adani Enterprises Limited",
+     "marketCap": 365288
+    },
+    {
+     "symbol": "COALINDIA.NS",
+     "name": "Coal India Limited",
+     "marketCap": 240562
+    },
+    {
+     "symbol": "GMDCLTD.NS",
+     "name": "Gujarat Mineral Development Corporation Limited",
+     "marketCap": 14518
+    },
+    {
+     "symbol": "GMRP&UI.NS",
+     "name": "GMR Power And Urban Infra Limited",
+     "marketCap": 7066
+    },
+    {
+     "symbol": "CMLL.NS",
+     "name": "Caliber Mining and Logistics Limited",
+     "marketCap": 3510
+    },
+    {
+     "symbol": "REFEX.NS",
+     "name": "Refex Industries Limited",
+     "marketCap": 2998
+    },
+    {
+     "symbol": "ANMOL.NS",
+     "name": "Anmol India Limited",
+     "marketCap": 62
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Financial Services",
+   "sector": null,
+   "total": 279,
+   "stocks": [
+    {
+     "symbol": "HDFCBANK.NS",
+     "name": "HDFC Bank Limited",
+     "marketCap": 1248587
+    },
+    {
+     "symbol": "ICICIBANK.NS",
+     "name": "ICICI Bank Limited",
+     "marketCap": 1145796
+    },
+    {
+     "symbol": "SBIN.NS",
+     "name": "State Bank of India",
+     "marketCap": 1055290
+    },
+    {
+     "symbol": "BAJFINANCE.NS",
+     "name": "Bajaj Finance Limited",
+     "marketCap": 697185
+    },
+    {
+     "symbol": "KOTAKBANK.NS",
+     "name": "Kotak Mahindra Bank Limited",
+     "marketCap": 493935
+    },
+    {
+     "symbol": "AXISBANK.NS",
+     "name": "Axis Bank Limited",
+     "marketCap": 426076
+    },
+    {
+     "symbol": "BAJAJFINSV.NS",
+     "name": "Bajaj Finserv Ltd.",
+     "marketCap": 301214
+    },
+    {
+     "symbol": "LICI.NS",
+     "name": "Life Insurance Corporation of India",
+     "marketCap": 254233
+    },
+    {
+     "symbol": "SHRIRAMFIN.NS",
+     "name": "Shriram Finance Limited",
+     "marketCap": 227419
+    },
+    {
+     "symbol": "SBILIFE.NS",
+     "name": "SBI Life Insurance Company Limited",
+     "marketCap": 181416
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Asset Management",
+   "sector": "Financial Services",
+   "total": 42,
+   "stocks": [
+    {
+     "symbol": "JIOFIN.NS",
+     "name": "Jio Financial Services Limited",
+     "marketCap": 154504
+    },
+    {
+     "symbol": "ICICIAMC.NS",
+     "name": "ICICI Prudential Asset Management Company Limited",
+     "marketCap": 145658
+    },
+    {
+     "symbol": "BAJAJHLDNG.NS",
+     "name": "Bajaj Holdings & Investment Limited",
+     "marketCap": 126719
+    },
+    {
+     "symbol": "HDFCAMC.NS",
+     "name": "HDFC Asset Management Company Limited",
+     "marketCap": 113383
+    },
+    {
+     "symbol": "SBIFUNDS.NS",
+     "name": "SBI Funds Management Limited",
+     "marketCap": 105925
+    },
+    {
+     "symbol": "NAM-INDIA.NS",
+     "name": "Nippon Life India Asset Management Limited",
+     "marketCap": 67622
+    },
+    {
+     "symbol": "360ONE.NS",
+     "name": "360 One Wam Limited",
+     "marketCap": 51733
+    },
+    {
+     "symbol": "ANANDRATHI.NS",
+     "name": "Anand Rathi Wealth Limited",
+     "marketCap": 39451
+    },
+    {
+     "symbol": "NUVAMA.NS",
+     "name": "Nuvama Wealth Management Limited",
+     "marketCap": 34077
+    },
+    {
+     "symbol": "TATAINVEST.NS",
+     "name": "Tata Investment Corporation Limited",
+     "marketCap": 29725
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Banks—Regional",
+   "sector": "Financial Services",
+   "total": 41,
+   "stocks": [
+    {
+     "symbol": "HDFCBANK.NS",
+     "name": "HDFC Bank Limited",
+     "marketCap": 1248510
+    },
+    {
+     "symbol": "ICICIBANK.NS",
+     "name": "ICICI Bank Limited",
+     "marketCap": 1145796
+    },
+    {
+     "symbol": "SBIN.NS",
+     "name": "State Bank of India",
+     "marketCap": 1055337
+    },
+    {
+     "symbol": "KOTAKBANK.NS",
+     "name": "Kotak Mahindra Bank Limited",
+     "marketCap": 493935
+    },
+    {
+     "symbol": "AXISBANK.NS",
+     "name": "Axis Bank Limited",
+     "marketCap": 426076
+    },
+    {
+     "symbol": "PNB.NS",
+     "name": "Punjab National Bank",
+     "marketCap": 177865
+    },
+    {
+     "symbol": "UNIONBANK.NS",
+     "name": "Union Bank of India",
+     "marketCap": 158909
+    },
+    {
+     "symbol": "BANKBARODA.NS",
+     "name": "Bank of Baroda Limited",
+     "marketCap": 145807
+    },
+    {
+     "symbol": "INDIANB.NS",
+     "name": "Indian Bank",
+     "marketCap": 126682
+    },
+    {
+     "symbol": "CANBK.NS",
+     "name": "Canara Bank",
+     "marketCap": 122726
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Capital Markets",
+   "sector": "Financial Services",
+   "total": 78,
+   "stocks": [
+    {
+     "symbol": "GROWW.NS",
+     "name": "Billionbrains Garage Ventures Limited",
+     "marketCap": 139486
+    },
+    {
+     "symbol": "MOTILALOFS.NS",
+     "name": "Motilal Oswal Financial Services Limited",
+     "marketCap": 72671
+    },
+    {
+     "symbol": "AIIL.NS",
+     "name": "Authum Investment & Infrastructure Limited",
+     "marketCap": 46746
+    },
+    {
+     "symbol": "ANGELONE.NS",
+     "name": "Angel One Limited",
+     "marketCap": 31183
+    },
+    {
+     "symbol": "CDSL.NS",
+     "name": "Central Depository Services (India) Limited",
+     "marketCap": 29739
+    },
+    {
+     "symbol": "CHOICEIN.NS",
+     "name": "Choice International Limited",
+     "marketCap": 15996
+    },
+    {
+     "symbol": "IIFLCAPS.NS",
+     "name": "IIFL Capital Services Limited",
+     "marketCap": 12854
+    },
+    {
+     "symbol": "JMFINANCIL.NS",
+     "name": "JM Financial Limited",
+     "marketCap": 10574
+    },
+    {
+     "symbol": "IEX.NS",
+     "name": "Indian Energy Exchange Limited",
+     "marketCap": 10552
+    },
+    {
+     "symbol": "SGFIN.NS",
+     "name": "SG Finserve Limited",
+     "marketCap": 5443
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Credit Services",
+   "sector": "Financial Services",
+   "total": 67,
+   "stocks": [
+    {
+     "symbol": "BAJFINANCE.NS",
+     "name": "Bajaj Finance Limited",
+     "marketCap": 697185
+    },
+    {
+     "symbol": "SHRIRAMFIN.NS",
+     "name": "Shriram Finance Limited",
+     "marketCap": 227419
+    },
+    {
+     "symbol": "CHOLAFIN.NS",
+     "name": "Cholamandalam Investment and Finance Company Limited",
+     "marketCap": 160137
+    },
+    {
+     "symbol": "TATACAP.NS",
+     "name": "Tata Capital Limited",
+     "marketCap": 143389
+    },
+    {
+     "symbol": "PFC.NS",
+     "name": "Power Finance Corporation Limited",
+     "marketCap": 109002
+    },
+    {
+     "symbol": "IRFC.NS",
+     "name": "Indian Railway Finance Corporation Limited",
+     "marketCap": 108691
+    },
+    {
+     "symbol": "MUTHOOTFIN.NS",
+     "name": "Muthoot Finance Limited",
+     "marketCap": 103980
+    },
+    {
+     "symbol": "RECLTD.NS",
+     "name": "REC Limited",
+     "marketCap": 77680
+    },
+    {
+     "symbol": "LTF.NS",
+     "name": "L&T Finance Limited",
+     "marketCap": 68802
+    },
+    {
+     "symbol": "SBICARD.NS",
+     "name": "SBI Cards and Payment Services Limited",
+     "marketCap": 53963
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Financial Conglomerates",
+   "sector": "Financial Services",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "BAJAJFINSV.NS",
+     "name": "Bajaj Finserv Ltd.",
+     "marketCap": 301230
+    },
+    {
+     "symbol": "ABCAPITAL.NS",
+     "name": "Aditya Birla Capital Limited",
+     "marketCap": 113957
+    },
+    {
+     "symbol": "EDELWEISS.NS",
+     "name": "Edelweiss Financial Services Limited",
+     "marketCap": 12333
+    },
+    {
+     "symbol": "ARSSBL.NS",
+     "name": "Anand Rathi Share and Stock Brokers Limited",
+     "marketCap": 3146
+    },
+    {
+     "symbol": "CREST.NS",
+     "name": "Crest Ventures Limited",
+     "marketCap": 1008
+    },
+    {
+     "symbol": "CENTRUM.NS",
+     "name": "Centrum Capital Limited",
+     "marketCap": 977
+    },
+    {
+     "symbol": "DIGISPICE.NS",
+     "name": "DiGiSPICE Technologies Limited",
+     "marketCap": 387
+    },
+    {
+     "symbol": "IVC.NS",
+     "name": "IL&FS Investment Managers Limited",
+     "marketCap": 253
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Financial Data & Stock Exchanges",
+   "sector": "Financial Services",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "BSE.NS",
+     "name": "BSE Limited",
+     "marketCap": 153484
+    },
+    {
+     "symbol": "MCX.NS",
+     "name": "Multi Commodity Exchange of India Limited",
+     "marketCap": 91653
+    },
+    {
+     "symbol": "CRISIL.NS",
+     "name": "CRISIL Limited",
+     "marketCap": 30288
+    },
+    {
+     "symbol": "CARERATING.NS",
+     "name": "CARE Ratings Limited",
+     "marketCap": 4814
+    },
+    {
+     "symbol": "ICRA.NS",
+     "name": "ICRA Limited",
+     "marketCap": 4276
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Insurance Brokers",
+   "sector": "Financial Services",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "POLICYBZR.NS",
+     "name": "PB Fintech Limited",
+     "marketCap": 47033
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Insurance—Diversified",
+   "sector": "Financial Services",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "ICICIGI.NS",
+     "name": "ICICI Lombard General Insurance Company Limited",
+     "marketCap": 83846
+    },
+    {
+     "symbol": "NIACL.NS",
+     "name": "The New India Assurance Company Limited",
+     "marketCap": 25074
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Insurance—Life",
+   "sector": "Financial Services",
+   "total": 9,
+   "stocks": [
+    {
+     "symbol": "LICI.NS",
+     "name": "Life Insurance Corporation of India",
+     "marketCap": 254233
+    },
+    {
+     "symbol": "SBILIFE.NS",
+     "name": "SBI Life Insurance Company Limited",
+     "marketCap": 181527
+    },
+    {
+     "symbol": "HDFCLIFE.NS",
+     "name": "HDFC Life Insurance Company Limited",
+     "marketCap": 125986
+    },
+    {
+     "symbol": "ICICILIFE.NS",
+     "name": "ICICI Life Insurance Limited",
+     "marketCap": 65966
+    },
+    {
+     "symbol": "MFSL.NS",
+     "name": "Max Financial Services Limited",
+     "marketCap": 48247
+    },
+    {
+     "symbol": "STARHEALTH.NS",
+     "name": "Star Health and Allied Insurance Company Limited",
+     "marketCap": 33030
+    },
+    {
+     "symbol": "NIVABUPA.NS",
+     "name": "Niva Bupa Health Insurance Company Limited",
+     "marketCap": 13582
+    },
+    {
+     "symbol": "CANHLIFE.NS",
+     "name": "Canara HSBC Life Insurance Company Limited",
+     "marketCap": 11918
+    },
+    {
+     "symbol": "RELIGARE.NS",
+     "name": "Religare Enterprises Limited",
+     "marketCap": 7819
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Insurance—Property & Casualty",
+   "sector": "Financial Services",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "GODIGIT.NS",
+     "name": "Go Digit General Insurance Limited",
+     "marketCap": 22204
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Insurance—Reinsurance",
+   "sector": "Financial Services",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "GICRE.NS",
+     "name": "General Insurance Corporation of India",
+     "marketCap": 59737
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Mortgage Finance",
+   "sector": "Financial Services",
+   "total": 16,
+   "stocks": [
+    {
+     "symbol": "BAJAJHFL.NS",
+     "name": "Bajaj Housing Finance Limited",
+     "marketCap": 67457
+    },
+    {
+     "symbol": "LICHSGFIN.NS",
+     "name": "LIC Housing Finance Limited",
+     "marketCap": 33551
+    },
+    {
+     "symbol": "PNBHOUSING.NS",
+     "name": "PNB Housing Finance Limited",
+     "marketCap": 29955
+    },
+    {
+     "symbol": "AADHARHFC.NS",
+     "name": "Aadhar Housing Finance Limited",
+     "marketCap": 18398
+    },
+    {
+     "symbol": "SAMMAANCAP.NS",
+     "name": "Sammaan Capital Limited",
+     "marketCap": 15869
+    },
+    {
+     "symbol": "HOMEFIRST.NS",
+     "name": "Home First Finance Company India Limited",
+     "marketCap": 11182
+    },
+    {
+     "symbol": "CANFINHOME.NS",
+     "name": "Can Fin Homes Limited",
+     "marketCap": 10254
+    },
+    {
+     "symbol": "APTUS.NS",
+     "name": "Aptus Value Housing Finance India Limited",
+     "marketCap": 9538
+    },
+    {
+     "symbol": "AAVAS.NS",
+     "name": "Aavas Financiers Limited",
+     "marketCap": 8808
+    },
+    {
+     "symbol": "INDIASHLTR.NS",
+     "name": "India Shelter Finance Corporation Limited",
+     "marketCap": 7065
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Shell Companies",
+   "sector": "Financial Services",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "BLAL.NS",
+     "name": "BEML Land Assets Limited",
+     "marketCap": 690
+    },
+    {
+     "symbol": "MELSTAR.NS",
+     "name": "Melstar Information Technologies Limited",
+     "marketCap": 134
+    },
+    {
+     "symbol": "INFOMEDIA.NS",
+     "name": "Infomedia Press Limited",
+     "marketCap": 29
+    },
+    {
+     "symbol": "TECILCHEM.NS",
+     "name": "Tecil Chemicals and Hydro Power Ltd.",
+     "marketCap": 18
+    },
+    {
+     "symbol": "UNIVAFOODS.NS",
+     "name": "Univa Foods Limited",
+     "marketCap": 14
+    },
+    {
+     "symbol": "GLFL.NS",
+     "name": "Gujarat Lease Financing Limited",
+     "marketCap": 14
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Healthcare",
+   "sector": null,
+   "total": 189,
+   "stocks": [
+    {
+     "symbol": "SUNPHARMA.NS",
+     "name": "Sun Pharmaceutical Industries Limited",
+     "marketCap": 454530
+    },
+    {
+     "symbol": "DIVISLAB.NS",
+     "name": "Divi's Laboratories Limited",
+     "marketCap": 293144
+    },
+    {
+     "symbol": "TORNTPHARM.NS",
+     "name": "Torrent Pharmaceuticals Limited",
+     "marketCap": 176692
+    },
+    {
+     "symbol": "LENSKART.NS",
+     "name": "Lenskart Solutions Limited",
+     "marketCap": 128897
+    },
+    {
+     "symbol": "APOLLOHOSP.NS",
+     "name": "Apollo Hospitals Enterprise Limited",
+     "marketCap": 125021
+    },
+    {
+     "symbol": "LAURUSLABS.NS",
+     "name": "Laurus Labs Limited",
+     "marketCap": 124450
+    },
+    {
+     "symbol": "ZYDUSLIFE.NS",
+     "name": "Zydus Lifesciences Limited",
+     "marketCap": 119052
+    },
+    {
+     "symbol": "DRREDDY.NS",
+     "name": "Dr. Reddy's Laboratories Limited",
+     "marketCap": 116121
+    },
+    {
+     "symbol": "CIPLA.NS",
+     "name": "Cipla Limited",
+     "marketCap": 113904
+    },
+    {
+     "symbol": "MANKIND.NS",
+     "name": "Mankind Pharma Limited",
+     "marketCap": 108085
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Biotechnology",
+   "sector": "Healthcare",
+   "total": 13,
+   "stocks": [
+    {
+     "symbol": "BIOCON.NS",
+     "name": "Biocon Limited",
+     "marketCap": 59500
+    },
+    {
+     "symbol": "ANTHEM.NS",
+     "name": "Anthem Biosciences Limited",
+     "marketCap": 52408
+    },
+    {
+     "symbol": "ONESOURCE.NS",
+     "name": "OneSource Specialty Pharma Limited",
+     "marketCap": 18313
+    },
+    {
+     "symbol": "CONCORDBIO.NS",
+     "name": "Concord Biotech Limited",
+     "marketCap": 11535
+    },
+    {
+     "symbol": "BLUEJET.NS",
+     "name": "Blue Jet Healthcare Limited",
+     "marketCap": 8933
+    },
+    {
+     "symbol": "SUPRIYA.NS",
+     "name": "Supriya Lifescience Limited",
+     "marketCap": 4934
+    },
+    {
+     "symbol": "ZOTA.NS",
+     "name": "Zota Health Care Limited",
+     "marketCap": 4530
+    },
+    {
+     "symbol": "PANACEABIO.NS",
+     "name": "Panacea Biotec Limited",
+     "marketCap": 2151
+    },
+    {
+     "symbol": "DCAL.NS",
+     "name": "Dishman Carbogen Amcis Limited",
+     "marketCap": 1904
+    },
+    {
+     "symbol": "3BBLACKBIO.NS",
+     "name": "3B Blackbio Dx Limited",
+     "marketCap": 1124
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Diagnostics & Research",
+   "sector": "Healthcare",
+   "total": 9,
+   "stocks": [
+    {
+     "symbol": "SAILIFE.NS",
+     "name": "Sai Life Sciences Limited",
+     "marketCap": 37803
+    },
+    {
+     "symbol": "LALPATHLAB.NS",
+     "name": "Dr. Lal PathLabs Limited",
+     "marketCap": 32773
+    },
+    {
+     "symbol": "SYNGENE.NS",
+     "name": "Syngene International Limited",
+     "marketCap": 17525
+    },
+    {
+     "symbol": "VIJAYA.NS",
+     "name": "Vijaya Diagnostic Centre Limited",
+     "marketCap": 15583
+    },
+    {
+     "symbol": "METROPOLIS.NS",
+     "name": "Metropolis Healthcare Limited",
+     "marketCap": 11655
+    },
+    {
+     "symbol": "THYROCARE.NS",
+     "name": "Thyrocare Technologies Limited",
+     "marketCap": 8052
+    },
+    {
+     "symbol": "VIMTALABS.NS",
+     "name": "Vimta Labs Limited",
+     "marketCap": 2056
+    },
+    {
+     "symbol": "SURAKSHA.NS",
+     "name": "Suraksha Diagnostic Limited",
+     "marketCap": 1752
+    },
+    {
+     "symbol": "KRSNAA.NS",
+     "name": "Krsnaa Diagnostics Limited",
+     "marketCap": 1750
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Drug Manufacturers—General",
+   "sector": "Healthcare",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "GLAXO.NS",
+     "name": "GlaxoSmithKline Pharmaceuticals Limited",
+     "marketCap": 45052
+    },
+    {
+     "symbol": "RUBICON.NS",
+     "name": "Rubicon Research Limited",
+     "marketCap": 28127
+    },
+    {
+     "symbol": "PFIZER.NS",
+     "name": "Pfizer Limited",
+     "marketCap": 17599
+    },
+    {
+     "symbol": "MARKSANS.NS",
+     "name": "Marksans Pharma Limited",
+     "marketCap": 13411
+    },
+    {
+     "symbol": "SYMBIOTEC.NS",
+     "name": "SYMBIOTEC PHARMALAB LTD",
+     "marketCap": 10249
+    },
+    {
+     "symbol": "SANOFICONR.NS",
+     "name": "Sanofi Consumer Healthcare India Limited",
+     "marketCap": 8075
+    },
+    {
+     "symbol": "SANOFI.NS",
+     "name": "Sanofi India Limited",
+     "marketCap": 7404
+    },
+    {
+     "symbol": "SENORES.NS",
+     "name": "Senores Pharmaceuticals Limited",
+     "marketCap": 5004
+    },
+    {
+     "symbol": "SMSPHARMA.NS",
+     "name": "SMS Pharmaceuticals Limited",
+     "marketCap": 4468
+    },
+    {
+     "symbol": "SAIPARENT.NS",
+     "name": "Sai Parenteral's Limited",
+     "marketCap": 2172
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Drug Manufacturers—Specialty & Generic",
+   "sector": "Healthcare",
+   "total": 104,
+   "stocks": [
+    {
+     "symbol": "SUNPHARMA.NS",
+     "name": "Sun Pharmaceutical Industries Limited",
+     "marketCap": 454530
+    },
+    {
+     "symbol": "DIVISLAB.NS",
+     "name": "Divi's Laboratories Limited",
+     "marketCap": 293104
+    },
+    {
+     "symbol": "TORNTPHARM.NS",
+     "name": "Torrent Pharmaceuticals Limited",
+     "marketCap": 176677
+    },
+    {
+     "symbol": "LAURUSLABS.NS",
+     "name": "Laurus Labs Limited",
+     "marketCap": 124450
+    },
+    {
+     "symbol": "ZYDUSLIFE.NS",
+     "name": "Zydus Lifesciences Limited",
+     "marketCap": 119052
+    },
+    {
+     "symbol": "DRREDDY.NS",
+     "name": "Dr. Reddy's Laboratories Limited",
+     "marketCap": 116113
+    },
+    {
+     "symbol": "CIPLA.NS",
+     "name": "Cipla Limited",
+     "marketCap": 113904
+    },
+    {
+     "symbol": "MANKIND.NS",
+     "name": "Mankind Pharma Limited",
+     "marketCap": 108085
+    },
+    {
+     "symbol": "AUROPHARMA.NS",
+     "name": "Aurobindo Pharma Limited",
+     "marketCap": 103505
+    },
+    {
+     "symbol": "LUPIN.NS",
+     "name": "Lupin Limited",
+     "marketCap": 90818
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Health Information Services",
+   "sector": "Healthcare",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "IKS.NS",
+     "name": "Inventurus Knowledge Solutions Limited",
+     "marketCap": 27066
+    },
+    {
+     "symbol": "SAGILITY.NS",
+     "name": "Sagility Limited",
+     "marketCap": 21000
+    },
+    {
+     "symbol": "INDGN.NS",
+     "name": "Indegene Limited",
+     "marketCap": 15702
+    },
+    {
+     "symbol": "FABTECH.NS",
+     "name": "Fabtech Technologies Limited",
+     "marketCap": 596
+    },
+    {
+     "symbol": "TAKE.NS",
+     "name": "TAKE LIMITED",
+     "marketCap": 186
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Healthcare Plans",
+   "sector": "Healthcare",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "MEDIASSIST.NS",
+     "name": "Medi Assist Healthcare Services Limited",
+     "marketCap": 2094
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Medical Care Facilities",
+   "sector": "Healthcare",
+   "total": 27,
+   "stocks": [
+    {
+     "symbol": "APOLLOHOSP.NS",
+     "name": "Apollo Hospitals Enterprise Limited",
+     "marketCap": 125021
+    },
+    {
+     "symbol": "MAXHEALTH.NS",
+     "name": "Max Healthcare Institute Limited",
+     "marketCap": 99411
+    },
+    {
+     "symbol": "MANIPALHOS.NS",
+     "name": "Manipal Health Enterprises Limited",
+     "marketCap": 90077
+    },
+    {
+     "symbol": "ASTERDM.NS",
+     "name": "Aster DM Quality Care Limited",
+     "marketCap": 63450
+    },
+    {
+     "symbol": "FORTIS.NS",
+     "name": "Fortis Healthcare Limited",
+     "marketCap": 59800
+    },
+    {
+     "symbol": "MEDANTA.NS",
+     "name": "Global Health Limited",
+     "marketCap": 38761
+    },
+    {
+     "symbol": "NH.NS",
+     "name": "Narayana Hrudayalaya Limited",
+     "marketCap": 37620
+    },
+    {
+     "symbol": "KIMS.NS",
+     "name": "Krishna Institute of Medical Sciences Limited",
+     "marketCap": 32046
+    },
+    {
+     "symbol": "RAINBOW.NS",
+     "name": "Rainbow Children's Medicare Limited",
+     "marketCap": 12591
+    },
+    {
+     "symbol": "YATHARTH.NS",
+     "name": "Yatharth Hospital & Trauma Care Services Limited",
+     "marketCap": 10406
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Medical Devices",
+   "sector": "Healthcare",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "MOLBIO.NS",
+     "name": "Molbio Diagnostics Limited",
+     "marketCap": 17171
+    },
+    {
+     "symbol": "SMT.NS",
+     "name": "Sahajanand Medical Technologies Limited",
+     "marketCap": 5581
+    },
+    {
+     "symbol": "FISCHER.NS",
+     "name": "Fischer Medical Ventures Limited",
+     "marketCap": 1615
+    },
+    {
+     "symbol": "UNIVPHOTO.NS",
+     "name": "Universus Photo Imagings Limited",
+     "marketCap": 493
+    },
+    {
+     "symbol": "NURECA.NS",
+     "name": "Nureca Limited",
+     "marketCap": 299
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Medical Distribution",
+   "sector": "Healthcare",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "ENTERO.NS",
+     "name": "Entero Healthcare Solutions Limited",
+     "marketCap": 8520
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Medical Instruments & Supplies",
+   "sector": "Healthcare",
+   "total": 7,
+   "stocks": [
+    {
+     "symbol": "LENSKART.NS",
+     "name": "Lenskart Solutions Limited",
+     "marketCap": 128897
+    },
+    {
+     "symbol": "AGARWALEYE.NS",
+     "name": "Dr. Agarwal's Health Care Limited",
+     "marketCap": 17412
+    },
+    {
+     "symbol": "POLYMED.NS",
+     "name": "Poly Medicure Limited",
+     "marketCap": 16725
+    },
+    {
+     "symbol": "TARSONS.NS",
+     "name": "Tarsons Products Limited",
+     "marketCap": 1604
+    },
+    {
+     "symbol": "LAXMIDENTL.NS",
+     "name": "Laxmi Dental Limited",
+     "marketCap": 1079
+    },
+    {
+     "symbol": "QMSMEDI.NS",
+     "name": "QMS Medical Allied Services Limited",
+     "marketCap": 330
+    },
+    {
+     "symbol": "GKB.NS",
+     "name": "GKB Ophthalmics Limited",
+     "marketCap": 30
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Pharmaceutical Retailers",
+   "sector": "Healthcare",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "MEDPLUS.NS",
+     "name": "MedPlus Health Services Limited",
+     "marketCap": 7132
+    },
+    {
+     "symbol": "HEALTHX.NS",
+     "name": "Health X Platform Limited",
+     "marketCap": 866
+    },
+    {
+     "symbol": "ONEGLOBAL.NS",
+     "name": "One Global Service Provider Limited",
+     "marketCap": 778
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Industrials",
+   "sector": null,
+   "total": 550,
+   "stocks": [
+    {
+     "symbol": "LT.NS",
+     "name": "Larsen & Toubro Limited",
+     "marketCap": 573126
+    },
+    {
+     "symbol": "ADANIPORTS.NS",
+     "name": "Adani Ports and Special Economic Zone Limited",
+     "marketCap": 438213
+    },
+    {
+     "symbol": "HAL.NS",
+     "name": "Hindustan Aeronautics Limited",
+     "marketCap": 316210
+    },
+    {
+     "symbol": "BEL.NS",
+     "name": "Bharat Electronics Limited",
+     "marketCap": 292976
+    },
+    {
+     "symbol": "INDIGO.NS",
+     "name": "InterGlobe Aviation Limited",
+     "marketCap": 215273
+    },
+    {
+     "symbol": "BHEL.NS",
+     "name": "Bharat Heavy Electricals Limited",
+     "marketCap": 149711
+    },
+    {
+     "symbol": "ABB.NS",
+     "name": "ABB India Limited",
+     "marketCap": 146916
+    },
+    {
+     "symbol": "POWERINDIA.NS",
+     "name": "Hitachi Energy India Limited",
+     "marketCap": 136614
+    },
+    {
+     "symbol": "SIEMENS.NS",
+     "name": "Siemens Limited",
+     "marketCap": 126996
+    },
+    {
+     "symbol": "CGPOWER.NS",
+     "name": "CG Power and Industrial Solutions Limited",
+     "marketCap": 125771
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Aerospace & Defense",
+   "sector": "Industrials",
+   "total": 22,
+   "stocks": [
+    {
+     "symbol": "HAL.NS",
+     "name": "Hindustan Aeronautics Limited",
+     "marketCap": 316030
+    },
+    {
+     "symbol": "BEL.NS",
+     "name": "Bharat Electronics Limited",
+     "marketCap": 292976
+    },
+    {
+     "symbol": "MAZDOCK.NS",
+     "name": "Mazagon Dock Shipbuilders Limited",
+     "marketCap": 74339
+    },
+    {
+     "symbol": "BDL.NS",
+     "name": "Bharat Dynamics Limited",
+     "marketCap": 37939
+    },
+    {
+     "symbol": "COCHINSHIP.NS",
+     "name": "Cochin Shipyard Limited",
+     "marketCap": 29939
+    },
+    {
+     "symbol": "GRSE.NS",
+     "name": "Garden Reach Shipbuilders & Engineers Limited",
+     "marketCap": 23938
+    },
+    {
+     "symbol": "DATAPATTNS.NS",
+     "name": "Data Patterns (India) Limited",
+     "marketCap": 23369
+    },
+    {
+     "symbol": "SIGMAADV.NS",
+     "name": "Sigma Advanced Systems Limited",
+     "marketCap": 18043
+    },
+    {
+     "symbol": "APOLLO.NS",
+     "name": "Apollo Micro Systems Limited",
+     "marketCap": 16657
+    },
+    {
+     "symbol": "ZENTEC.NS",
+     "name": "Zen Technologies Limited",
+     "marketCap": 15523
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Airlines",
+   "sector": "Industrials",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "INDIGO.NS",
+     "name": "InterGlobe Aviation Limited",
+     "marketCap": 215327
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Airports & Air Services",
+   "sector": "Industrials",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "GMRAIRPORT.NS",
+     "name": "GMR Airports Limited",
+     "marketCap": 110160
+    },
+    {
+     "symbol": "TAALTECH.NS",
+     "name": "TAAL Tech Limited",
+     "marketCap": 1450
+    },
+    {
+     "symbol": "DREAMFOLKS.NS",
+     "name": "Dreamfolks Services Limited",
+     "marketCap": 317
+    },
+    {
+     "symbol": "GLOBALVECT.NS",
+     "name": "Global Vectra Helicorp Limited",
+     "marketCap": 180
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Building Products & Equipment",
+   "sector": "Industrials",
+   "total": 40,
+   "stocks": [
+    {
+     "symbol": "CPPLUS.NS",
+     "name": "Aditya Infotech Limited",
+     "marketCap": 49023
+    },
+    {
+     "symbol": "SUPREMEIND.NS",
+     "name": "The Supreme Industries Limited",
+     "marketCap": 40763
+    },
+    {
+     "symbol": "BLUESTARCO.NS",
+     "name": "Blue Star Limited",
+     "marketCap": 35154
+    },
+    {
+     "symbol": "ASTRAL.NS",
+     "name": "Astral Limited",
+     "marketCap": 33608
+    },
+    {
+     "symbol": "GRINDWELL.NS",
+     "name": "Grindwell Norton Limited",
+     "marketCap": 20460
+    },
+    {
+     "symbol": "KAJARIACER.NS",
+     "name": "Kajaria Ceramics Limited",
+     "marketCap": 19032
+    },
+    {
+     "symbol": "FINPIPE.NS",
+     "name": "Finolex Industries Limited",
+     "marketCap": 8993
+    },
+    {
+     "symbol": "CERA.NS",
+     "name": "Cera Sanitaryware Limited",
+     "marketCap": 6359
+    },
+    {
+     "symbol": "ELECTCAST.NS",
+     "name": "Electrosteel Castings Limited",
+     "marketCap": 4142
+    },
+    {
+     "symbol": "PRINCEPIPE.NS",
+     "name": "Prince Pipes and Fittings Limited",
+     "marketCap": 3214
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Business Equipment & Supplies",
+   "sector": "Industrials",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "DOMS.NS",
+     "name": "DOMS Industries Limited",
+     "marketCap": 12641
+    },
+    {
+     "symbol": "FLAIR.NS",
+     "name": "Flair Writing Industries Limited",
+     "marketCap": 2537
+    },
+    {
+     "symbol": "CONTROLPR.NS",
+     "name": "Control Print Limited",
+     "marketCap": 978
+    },
+    {
+     "symbol": "KOKUYOCMLN.NS",
+     "name": "Kokuyo Camlin Limited",
+     "marketCap": 719
+    },
+    {
+     "symbol": "LINC.NS",
+     "name": "Linc Limited",
+     "marketCap": 514
+    },
+    {
+     "symbol": "KSHITIJPOL.NS",
+     "name": "Kshitij Polyline Limited",
+     "marketCap": 52
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Conglomerates",
+   "sector": "Industrials",
+   "total": 31,
+   "stocks": [
+    {
+     "symbol": "SRF.NS",
+     "name": "SRF Limited",
+     "marketCap": 73307
+    },
+    {
+     "symbol": "TIINDIA.NS",
+     "name": "Tube Investments of India Limited",
+     "marketCap": 43325
+    },
+    {
+     "symbol": "GODREJIND.NS",
+     "name": "Godrej Industries Limited",
+     "marketCap": 37262
+    },
+    {
+     "symbol": "3MINDIA.NS",
+     "name": "3M India Limited",
+     "marketCap": 31317
+    },
+    {
+     "symbol": "THERMAX.NS",
+     "name": "Thermax Limited",
+     "marketCap": 30555
+    },
+    {
+     "symbol": "BEML.NS",
+     "name": "BEML Limited",
+     "marketCap": 16784
+    },
+    {
+     "symbol": "NAVA.NS",
+     "name": "Nava Limited",
+     "marketCap": 15011
+    },
+    {
+     "symbol": "DCMSHRIRAM.NS",
+     "name": "DCM Shriram Limited",
+     "marketCap": 13761
+    },
+    {
+     "symbol": "CYIENT.NS",
+     "name": "Cyient Limited",
+     "marketCap": 11446
+    },
+    {
+     "symbol": "MMTC.NS",
+     "name": "MMTC Limited",
+     "marketCap": 7710
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Consulting Services",
+   "sector": "Industrials",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "LATENTVIEW.NS",
+     "name": "Latent View Analytics Limited",
+     "marketCap": 3985
+    },
+    {
+     "symbol": "EKI.NS",
+     "name": "EKI Energy Services Limited",
+     "marketCap": 199
+    },
+    {
+     "symbol": "SECMARK.NS",
+     "name": "SecMark Consultancy Limited",
+     "marketCap": 170
+    },
+    {
+     "symbol": "REPL.NS",
+     "name": "Rudrabhishek Enterprises Limited",
+     "marketCap": 101
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Electrical Equipment & Parts",
+   "sector": "Industrials",
+   "total": 62,
+   "stocks": [
+    {
+     "symbol": "POWERINDIA.NS",
+     "name": "Hitachi Energy India Limited",
+     "marketCap": 136614
+    },
+    {
+     "symbol": "CGPOWER.NS",
+     "name": "CG Power and Industrial Solutions Limited",
+     "marketCap": 125803
+    },
+    {
+     "symbol": "POLYCAB.NS",
+     "name": "Polycab India Limited",
+     "marketCap": 111741
+    },
+    {
+     "symbol": "HAVELLS.NS",
+     "name": "Havells India Limited",
+     "marketCap": 74372
+    },
+    {
+     "symbol": "APARINDS.NS",
+     "name": "APAR Industries Limited",
+     "marketCap": 59773
+    },
+    {
+     "symbol": "KEI.NS",
+     "name": "KEI Industries Limited",
+     "marketCap": 36201
+    },
+    {
+     "symbol": "HONAUT.NS",
+     "name": "Honeywell Automation India Limited",
+     "marketCap": 26653
+    },
+    {
+     "symbol": "SCHNEIDER.NS",
+     "name": "Schneider Electric Infrastructure Limited",
+     "marketCap": 24016
+    },
+    {
+     "symbol": "HBLENGINE.NS",
+     "name": "HBL Engineering Limited",
+     "marketCap": 21596
+    },
+    {
+     "symbol": "RRKABEL.NS",
+     "name": "R R Kabel Limited",
+     "marketCap": 20613
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Engineering & Construction",
+   "sector": "Industrials",
+   "total": 107,
+   "stocks": [
+    {
+     "symbol": "LT.NS",
+     "name": "Larsen & Toubro Limited",
+     "marketCap": 573195
+    },
+    {
+     "symbol": "RVNL.NS",
+     "name": "Rail Vikas Nigam Limited",
+     "marketCap": 39993
+    },
+    {
+     "symbol": "CEMPRO.NS",
+     "name": "Cemindia Projects Limited",
+     "marketCap": 25131
+    },
+    {
+     "symbol": "KPIL.NS",
+     "name": "Kalpataru Projects International Limited",
+     "marketCap": 22621
+    },
+    {
+     "symbol": "NBCC.NS",
+     "name": "NBCC (India) Limited",
+     "marketCap": 21044
+    },
+    {
+     "symbol": "ENGINERSIN.NS",
+     "name": "Engineers India Limited",
+     "marketCap": 17131
+    },
+    {
+     "symbol": "WABAG.NS",
+     "name": "VA Tech Wabag Limited",
+     "marketCap": 11754
+    },
+    {
+     "symbol": "LOTUSDEV.NS",
+     "name": "Sri Lotus Developers and Realty Limited",
+     "marketCap": 11485
+    },
+    {
+     "symbol": "TECHNOE.NS",
+     "name": "Techno Electric & Engineering Company Limited",
+     "marketCap": 10790
+    },
+    {
+     "symbol": "IRCON.NS",
+     "name": "Ircon International Limited",
+     "marketCap": 10117
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Farm & Heavy Construction Machinery",
+   "sector": "Industrials",
+   "total": 18,
+   "stocks": [
+    {
+     "symbol": "ASHOKLEY.NS",
+     "name": "Ashok Leyland Limited",
+     "marketCap": 98041
+    },
+    {
+     "symbol": "ESCORTS.NS",
+     "name": "Escorts Kubota Limited",
+     "marketCap": 26664
+    },
+    {
+     "symbol": "ACE.NS",
+     "name": "Action Construction Equipment Limited",
+     "marketCap": 14021
+    },
+    {
+     "symbol": "OLECTRA.NS",
+     "name": "Olectra Greentech Limited",
+     "marketCap": 8256
+    },
+    {
+     "symbol": "AJAXENGG.NS",
+     "name": "Ajax Engineering Limited",
+     "marketCap": 7123
+    },
+    {
+     "symbol": "SWARAJENG.NS",
+     "name": "Swaraj Engines Limited",
+     "marketCap": 4210
+    },
+    {
+     "symbol": "UNIPARTS.NS",
+     "name": "Uniparts India Limited",
+     "marketCap": 3244
+    },
+    {
+     "symbol": "VSTTILLERS.NS",
+     "name": "V.S.T. Tillers Tractors Limited",
+     "marketCap": 3164
+    },
+    {
+     "symbol": "HMT.NS",
+     "name": "HMT Limited",
+     "marketCap": 1831
+    },
+    {
+     "symbol": "TIL.NS",
+     "name": "TIL Limited",
+     "marketCap": 1706
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Industrial Distribution",
+   "sector": "Industrials",
+   "total": 7,
+   "stocks": [
+    {
+     "symbol": "SGMART.NS",
+     "name": "SG Mart Limited",
+     "marketCap": 12771
+    },
+    {
+     "symbol": "YOGI.NS",
+     "name": "Yogi Limited",
+     "marketCap": 725
+    },
+    {
+     "symbol": "DCMSIL.NS",
+     "name": "DCM Shriram International Limited",
+     "marketCap": 530
+    },
+    {
+     "symbol": "JKIPL.NS",
+     "name": "Jinkushal Industries Limited",
+     "marketCap": 431
+    },
+    {
+     "symbol": "WHBRADY.NS",
+     "name": "W. H. Brady & Company Limited",
+     "marketCap": 119
+    },
+    {
+     "symbol": "KHAITANLTD.NS",
+     "name": "Khaitan (India) Limited",
+     "marketCap": 71
+    },
+    {
+     "symbol": "AKG.NS",
+     "name": "AKG Exim Limited",
+     "marketCap": 29
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Infrastructure Operations",
+   "sector": "Industrials",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "IRB.NS",
+     "name": "IRB Infrastructure Developers Limited",
+     "marketCap": 21112
+    },
+    {
+     "symbol": "LCCPROJECT.NS",
+     "name": "LCC PROJECTS LIMITED",
+     "marketCap": 3611
+    },
+    {
+     "symbol": "TECHNOCRAF.NS",
+     "name": "Technocraft Ventures Limited",
+     "marketCap": 1925
+    },
+    {
+     "symbol": "BFUTILITIE.NS",
+     "name": "BF Utilities Limited",
+     "marketCap": 1770
+    },
+    {
+     "symbol": "HILINFRA.NS",
+     "name": "Highway Infrastructure Limited",
+     "marketCap": 595
+    },
+    {
+     "symbol": "MARKOLINES.NS",
+     "name": "Markolines Pavement Technologies Limited",
+     "marketCap": 376
+    },
+    {
+     "symbol": "ATLANTAA.NS",
+     "name": "Atlantaa Limited",
+     "marketCap": 286
+    },
+    {
+     "symbol": "ANNU.NS",
+     "name": "ANNU PROJECTS LIMITED",
+     "marketCap": 254
+    },
+    {
+     "symbol": "BRNL.NS",
+     "name": "Bharat Road Network Limited",
+     "marketCap": 132
+    },
+    {
+     "symbol": "BCPL.NS",
+     "name": "BCPL Railway Infrastructure Limited",
+     "marketCap": 108
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Integrated Freight & Logistics",
+   "sector": "Industrials",
+   "total": 31,
+   "stocks": [
+    {
+     "symbol": "DELHIVERY.NS",
+     "name": "Delhivery Limited",
+     "marketCap": 34081
+    },
+    {
+     "symbol": "SHADOWFAX.NS",
+     "name": "Shadowfax Technologies Limited",
+     "marketCap": 18328
+    },
+    {
+     "symbol": "BLUEDART.NS",
+     "name": "Blue Dart Express Limited",
+     "marketCap": 10641
+    },
+    {
+     "symbol": "TCI.NS",
+     "name": "Transport Corporation of India Limited",
+     "marketCap": 6111
+    },
+    {
+     "symbol": "TVSSCS.NS",
+     "name": "TVS Supply Chain Solutions Limited",
+     "marketCap": 5901
+    },
+    {
+     "symbol": "LEAPIND.NS",
+     "name": "LEAP India Limited",
+     "marketCap": 5843
+    },
+    {
+     "symbol": "MAHLOG.NS",
+     "name": "Mahindra Logistics Limited",
+     "marketCap": 3724
+    },
+    {
+     "symbol": "GATEWAY.NS",
+     "name": "Gateway Distriparks Limited",
+     "marketCap": 2371
+    },
+    {
+     "symbol": "TCIEXP.NS",
+     "name": "TCI Express Limited",
+     "marketCap": 1820
+    },
+    {
+     "symbol": "SKYWAYS.NS",
+     "name": "SKYWAYS AIR SERVICES LTD",
+     "marketCap": 1804
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Marine Shipping",
+   "sector": "Industrials",
+   "total": 11,
+   "stocks": [
+    {
+     "symbol": "ADANIPORTS.NS",
+     "name": "Adani Ports and Special Economic Zone Limited",
+     "marketCap": 438213
+    },
+    {
+     "symbol": "JSWINFRA.NS",
+     "name": "JSW Infrastructure Limited",
+     "marketCap": 78437
+    },
+    {
+     "symbol": "GESHIP.NS",
+     "name": "The Great Eastern Shipping Company Limited",
+     "marketCap": 21112
+    },
+    {
+     "symbol": "SHREEJISPG.NS",
+     "name": "Shreeji Shipping Global Limited",
+     "marketCap": 14449
+    },
+    {
+     "symbol": "SCI.NS",
+     "name": "The Shipping Corporation of India Limited",
+     "marketCap": 11631
+    },
+    {
+     "symbol": "KMEW.NS",
+     "name": "Knowledge Marine & Engineering Works Limited",
+     "marketCap": 9461
+    },
+    {
+     "symbol": "GPPL.NS",
+     "name": "Gujarat Pipavav Port Limited",
+     "marketCap": 8605
+    },
+    {
+     "symbol": "CORDELIA.NS",
+     "name": "Waterways Leisure Tourism Limited",
+     "marketCap": 6256
+    },
+    {
+     "symbol": "SEAMECLTD.NS",
+     "name": "Seamec Limited",
+     "marketCap": 3937
+    },
+    {
+     "symbol": "TRANSWORLD.NS",
+     "name": "Transworld Shipping Lines Limited",
+     "marketCap": 386
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Metal Fabrication",
+   "sector": "Industrials",
+   "total": 37,
+   "stocks": [
+    {
+     "symbol": "BHARATFORG.NS",
+     "name": "Bharat Forge Limited",
+     "marketCap": 84222
+    },
+    {
+     "symbol": "INDOMIM.NS",
+     "name": "INDO-MIM Limited",
+     "marketCap": 61330
+    },
+    {
+     "symbol": "PTCIL.NS",
+     "name": "PTC Industries Limited",
+     "marketCap": 37796
+    },
+    {
+     "symbol": "ZETWERK.NS",
+     "name": "Zetwerk Manufacturing Businesses Limited",
+     "marketCap": 28704
+    },
+    {
+     "symbol": "HAPPYFORGE.NS",
+     "name": "Happy Forgings Limited",
+     "marketCap": 17025
+    },
+    {
+     "symbol": "RKFORGE.NS",
+     "name": "Ramkrishna Forgings Limited",
+     "marketCap": 14250
+    },
+    {
+     "symbol": "GRAVITA.NS",
+     "name": "Gravita India Limited",
+     "marketCap": 10702
+    },
+    {
+     "symbol": "RHIM.NS",
+     "name": "RHI Magnesita India Limited",
+     "marketCap": 7252
+    },
+    {
+     "symbol": "AEROFLEX.NS",
+     "name": "Aeroflex Industries Limited",
+     "marketCap": 6470
+    },
+    {
+     "symbol": "BALUFORGE.NS",
+     "name": "Balu Forge Industries Limited",
+     "marketCap": 6433
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Pollution & Treatment Controls",
+   "sector": "Industrials",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "SFCTECH.NS",
+     "name": "SFC Environmental Technologies Limited",
+     "marketCap": 4113
+    },
+    {
+     "symbol": "BANKA.NS",
+     "name": "Banka BioLoo Limited",
+     "marketCap": 85
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Railroads",
+   "sector": "Industrials",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "CONCOR.NS",
+     "name": "Container Corporation of India Limited",
+     "marketCap": 33222
+    },
+    {
+     "symbol": "TITAGARH.NS",
+     "name": "Titagarh Rail Systems Limited",
+     "marketCap": 9925
+    },
+    {
+     "symbol": "JWL.NS",
+     "name": "Jupiter Wagons Limited",
+     "marketCap": 8323
+    },
+    {
+     "symbol": "TEXRAIL.NS",
+     "name": "Texmaco Rail & Engineering Limited",
+     "marketCap": 4448
+    },
+    {
+     "symbol": "QUADFUTURE.NS",
+     "name": "Quadrant Future Tek Limited",
+     "marketCap": 1690
+    },
+    {
+     "symbol": "ORIRAIL.NS",
+     "name": "Oriental Rail Infrastructure Limited",
+     "marketCap": 770
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Rental & Leasing Services",
+   "sector": "Industrials",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "SANGHVIMOV.NS",
+     "name": "Sanghvi Movers Limited",
+     "marketCap": 3205
+    },
+    {
+     "symbol": "AWFIS.NS",
+     "name": "Awfis Space Solutions Limited",
+     "marketCap": 2027
+    },
+    {
+     "symbol": "ECOSMOBLTY.NS",
+     "name": "Ecos (India) Mobility & Hospitality Limited",
+     "marketCap": 734
+    },
+    {
+     "symbol": "CROWN.NS",
+     "name": "Crown Lifters Limited",
+     "marketCap": 102
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Security & Protection Services",
+   "sector": "Industrials",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "SIS.NS",
+     "name": "SIS Limited",
+     "marketCap": 5002
+    },
+    {
+     "symbol": "MALLCOM.NS",
+     "name": "Mallcom (India) Limited",
+     "marketCap": 533
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Specialty Business Services",
+   "sector": "Industrials",
+   "total": 21,
+   "stocks": [
+    {
+     "symbol": "BLS.NS",
+     "name": "BLS International Services Limited",
+     "marketCap": 9409
+    },
+    {
+     "symbol": "PDSL.NS",
+     "name": "PDS Limited",
+     "marketCap": 5779
+    },
+    {
+     "symbol": "FUSIONCX.NS",
+     "name": "Fusion CX Limited",
+     "marketCap": 3968
+    },
+    {
+     "symbol": "CMSINFO.NS",
+     "name": "CMS Info Systems Limited",
+     "marketCap": 3296
+    },
+    {
+     "symbol": "JAYKAY.NS",
+     "name": "Jaykay Enterprises Limited",
+     "marketCap": 2706
+    },
+    {
+     "symbol": "BLSE.NS",
+     "name": "BLS E-Services Limited",
+     "marketCap": 2682
+    },
+    {
+     "symbol": "BLUSPRING.NS",
+     "name": "Bluspring Enterprises Limited",
+     "marketCap": 2399
+    },
+    {
+     "symbol": "ONEPOINT.NS",
+     "name": "One Point One Solutions Limited",
+     "marketCap": 1845
+    },
+    {
+     "symbol": "GYFTR.NS",
+     "name": "Gyftr Limited",
+     "marketCap": 1699
+    },
+    {
+     "symbol": "KAPSTON.NS",
+     "name": "Kapston Services Limited",
+     "marketCap": 1631
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Specialty Industrial Machinery",
+   "sector": "Industrials",
+   "total": 89,
+   "stocks": [
+    {
+     "symbol": "BHEL.NS",
+     "name": "Bharat Heavy Electricals Limited",
+     "marketCap": 149711
+    },
+    {
+     "symbol": "ABB.NS",
+     "name": "ABB India Limited",
+     "marketCap": 146916
+    },
+    {
+     "symbol": "SIEMENS.NS",
+     "name": "Siemens Limited",
+     "marketCap": 127085
+    },
+    {
+     "symbol": "CUMMINSIND.NS",
+     "name": "Cummins India Limited",
+     "marketCap": 113968
+    },
+    {
+     "symbol": "GVT&D.NS",
+     "name": "GE Vernova T&D India Limited",
+     "marketCap": 109923
+    },
+    {
+     "symbol": "SUZLON.NS",
+     "name": "Suzlon Energy Limited",
+     "marketCap": 50588
+    },
+    {
+     "symbol": "AIAENG.NS",
+     "name": "AIA Engineering Limited",
+     "marketCap": 31158
+    },
+    {
+     "symbol": "KIRLOSENG.NS",
+     "name": "Kirloskar Oil Engines Limited",
+     "marketCap": 24587
+    },
+    {
+     "symbol": "JYOTICNC.NS",
+     "name": "Jyoti CNC Automation Limited",
+     "marketCap": 23948
+    },
+    {
+     "symbol": "DIACABS.NS",
+     "name": "Diamond Power Infrastructure Limited",
+     "marketCap": 21563
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Staffing & Employment Services",
+   "sector": "Industrials",
+   "total": 5,
+   "stocks": [
+    {
+     "symbol": "QUESS.NS",
+     "name": "Quess Corp Limited",
+     "marketCap": 4911
+    },
+    {
+     "symbol": "TEAMLEASE.NS",
+     "name": "TeamLease Services Limited",
+     "marketCap": 1496
+    },
+    {
+     "symbol": "INNOVISION.NS",
+     "name": "Innovision Limited",
+     "marketCap": 602
+    },
+    {
+     "symbol": "AARVI.NS",
+     "name": "Aarvi Encon Limited",
+     "marketCap": 184
+    },
+    {
+     "symbol": "ACEINTEG.NS",
+     "name": "Ace Integrated Solutions Limited",
+     "marketCap": 17
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Tools & Accessories",
+   "sector": "Industrials",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "TIMKEN.NS",
+     "name": "Timken India Limited",
+     "marketCap": 23356
+    },
+    {
+     "symbol": "CARBORUNIV.NS",
+     "name": "Carborundum Universal Limited",
+     "marketCap": 19146
+    },
+    {
+     "symbol": "SKFINDUS.NS",
+     "name": "SKF India (Industrial) Limited",
+     "marketCap": 12328
+    },
+    {
+     "symbol": "KENNAMET.NS",
+     "name": "Kennametal India Limited",
+     "marketCap": 8292
+    },
+    {
+     "symbol": "ESABINDIA.NS",
+     "name": "ESAB India Limited",
+     "marketCap": 7962
+    },
+    {
+     "symbol": "SKFINDIA.NS",
+     "name": "SKF India Limited",
+     "marketCap": 7178
+    },
+    {
+     "symbol": "TIIL.NS",
+     "name": "Technocraft Industries (India) Limited",
+     "marketCap": 6294
+    },
+    {
+     "symbol": "HARSHA.NS",
+     "name": "Harsha Engineers International Limited",
+     "marketCap": 4117
+    },
+    {
+     "symbol": "WENDT.NS",
+     "name": "Wendt (India) Limited",
+     "marketCap": 1414
+    },
+    {
+     "symbol": "STERTOOLS.NS",
+     "name": "Sterling Tools Limited",
+     "marketCap": 751
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Trucking",
+   "sector": "Industrials",
+   "total": 4,
+   "stocks": [
+    {
+     "symbol": "VRLLOG.NS",
+     "name": "VRL Logistics Limited",
+     "marketCap": 5694
+    },
+    {
+     "symbol": "SVLL.NS",
+     "name": "Shree Vasu Logistics Limited",
+     "marketCap": 907
+    },
+    {
+     "symbol": "NECCLTD.NS",
+     "name": "North Eastern Carrying Corporation Limited",
+     "marketCap": 236
+    },
+    {
+     "symbol": "OBCL.NS",
+     "name": "OBCL Limited",
+     "marketCap": 127
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Waste Management",
+   "sector": "Industrials",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "NRL.NS",
+     "name": "Nupur Recyclers Limited",
+     "marketCap": 1356
+    },
+    {
+     "symbol": "AWHCL.NS",
+     "name": "Antony Waste Handling Cell Limited",
+     "marketCap": 899
+    },
+    {
+     "symbol": "RACE.NS",
+     "name": "Race Eco Chain Limited",
+     "marketCap": 181
+    },
+    {
+     "symbol": "HRYNSHP.NS",
+     "name": "Hariyana Ship Breakers Limited",
+     "marketCap": 57
+    },
+    {
+     "symbol": "CEREBRAINT.NS",
+     "name": "Cerebra Integrated Technologies Limited",
+     "marketCap": 23
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Real Estate",
+   "sector": null,
+   "total": 110,
+   "stocks": [
+    {
+     "symbol": "DLF.NS",
+     "name": "DLF Limited",
+     "marketCap": 189423
+    },
+    {
+     "symbol": "LODHA.NS",
+     "name": "Lodha Developers Limited",
+     "marketCap": 119380
+    },
+    {
+     "symbol": "PHOENIXLTD.NS",
+     "name": "The Phoenix Mills Limited",
+     "marketCap": 79846
+    },
+    {
+     "symbol": "PRESTIGE.NS",
+     "name": "Prestige Estates Projects Limited",
+     "marketCap": 71755
+    },
+    {
+     "symbol": "OBEROIRLTY.NS",
+     "name": "Oberoi Realty Limited",
+     "marketCap": 66114
+    },
+    {
+     "symbol": "GODREJPROP.NS",
+     "name": "Godrej Properties Limited",
+     "marketCap": 56456
+    },
+    {
+     "symbol": "BRIGADE.NS",
+     "name": "Brigade Enterprises Limited",
+     "marketCap": 18489
+    },
+    {
+     "symbol": "ANANTRAJ.NS",
+     "name": "Anant Raj Limited",
+     "marketCap": 16455
+    },
+    {
+     "symbol": "HORIZONIND.NS",
+     "name": "Horizon Industrial Parks Limited",
+     "marketCap": 14103
+    },
+    {
+     "symbol": "ABREL.NS",
+     "name": "Aditya Birla Real Estate Limited",
+     "marketCap": 13568
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Real Estate Services",
+   "sector": "Real Estate",
+   "total": 28,
+   "stocks": [
+    {
+     "symbol": "ABREL.NS",
+     "name": "Aditya Birla Real Estate Limited",
+     "marketCap": 13568
+    },
+    {
+     "symbol": "WEWORK.NS",
+     "name": "WeWork India Management Limited",
+     "marketCap": 9537
+    },
+    {
+     "symbol": "SMARTWORKS.NS",
+     "name": "Smartworks Coworking Spaces Limited",
+     "marketCap": 5824
+    },
+    {
+     "symbol": "NIRLON.NS",
+     "name": "Nirlon Limited",
+     "marketCap": 5794
+    },
+    {
+     "symbol": "INDIQUBE.NS",
+     "name": "IndiQube Spaces Limited",
+     "marketCap": 3858
+    },
+    {
+     "symbol": "ELPROINTL.NS",
+     "name": "Elpro International Limited",
+     "marketCap": 2984
+    },
+    {
+     "symbol": "EFCIL.NS",
+     "name": "EFC (I) Limited",
+     "marketCap": 2385
+    },
+    {
+     "symbol": "AURUM.NS",
+     "name": "Aurum PropTech Limited",
+     "marketCap": 2086
+    },
+    {
+     "symbol": "SCILAL.NS",
+     "name": "Shipping Corporation of India Land and Assets Limited",
+     "marketCap": 1662
+    },
+    {
+     "symbol": "TEXINFRA.NS",
+     "name": "Texmaco Infrastructure & Holdings Limited",
+     "marketCap": 1505
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Real Estate—Development",
+   "sector": "Real Estate",
+   "total": 72,
+   "stocks": [
+    {
+     "symbol": "DLF.NS",
+     "name": "DLF Limited",
+     "marketCap": 189411
+    },
+    {
+     "symbol": "LODHA.NS",
+     "name": "Lodha Developers Limited",
+     "marketCap": 119380
+    },
+    {
+     "symbol": "OBEROIRLTY.NS",
+     "name": "Oberoi Realty Limited",
+     "marketCap": 66099
+    },
+    {
+     "symbol": "GODREJPROP.NS",
+     "name": "Godrej Properties Limited",
+     "marketCap": 56459
+    },
+    {
+     "symbol": "BRIGADE.NS",
+     "name": "Brigade Enterprises Limited",
+     "marketCap": 18489
+    },
+    {
+     "symbol": "ANANTRAJ.NS",
+     "name": "Anant Raj Limited",
+     "marketCap": 16459
+    },
+    {
+     "symbol": "HORIZONIND.NS",
+     "name": "Horizon Industrial Parks Limited",
+     "marketCap": 14115
+    },
+    {
+     "symbol": "SOBHA.NS",
+     "name": "Sobha Limited",
+     "marketCap": 13494
+    },
+    {
+     "symbol": "SIGNATURE.NS",
+     "name": "Signatureglobal (India) Limited",
+     "marketCap": 11986
+    },
+    {
+     "symbol": "MAXESTATES.NS",
+     "name": "Max Estates Limited",
+     "marketCap": 9259
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Real Estate—Diversified",
+   "sector": "Real Estate",
+   "total": 10,
+   "stocks": [
+    {
+     "symbol": "PHOENIXLTD.NS",
+     "name": "The Phoenix Mills Limited",
+     "marketCap": 79846
+    },
+    {
+     "symbol": "PRESTIGE.NS",
+     "name": "Prestige Estates Projects Limited",
+     "marketCap": 71755
+    },
+    {
+     "symbol": "EMBDL.NS",
+     "name": "Embassy Developments Limited",
+     "marketCap": 7032
+    },
+    {
+     "symbol": "HEMIPROP.NS",
+     "name": "Hemisphere Properties India Limited",
+     "marketCap": 3114
+    },
+    {
+     "symbol": "UNITECH.NS",
+     "name": "Unitech Limited",
+     "marketCap": 1018
+    },
+    {
+     "symbol": "PROZONER.NS",
+     "name": "Prozone Realty Limited",
+     "marketCap": 847
+    },
+    {
+     "symbol": "VIPULLTD.NS",
+     "name": "Vipul Limited",
+     "marketCap": 125
+    },
+    {
+     "symbol": "HDIL.NS",
+     "name": "Housing Development and Infrastructure Limited",
+     "marketCap": 74
+    },
+    {
+     "symbol": "MEDICAPQ.NS",
+     "name": "Medi-Caps Limited",
+     "marketCap": 28
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Technology",
+   "sector": null,
+   "total": 211,
+   "stocks": [
+    {
+     "symbol": "JPL.NS",
+     "name": "Jio Platforms Limited",
+     "marketCap": 1270294
+    },
+    {
+     "symbol": "TCS.NS",
+     "name": "Tata Consultancy Services Limited",
+     "marketCap": 852892
+    },
+    {
+     "symbol": "INFY.NS",
+     "name": "Infosys Limited",
+     "marketCap": 438980
+    },
+    {
+     "symbol": "HCLTECH.NS",
+     "name": "HCL Technologies Limited",
+     "marketCap": 358736
+    },
+    {
+     "symbol": "WIPRO.NS",
+     "name": "Wipro Limited",
+     "marketCap": 181146
+    },
+    {
+     "symbol": "TECHM.NS",
+     "name": "Tech Mahindra Limited",
+     "marketCap": 152528
+    },
+    {
+     "symbol": "LTM.NS",
+     "name": "LTM Limited",
+     "marketCap": 119512
+    },
+    {
+     "symbol": "LGEINDIA.NS",
+     "name": "LG Electronics India Limited",
+     "marketCap": 115921
+    },
+    {
+     "symbol": "PAYTM.NS",
+     "name": "One97 Communications Limited",
+     "marketCap": 110367
+    },
+    {
+     "symbol": "PERSISTENT.NS",
+     "name": "Persistent Systems Limited",
+     "marketCap": 95875
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Communication Equipment",
+   "sector": "Technology",
+   "total": 19,
+   "stocks": [
+    {
+     "symbol": "STLTECH.NS",
+     "name": "Sterlite Technologies Limited",
+     "marketCap": 32909
+    },
+    {
+     "symbol": "HFCL.NS",
+     "name": "HFCL Limited",
+     "marketCap": 29096
+    },
+    {
+     "symbol": "ITI.NS",
+     "name": "ITI Limited",
+     "marketCap": 23821
+    },
+    {
+     "symbol": "ASTRAMICRO.NS",
+     "name": "Astra Microwave Products Limited",
+     "marketCap": 15965
+    },
+    {
+     "symbol": "TEJASNET.NS",
+     "name": "Tejas Networks Limited",
+     "marketCap": 7196
+    },
+    {
+     "symbol": "AVANTEL.NS",
+     "name": "Avantel Limited",
+     "marketCap": 4343
+    },
+    {
+     "symbol": "PACEDIGITK.NS",
+     "name": "Pace Digitek Limited",
+     "marketCap": 3756
+    },
+    {
+     "symbol": "PARACABLES.NS",
+     "name": "Paramount Communications Limited",
+     "marketCap": 1975
+    },
+    {
+     "symbol": "NELCO.NS",
+     "name": "Nelco Limited",
+     "marketCap": 1797
+    },
+    {
+     "symbol": "DLINKINDIA.NS",
+     "name": "D-Link (India) Limited",
+     "marketCap": 1473
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Computer Hardware",
+   "sector": "Technology",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "NETWEB.NS",
+     "name": "Netweb Technologies India Limited",
+     "marketCap": 25194
+    },
+    {
+     "symbol": "EBGNG.NS",
+     "name": "GNG Electronics Limited",
+     "marketCap": 5884
+    },
+    {
+     "symbol": "TVSELECT.NS",
+     "name": "TVS Electronics Limited",
+     "marketCap": 710
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Consumer Electronics",
+   "sector": "Technology",
+   "total": 6,
+   "stocks": [
+    {
+     "symbol": "LGEINDIA.NS",
+     "name": "LG Electronics India Limited",
+     "marketCap": 115921
+    },
+    {
+     "symbol": "DIXON.NS",
+     "name": "Dixon Technologies (India) Limited",
+     "marketCap": 79418
+    },
+    {
+     "symbol": "VOEPL.NS",
+     "name": "Virtuoso Optoelectronics Limited",
+     "marketCap": 1680
+    },
+    {
+     "symbol": "BPL.NS",
+     "name": "BPL Limited",
+     "marketCap": 203
+    },
+    {
+     "symbol": "PALREDTEC.NS",
+     "name": "Palred Technologies Limited",
+     "marketCap": 51
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Electronic Components",
+   "sector": "Technology",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "SYRMA.NS",
+     "name": "Syrma SGS Technology Limited",
+     "marketCap": 29273
+    },
+    {
+     "symbol": "KAYNES.NS",
+     "name": "Kaynes Technology India Limited",
+     "marketCap": 19497
+    },
+    {
+     "symbol": "PGEL.NS",
+     "name": "PG Electroplast Limited",
+     "marketCap": 16308
+    },
+    {
+     "symbol": "AVALON.NS",
+     "name": "Avalon Technologies Limited",
+     "marketCap": 11981
+    },
+    {
+     "symbol": "CENTUM.NS",
+     "name": "Centum Electronics Limited",
+     "marketCap": 6626
+    },
+    {
+     "symbol": "KRN.NS",
+     "name": "KRN Heat Exchanger and Refrigeration Limited",
+     "marketCap": 6250
+    },
+    {
+     "symbol": "IKIO.NS",
+     "name": "IKIO Technologies Limited",
+     "marketCap": 1541
+    },
+    {
+     "symbol": "MICEL.NS",
+     "name": "MIC Electronics Limited",
+     "marketCap": 1072
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Electronics & Computer Distribution",
+   "sector": "Technology",
+   "total": 7,
+   "stocks": [
+    {
+     "symbol": "OPTIEMUS.NS",
+     "name": "Optiemus Infracom Limited",
+     "marketCap": 7424
+    },
+    {
+     "symbol": "RPTECH.NS",
+     "name": "Rashi Peripherals Limited",
+     "marketCap": 4128
+    },
+    {
+     "symbol": "CNL.NS",
+     "name": "Creative Newtech Limited",
+     "marketCap": 2083
+    },
+    {
+     "symbol": "DCI.NS",
+     "name": "DC Infotech and Communication Limited",
+     "marketCap": 600
+    },
+    {
+     "symbol": "HCL-INSYS.NS",
+     "name": "HCL Infosystems Limited",
+     "marketCap": 313
+    },
+    {
+     "symbol": "EMPOWER.NS",
+     "name": "Empower India Limited",
+     "marketCap": 118
+    },
+    {
+     "symbol": "COMPINFO.NS",
+     "name": "Compuage Infocom Limited",
+     "marketCap": 8
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Information Technology Services",
+   "sector": "Technology",
+   "total": 79,
+   "stocks": [
+    {
+     "symbol": "TCS.NS",
+     "name": "Tata Consultancy Services Limited",
+     "marketCap": 852928
+    },
+    {
+     "symbol": "INFY.NS",
+     "name": "Infosys Limited",
+     "marketCap": 438980
+    },
+    {
+     "symbol": "HCLTECH.NS",
+     "name": "HCL Technologies Limited",
+     "marketCap": 358736
+    },
+    {
+     "symbol": "WIPRO.NS",
+     "name": "Wipro Limited",
+     "marketCap": 181077
+    },
+    {
+     "symbol": "TECHM.NS",
+     "name": "Tech Mahindra Limited",
+     "marketCap": 152466
+    },
+    {
+     "symbol": "LTM.NS",
+     "name": "LTM Limited",
+     "marketCap": 119565
+    },
+    {
+     "symbol": "PERSISTENT.NS",
+     "name": "Persistent Systems Limited",
+     "marketCap": 95875
+    },
+    {
+     "symbol": "COFORGE.NS",
+     "name": "Coforge Limited",
+     "marketCap": 90252
+    },
+    {
+     "symbol": "MPHASIS.NS",
+     "name": "Mphasis Limited",
+     "marketCap": 45036
+    },
+    {
+     "symbol": "LTTS.NS",
+     "name": "L&T Technology Services Limited",
+     "marketCap": 42756
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Scientific & Technical Instruments",
+   "sector": "Technology",
+   "total": 3,
+   "stocks": [
+    {
+     "symbol": "RISHABH.NS",
+     "name": "Rishabh Instruments Limited",
+     "marketCap": 2286
+    },
+    {
+     "symbol": "NITIRAJ.NS",
+     "name": "Nitiraj Engineers Limited",
+     "marketCap": 195
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Semiconductor Equipment & Materials",
+   "sector": "Technology",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "MOSCHIP.NS",
+     "name": "MosChip Technologies Limited",
+     "marketCap": 3204
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Semiconductors",
+   "sector": "Technology",
+   "total": 2,
+   "stocks": [
+    {
+     "symbol": "RIR.NS",
+     "name": "Rir Power Electronics Limited",
+     "marketCap": 1119
+    },
+    {
+     "symbol": "SPELS.NS",
+     "name": "SPEL Semiconductor Limited",
+     "marketCap": 341
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Software—Application",
+   "sector": "Technology",
+   "total": 45,
+   "stocks": [
+    {
+     "symbol": "URBANCO.NS",
+     "name": "Urban Company Limited",
+     "marketCap": 26127
+    },
+    {
+     "symbol": "TATAELXSI.NS",
+     "name": "Tata Elxsi Limited",
+     "marketCap": 23091
+    },
+    {
+     "symbol": "KFINTECH.NS",
+     "name": "KFin Technologies Limited",
+     "marketCap": 16169
+    },
+    {
+     "symbol": "BBOX.NS",
+     "name": "Black Box Limited",
+     "marketCap": 16056
+    },
+    {
+     "symbol": "KPITTECH.NS",
+     "name": "KPIT Technologies Limited",
+     "marketCap": 14169
+    },
+    {
+     "symbol": "AMAGI.NS",
+     "name": "Amagi Media Labs Limited",
+     "marketCap": 12325
+    },
+    {
+     "symbol": "MONEYVIEW.NS",
+     "name": "Moneyview Limited",
+     "marketCap": 9966
+    },
+    {
+     "symbol": "BLACKBUCK.NS",
+     "name": "BlackBuck Limited",
+     "marketCap": 9395
+    },
+    {
+     "symbol": "TANLA.NS",
+     "name": "Tanla Platforms Limited",
+     "marketCap": 8814
+    },
+    {
+     "symbol": "SHIPROCKET.NS",
+     "name": "Shiprocket Limited",
+     "marketCap": 8703
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Software—Infrastructure",
+   "sector": "Technology",
+   "total": 17,
+   "stocks": [
+    {
+     "symbol": "JPL.NS",
+     "name": "Jio Platforms Limited",
+     "marketCap": 1270109
+    },
+    {
+     "symbol": "PAYTM.NS",
+     "name": "One97 Communications Limited",
+     "marketCap": 110354
+    },
+    {
+     "symbol": "OFSS.NS",
+     "name": "Oracle Financial Services Software Limited",
+     "marketCap": 84967
+    },
+    {
+     "symbol": "PINELABS.NS",
+     "name": "Pine Labs Limited",
+     "marketCap": 18568
+    },
+    {
+     "symbol": "FRACTAL.NS",
+     "name": "Fractal Analytics Limited",
+     "marketCap": 14266
+    },
+    {
+     "symbol": "E2E.NS",
+     "name": "E2E Networks Limited",
+     "marketCap": 10524
+    },
+    {
+     "symbol": "NEWGEN.NS",
+     "name": "Newgen Software Technologies Limited",
+     "marketCap": 5813
+    },
+    {
+     "symbol": "STYL.NS",
+     "name": "Seshaasai Technologies Limited",
+     "marketCap": 4960
+    },
+    {
+     "symbol": "MAPMYINDIA.NS",
+     "name": "C. E. Info Systems Limited",
+     "marketCap": 4631
+    },
+    {
+     "symbol": "CCAVENUE.NS",
+     "name": "AvenuesAI Limited",
+     "marketCap": 4178
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Solar",
+   "sector": "Technology",
+   "total": 21,
+   "stocks": [
+    {
+     "symbol": "WAAREEENER.NS",
+     "name": "Waaree Energies Limited",
+     "marketCap": 69712
+    },
+    {
+     "symbol": "PREMIERENE.NS",
+     "name": "Premier Energies Limited",
+     "marketCap": 37477
+    },
+    {
+     "symbol": "EMMVEE.NS",
+     "name": "Emmvee Photovoltaic Power Limited",
+     "marketCap": 18554
+    },
+    {
+     "symbol": "UTLSOLAR.NS",
+     "name": "Fujiyama Power Systems Limited",
+     "marketCap": 9726
+    },
+    {
+     "symbol": "BORORENEW.NS",
+     "name": "Borosil Renewables Limited",
+     "marketCap": 5614
+    },
+    {
+     "symbol": "VIKRAMSOLR.NS",
+     "name": "Vikram Solar Limited",
+     "marketCap": 5043
+    },
+    {
+     "symbol": "SAATVIKGL.NS",
+     "name": "Saatvik Green Energy Limited",
+     "marketCap": 4342
+    },
+    {
+     "symbol": "SWSOLAR.NS",
+     "name": "Sterling and Wilson Renewable Energy Limited",
+     "marketCap": 3689
+    },
+    {
+     "symbol": "WEBELSOLAR.NS",
+     "name": "Websol Energy System Limited",
+     "marketCap": 2819
+    },
+    {
+     "symbol": "RELTD.NS",
+     "name": "Ravindra Energy Limited",
+     "marketCap": 2620
+    }
+   ]
+  },
+  {
+   "kind": "sector",
+   "name": "Utilities",
+   "sector": null,
+   "total": 44,
+   "stocks": [
+    {
+     "symbol": "ADANIPOWER.NS",
+     "name": "Adani Power Limited",
+     "marketCap": 397708
+    },
+    {
+     "symbol": "NTPC.NS",
+     "name": "NTPC Limited",
+     "marketCap": 312427
+    },
+    {
+     "symbol": "POWERGRID.NS",
+     "name": "Power Grid Corporation of India Limited",
+     "marketCap": 242839
+    },
+    {
+     "symbol": "ADANIGREEN.NS",
+     "name": "Adani Green Energy Limited",
+     "marketCap": 233570
+    },
+    {
+     "symbol": "ADANIENSOL.NS",
+     "name": "Adani Energy Solutions Limited",
+     "marketCap": 182061
+    },
+    {
+     "symbol": "GAIL.NS",
+     "name": "GAIL (India) Limited",
+     "marketCap": 125531
+    },
+    {
+     "symbol": "TATAPOWER.NS",
+     "name": "The Tata Power Company Limited",
+     "marketCap": 109265
+    },
+    {
+     "symbol": "ENRIN.NS",
+     "name": "Siemens Energy India Limited",
+     "marketCap": 105857
+    },
+    {
+     "symbol": "JSWENERGY.NS",
+     "name": "JSW Energy Limited",
+     "marketCap": 93960
+    },
+    {
+     "symbol": "NHPC.NS",
+     "name": "NHPC Limited",
+     "marketCap": 75870
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Utilities—Independent Power Producers",
+   "sector": "Utilities",
+   "total": 14,
+   "stocks": [
+    {
+     "symbol": "ADANIPOWER.NS",
+     "name": "Adani Power Limited",
+     "marketCap": 397824
+    },
+    {
+     "symbol": "ADANIENSOL.NS",
+     "name": "Adani Energy Solutions Limited",
+     "marketCap": 182061
+    },
+    {
+     "symbol": "TATAPOWER.NS",
+     "name": "The Tata Power Company Limited",
+     "marketCap": 109265
+    },
+    {
+     "symbol": "JSWENERGY.NS",
+     "name": "JSW Energy Limited",
+     "marketCap": 93960
+    },
+    {
+     "symbol": "TORNTPOWER.NS",
+     "name": "Torrent Power Limited",
+     "marketCap": 61894
+    },
+    {
+     "symbol": "VEDPOWER.NS",
+     "name": "Vedanta Power Limited",
+     "marketCap": 13665
+    },
+    {
+     "symbol": "JPPOWER.NS",
+     "name": "Jaiprakash Power Ventures Limited",
+     "marketCap": 9170
+    },
+    {
+     "symbol": "RPOWER.NS",
+     "name": "Reliance Power Limited",
+     "marketCap": 7324
+    },
+    {
+     "symbol": "PTC.NS",
+     "name": "PTC India Limited",
+     "marketCap": 4061
+    },
+    {
+     "symbol": "RTNPOWER.NS",
+     "name": "RattanIndia Power Limited",
+     "marketCap": 3491
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Utilities—Regulated Electric",
+   "sector": "Utilities",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "NTPC.NS",
+     "name": "NTPC Limited",
+     "marketCap": 312427
+    },
+    {
+     "symbol": "POWERGRID.NS",
+     "name": "Power Grid Corporation of India Limited",
+     "marketCap": 242746
+    },
+    {
+     "symbol": "NLCINDIA.NS",
+     "name": "NLC India Limited",
+     "marketCap": 31618
+    },
+    {
+     "symbol": "CESC.NS",
+     "name": "CESC Limited",
+     "marketCap": 16457
+    },
+    {
+     "symbol": "GIPCL.NS",
+     "name": "Gujarat Industries Power Company Limited",
+     "marketCap": 2437
+    },
+    {
+     "symbol": "BAJEL.NS",
+     "name": "Bajel Projects Limited",
+     "marketCap": 1833
+    },
+    {
+     "symbol": "DPSCLTD.NS",
+     "name": "India Power Corporation Limited",
+     "marketCap": 695
+    },
+    {
+     "symbol": "ENERGYDEV.NS",
+     "name": "Energy Development Company Limited",
+     "marketCap": 71
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Utilities—Regulated Gas",
+   "sector": "Utilities",
+   "total": 8,
+   "stocks": [
+    {
+     "symbol": "GAIL.NS",
+     "name": "GAIL (India) Limited",
+     "marketCap": 125545
+    },
+    {
+     "symbol": "ATGL.NS",
+     "name": "Adani Total Gas Limited",
+     "marketCap": 62029
+    },
+    {
+     "symbol": "GUJENERGY.NS",
+     "name": "Gujarat Energy Limited",
+     "marketCap": 21121
+    },
+    {
+     "symbol": "IGL.NS",
+     "name": "Indraprastha Gas Limited",
+     "marketCap": 21014
+    },
+    {
+     "symbol": "MGL.NS",
+     "name": "Mahanagar Gas Limited",
+     "marketCap": 10923
+    },
+    {
+     "symbol": "IRMENERGY.NS",
+     "name": "IRM Energy Limited",
+     "marketCap": 1021
+    },
+    {
+     "symbol": "CFEL.NS",
+     "name": "Confidence Futuristic Energetech Limited",
+     "marketCap": 85
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Utilities—Regulated Water",
+   "sector": "Utilities",
+   "total": 1,
+   "stocks": [
+    {
+     "symbol": "CEWATER.NS",
+     "name": "Concord Enviro Systems Limited",
+     "marketCap": 442
+    }
+   ]
+  },
+  {
+   "kind": "industry",
+   "name": "Utilities—Renewable",
+   "sector": "Utilities",
+   "total": 13,
+   "stocks": [
+    {
+     "symbol": "ADANIGREEN.NS",
+     "name": "Adani Green Energy Limited",
+     "marketCap": 233553
+    },
+    {
+     "symbol": "ENRIN.NS",
+     "name": "Siemens Energy India Limited",
+     "marketCap": 105857
+    },
+    {
+     "symbol": "NHPC.NS",
+     "name": "NHPC Limited",
+     "marketCap": 75870
+    },
+    {
+     "symbol": "NTPCGREEN.NS",
+     "name": "NTPC Green Energy Limited",
+     "marketCap": 69138
+    },
+    {
+     "symbol": "ACMESOLAR.NS",
+     "name": "ACME Solar Holdings Limited",
+     "marketCap": 28772
+    },
+    {
+     "symbol": "SJVN.NS",
+     "name": "SJVN Limited",
+     "marketCap": 21755
+    },
+    {
+     "symbol": "CLEANMAX.NS",
+     "name": "Clean Max Enviro Energy Solutions Limited",
+     "marketCap": 14914
+    },
+    {
+     "symbol": "JNPR.NS",
+     "name": "Juniper Green Energy Limited",
+     "marketCap": 13831
+    },
+    {
+     "symbol": "KPIGREEN.NS",
+     "name": "KPI Green Energy Limited",
+     "marketCap": 6487
+    },
+    {
+     "symbol": "INOXGREEN.NS",
+     "name": "Inox Green Energy Services Limited",
+     "marketCap": 4693
+    }
+   ]
+  }
+ ]
+}

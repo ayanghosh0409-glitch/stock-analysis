@@ -72,6 +72,23 @@ Search for a name that matches none of the listed stocks and the page offers to 
 - Banks and lenders usually have no ROCE from Yahoo, so they get no verdict.
 - The workflow **Live check: Yahoo lookup** runs the real fetch for a spread of companies and prints a report in its run summary. It is the only place the real Yahoo calls are exercised, because the build environment cannot reach Yahoo.
 
+## Build a sector from Yahoo Finance
+
+Type a sector or industry (banks, pharma, real estate) into the box at the top of the page. The site checks the name against
+Yahoo's own list, offers a choice if several match or the nearest names if none does, then fetches the ten largest NSE
+companies in it by market cap and screens them with the same rules as the listed sectors. The new sector appears as a tab for
+that visit; "Remove this sector" takes it away.
+
+- **No Yahoo call to find a sector.** `data/yahoo-taxonomy.json` holds Yahoo's 11 sectors and 145 industries, spelled exactly as
+  Yahoo's screener expects (with a long dash: `Banks—Regional`). Yahoo answers an unknown name with zero stocks, not an error, so
+  the check cannot be left to Yahoo. `src/lib/sectorMatch.ts` does the matching.
+- **Top ten lists** live in `data/sector-lists.json`, written by the "Refresh sector lists" workflow every Monday
+  (`scripts/refresh-sector-lists.ts`). Sectors and industries with no NSE stocks are left out, and 60-odd industries hold fewer
+  than ten stocks because Yahoo has fewer. Run the workflow by hand with "apply" ticked to refresh it on demand.
+- **Each company's figures** come from `/api/stock`, the same route the company lookup uses. With a database set up, what Yahoo
+  returned is kept in the `preview_cache` table for a week and served from there, so a second visitor costs Yahoo nothing.
+- **Banks, lenders and insurers** are judged on ROE alone (ROCE means little for them), so their best result is Moderate.
+
 ## Figures visitors enter (shared database)
 
 When Yahoo Finance has no ROE or ROCE for a company (banks usually have no ROCE), the preview shows a box beside the missing figure. Whatever a visitor types is saved in a shared Postgres database and shown to everyone who previews that company, marked "entered by visitors" and unverified.

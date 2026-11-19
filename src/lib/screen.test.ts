@@ -259,3 +259,27 @@ describe("real data", () => {
     });
   });
 });
+
+describe("ROE-only verdict for banks, lenders and insurers (roceNa)", () => {
+  const stock = (o: Partial<Stock>): Stock => ({ name: "B", symbol: "B", marketCap: 1, revenue: 1, profit: 1, roe: 0.18, roce: null, pe: 10, price: 1, high52: 2, low52: 1, profitHistory: null, roe5y: null, roceHistory: null, notes: [], ...o });
+  const peers = [0.1, 0.12, 0.14, 0.16].map((roe, i) => stock({ symbol: `P${i}`, roe, roceNa: true }));
+  const b = benchmarks(peers); // median ROE 13%, so the 15% floor is the bar
+
+  it("passes on ROE alone and is never better than Moderate", () => {
+    expect(verdict(stock({ roe: 0.2, roceNa: true }), b)).toBe("CONSIDER – Moderate");
+    expect(verdict(stock({ roe: 0.2, roce: 0.5, roceNa: true }), b)).toBe("CONSIDER – Moderate");
+  });
+  it("skips when ROE does not beat the cut-off, and says n/a when ROE is missing", () => {
+    expect(verdict(stock({ roe: 0.14, roceNa: true }), b)).toBe("SKIP");
+    expect(verdict(stock({ roe: null, roceNa: true }), b)).toBe("n/a");
+  });
+  it("leaves every other stock exactly as before: no ROCE still means no verdict", () => {
+    expect(verdict(stock({ roe: 0.2, roce: null }), b)).toBe("n/a");
+    expect(verdict(stock({ roe: 0.1, roce: null }), b)).toBe("n/a");
+  });
+  it("explains the ROE-only rule in words", () => {
+    expect(explain(stock({ roe: 0.2, roceNa: true }), b)).toMatch(/ROCE is not used for banks.*best result is Moderate/);
+    expect(explain(stock({ roe: 0.14, roceNa: true }), b)).toMatch(/does not beat/);
+    expect(explain(stock({ roe: null, roceNa: true }), b)).toMatch(/ROE is missing/);
+  });
+});
