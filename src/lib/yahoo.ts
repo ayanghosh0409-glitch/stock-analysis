@@ -106,8 +106,11 @@ export type RawYahoo = {
   ticker: string;
   name: string;
   currency?: string;
+  /** The currency the company reports its statements in. Some rupee-listed companies (Infosys, HCL) report in dollars. */
+  financialCurrency?: string;
   price?: number;
   marketCap?: number; // rupees
+  sharesQuote?: number; // shares outstanding from the quote, only used to work out a missing market cap
   high52?: number;
   low52?: number;
   pe?: number;
@@ -169,6 +172,17 @@ export function yearLabel(date: string): string {
   return `${mon} ${String(y).slice(-2)}`;
 }
 
+/**
+ * Market cap in rupees. Yahoo's quote sometimes leaves it out for large companies, so fall back to the summary's figure,
+ * then to price times a share count (whichever of the quote's and the key statistics' counts is present).
+ */
+export function marketCapFrom(o: { quote?: number; summary?: number; price?: number; shares?: (number | undefined)[] }): number | undefined {
+  if (isNum(o.quote) && o.quote > 0) return o.quote;
+  if (isNum(o.summary) && o.summary > 0) return o.summary;
+  const shares = o.shares?.find((x): x is number => isNum(x) && x > 0);
+  return isNum(o.price) && o.price > 0 && shares !== undefined ? o.price * shares : undefined;
+}
+
 const ratio = (num: number | null | undefined, den: number | null | undefined): number | null =>
   isNum(num) && isNum(den) && den > 0 ? num / den : null;
 
@@ -187,9 +201,12 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
   const prev = years[years.length - 2];
   const notes: string[] = [];
 
-  // Profit history: oldest first, in crore, a hole where Yahoo has no figure for that year.
-  const profitHistory = years.map((y) => toCrore(y.netIncome));
-  const historyLabels = years.map((y) => yearLabel(y.date));
+  // Profit history: oldest first, in crore, a hole where Yahoo has no figure for that year. Yahoo often sends a fifth,
+  // oldest year with balance-sheet items but no profit; that empty year would blank the growth rate, so it is left off.
+  const firstProfit = Math.max(0, years.findIndex((y) => isNum(y.netIncome)));
+  const shown = years.slice(firstProfit);
+  const profitHistory = shown.map((y) => toCrore(y.netIncome));
+  const historyLabels = shown.map((y) => yearLabel(y.date));
   const profitYears = profitHistory.filter(isNum).length;
 
   // ROE: latest annual profit over the average of the last two year-end equities. One year of equity is used as is.
@@ -221,6 +238,20 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     roce = ratio(ebit, capital(last));
     roceDetail = "operating profit over year-end capital employed (only one year)";
   }
+
+  // ROE and ROCE for each year that has a prior year to average with, so a four-year history gives three points.
+  const yearlyRoe: (number | null)[] = [];
+  const yearlyRoce: (number | null)[] = [];
+  years.forEach((y, i) => {
+    const p = years[i - 1];
+    yearlyRoe.push(p ? ratio(y.netIncome, avg2(y.equity, p.equity) ?? undefined) : null);
+    yearlyRoce.push(p ? ratio(y.ebit, avg2(capital(y), capital(p)) ?? undefined) : null);
+  });
+  const rounded = (xs: (number | null)[]) => xs.slice(firstProfit).map((x) => (x === null ? null : Math.round(x * 1000) / 1000));
+  const mean = (xs: (number | null)[]): number | null => {
+    const v = xs.filter(isNum);
+    return v.length >= 2 ? Math.round((v.reduce((a, b) => a + b, 0) / v.length) * 1000) / 1000 : null;
+  };
 
   const trailing = toCrore(raw.trailingProfit);
   const latestProfit = toCrore(last?.netIncome);
@@ -301,8 +332,9 @@ export function buildPreview(raw: RawYahoo, siteSectors: string[], now: Date = n
     high52: figures.high52 ?? 0,
     low52: figures.low52 ?? 0,
     profitHistory: profitHistory.length ? profitHistory : null,
-    roe5y: null,
-    roceHistory: null,
+    // Averages over the years Yahoo gives (three for four years of statements), not the five Screener showed.
+    roe5y: mean(yearlyRoe.slice(firstProfit)),
+    roceHistory: yearlyRoce.slice(firstProfit).filter(isNum).length >= 2 ? rounded(yearlyRoce) : null,
     notes: [],
     historyLabels,
   };

@@ -164,7 +164,9 @@ export function profitTrend(s: Stock): ProfitTrend {
   if (count < 4) consistency = "Insufficient data";
   else if (hasLoss) consistency = isNum(last) && last > 0 && growth === steps ? "Recovering" : "Weak";
   else if (isNum(cagr) && cagr <= 0) consistency = "Weak";
-  else consistency = steps > 0 && growth / steps >= 0.75 ? "Consistent" : "Mixed";
+  // Consistent: profit grew in at least two of every three year-on-year steps (3 of 4 on a five-year history, 2 of 3 on
+  // Yahoo's four years), with no loss year. Compared as growth * 3 >= steps * 2 so no rounding can tip it.
+  else consistency = steps > 0 && growth * 3 >= steps * 2 ? "Consistent" : "Mixed";
 
   return { cagr, growthYears, steps, hasLoss, consistency };
 }

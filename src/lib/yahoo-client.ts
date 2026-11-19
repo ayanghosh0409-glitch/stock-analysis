@@ -1,5 +1,5 @@
 import YahooFinance from "yahoo-finance2";
-import { buildPreview, toCandidates, type Candidate, type Preview, type RawYahoo, type StatementYear } from "./yahoo";
+import { buildPreview, marketCapFrom, toCandidates, type Candidate, type Preview, type RawYahoo, type StatementYear } from "./yahoo";
 
 /**
  * The only file that talks to Yahoo Finance (through the open-source yahoo-finance2 package). Server-side only: the
@@ -45,7 +45,7 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
 
   const [quote, profile, series] = await Promise.allSettled([
     yf.quote(ticker, {}, loose),
-    yf.quoteSummary(ticker, { modules: ["summaryProfile", "financialData", "defaultKeyStatistics"] }, loose),
+    yf.quoteSummary(ticker, { modules: ["summaryProfile", "financialData", "defaultKeyStatistics", "summaryDetail"] }, loose),
     yf.fundamentalsTimeSeries(ticker, { period1: sixYearsAgo, type: "annual", module: "all" }, loose),
   ]);
 
@@ -54,7 +54,8 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
     raw.name = str(q.longName) ?? str(q.shortName) ?? ticker;
     raw.currency = str(q.currency);
     raw.price = num(q.regularMarketPrice);
-    raw.marketCap = num(q.marketCap);
+    raw.marketCap = num(q.marketCap); // topped up below from the profile call if Yahoo left it out
+    raw.sharesQuote = num(q.sharesOutstanding);
     raw.high52 = num(q.fiftyTwoWeekHigh);
     raw.low52 = num(q.fiftyTwoWeekLow);
     raw.pe = num(q.trailingPE);
@@ -66,11 +67,25 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
     const p = profile.value as Record<string, Record<string, unknown> | undefined>;
     raw.sector = str(p.summaryProfile?.sector);
     raw.industry = str(p.summaryProfile?.industry);
+    raw.financialCurrency = str(p.financialData?.financialCurrency);
     raw.yahooRoe = num(p.financialData?.returnOnEquity);
     raw.revenueTTM = num(p.financialData?.totalRevenue);
     raw.trailingProfit = num(p.defaultKeyStatistics?.netIncomeToCommon);
+    raw.marketCap = marketCapFrom({
+      quote: raw.marketCap,
+      summary: num(p.summaryDetail?.marketCap),
+      price: raw.price,
+      shares: [raw.sharesQuote, num(p.defaultKeyStatistics?.sharesOutstanding), num(p.defaultKeyStatistics?.impliedSharesOutstanding)],
+    });
   } else {
     raw.errors.push(`profile: ${profile.status === "rejected" ? msg(profile.reason) : "empty"}`);
+  }
+
+  if (raw.price !== undefined && raw.marketCap === undefined && quote.status === "fulfilled") {
+    raw.marketCap = marketCapFrom({ price: raw.price, shares: [raw.sharesQuote] });
+  }
+  if (quote.status === "fulfilled" && (raw.price === undefined || raw.marketCap === undefined)) {
+    console.error(`[yahoo] ${ticker}: no ${raw.price === undefined ? "price" : "market cap"} from either the quote or the profile`);
   }
 
   if (series.status === "fulfilled" && Array.isArray(series.value)) {
@@ -82,6 +97,8 @@ export async function fetchRaw(ticker: string): Promise<RawYahoo> {
 }
 
 export class NotIndianListing extends Error {}
+/** Listed in rupees but reports its statements in another currency, so Yahoo's amounts cannot be shown as rupees crore. */
+export class ForeignReporting extends Error {}
 /** Yahoo answered but has nothing for this ticker. */
 export class NothingFound extends Error {}
 /** Every Yahoo call failed, so the problem is reaching Yahoo, not the ticker. */
@@ -93,6 +110,7 @@ export async function fetchPreview(ticker: string, siteSectors: string[]): Promi
   if (raw.errors.length) console.error(`[yahoo] ${ticker}: ${raw.errors.join(" | ")}`); // visible in the host's logs, never sent to the browser
   if (raw.errors.length >= 3) throw new YahooUnreachable(raw.errors.join("; "));
   if (raw.currency && raw.currency !== "INR") throw new NotIndianListing(`${ticker} is priced in ${raw.currency}`);
+  if (raw.financialCurrency && raw.financialCurrency !== "INR") throw new ForeignReporting(`${ticker} reports its statements in ${raw.financialCurrency}`);
   const gotNothing = raw.price === undefined && raw.marketCap === undefined && raw.years.length === 0;
   if (gotNothing) throw new NothingFound(raw.errors.join("; ") || "Yahoo returned nothing for this ticker");
   return buildPreview(raw, siteSectors);

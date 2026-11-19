@@ -1,0 +1,52 @@
+name: Re-source stocks from Yahoo
+
+# Fetches every listed stock from Yahoo Finance with the same code the company lookup uses, and prints a before/after
+# report of ROE, ROCE and verdicts in the run summary. A pull request run only reports; it changes nothing.
+# Run it by hand with "apply" ticked to also write the new figures into data/stocks.json on the branch it runs on.
+
+on:
+  pull_request:
+    paths:
+      - scripts/resource-yahoo.ts
+      - src/lib/resource.ts
+      - src/lib/yahoo.ts
+      - src/lib/yahoo-client.ts
+      - .github/workflows/resource-yahoo.yml
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Write the new figures into data/stocks.json and commit them to this branch"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  resource:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch from Yahoo Finance
+        run: npx tsx scripts/resource-yahoo.ts ${{ inputs.apply && '--apply' || '' }}
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f resource-out/report.md ] && cat resource-out/report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: resource-out
+          path: resource-out
+      - name: Commit the new data
+        if: ${{ inputs.apply }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stocks.json
+          git diff --cached --quiet || git commit -m "Re-source listed stocks from Yahoo Finance"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

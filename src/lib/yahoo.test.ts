@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildPreview, cleanQuery, cleanTicker, completeness, mapSector, toCandidates, yearLabel, type RawYahoo, type StatementYear } from "./yahoo";
+import { buildPreview, marketCapFrom, cleanQuery, cleanTicker, completeness, mapSector, toCandidates, yearLabel, type RawYahoo, type StatementYear } from "./yahoo";
 
 const CR = 1e7;
 const SECTORS = ["IT", "Auto", "Auto Components", "Auto Batteries", "Pharma", "FMCG"];
@@ -217,5 +217,36 @@ describe("buildPreview: gaps", () => {
     const many = ["2020-03-31", "2021-03-31", "2022-03-31", "2023-03-31", "2024-03-31", "2025-03-31", "2026-03-31"].map((d, i) => year(d, { netIncome: (i + 1) * 100 * CR }));
     const p = buildPreview(healthy({ years: [...many].reverse() }), SECTORS, NOW);
     expect(p.figures.profitHistory).toEqual([300, 400, 500, 600, 700]);
+  });
+});
+
+describe("a fifth, oldest year with no profit", () => {
+  it("is left off the profit history so growth can still be worked out", () => {
+    const base = healthy();
+    const withEmptyYear = healthy({ years: [year("2022-03-31", { equity: 8_000 * CR, totalAssets: 13_000 * CR, currentLiabilities: 3_500 * CR }), ...base.years] });
+    const p = buildPreview(withEmptyYear, SECTORS, NOW);
+    expect(p.figures.profitHistory).toEqual([1500, 1800, 2100, 2400]);
+    expect(p.figures.historyLabels).toEqual(["FY23", "FY24", "FY25", "FY26"]);
+    expect(p.stock.profitHistory).toEqual([1500, 1800, 2100, 2400]);
+    expect(p.checks.find((c) => c.key === "history")?.ok).toBe(true);
+  });
+  it("still uses that year's balance sheet to average with the next year", () => {
+    const withEmptyYear = healthy({ years: [year("2022-03-31", { equity: 8_000 * CR, totalAssets: 13_000 * CR, currentLiabilities: 3_500 * CR }), ...healthy().years] });
+    const p = buildPreview(withEmptyYear, SECTORS, NOW);
+    expect(p.stock.roceHistory).toHaveLength(4);
+    expect(p.stock.roceHistory![0]).not.toBeNull(); // FY23 now has a prior year to average with
+  });
+});
+
+describe("marketCapFrom", () => {
+  it("prefers the quote's figure, then the summary's, then price times shares", () => {
+    expect(marketCapFrom({ quote: 5, summary: 6, price: 2, shares: [10] })).toBe(5);
+    expect(marketCapFrom({ summary: 6, price: 2, shares: [10] })).toBe(6);
+    expect(marketCapFrom({ price: 2, shares: [undefined, 10, 20] })).toBe(20);
+  });
+  it("is undefined when nothing can give it, and ignores zero or missing values", () => {
+    expect(marketCapFrom({ price: 2 })).toBeUndefined();
+    expect(marketCapFrom({ quote: 0, summary: Number.NaN, price: 0, shares: [10] })).toBeUndefined();
+    expect(marketCapFrom({})).toBeUndefined();
   });
 });

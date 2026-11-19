@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server";
 import data from "../../../../data/stocks.json";
 import { callerKey, createLimiter } from "@/lib/rateLimit";
 import { cleanTicker } from "@/lib/yahoo";
-import { NotIndianListing, NothingFound, fetchPreview } from "@/lib/yahoo-client";
+import { ForeignReporting, NotIndianListing, NothingFound, fetchPreview } from "@/lib/yahoo-client";
 
 // The screen figures for one NSE or BSE ticker, worked out from Yahoo Finance. Nothing is saved.
 const allow = createLimiter(20, 60_000);
@@ -19,6 +19,7 @@ export async function GET(req: NextRequest) {
     const preview = await fetchPreview(ticker, SECTORS);
     return Response.json({ preview }, { headers: { "Cache-Control": CACHE } });
   } catch (e) {
+    if (e instanceof ForeignReporting) return fail(422, "This company reports its accounts in a foreign currency, so its amounts cannot be shown in rupees yet.");
     if (e instanceof NotIndianListing) return fail(422, "Only companies listed on NSE or BSE (priced in rupees) can be previewed.");
     if (e instanceof NothingFound) return fail(404, "Yahoo Finance has no data for that ticker.");
     return fail(502, "Yahoo Finance did not respond. Try again in a moment.");
