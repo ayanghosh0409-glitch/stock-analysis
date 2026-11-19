@@ -26,6 +26,7 @@ import LookupPanel from "./LookupPanel";
 import SectorBuilder from "./SectorBuilder";
 import BuiltBanner from "./BuiltBanner";
 import { tally } from "@/lib/overview";
+import { isFresh } from "@/lib/sharedSectors";
 import { fmtPct } from "./format";
 
 const OVERVIEW = "Overview";
@@ -52,18 +53,64 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const [sort, setSort] = useState<{ key: SortKey; asc: boolean }>({ key: "verdict", asc: true });
   const [selected, setSelected] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(false);
-  // Sectors built from Yahoo during this visit. They sit beside the listed ones but are kept out of the overview totals.
+  // Sectors built from Yahoo. `shared` are kept by the server and shown to every visitor; `built` are this visitor's own
+  // builds, shown until the server has kept them (or for good if it could not). Both sit beside the listed sectors but are
+  // kept out of the overview totals.
+  const [shared, setShared] = useState<Sector[]>([]);
   const [built, setBuilt] = useState<Sector[]>([]);
-  const sectors = useMemo(() => [...data.sectors, ...built], [data, built]);
+  const [shareState, setShareState] = useState<Record<string, string>>({}); // by Yahoo name: "saving", or why it was not kept
+  const sectors = useMemo(() => {
+    const mine = new Set(built.map((b) => b.built?.yahooName));
+    return [...data.sectors, ...shared.filter((s) => !mine.has(s.built?.yahooName)), ...built];
+  }, [data, shared, built]);
   const listedNames = useMemo(() => new Set(data.sectors.map((s) => s.name)), [data]);
+  const listedList = useMemo(() => data.sectors.map((s) => s.name), [data]);
+  const upsert = (list: Sector[], sec: Sector) => [...list.filter((x) => x.built?.yahooName !== sec.built?.yahooName), sec];
+  const setShare = (yahooName: string, v: string | null) =>
+    setShareState((m) => {
+      const next = { ...m };
+      if (v === null) delete next[yahooName];
+      else next[yahooName] = v;
+      return next;
+    });
+
+  // Offers this visitor's build to the server, which builds and keeps its own copy for everyone (the browser's figures are not sent).
+  const share = async (sec: Sector) => {
+    const y = sec.built!.yahooName;
+    setShare(y, "saving");
+    try {
+      const res = await fetch("/api/sectors", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: y }) });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok || !body?.sector) {
+        setShare(y, typeof body?.error === "string" ? body.error : "it could not be saved.");
+        return;
+      }
+      setShared((l) => upsert(l, body.sector as Sector));
+      setBuilt((b) => b.filter((x) => x.built?.yahooName !== y));
+      setShare(y, null);
+    } catch {
+      setShare(y, "the server could not be reached.");
+    }
+  };
   const onBuilt = (sec: Sector) => {
-    setBuilt((b) => [...b.filter((x) => x.built?.yahooName !== sec.built?.yahooName), sec]);
+    setBuilt((b) => upsert(b, sec));
     setTab(sec.name);
     setSelected(null);
     setQuery("");
+    void share(sec);
+  };
+  // A sector that is already shared and fresh needs no new build: just show it.
+  const onExisting = (yahooName: string) => {
+    const have = shared.find((x) => x.built?.yahooName === yahooName);
+    if (!have || !isFresh(have.built?.builtAt) || built.some((b) => b.built?.yahooName === yahooName)) return false;
+    setTab(have.name);
+    setSelected(null);
+    setQuery("");
+    return true;
   };
   const removeBuilt = (name: string) => {
     setBuilt((b) => b.filter((x) => x.name !== name));
+    setShareState({});
     setTab(OVERVIEW);
     setSelected(null);
   };
@@ -82,6 +129,17 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     setLoaded(true);
   }, []);
   /* eslint-enable react-hooks/set-state-in-effect */
+  // The sectors other visitors have built and the server keeps. If this fails the page is just the listed sectors.
+  useEffect(() => {
+    const ctl = new AbortController();
+    fetch("/api/sectors", { signal: ctl.signal })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((b) => {
+        if (b && Array.isArray(b.sectors)) setShared(b.sectors as Sector[]);
+      })
+      .catch(() => {});
+    return () => ctl.abort();
+  }, []);
   useEffect(() => {
     if (!loaded) return;
     try {
@@ -190,7 +248,7 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         </p>
       </header>
 
-      <SectorBuilder taken={sectors.map((s) => s.name)} onBuilt={onBuilt} />
+      <SectorBuilder taken={listedList} onBuilt={onBuilt} onExisting={onExisting} />
 
       <nav aria-label="Sectors" className="mb-4 flex flex-wrap gap-2">
         {[OVERVIEW, ...sectors.map((s) => s.name)].map((t) => (
@@ -208,7 +266,7 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       ) : (
         sector && o && info && (
           <>
-          {sector.built && <BuiltBanner sector={sector} onRemove={() => removeBuilt(sector.name)} />}
+          {sector.built && <BuiltBanner sector={sector} share={shareState[sector.built!.yahooName]} onRemove={() => removeBuilt(sector.name)} />}
           <SectorView
             name={sector.name}
             bench={info.bench}

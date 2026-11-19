@@ -29,6 +29,8 @@ export type BuiltInfo = {
   listsFetchedAt: string | null; // when the stored top-ten list was fetched
   oldest: string | null; // when the oldest figure used was fetched from Yahoo
   skipped: { symbol: string; name: string; reason: string }[];
+  shared?: boolean; // true when the server keeps this sector and shows it to every visitor
+  builtAt?: string; // when the server built the shared copy
 };
 
 export type Sector = { name: string; title: string; stocks: Stock[]; built?: BuiltInfo };

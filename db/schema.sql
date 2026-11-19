@@ -1,5 +1,5 @@
--- The shared database holds two tables: figures that visitors enter when Yahoo Finance has none, and a cache of what
--- Yahoo returned for each company (preview_cache, at the end of this file).
+-- The shared database holds three tables: figures that visitors enter when Yahoo Finance has none, a cache of what
+-- Yahoo returned for each company (preview_cache), and the sectors visitors built (shared_sectors), both at the end of this file.
 -- The site creates this itself the first time it needs it (src/lib/figures.ts, ensureSchema), so running this by hand is optional.
 -- Rows are only ever added. To remove a bad entry, delete its row.
 
@@ -21,4 +21,12 @@ create table if not exists preview_cache (
   ticker     text primary key,
   payload    jsonb not null,
   fetched_at timestamptz not null default now()
+);
+
+-- Sectors built from Yahoo that every visitor sees (src/lib/sharedSectors.ts). The payload is the whole built sector, as
+-- the server built it from Yahoo's answers. At most 40 rows. To take a sector off the site, delete its row.
+create table if not exists shared_sectors (
+  yahoo_name text primary key,                                          -- exactly as Yahoo spells it, e.g. Banks—Regional
+  payload    jsonb not null,
+  built_at   timestamptz not null default now()
 );

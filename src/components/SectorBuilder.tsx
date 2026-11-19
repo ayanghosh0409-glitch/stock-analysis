@@ -56,7 +56,16 @@ const chip = "rounded-full border border-line bg-surface px-3 py-1 text-xs hover
  * lists (no Yahoo call), offers a choice or the nearest names when needed, then fetches the ten largest companies and
  * hands the built sector to the dashboard, which screens it exactly like a listed one.
  */
-export default function SectorBuilder({ taken, onBuilt }: { taken: string[]; onBuilt: (s: Sector) => void }) {
+export default function SectorBuilder({
+  taken,
+  onBuilt,
+  onExisting,
+}: {
+  taken: string[];
+  onBuilt: (s: Sector) => void;
+  /** Shows a sector that is already shared and fresh, and says so by returning true: nothing needs fetching then. */
+  onExisting: (yahooName: string) => boolean;
+}) {
   const [text, setText] = useState("");
   const [st, setSt] = useState<State>({ s: "idle" });
   const ctrl = useRef<AbortController | null>(null);
@@ -111,7 +120,10 @@ export default function SectorBuilder({ taken, onBuilt }: { taken: string[]; onB
     try {
       const a = await getJson<Answer>(`/api/sector?q=${encodeURIComponent(query)}`, signal);
       if (signal.aborted) return;
-      if (a.status === "found") await build(a.list, a.fetchedAt, signal);
+      if (a.status === "found") {
+        if (onExisting(a.list.name)) setSt({ s: "idle", note: `${a.list.name} is already shared with every visitor, so it is shown as it is.` });
+        else await build(a.list, a.fetchedAt, signal);
+      }
       else if (a.status === "choose") setSt({ s: "choose", q: query, options: a.options });
       else if (a.status === "none") setSt({ s: "none", q: query, suggestions: a.suggestions, sectors: a.sectors });
       else setSt({ s: "unavailable" });
@@ -133,7 +145,7 @@ export default function SectorBuilder({ taken, onBuilt }: { taken: string[]; onB
       <h2 className="text-base font-semibold tracking-tight">Build a sector from Yahoo Finance</h2>
       <p className="mt-1 max-w-3xl text-sm text-muted">
         Type a sector or industry, for example banks, pharma or real estate. The ten largest NSE companies in it are fetched and
-        screened with the same rules as the listed sectors.
+        screened with the same rules as the listed sectors, and the sector is then kept for every visitor to see.
       </p>
       <form
         className="mt-3 flex flex-wrap items-center gap-2"
