@@ -10,7 +10,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import YahooFinance from "yahoo-finance2";
 
-const yf = new YahooFinance() as unknown as {
+const client = new YahooFinance();
+const yf = client as unknown as {
   _fetch: (url: string, params: Record<string, string>, opts: Record<string, unknown>, kind: string, crumb: boolean) => Promise<unknown>;
 };
 
@@ -64,6 +65,9 @@ const CASES: Q[] = [
 ];
 
 async function main() {
+  // The POST options would also be applied to the library's own cookie request and break it, so get the cookie and
+  // crumb with an ordinary call first; the screener call then reuses them.
+  await client.quote("RELIANCE.NS", {}, { validateResult: false }).catch((e) => console.error("warm-up failed:", e));
   const out: string[] = ["# Spike: top Indian stocks by sector or industry from Yahoo", "", `Run at ${new Date().toISOString()}`, ""];
   let worked = 0;
   for (const c of CASES) {
