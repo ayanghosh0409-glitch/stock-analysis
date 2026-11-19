@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { Benchmarks, PeerHealth } from "@/lib/screen";
 import { donutArcs, share, type Tally } from "@/lib/overview";
 import { PeerBadge } from "./Badges";
@@ -106,78 +107,116 @@ export function TrendBar({ t }: { t: Tally }) {
   );
 }
 
-function SectorCard({ s, onOpen }: { s: SectorSummary; onOpen: (name: string) => void }) {
+const tag = "rounded-full border border-line bg-surface2 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider";
+
+/** What a sector row holds once it is opened: the benchmark, the screen results and the profit consistency. */
+function SectorPanel({ s, onOpen }: { s: SectorSummary; onOpen: (name: string) => void }) {
   const { bench, t } = s;
   const floorApplies = bench.roe != null && bench.threshold != null && bench.threshold > bench.roe;
   return (
-    <article className="relative flex flex-col gap-5 rounded-xl border border-line bg-surface p-5 shadow-sm transition hover:border-accent hover:shadow-md has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent">
-      <header className="flex items-start justify-between gap-3">
-        <div>
-          <h3 className="text-lg font-semibold tracking-tight">
-            {/* The button stretches over the whole card, so the card is one big target while staying a real, focusable button. */}
-            <button type="button" onClick={() => onOpen(s.name)} className="outline-none after:absolute after:inset-0 after:content-['']" aria-label={`Open ${s.name} sector, ${t.n} stocks`}>
-              {s.name}
-            </button>
-          </h3>
-          <p className="text-xs text-muted">
-            {t.n} stocks
-            {s.built && <span className="ml-2 rounded-full border border-line bg-surface2 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider">From Yahoo</span>}
-          </p>
-        </div>
-        <div className="relative z-10 flex flex-col items-end gap-1">
+    <div className="space-y-4 px-5 pb-5 pt-1">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2">
           <span className={eyebrow}>Peer set</span>
           <PeerBadge health={s.health} />
         </div>
-      </header>
+        <button type="button" onClick={() => onOpen(s.name)} className="text-sm font-medium text-accent hover:underline" aria-label={`View stocks in ${s.name}`}>
+          View stocks →
+        </button>
+      </div>
 
-      <section aria-label={`${s.name} industry benchmark`}>
-        <h4 className={eyebrow}>Industry benchmark</h4>
-        <dl className="mt-2 grid grid-cols-2 gap-2">
-          <div className="rounded-lg bg-surface2 px-3 py-2">
-            <dt className="text-xs text-muted">ROE cut-off</dt>
-            <dd className="num text-xl font-semibold tracking-tight">{fmtPct(bench.threshold)}</dd>
+      <div className="grid gap-6 lg:grid-cols-3">
+        <section aria-label={`${s.name} industry benchmark`}>
+          <h4 className={eyebrow}>Industry benchmark</h4>
+          <dl className="mt-2 grid grid-cols-2 gap-2">
+            <div className="rounded-lg bg-surface2 px-3 py-2">
+              <dt className="text-xs text-muted">ROE cut-off</dt>
+              <dd className="num text-xl font-semibold tracking-tight">{fmtPct(bench.threshold)}</dd>
+            </div>
+            <div className="rounded-lg bg-surface2 px-3 py-2">
+              <dt className="text-xs text-muted">Industry ROCE</dt>
+              <dd className="num text-xl font-semibold tracking-tight">{fmtPct(bench.roce)}</dd>
+            </div>
+          </dl>
+          <p className="mt-1.5 text-[11px] text-muted">
+            {floorApplies
+              ? `Peer median ROE is ${fmtPct(bench.roe)}, so the ${fmtPct(bench.floor, 0)} minimum applies.`
+              : s.built
+                ? `Median of the profitable stocks among these ${t.n}, not of the whole sector.`
+                : "Median of the profitable peers in this sector."}
+          </p>
+        </section>
+
+        <section aria-label={`${s.name} screen results`}>
+          <h4 className={eyebrow}>Screen results · {t.n} stocks</h4>
+          <div className="mt-2">
+            <Donut t={t} />
           </div>
-          <div className="rounded-lg bg-surface2 px-3 py-2">
-            <dt className="text-xs text-muted">Industry ROCE</dt>
-            <dd className="num text-xl font-semibold tracking-tight">{fmtPct(bench.roce)}</dd>
+        </section>
+
+        <section aria-label={`${s.name} profit consistency`}>
+          <h4 className={eyebrow}>Profit consistency · {t.n} stocks</h4>
+          <div className="mt-2">
+            <TrendBar t={t} />
           </div>
-        </dl>
-        <p className="mt-1.5 text-[11px] text-muted">
-          {floorApplies
-            ? `Peer median ROE is ${fmtPct(bench.roe)}, so the ${fmtPct(bench.floor, 0)} minimum applies.`
-            : s.built
-              ? `Median of the profitable stocks among these ${t.n}, not of the whole sector.`
-              : "Median of the profitable peers in this sector."}
-        </p>
-      </section>
-
-      <section aria-label={`${s.name} screen results`}>
-        <h4 className={eyebrow}>Screen results · {t.n} stocks</h4>
-        <div className="mt-2">
-          <Donut t={t} />
-        </div>
-      </section>
-
-      <section aria-label={`${s.name} profit consistency`}>
-        <h4 className={eyebrow}>Profit consistency · {t.n} stocks</h4>
-        <div className="mt-2">
-          <TrendBar t={t} />
-        </div>
-      </section>
-
-      <p aria-hidden className="mt-auto text-sm font-medium text-accent">
-        View stocks →
-      </p>
-    </article>
+        </section>
+      </div>
+    </div>
   );
 }
 
+/**
+ * Every sector on the page as a collapsible row. Closed, a row is just the sector's name and how many stocks it holds, so
+ * the overview stays short however many sectors are built; open, it shows the full detail. All rows start closed.
+ */
 export default function SectorCards({ sectors, onOpen }: { sectors: SectorSummary[]; onOpen: (name: string) => void }) {
+  const [open, setOpen] = useState<ReadonlySet<string>>(new Set());
+  const toggle = (name: string) =>
+    setOpen((prev) => {
+      const next = new Set(prev);
+      if (!next.delete(name)) next.add(name);
+      return next;
+    });
+  const allOpen = sectors.length > 0 && sectors.every((s) => open.has(s.name));
   return (
-    <section aria-label="Sector cards" className="mb-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      {sectors.map((s) => (
-        <SectorCard key={s.name} s={s} onOpen={onOpen} />
-      ))}
+    <section aria-label="Sector cards" className="mb-5">
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <h2 className={eyebrow}>{sectors.length} sectors</h2>
+        <button type="button" onClick={() => setOpen(allOpen ? new Set() : new Set(sectors.map((s) => s.name)))} className="rounded-full border border-line bg-surface px-3 py-1 text-xs hover:bg-surface2">
+          {allOpen ? "Collapse all" : "Expand all"}
+        </button>
+      </div>
+      <ul className="divide-y divide-line rounded-xl border border-line bg-surface shadow-sm">
+        {sectors.map((s, i) => {
+          const isOpen = open.has(s.name);
+          const id = `sector-row-${i}`;
+          return (
+            <li key={s.name}>
+              <h3>
+                <button
+                  type="button"
+                  onClick={() => toggle(s.name)}
+                  aria-expanded={isOpen}
+                  aria-controls={id}
+                  className="flex w-full items-center gap-3 rounded-xl px-5 py-3.5 text-left hover:bg-surface2 focus-visible:outline-2 focus-visible:outline-accent"
+                >
+                  <svg aria-hidden viewBox="0 0 12 12" className={`size-3 shrink-0 text-muted transition-transform ${isOpen ? "rotate-90" : ""}`}>
+                    <path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span className="text-base font-semibold tracking-tight">{s.name}</span>
+                  {s.built && <span className={tag}>From Yahoo</span>}
+                  <span className="num ml-auto text-sm text-muted">{s.t.n} stocks</span>
+                </button>
+              </h3>
+              {isOpen && (
+                <div id={id} role="region" aria-label={`${s.name} details`}>
+                  <SectorPanel s={s} onOpen={onOpen} />
+                </div>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
