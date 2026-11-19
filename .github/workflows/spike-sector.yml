@@ -1,0 +1,30 @@
+name: Spike - sector lookup
+
+# Asks Yahoo Finance, for real, for the top Indian stocks in a few sectors and industries, and prints what came back.
+# It changes nothing in the repository. Open the run's job summary to read the report.
+
+on:
+  pull_request:
+    paths:
+      - scripts/spike-sector.ts
+      - .github/workflows/spike-sector.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  spike:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Ask Yahoo for the top stocks by sector
+        run: npx tsx scripts/spike-sector.ts
+      - name: Show the report in the run summary
+        if: always()
+        run: '[ -f spike-out/sector-report.md ] && cat spike-out/sector-report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report was written." >> "$GITHUB_STEP_SUMMARY"'
