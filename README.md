@@ -76,8 +76,8 @@ Search for a name that matches none of the listed stocks and the page offers to 
 
 Type a sector or industry (banks, pharma, real estate) into the box at the top of the page. The site checks the name against
 Yahoo's own list, offers a choice if several match or the nearest names if none does, then fetches the ten largest NSE
-companies in it by market cap and screens them with the same rules as the listed sectors. The new sector appears as a tab for
-that visit; "Remove this sector" takes it away.
+companies in it by market cap and screens them with the same rules as the listed sectors. The new sector appears as a tab, and
+is then kept for every visitor (see below). If it could not be kept, it stays for that visit only and "Remove this sector" takes it away.
 
 - **No Yahoo call to find a sector.** `data/yahoo-taxonomy.json` holds Yahoo's 11 sectors and 145 industries, spelled exactly as
   Yahoo's screener expects (with a long dash: `Banks—Regional`). Yahoo answers an unknown name with zero stocks, not an error, so
@@ -88,6 +88,12 @@ that visit; "Remove this sector" takes it away.
 - **Each company's figures** come from `/api/stock`, the same route the company lookup uses. With a database set up, what Yahoo
   returned is kept in the `preview_cache` table for a week and served from there, so a second visitor costs Yahoo nothing.
 - **Banks, lenders and insurers** are judged on ROE alone (ROCE means little for them), so their best result is Moderate.
+- **Shared with everyone.** Once a visitor's build finishes, the browser asks `POST /api/sectors` with only the Yahoo name. The
+  server builds its own copy from the Yahoo cache (and from Yahoo for anything missing), never from figures a browser sent, and keeps
+  it in the `shared_sectors` table. Every visitor's page loads those sectors from `GET /api/sectors`. Rules: the name must be one of
+  the stored lists; at most 40 shared sectors; 6 saves a minute per caller; nothing is saved if Yahoo did not answer for some
+  companies (a company Yahoo can never give, such as a dollar reporter, is just left out); a copy older than a week is rebuilt when
+  someone builds it again. Without a database the sector stays for that visit only. To take one off the site, delete its row.
 
 ## Figures visitors enter (shared database)
 
