@@ -8,7 +8,7 @@ companies are left out), or your own override. It is rated **Strong** when ROCE 
 **Moderate** when only ROE passes, and **Skip** otherwise. Comparison is strict, so a stock exactly at the cut-off fails.
 A stock within 2 points of its ROE cut-off is marked **Near cut-off**, because a small data change could flip it.
 
-Each sector also gets a **Peer set** grade (Solid, Caution or Weak) from how many profitable stocks it has, how many
+Each sector also gets a **Peer set** grade (Good, Fair or Weak) from how many profitable stocks it has, how many
 loss-making ones were left out, and how widely ROE varies. The minimum ROE, the borderline band and the peer-set
 thresholds are constants at the top of `src/lib/screen.ts`.
 
@@ -22,10 +22,19 @@ in your browser (`localStorage`), never sent anywhere, and can be cleared from t
 `src/lib/recent.ts`.
 
 **Navigation:** a sidebar down the left (a slide-in menu on phones) lists the **Overview**, **All stocks** (every stock in one
-table, a company in two sectors once), then every sector: the listed ones, then the ones built from Yahoo. Each shows its stock
-count. A filter box narrows the sector list. Each page has its own address after a `#` (`#/`, `#/all`, `#/sector/IT`), so a page
-can be linked to and the back button works; the address logic is in `src/lib/route.ts`. A link to a sector a visitor built for
-their visit only stops working after they leave, and says so.
+table, a company in two sectors once) and **Sectors**, each with a count. Under them are the sectors you pinned (three at most;
+until you pin one, the three listed sectors with the most stocks), the three most recently built from Yahoo, and an "All sectors"
+link, so the sidebar is the same length however many sectors are built. Its filter box looks through every sector. Pins are kept
+in your browser only (`src/lib/pins.ts`). Each page has its own address after a `#` (`#/`, `#/all`, `#/sectors`,
+`#/sector/IT`), so a page can be linked to and the back button works; the address logic is in `src/lib/route.ts`. A link to a
+sector a visitor built for their visit only stops working after they leave, and says so.
+
+**Sectors page:** the one page that lists every sector. Each row shows the stock count, a bar of how many stocks are Strong,
+Moderate, Near cut-off (a Skip that missed the ROE cut-off by 2 points or less) and Skip, the median ROE, the share that pass
+(Strong plus Moderate) and the peer-set grade; a row opens that sector and a pin button puts it in the sidebar. A search box,
+Listed / Built from Yahoo chips, a peer-set filter and a sort narrow the table, and it pages 10, 25 or 50 rows at a time. The
+bar is told apart by fill and hatching as well as colour, and has a text alternative. The search, filters and paging logic is in
+`src/lib/sectorsPage.ts`.
 
 **Search:** the box at the top of every page (press `/` to jump to it) finds sectors and stocks on the site by name or ticker as
 you type, and opening a result goes to that sector or stock. It matches spelling, not meaning, and covers only what is on the
