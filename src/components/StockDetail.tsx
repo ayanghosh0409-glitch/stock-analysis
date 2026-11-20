@@ -6,6 +6,7 @@ import { ConsistencyBadge, NearCutoffBadge, VerdictBadge } from "./Badges";
 import { fmtCr, fmtPct, fmtPrice, fmtX } from "./format";
 import type { Row } from "./StockTable";
 import { BORDERLINE_BAND, explain, profitTrend } from "@/lib/screen";
+import WatchButton from "./WatchButton";
 
 const DEFAULT_LABELS = ["FY22", "FY23", "FY24", "FY25", "FY26"];
 
@@ -18,7 +19,19 @@ function Metric({ label, value }: { label: string; value: string }) {
   );
 }
 
-export default function StockDetail({ row, onClose }: { row: Row; onClose: () => void }) {
+export default function StockDetail({
+  row,
+  onClose,
+  watching,
+  watchFull,
+  onToggleWatch,
+}: {
+  row: Row;
+  onClose: () => void;
+  watching: boolean;
+  watchFull: boolean;
+  onToggleWatch: () => void;
+}) {
   useEffect(() => {
     const h = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", h);
@@ -38,7 +51,10 @@ export default function StockDetail({ row, onClose }: { row: Row; onClose: () =>
           <h2 className="text-xl font-semibold tracking-tight">{s.name}</h2>
           <div className="text-xs text-muted">{s.symbol} · {row.sector}</div>
         </div>
-        <button type="button" onClick={onClose} className="rounded-full border border-line px-3 py-1 text-xs hover:bg-surface2">Close (Esc)</button>
+        <div className="flex shrink-0 items-center gap-2">
+          <WatchButton name={s.name} watching={watching} full={watchFull} onToggle={onToggleWatch} label />
+          <button type="button" onClick={onClose} className="rounded-full border border-line px-3 py-1 text-xs hover:bg-surface2">Close (Esc)</button>
+        </div>
       </div>
 
       <div className="mt-4 space-y-3">

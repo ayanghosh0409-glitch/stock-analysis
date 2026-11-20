@@ -32,6 +32,14 @@ you type, and opening a result goes to that sector or stock. It matches spelling
 page. When no stock fits, it offers a Yahoo Finance lookup. The matching is in `src/lib/siteSearch.ts`. The separate search
 with recent searches above the stock table only filters that table.
 
+**Watchlist and notifications:** the star beside a stock (in the stock table, its details panel and each search result; in the search
+box Shift+Enter does the same for the highlighted stock) watches it, up to 30 stocks. The bell in the header opens a panel of
+notifications, and its "Manage" view lists the watched stocks. A notification goes away when you open it; one you never open stays
+for 24 hours (7 days for a merger or acquisition headline). Both are kept in your browser only (`localStorage`), through one small
+module, `src/lib/browserStore.ts`, so a different browser or device has its own. **No alerts are made yet:** the price, ROE/ROCE and
+merger alerts are added in later steps, and the Manage view says "Not switched on yet" beside each. The rules are in
+`src/lib/watchlist.ts` and `src/lib/notifications.ts`.
+
 **Overview:** a stat strip totals all sectors, then the sector builder, then every sector as a collapsible row: closed it shows
 the sector's name and stock count; open it shows the sector benchmark (ROE cut-off, industry ROCE, peer-set grade), the screen
 result (Strong, Moderate, Skip in a ring) and profit consistency (a segmented bar). The counting logic is in
