@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { ALL_STOCKS, OVERVIEW, hashForTab, tabFromHash } from "./route";
+import { ALL_STOCKS, OVERVIEW, SECTORS, hashForTab, tabFromHash } from "./route";
 
 describe("page addresses", () => {
   it("round-trips the fixed pages and every kind of sector name", () => {
-    for (const tab of [OVERVIEW, ALL_STOCKS, "IT", "Auto Components", "Banks—Regional", "Drug Manufacturers—General", "Oil & Gas / E&P", "100% pure"]) {
+    for (const tab of [OVERVIEW, ALL_STOCKS, SECTORS, "IT", "Auto Components", "Banks—Regional", "Drug Manufacturers—General", "Oil & Gas / E&P", "100% pure"]) {
       expect(tabFromHash(hashForTab(tab))).toBe(tab);
     }
   });
@@ -11,6 +11,7 @@ describe("page addresses", () => {
   it("writes readable addresses", () => {
     expect(hashForTab(OVERVIEW)).toBe("#/");
     expect(hashForTab(ALL_STOCKS)).toBe("#/all");
+    expect(hashForTab(SECTORS)).toBe("#/sectors");
     expect(hashForTab("Auto Components")).toBe("#/sector/Auto%20Components");
   });
 
@@ -23,5 +24,6 @@ describe("page addresses", () => {
   it("does not let an address name one of the fixed pages as a sector", () => {
     expect(tabFromHash("#/sector/Overview")).toBe(OVERVIEW);
     expect(tabFromHash("#/sector/All%20stocks")).toBe(OVERVIEW);
+    expect(tabFromHash("#/sector/Sectors")).toBe(OVERVIEW);
   });
 });
