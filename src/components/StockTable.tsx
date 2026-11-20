@@ -5,6 +5,7 @@ import { BORDERLINE_BAND, type Benchmarks, type Consistency, type Verdict } from
 import { ConsistencyBadge, NearCutoffBadge, VerdictBadge } from "./Badges";
 import Sparkline from "./Sparkline";
 import { fmtCr, fmtPct, fmtPrice, fmtX } from "./format";
+import WatchButton from "./WatchButton";
 
 export type Row = {
   stock: Stock;
@@ -93,7 +94,7 @@ function MarginCell({ margin, borderline }: { margin: number | null; borderline:
 }
 
 export default function StockTable({
-  rows, sort, onSort, onPick, showSector, selected,
+  rows, sort, onSort, onPick, showSector, selected, watched, watchFull, onToggleWatch,
 }: {
   rows: Row[];
   sort: { key: SortKey; asc: boolean };
@@ -101,6 +102,11 @@ export default function StockTable({
   onPick: (symbol: string) => void;
   showSector: boolean;
   selected: string | null;
+  /** Tickers being watched. */
+  watched: Set<string>;
+  /** True when no more stocks can be watched. */
+  watchFull: boolean;
+  onToggleWatch: (stock: Stock) => void;
 }) {
   const th = (k: SortKey, label: string, right = false) => (
     <th scope="col" aria-sort={sort.key === k ? (sort.asc ? "ascending" : "descending") : "none"} className={`px-3 py-3 font-semibold ${right ? "text-right" : "text-left"}`}>
@@ -113,9 +119,10 @@ export default function StockTable({
 
   return (
     <div className="overflow-x-auto rounded-xl border border-line bg-surface shadow-sm">
-      <table className="w-full min-w-[1200px] border-collapse text-sm">
+      <table className="w-full min-w-[1260px] border-collapse text-sm">
         <thead className="bg-surface2 text-[11px] font-semibold uppercase tracking-wider text-muted">
           <tr>
+            <th scope="col" className="w-14 px-1 py-3 text-center font-semibold">Watch</th>
             {th("name", "Stock")}
             {th("price", "Price (₹)", true)}
             <th scope="col" className="px-3 py-3 text-left font-semibold">52W position</th>
@@ -136,6 +143,9 @@ export default function StockTable({
             const s = r.stock;
             return (
               <tr key={s.symbol} className={`border-t border-line ${selected === s.symbol ? "bg-surface2" : "hover:bg-surface2"}`}>
+                <td className="px-1 py-1 text-center">
+                  <WatchButton name={s.name} watching={watched.has(s.symbol)} full={watchFull} onToggle={() => onToggleWatch(s)} />
+                </td>
                 <td className="px-3 py-2">
                   <button type="button" onClick={() => onPick(s.symbol)} className="text-left font-semibold text-accent hover:underline">
                     {s.name}
@@ -144,6 +154,7 @@ export default function StockTable({
                     {s.symbol}
                     {showSector ? ` · ${r.sector}` : ""}
                     {s.notes.length > 0 ? " · has notes" : ""}
+                    {watched.has(s.symbol) ? " · Watching" : ""}
                   </div>
                 </td>
                 <td className="num px-3 py-2 text-right">{fmtPrice(s.price)}</td>
@@ -167,7 +178,7 @@ export default function StockTable({
             );
           })}
           {rows.length === 0 && (
-            <tr><td colSpan={13} className="px-3 py-8 text-center text-muted">No stocks match these filters.</td></tr>
+            <tr><td colSpan={14} className="px-3 py-8 text-center text-muted">No stocks match these filters.</td></tr>
           )}
         </tbody>
       </table>
