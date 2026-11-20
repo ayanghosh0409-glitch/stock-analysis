@@ -1,4 +1,5 @@
 import type { Consistency, PeerHealth, Verdict } from "@/lib/screen";
+import { GRADE } from "@/lib/sectorsPage";
 
 const base = "inline-flex items-center whitespace-nowrap rounded px-2 py-0.5 text-xs font-semibold";
 
@@ -15,7 +16,7 @@ export function NearCutoffBadge({ points }: { points: number }) {
 }
 
 export function PeerBadge({ health }: { health: PeerHealth }) {
-  const label = { ok: "Solid", caution: "Caution", poor: "Weak" }[health.level];
+  const label = GRADE[health.level];
   const [bg, fg] =
     health.level === "ok"
       ? ["var(--good-bg)", "var(--good)"]

@@ -30,8 +30,11 @@ import { isFresh } from "@/lib/sharedSectors";
 import { fmtPct } from "./format";
 import Sidebar from "./Sidebar";
 import GlobalSearch from "./GlobalSearch";
-import { ALL_STOCKS, OVERVIEW, tabFromHash, hashForTab } from "@/lib/route";
+import SectorsPage from "./SectorsPage";
+import { ALL_STOCKS, OVERVIEW, SECTORS, tabFromHash, hashForTab } from "@/lib/route";
 import type { SiteSector, SiteStock } from "@/lib/siteSearch";
+import { PINS_KEY, defaultPins, effectivePins, parsePins, recentlyBuilt, togglePin, MAX_PINS } from "@/lib/pins";
+import { buildSectorRows } from "@/lib/sectorsPage";
 
 const STORE = "stock-analysis:v1";
 
@@ -68,6 +71,8 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const [built, setBuilt] = useState<Sector[]>([]);
   const [shareState, setShareState] = useState<Record<string, string>>({}); // by Yahoo name: "saving", or why it was not kept
   const [sharedLoaded, setSharedLoaded] = useState(false); // false until the server has answered, so a linked sector is not called missing too early
+  // The sectors this visitor pinned to the sidebar, kept in this browser. Null until they pin or unpin one, so the defaults show.
+  const [pinsStored, setPinsStored] = useState<string[] | null>(null);
   const sectors = useMemo(() => {
     const mine = new Set(built.map((b) => b.built?.yahooName));
     return [...data.sectors, ...shared.filter((s) => !mine.has(s.built?.yahooName)), ...built];
@@ -141,6 +146,9 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         if (v.overrides && typeof v.overrides === "object") setOverrides(v.overrides);
       }
     } catch {}
+    try {
+      setPinsStored(parsePins(window.localStorage.getItem(PINS_KEY)));
+    } catch {}
     setLoaded(true);
     // Open the page the address names, and follow it when the address changes (a link, or the back button).
     setTab(tabFromHash(window.location.hash));
@@ -189,6 +197,12 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       window.localStorage.setItem(STORE, JSON.stringify({ overrides }));
     } catch {}
   }, [overrides, loaded]);
+  useEffect(() => {
+    if (!loaded || pinsStored === null) return;
+    try {
+      window.localStorage.setItem(PINS_KEY, JSON.stringify(pinsStored));
+    } catch {}
+  }, [pinsStored, loaded]);
 
   // Each stock is judged against its sector peers without itself (benchmarkFor), while the
   // sector-wide figures below are the reference shown in summaries and on the chart.
@@ -282,11 +296,21 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     const builtNames = new Set(sectors.filter((s) => s.built).map((s) => s.name));
     return allRows.map((r) => ({ name: r.stock.name, symbol: r.stock.symbol, sector: r.sector, built: builtNames.has(r.sector) }));
   }, [allRows, sectors]);
-  const listedItems = siteSectors.filter((s) => !s.built);
-  const builtItems = siteSectors.filter((s) => s.built);
+
+  // The sidebar stays short: the sectors pinned (or, until something is pinned, the biggest listed ones) and the newest builds.
+  const sectorNames = useMemo(() => new Set(sectors.map((s) => s.name)), [sectors]);
+  const pins = effectivePins(pinsStored, defaultPins(siteSectors), sectorNames);
+  const sizeOf = (name: string) => ({ name, n: sectors.find((s) => s.name === name)?.stocks.length ?? 0 });
+  const pinnedItems = pins.map(sizeOf);
+  const recentItems = recentlyBuilt(sectors.map((s) => ({ name: s.name, built: !!s.built, builtAt: s.built?.builtAt ?? null }))).map(sizeOf);
+  const onTogglePin = (name: string) => {
+    const next = togglePin(pinsStored ?? defaultPins(siteSectors), name, sectorNames, sharedLoaded);
+    if (next) setPinsStored(next);
+  };
+  const sectorTable = useMemo(() => buildSectorRows(sectors, allRows, sectorInfo), [sectors, allRows, sectorInfo]);
 
   const sidebar = (label: string, onNavigate?: () => void) => (
-    <Sidebar label={label} active={tab} total={overviewRows.length} listed={listedItems} built={builtItems} onNavigate={onNavigate} />
+    <Sidebar label={label} active={tab} total={overviewRows.length} all={siteSectors} pinned={pinnedItems} recent={recentItems} onNavigate={onNavigate} />
   );
 
   // The controls and the table of stocks, shared by the All stocks page and every sector page.
@@ -400,6 +424,11 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
 
           {tab === OVERVIEW && <SectorCards sectors={summary} onOpen={(name) => go(name)} />}
 
+          {/* Kept mounted, hidden away from its own page, so the search, filters and page survive a visit to a sector and the back button. */}
+          <div hidden={tab !== SECTORS}>
+            <SectorsPage rows={sectorTable} pinned={pins} onTogglePin={onTogglePin} onOpen={(name) => go(name)} loading={!sharedLoaded} />
+          </div>
+
           {tab === ALL_STOCKS && (
             <>
               <h1 className="mb-1 text-2xl sm:text-3xl">All stocks</h1>
@@ -408,10 +437,28 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
             </>
           )}
 
-          {tab !== OVERVIEW && tab !== ALL_STOCKS && (
+          {tab !== OVERVIEW && tab !== ALL_STOCKS && tab !== SECTORS && (
             <>
               <p className="text-[11px] font-medium uppercase tracking-wider text-muted">{sector?.built ? "Built from Yahoo" : sector ? "Listed sector" : "Sector"}</p>
-              <h1 className="mb-3 mt-1 text-2xl sm:text-3xl">{tab}</h1>
+              <div className="mb-3 mt-1 flex flex-wrap items-center gap-x-4 gap-y-2">
+                <h1 className="text-2xl sm:text-3xl">{tab}</h1>
+                {sector && (
+                  <button
+                    type="button"
+                    aria-pressed={pins.includes(sector.name)}
+                    disabled={pins.length >= MAX_PINS && !pins.includes(sector.name)}
+                    title={pins.length >= MAX_PINS && !pins.includes(sector.name) ? `${MAX_PINS} sectors are pinned. Unpin one on the Sectors page first.` : undefined}
+                    onClick={() => onTogglePin(sector.name)}
+                    className="flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-3.5 text-sm hover:bg-surface2 focus-visible:outline-2 focus-visible:outline-accent disabled:cursor-not-allowed disabled:opacity-40 lg:min-h-9"
+                  >
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill={pins.includes(sector.name) ? "currentColor" : "none"} stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round">
+                      <path d="M7 3h6l-1 6 3 3v1.5H5V12l3-3z" />
+                      <path d="M10 13.5V18" />
+                    </svg>
+                    {pins.includes(sector.name) ? "Pinned to sidebar" : "Pin to sidebar"}
+                  </button>
+                )}
+              </div>
               {sector && o && info ? (
                 <>
                   {sector.built && <BuiltBanner sector={sector} share={shareState[sector.built!.yahooName]} onRemove={() => removeBuilt(sector.name)} />}
