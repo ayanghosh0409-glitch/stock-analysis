@@ -49,6 +49,13 @@ module, `src/lib/browserStore.ts`, so a different browser or device has its own.
 merger alerts are added in later steps, and the Manage view says "Not switched on yet" beside each. The rules are in
 `src/lib/watchlist.ts` and `src/lib/notifications.ts`.
 
+**Sector page:** a sector's page has no charts. Four cards state the sector in words (stocks in it, the ROE benchmark, the ROCE benchmark
+and how much to trust the peer set), with the benchmark workings and overrides folded under them. The stocks follow as one table in
+groups (Strong, Moderate, Near cut-off, Skip, Not rated), each group headed by its count and what it means. Chips filter by group, a
+menu filters by profit trend, another sorts inside the groups, and the table pages 25 rows at a time. Each row shows the ROE, how many
+points it is above or short of the cut-off, the ROCE, three arrows for the latest year-on-year profit moves and the verdict, with a
+watch star; a row opens the stock. The rules are in `src/lib/sectorPage.ts`.
+
 **Overview:** a stat strip totals all sectors, then the sector builder, then every sector as a collapsible row: closed it shows
 the sector's name and stock count; open it shows the sector benchmark (ROE cut-off, industry ROCE, peer-set grade), the screen
 result (Strong, Moderate, Skip in a ring) and profit consistency (a segmented bar). The counting logic is in

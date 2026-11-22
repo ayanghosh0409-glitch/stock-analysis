@@ -13,12 +13,12 @@ import {
   roeMargin,
   verdict,
   type Override,
-  type Verdict,
 } from "@/lib/screen";
 import StockTable, { sortValue, type Row, type SortKey } from "./StockTable";
 import StockDetail from "./StockDetail";
 import RecentSearch from "./RecentSearch";
 import SectorView from "./SectorView";
+import SectorStocks from "./SectorStocks";
 import NewsPanel from "./NewsPanel";
 import type { NewsFile } from "@/lib/news";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
@@ -519,15 +519,22 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
                     name={sector.name}
                     bench={info.bench}
                     health={info.health}
-                    t={tally(sectorRows)}
-                    points={sectorRows
-                      .filter((r) => r.stock.roe != null && r.stock.roce != null)
-                      .map((r) => ({ symbol: r.stock.symbol, roe: r.stock.roe as number, roce: r.stock.roce as number, verdict: r.verdict as Verdict }))}
+                    count={sectorRows.length}
                     override={o}
                     onOverride={(k, v) => setOverrides((p) => ({ ...p, [sector.name]: { ...o, [k]: v } }))}
+                  />
+                  <SectorStocks
+                    key={sector.name}
+                    name={sector.name}
+                    rows={sectorRows}
+                    selected={selected}
+                    watched={watchedSet}
+                    watchFull={watchFull}
                     onPick={setSelected}
-                  >
-                    {!sector.built && (
+                    onToggleWatch={toggleWatch}
+                  />
+                  {!sector.built && (
+                    <div className="mt-6">
                       <NewsPanel
                         sector={sector.name}
                         news={news.sectors[sector.name]}
@@ -536,10 +543,8 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
                         stocks={sectorRows.map((r) => ({ symbol: r.stock.symbol, name: r.stock.name, verdict: r.verdict }))}
                         onPick={setSelected}
                       />
-                    )}
-                  </SectorView>
-                  <h2 className="mb-3 mt-2 text-xl font-semibold tracking-tight">{tab} stocks</h2>
-                  {stockList}
+                    </div>
+                  )}
                 </>
               ) : (
                 <section aria-label="Sector not found" className="rounded-xl border border-line bg-surface p-5 text-sm shadow-sm">
