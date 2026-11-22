@@ -30,6 +30,9 @@ import { isFresh } from "@/lib/sharedSectors";
 import { fmtPct } from "./format";
 import Sidebar from "./Sidebar";
 import GlobalSearch from "./GlobalSearch";
+import NotificationCenter, { type WatchInfo } from "./NotificationCenter";
+import { useWatchNotify } from "./useWatchNotify";
+import { isFull } from "@/lib/watchlist";
 import SectorsPage from "./SectorsPage";
 import { ALL_STOCKS, OVERVIEW, SECTORS, tabFromHash, hashForTab } from "@/lib/route";
 import type { SiteSector, SiteStock } from "@/lib/siteSearch";
@@ -55,6 +58,8 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const [tab, setTab] = useState(OVERVIEW);
   const [menuOpen, setMenuOpen] = useState(false);
   const pendingPick = useRef<string | null>(null);
+  // The stocks this visitor watches and the notifications about them, kept in this browser.
+  const { watch, notices, now, toggle: toggleWatch, unwatch, dismiss, clearNotices } = useWatchNotify();
   const menuButton = useRef<HTMLButtonElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
   const [overrides, setOverrides] = useState<Overrides>({});
@@ -309,6 +314,34 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   };
   const sectorTable = useMemo(() => buildSectorRows(sectors, allRows, sectorInfo), [sectors, allRows, sectorInfo]);
 
+  // What the bell and the star need: who is watched, what the page knows about each, and how to open one.
+  const watchedSet = useMemo(() => new Set(watch.map((w) => w.symbol)), [watch]);
+  const watchFull = isFull(watch);
+  const watchInfo: WatchInfo = useMemo(
+    () => Object.fromEntries(overviewRows.map((r) => [r.stock.symbol, { name: r.stock.name, sector: r.sector, verdict: r.verdict }])),
+    [overviewRows],
+  );
+  const openWatched = (symbol: string) => {
+    const r = overviewRows.find((x) => x.stock.symbol === symbol);
+    if (r) go(r.sector, symbol);
+  };
+  const bell = (
+    <NotificationCenter
+      notices={notices}
+      now={now}
+      watch={watch}
+      info={watchInfo}
+      onOpenNotice={(n) => {
+        dismiss(n.id);
+        openWatched(n.symbol);
+      }}
+      onDismiss={dismiss}
+      onOpenStock={openWatched}
+      onClear={clearNotices}
+      onUnwatch={unwatch}
+    />
+  );
+
   const sidebar = (label: string, onNavigate?: () => void) => (
     <Sidebar label={label} active={tab} total={overviewRows.length} all={siteSectors} pinned={pinnedItems} recent={recentItems} onNavigate={onNavigate} />
   );
@@ -348,7 +381,17 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
       ) : (
         <>
           <div className="mb-2 text-xs text-muted">{rows.length} stock{rows.length === 1 ? "" : "s"} shown</div>
-          <StockTable rows={rows} sort={sort} onSort={onSort} onPick={setSelected} showSector={tab === ALL_STOCKS} selected={selected} />
+          <StockTable
+            rows={rows}
+            sort={sort}
+            onSort={onSort}
+            onPick={setSelected}
+            showSector={tab === ALL_STOCKS}
+            selected={selected}
+            watched={watchedSet}
+            watchFull={watchFull}
+            onToggleWatch={toggleWatch}
+          />
         </>
       )}
     </>
@@ -381,20 +424,30 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
             </svg>
           </button>
           <span className="truncate text-base font-bold tracking-tight">{tab}</span>
+          <div className="ml-auto">{bell}</div>
         </div>
 
         <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-4 sm:px-6 lg:pt-6">
-          <div className="mb-5 max-w-2xl">
-            <GlobalSearch
-              sectors={siteSectors}
-              stocks={siteStocks}
-              onOpenSector={(name) => go(name)}
-              onOpenStock={(st) => go(st.sector, st.symbol)}
-              onLookup={(text) => {
-                setQuery(text);
-                go(ALL_STOCKS);
-              }}
-            />
+          <div className="mb-5 flex items-center gap-3">
+            <div className="max-w-2xl flex-1">
+              <GlobalSearch
+                sectors={siteSectors}
+                stocks={siteStocks}
+                onOpenSector={(name) => go(name)}
+                onOpenStock={(st) => go(st.sector, st.symbol)}
+                onLookup={(text) => {
+                  setQuery(text);
+                  go(ALL_STOCKS);
+                }}
+                watched={watchedSet}
+                watchFull={watchFull}
+                onToggleWatch={(st) => {
+                  const r = allRows.find((x) => x.stock.symbol === st.symbol);
+                  return toggleWatch(r ? r.stock : { symbol: st.symbol, name: st.name });
+                }}
+              />
+            </div>
+            <div className="ml-auto hidden lg:block">{bell}</div>
           </div>
 
           {tab === OVERVIEW && (
@@ -519,7 +572,15 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
         </div>
       </div>
 
-      {selectedRow && <StockDetail row={selectedRow} onClose={() => setSelected(null)} />}
+      {selectedRow && (
+        <StockDetail
+          row={selectedRow}
+          onClose={() => setSelected(null)}
+          watching={watchedSet.has(selectedRow.stock.symbol)}
+          watchFull={watchFull}
+          onToggleWatch={() => toggleWatch(selectedRow.stock)}
+        />
+      )}
     </div>
   );
 }

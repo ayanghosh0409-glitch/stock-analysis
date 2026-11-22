@@ -2,6 +2,8 @@
 
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { searchSite, type SiteSector, type SiteStock } from "@/lib/siteSearch";
+import { WATCH_MAX } from "@/lib/watchlist";
+import { Star } from "./WatchButton";
 
 type Option =
   | { kind: "sector"; sector: SiteSector }
@@ -22,12 +24,21 @@ export default function GlobalSearch({
   onOpenSector,
   onOpenStock,
   onLookup,
+  watched,
+  watchFull,
+  onToggleWatch,
 }: {
   sectors: SiteSector[];
   stocks: SiteStock[];
   onOpenSector: (name: string) => void;
   onOpenStock: (stock: SiteStock) => void;
   onLookup: (query: string) => void;
+  /** Tickers being watched. */
+  watched: Set<string>;
+  /** True when no more stocks can be watched. */
+  watchFull: boolean;
+  /** Watches or stops watching a stock; says what happened. */
+  onToggleWatch: (stock: SiteStock) => "added" | "removed" | "full";
 }) {
   const id = useId();
   const listId = `${id}-list`;
@@ -36,6 +47,7 @@ export default function GlobalSearch({
   const [value, setValue] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  const [note, setNote] = useState("");
 
   const q = value.trim();
   const hits = useMemo(() => searchSite(q, sectors, stocks), [q, sectors, stocks]);
@@ -72,6 +84,12 @@ export default function GlobalSearch({
     else onLookup(o.query);
   };
 
+  // The star on a result, or Shift+Enter on the highlighted stock, watches it without leaving the search.
+  const toggleWatch = (stock: SiteStock) => {
+    const r = onToggleWatch(stock);
+    setNote(r === "added" ? `Now watching ${stock.name}.` : r === "removed" ? `Stopped watching ${stock.name}.` : `You can watch ${WATCH_MAX} stocks. Stop watching one to add another.`);
+  };
+
   const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       if (options.length === 0) return;
@@ -81,7 +99,12 @@ export default function GlobalSearch({
       setActive((a) => (a < 0 ? (step === 1 ? 0 : options.length - 1) : (a + step + options.length) % options.length));
     } else if (e.key === "Enter") {
       const o = options[active >= 0 ? active : 0];
-      if (o && showing) {
+      if (e.shiftKey) {
+        if (o?.kind === "stock" && showing) {
+          e.preventDefault();
+          toggleWatch(o.stock);
+        }
+      } else if (o && showing) {
         e.preventDefault();
         choose(o);
       }
@@ -118,7 +141,23 @@ export default function GlobalSearch({
             <span className="ml-auto flex items-center gap-1.5 text-xs text-muted">
               {o.stock.sector}
               {o.stock.built && <span className={tag}>From Yahoo</span>}
+              {watched.has(o.stock.symbol) && <span className="sr-only">, watching</span>}
             </span>
+            {/* A mouse shortcut for Shift+Enter: the keyboard and screen reader route is the key, so this stays out of the tab order. */}
+            <button
+              type="button"
+              tabIndex={-1}
+              aria-hidden="true"
+              disabled={watchFull && !watched.has(o.stock.symbol)}
+              title={watched.has(o.stock.symbol) ? "Stop watching" : "Watch for notifications"}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleWatch(o.stock);
+              }}
+              className={`-my-1 flex size-9 shrink-0 items-center justify-center rounded-lg hover:bg-surface ${watched.has(o.stock.symbol) ? "text-accent" : "text-muted"} disabled:opacity-50`}
+            >
+              <Star filled={watched.has(o.stock.symbol)} />
+            </button>
           </>
         )}
         {o.kind === "lookup" && (
@@ -158,6 +197,7 @@ export default function GlobalSearch({
           value={value}
           onChange={(e) => {
             setValue(e.target.value);
+            setNote("");
             setOpen(true);
             setActive(-1);
           }}
@@ -173,7 +213,7 @@ export default function GlobalSearch({
       </div>
 
       <div role="status" className="sr-only">
-        {showing ? (options.filter((o) => o.kind !== "lookup").length === 0 ? "No match on this site." : `${options.filter((o) => o.kind !== "lookup").length} results.`) : ""}
+        {note || (showing ? (options.filter((o) => o.kind !== "lookup").length === 0 ? "No match on this site." : `${options.filter((o) => o.kind !== "lookup").length} results.`) : "")}
       </div>
 
       {showing && (
@@ -198,7 +238,7 @@ export default function GlobalSearch({
               </li>
             )}
           </ul>
-          <p className="border-t border-line px-4 py-2 text-xs text-muted">Searches the sectors and stocks on this site by name or ticker.</p>
+          <p className="border-t border-line px-4 py-2 text-xs text-muted">Searches the sectors and stocks on this site by name or ticker. Shift+Enter watches the highlighted stock.</p>
         </div>
       )}
     </div>
