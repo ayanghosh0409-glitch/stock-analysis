@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-19",
+ "fetchedAt": "2026-11-23",
  "lists": [
   {
    "kind": "sector",
@@ -10,52 +10,52 @@
     {
      "symbol": "ULTRACEMCO.NS",
      "name": "UltraTech Cement Limited",
-     "marketCap": 368228
+     "marketCap": 371992
     },
     {
      "symbol": "JSWSTEEL.NS",
      "name": "JSW Steel Limited",
-     "marketCap": 322573
+     "marketCap": 319886
     },
     {
      "symbol": "ASIANPAINT.NS",
      "name": "Asian Paints Limited",
-     "marketCap": 247830
-    },
-    {
-     "symbol": "TATASTEEL.NS",
-     "name": "Tata Steel Limited",
-     "marketCap": 225703
+     "marketCap": 246738
     },
     {
      "symbol": "HINDZINC.NS",
      "name": "Hindustan Zinc Limited",
-     "marketCap": 219864
+     "marketCap": 222991
     },
     {
      "symbol": "GRASIM.NS",
      "name": "Grasim Industries Limited",
-     "marketCap": 211240
+     "marketCap": 208669
+    },
+    {
+     "symbol": "TATASTEEL.NS",
+     "name": "Tata Steel Limited",
+     "marketCap": 203166
     },
     {
      "symbol": "HINDALCO.NS",
      "name": "Hindalco Industries Limited",
-     "marketCap": 200451
+     "marketCap": 199852
     },
     {
      "symbol": "SOLARINDS.NS",
      "name": "Solar Industries India Limited",
-     "marketCap": 169388
+     "marketCap": 165687
     },
     {
      "symbol": "PIDILITIND.NS",
      "name": "Pidilite Industries Limited",
-     "marketCap": 160145
+     "marketCap": 162253
     },
     {
      "symbol": "VAML.NS",
      "name": "Vedanta Aluminium Metal Limited",
-     "marketCap": 142521
+     "marketCap": 141389
     }
    ]
   },
@@ -68,52 +68,52 @@
     {
      "symbol": "COROMANDEL.NS",
      "name": "Coromandel International Limited",
-     "marketCap": 57765
+     "marketCap": 57880
     },
     {
      "symbol": "FACT.NS",
      "name": "The Fertilisers and Chemicals Travancore Limited",
-     "marketCap": 49977
+     "marketCap": 48595
     },
     {
      "symbol": "UPL.NS",
      "name": "UPL Limited",
-     "marketCap": 48287
+     "marketCap": 47336
     },
     {
      "symbol": "PIIND.NS",
      "name": "PI Industries Limited",
-     "marketCap": 24928
+     "marketCap": 23901
     },
     {
      "symbol": "SUMICHEM.NS",
      "name": "Sumitomo Chemical India Limited",
-     "marketCap": 16789
+     "marketCap": 16721
     },
     {
      "symbol": "BAYERCROP.NS",
      "name": "Bayer CropScience Limited",
-     "marketCap": 15048
+     "marketCap": 14945
     },
     {
      "symbol": "CHAMBLFERT.NS",
      "name": "Chambal Fertilisers and Chemicals Limited",
-     "marketCap": 14888
+     "marketCap": 14806
     },
     {
      "symbol": "PARADEEP.NS",
      "name": "Paradeep Phosphates Limited",
-     "marketCap": 14452
+     "marketCap": 14646
     },
     {
      "symbol": "EIDPARRY.NS",
      "name": "E.I.D.- Parry (India) Limited",
-     "marketCap": 11464
+     "marketCap": 11569
     },
     {
      "symbol": "MBAPL.NS",
      "name": "Madhya Bharat Agro Products Limited",
-     "marketCap": 8438
+     "marketCap": 8398
     }
    ]
   },
@@ -126,52 +126,52 @@
     {
      "symbol": "HINDALCO.NS",
      "name": "Hindalco Industries Limited",
-     "marketCap": 200451
+     "marketCap": 199852
     },
     {
      "symbol": "VAML.NS",
      "name": "Vedanta Aluminium Metal Limited",
-     "marketCap": 142521
+     "marketCap": 141448
     },
     {
      "symbol": "NATIONALUM.NS",
      "name": "National Aluminium Company Limited",
-     "marketCap": 55916
+     "marketCap": 54768
     },
     {
      "symbol": "ARFIN.NS",
      "name": "Arfin India Limited",
-     "marketCap": 1531
-    },
-    {
-     "symbol": "BELDING.NS",
-     "name": "Belding India Limited",
-     "marketCap": 1170
+     "marketCap": 1532
     },
     {
      "symbol": "MMP.NS",
      "name": "MMP Industries Limited",
-     "marketCap": 1151
+     "marketCap": 1194
+    },
+    {
+     "symbol": "BELDING.NS",
+     "name": "Belding India Limited",
+     "marketCap": 1122
     },
     {
      "symbol": "BAHETI.NS",
      "name": "Baheti Recycling Industries Limited",
-     "marketCap": 796
+     "marketCap": 772
     },
     {
      "symbol": "MAANALU.NS",
      "name": "Maan Aluminium Limited",
-     "marketCap": 585
+     "marketCap": 560
     },
     {
      "symbol": "MANAKALUCO.NS",
      "name": "Manaksia Aluminium Company Limited",
-     "marketCap": 186
+     "marketCap": 180
     },
     {
      "symbol": "CENTEXT.NS",
      "name": "Century Extrusions Limited",
-     "marketCap": 134
+     "marketCap": 135
     }
    ]
   },
@@ -184,52 +184,52 @@
     {
      "symbol": "ULTRACEMCO.NS",
      "name": "UltraTech Cement Limited",
-     "marketCap": 368228
+     "marketCap": 371992
     },
     {
      "symbol": "GRASIM.NS",
      "name": "Grasim Industries Limited",
-     "marketCap": 211240
+     "marketCap": 208669
     },
     {
      "symbol": "AMBUJACEM.NS",
      "name": "Ambuja Cements Limited",
-     "marketCap": 96808
+     "marketCap": 97392
     },
     {
      "symbol": "SHREECEM.NS",
      "name": "Shree Cement Limited",
-     "marketCap": 90220
+     "marketCap": 90021
     },
     {
      "symbol": "JKCEMENT.NS",
      "name": "J.K. Cement Limited",
-     "marketCap": 40352
+     "marketCap": 41768
     },
     {
      "symbol": "DALBHARAT.NS",
      "name": "Dalmia Bharat Limited",
-     "marketCap": 28606
+     "marketCap": 29387
     },
     {
      "symbol": "ACC.NS",
      "name": "ACC Limited",
-     "marketCap": 23447
+     "marketCap": 23567
     },
     {
      "symbol": "RAMCOCEM.NS",
      "name": "The Ramco Cements Limited",
-     "marketCap": 19561
+     "marketCap": 19221
     },
     {
      "symbol": "JSWCEMENT.NS",
      "name": "JSW Cement Limited",
-     "marketCap": 16769
+     "marketCap": 16994
     },
     {
      "symbol": "INDIACEM.NS",
      "name": "The India Cements Limited",
-     "marketCap": 14905
+     "marketCap": 14903
     }
    ]
   },
@@ -242,52 +242,52 @@
     {
      "symbol": "NAVINFLUOR.NS",
      "name": "Navin Fluorine International Limited",
-     "marketCap": 52682
+     "marketCap": 51796
     },
     {
      "symbol": "DEEPAKNTR.NS",
      "name": "Deepak Nitrite Limited",
-     "marketCap": 21264
+     "marketCap": 20759
     },
     {
      "symbol": "DEEPAKFERT.NS",
      "name": "Deepak Fertilisers And Petrochemicals Corporation Limited",
-     "marketCap": 18471
+     "marketCap": 17907
     },
     {
      "symbol": "TATACHEM.NS",
      "name": "Tata Chemicals Limited",
-     "marketCap": 16557
+     "marketCap": 16623
     },
     {
      "symbol": "RPEL.NS",
      "name": "Raghav Productivity Enhancers Limited",
-     "marketCap": 8595
+     "marketCap": 8551
     },
     {
      "symbol": "GNFC.NS",
      "name": "Gujarat Narmada Valley Fertilizers & Chemicals Limited",
-     "marketCap": 6872
+     "marketCap": 6667
     },
     {
      "symbol": "ACI.NS",
      "name": "Archean Chemical Industries Limited",
-     "marketCap": 5423
+     "marketCap": 5227
     },
     {
      "symbol": "FOSECOIND.NS",
      "name": "Foseco India Limited",
-     "marketCap": 4520
+     "marketCap": 4477
     },
     {
      "symbol": "GUJALKALI.NS",
      "name": "Gujarat Alkalies and Chemicals Limited",
-     "marketCap": 4233
+     "marketCap": 4264
     },
     {
      "symbol": "GHCL.NS",
      "name": "GHCL Limited",
-     "marketCap": 4191
+     "marketCap": 4015
     }
    ]
   },
@@ -300,32 +300,32 @@
     {
      "symbol": "HINDCOPPER.NS",
      "name": "Hindustan Copper Limited",
-     "marketCap": 40354
+     "marketCap": 39774
     },
     {
      "symbol": "CUBEXTUB.NS",
      "name": "Cubex Tubings Limited",
-     "marketCap": 315
+     "marketCap": 303
     },
     {
      "symbol": "BHAGYANGR.NS",
      "name": "Bhagyanagar India Limited",
-     "marketCap": 290
+     "marketCap": 278
     },
     {
      "symbol": "MCL.NS",
      "name": "M Tek Copper Limited",
-     "marketCap": 139
+     "marketCap": 137
     },
     {
      "symbol": "RAJMET.NS",
      "name": "Rajnandini Metal Limited",
-     "marketCap": 81
+     "marketCap": 80
     },
     {
      "symbol": "SAGARDEEP.NS",
      "name": "Sagardeep Alloys Limited",
-     "marketCap": 45
+     "marketCap": 43
     }
    ]
   },
@@ -338,7 +338,7 @@
     {
      "symbol": "DECNGOLD.NS",
      "name": "Deccan Gold Mines Limited",
-     "marketCap": 3483
+     "marketCap": 3423
     }
    ]
   },
@@ -351,37 +351,37 @@
     {
      "symbol": "CENTURYPLY.NS",
      "name": "Century Plyboards (India) Limited",
-     "marketCap": 14761
+     "marketCap": 14561
     },
     {
      "symbol": "GREENLAM.NS",
      "name": "Greenlam Industries Limited",
-     "marketCap": 6035
+     "marketCap": 5549
     },
     {
      "symbol": "GREENPLY.NS",
      "name": "Greenply Industries Limited",
-     "marketCap": 3368
+     "marketCap": 3326
     },
     {
      "symbol": "GREENPANEL.NS",
      "name": "Greenpanel Industries Limited",
-     "marketCap": 1897
+     "marketCap": 1905
     },
     {
      "symbol": "IWP.NS",
      "name": "The Indian Wood Products Company Limited",
-     "marketCap": 218
+     "marketCap": 212
     },
     {
      "symbol": "ARCHIDPLY.NS",
      "name": "Archidply Industries Limited",
-     "marketCap": 163
+     "marketCap": 155
     },
     {
      "symbol": "WIPL.NS",
      "name": "The Western India Plywoods Limited",
-     "marketCap": 144
+     "marketCap": 138
     }
    ]
   },
@@ -394,52 +394,52 @@
     {
      "symbol": "HINDZINC.NS",
      "name": "Hindustan Zinc Limited",
-     "marketCap": 219822
+     "marketCap": 222991
     },
     {
      "symbol": "VEDL.NS",
      "name": "Vedanta Limited",
-     "marketCap": 94922
+     "marketCap": 91927
     },
     {
      "symbol": "VOGL.NS",
      "name": "Vedanta Oil and Gas Limited",
-     "marketCap": 11506
+     "marketCap": 11248
     },
     {
      "symbol": "JAINREC.NS",
      "name": "Jain Resource Recycling Limited",
-     "marketCap": 9994
+     "marketCap": 9536
     },
     {
      "symbol": "IMFA.NS",
      "name": "Indian Metals and Ferro Alloys Limited",
-     "marketCap": 5486
+     "marketCap": 5502
     },
     {
      "symbol": "MOIL.NS",
      "name": "MOIL Limited",
-     "marketCap": 4286
+     "marketCap": 4365
     },
     {
      "symbol": "ASHAPURMIN.NS",
      "name": "Ashapura Minechem Limited",
-     "marketCap": 4003
+     "marketCap": 4083
     },
     {
      "symbol": "JGCHEM.NS",
      "name": "J.G. Chemicals Limited",
-     "marketCap": 2171
+     "marketCap": 1976
     },
     {
      "symbol": "20MICRONS.NS",
      "name": "20 Microns Limited",
-     "marketCap": 632
+     "marketCap": 633
     },
     {
      "symbol": "NILE.NS",
      "name": "Nile Limited",
-     "marketCap": 362
+     "marketCap": 354
     }
    ]
   },
@@ -452,7 +452,7 @@
     {
      "symbol": "IGIL.NS",
      "name": "International Gemological Institute Limited",
-     "marketCap": 19114
+     "marketCap": 18602
     }
    ]
   },
@@ -465,52 +465,52 @@
     {
      "symbol": "JKPAPER.NS",
      "name": "JK Paper Limited",
-     "marketCap": 6542
+     "marketCap": 6457
     },
     {
      "symbol": "WSTCSTPAPR.NS",
      "name": "West Coast Paper Mills Limited",
-     "marketCap": 4353
+     "marketCap": 4050
     },
     {
      "symbol": "SESHAPAPER.NS",
      "name": "Seshasayee Paper and Boards Limited",
-     "marketCap": 1331
+     "marketCap": 1321
     },
     {
      "symbol": "ANDHRAPAP.NS",
      "name": "Andhra Paper Limited",
-     "marketCap": 1252
+     "marketCap": 1224
     },
     {
      "symbol": "NRAIL.NS",
      "name": "N R Agarwal Industries Limited",
-     "marketCap": 1078
+     "marketCap": 1088
     },
     {
      "symbol": "TNPL.NS",
      "name": "Tamil Nadu Newsprint and Papers Limited",
-     "marketCap": 917
+     "marketCap": 932
     },
     {
      "symbol": "PDMJEPAPER.NS",
      "name": "Pudumjee Paper Products Limited",
-     "marketCap": 876
+     "marketCap": 822
     },
     {
      "symbol": "EMAMIPAP.NS",
      "name": "Emami Paper Mills Limited",
-     "marketCap": 689
+     "marketCap": 671
     },
     {
      "symbol": "VOITHPAPR.NS",
      "name": "Voith Paper Fabrics India Limited",
-     "marketCap": 610
+     "marketCap": 606
     },
     {
      "symbol": "SATIA.NS",
      "name": "Satia Industries Limited",
-     "marketCap": 591
+     "marketCap": 574
     }
    ]
   },
@@ -523,52 +523,52 @@
     {
      "symbol": "ASIANPAINT.NS",
      "name": "Asian Paints Limited",
-     "marketCap": 247801
+     "marketCap": 246738
     },
     {
      "symbol": "SOLARINDS.NS",
      "name": "Solar Industries India Limited",
-     "marketCap": 169388
+     "marketCap": 165687
     },
     {
      "symbol": "PIDILITIND.NS",
      "name": "Pidilite Industries Limited",
-     "marketCap": 160186
+     "marketCap": 162253
     },
     {
      "symbol": "LINDEINDIA.NS",
      "name": "Linde India Limited",
-     "marketCap": 57789
+     "marketCap": 59460
     },
     {
      "symbol": "BERGEPAINT.NS",
      "name": "Berger Paints India Limited",
-     "marketCap": 54516
+     "marketCap": 53829
     },
     {
      "symbol": "FLUOROCHEM.NS",
      "name": "Gujarat Fluorochemicals Limited",
-     "marketCap": 53451
+     "marketCap": 53807
     },
     {
      "symbol": "ACUTAAS.NS",
      "name": "Acutaas Chemicals Limited",
-     "marketCap": 32627
+     "marketCap": 31815
     },
     {
      "symbol": "HSCL.NS",
      "name": "Himadri Speciality Chemical Limited",
-     "marketCap": 27890
+     "marketCap": 27931
     },
     {
      "symbol": "AETHER.NS",
      "name": "Aether Industries Limited",
-     "marketCap": 21955
+     "marketCap": 21203
     },
     {
      "symbol": "GRWRHITECH.NS",
      "name": "Garware Hi-Tech Films Limited",
-     "marketCap": 18070
+     "marketCap": 18376
     }
    ]
   },
@@ -581,52 +581,52 @@
     {
      "symbol": "JSWSTEEL.NS",
      "name": "JSW Steel Limited",
-     "marketCap": 322573
+     "marketCap": 319886
     },
     {
      "symbol": "TATASTEEL.NS",
      "name": "Tata Steel Limited",
-     "marketCap": 225690
+     "marketCap": 203166
     },
     {
      "symbol": "JINDALSTEL.NS",
      "name": "Jindal Steel Limited",
-     "marketCap": 113779
+     "marketCap": 115998
     },
     {
      "symbol": "LLOYDSME.NS",
      "name": "Lloyds Metals and Energy Limited",
-     "marketCap": 98057
+     "marketCap": 95738
     },
     {
      "symbol": "SAIL.NS",
      "name": "Steel Authority of India Limited",
-     "marketCap": 67955
-    },
-    {
-     "symbol": "APLAPOLLO.NS",
-     "name": "APL Apollo Tubes Limited",
-     "marketCap": 60696
+     "marketCap": 67001
     },
     {
      "symbol": "JSL.NS",
      "name": "Jindal Stainless Limited",
-     "marketCap": 60206
+     "marketCap": 59724
     },
     {
      "symbol": "NMDC.NS",
      "name": "NMDC Limited",
-     "marketCap": 60013
+     "marketCap": 59301
     },
     {
      "symbol": "WELCORP.NS",
      "name": "Welspun Corp Limited",
-     "marketCap": 58806
+     "marketCap": 56794
+    },
+    {
+     "symbol": "APLAPOLLO.NS",
+     "name": "APL Apollo Tubes Limited",
+     "marketCap": 46061
     },
     {
      "symbol": "SHYAMMETL.NS",
      "name": "Shyam Metalics and Energy Limited",
-     "marketCap": 36799
+     "marketCap": 35541
     }
    ]
   },
@@ -639,52 +639,52 @@
     {
      "symbol": "BHARTIARTL.NS",
      "name": "Bharti Airtel Limited",
-     "marketCap": 1335616
+     "marketCap": 1330063
     },
     {
      "symbol": "IDEA.NS",
      "name": "Vodafone Idea Limited",
-     "marketCap": 130012
+     "marketCap": 129253
     },
     {
      "symbol": "INDUSTOWER.NS",
      "name": "Indus Towers Limited",
-     "marketCap": 102248
+     "marketCap": 100415
     },
     {
      "symbol": "BHARTIHEXA.NS",
      "name": "Bharti Hexacom Limited",
-     "marketCap": 81625
+     "marketCap": 79850
     },
     {
      "symbol": "NAUKRI.NS",
      "name": "Info Edge (India) Limited",
-     "marketCap": 75396
+     "marketCap": 76918
     },
     {
      "symbol": "TATACOMM.NS",
      "name": "Tata Communications Limited",
-     "marketCap": 50025
+     "marketCap": 49110
     },
     {
      "symbol": "SUNTV.NS",
      "name": "Sun TV Network Limited",
-     "marketCap": 27558
+     "marketCap": 26780
     },
     {
      "symbol": "AFFLE.NS",
      "name": "Affle 3i Limited",
-     "marketCap": 22860
+     "marketCap": 23217
     },
     {
      "symbol": "PFOCUS.NS",
      "name": "Prime Focus Limited",
-     "marketCap": 21685
+     "marketCap": 18328
     },
     {
      "symbol": "NAZARA.NS",
      "name": "Nazara Technologies Limited",
-     "marketCap": 17250
+     "marketCap": 16778
     }
    ]
   },
@@ -697,37 +697,37 @@
     {
      "symbol": "AFFLE.NS",
      "name": "Affle 3i Limited",
-     "marketCap": 22860
+     "marketCap": 23217
     },
     {
      "symbol": "BCG.NS",
      "name": "Brightcom Group Limited",
-     "marketCap": 1786
+     "marketCap": 1746
     },
     {
      "symbol": "SIGNPOST.NS",
      "name": "Signpost India Limited",
-     "marketCap": 1191
+     "marketCap": 1165
     },
     {
      "symbol": "PRAVEG.NS",
      "name": "Praveg Limited",
-     "marketCap": 498
+     "marketCap": 474
     },
     {
      "symbol": "RKSWAMY.NS",
      "name": "R K Swamy Limited",
-     "marketCap": 394
+     "marketCap": 390
     },
     {
      "symbol": "TOUCHWOOD.NS",
      "name": "Touchwood Entertainment Limited",
-     "marketCap": 62
+     "marketCap": 63
     },
     {
      "symbol": "ODIGMA.NS",
      "name": "Odigma Consultancy Solutions Limited",
-     "marketCap": 62
+     "marketCap": 60
     }
    ]
   },
@@ -740,22 +740,22 @@
     {
      "symbol": "SUNTV.NS",
      "name": "Sun TV Network Limited",
-     "marketCap": 27558
+     "marketCap": 26780
     },
     {
      "symbol": "ZEEL.NS",
      "name": "Zee Entertainment Enterprises Limited",
-     "marketCap": 6816
+     "marketCap": 6883
     },
     {
      "symbol": "NDTV.NS",
      "name": "New Delhi Television Limited",
-     "marketCap": 734
+     "marketCap": 703
     },
     {
      "symbol": "TVTODAY.NS",
      "name": "T.V. Today Network Limited",
-     "marketCap": 603
+     "marketCap": 594
     },
     {
      "symbol": "ZEEMEDIA.NS",
@@ -765,27 +765,27 @@
     {
      "symbol": "ENIL.NS",
      "name": "Entertainment Network (India) Limited",
-     "marketCap": 386
+     "marketCap": 368
     },
     {
      "symbol": "AQYLON.NS",
      "name": "Aqylon Nexus Limited",
-     "marketCap": 301
+     "marketCap": 270
     },
     {
      "symbol": "RADIOCITY.NS",
      "name": "Music Broadcast Limited",
-     "marketCap": 204
+     "marketCap": 197
     },
     {
      "symbol": "BAGFILMS.NS",
      "name": "B.A.G. Films and Media Limited",
-     "marketCap": 85
+     "marketCap": 86
     },
     {
      "symbol": "RAJTV.NS",
      "name": "Raj Television Network Limited",
-     "marketCap": 40
+     "marketCap": 41
     }
    ]
   },
@@ -798,7 +798,7 @@
     {
      "symbol": "NAZARA.NS",
      "name": "Nazara Technologies Limited",
-     "marketCap": 17250
+     "marketCap": 16778
     }
    ]
   },
@@ -811,52 +811,52 @@
     {
      "symbol": "PFOCUS.NS",
      "name": "Prime Focus Limited",
-     "marketCap": 21685
+     "marketCap": 18328
     },
     {
      "symbol": "PVRINOX.NS",
      "name": "PVR INOX Limited",
-     "marketCap": 16755
+     "marketCap": 16342
     },
     {
      "symbol": "SAREGAMA.NS",
      "name": "Saregama India Limited",
-     "marketCap": 12829
+     "marketCap": 12608
     },
     {
      "symbol": "TIPSMUSIC.NS",
      "name": "Tips Music Limited",
-     "marketCap": 10431
+     "marketCap": 10219
     },
     {
      "symbol": "NETWORK18.NS",
      "name": "Network18 Media & Investments Limited",
-     "marketCap": 3982
+     "marketCap": 3858
     },
     {
      "symbol": "IMAGICAA.NS",
      "name": "Imagicaaworld Entertainment Limited",
-     "marketCap": 2356
+     "marketCap": 2336
     },
     {
      "symbol": "MMWL.NS",
      "name": "Media Matrix Worldwide Limited",
-     "marketCap": 2335
-    },
-    {
-     "symbol": "HATHWAY.NS",
-     "name": "Hathway Cable and Datacom Limited",
-     "marketCap": 1632
+     "marketCap": 2271
     },
     {
      "symbol": "SUNSHINE.NS",
      "name": "Sunshine Pictures Limited",
-     "marketCap": 1571
+     "marketCap": 1673
+    },
+    {
+     "symbol": "HATHWAY.NS",
+     "name": "Hathway Cable and Datacom Limited",
+     "marketCap": 1614
     },
     {
      "symbol": "PANORAMA.NS",
      "name": "Panorama Studios International Limited",
-     "marketCap": 1473
+     "marketCap": 1479
     }
    ]
   },
@@ -869,17 +869,17 @@
     {
      "symbol": "NAUKRI.NS",
      "name": "Info Edge (India) Limited",
-     "marketCap": 75376
+     "marketCap": 76918
     },
     {
      "symbol": "JUSTDIAL.NS",
      "name": "Just Dial Limited",
-     "marketCap": 5636
+     "marketCap": 5574
     },
     {
      "symbol": "MATRIMONY.NS",
      "name": "Matrimony.com Limited",
-     "marketCap": 1093
+     "marketCap": 1075
     },
     {
      "symbol": "DGCONTENT.NS",
@@ -897,47 +897,47 @@
     {
      "symbol": "MPSLTD.NS",
      "name": "MPS Limited",
-     "marketCap": 3641
+     "marketCap": 3576
     },
     {
      "symbol": "NAVNETEDUL.NS",
      "name": "Navneet Education Limited",
-     "marketCap": 2696
+     "marketCap": 2646
     },
     {
      "symbol": "DBCORP.NS",
      "name": "D. B. Corp Limited",
-     "marketCap": 2656
+     "marketCap": 2644
     },
     {
      "symbol": "JAGRAN.NS",
      "name": "Jagran Prakashan Limited",
-     "marketCap": 1384
+     "marketCap": 1311
     },
     {
      "symbol": "SANDESH.NS",
      "name": "The Sandesh Limited",
-     "marketCap": 742
+     "marketCap": 745
     },
     {
      "symbol": "HMVL.NS",
      "name": "Hindustan Media Ventures Limited",
-     "marketCap": 674
+     "marketCap": 700
     },
     {
      "symbol": "HTMEDIA.NS",
      "name": "HT Media Limited",
-     "marketCap": 547
+     "marketCap": 552
     },
     {
      "symbol": "SCHAND.NS",
      "name": "S Chand And Company Limited",
-     "marketCap": 431
+     "marketCap": 435
     },
     {
      "symbol": "SAMBHAAV.NS",
      "name": "Sambhaav Media Limited",
-     "marketCap": 108
+     "marketCap": 107
     },
     {
      "symbol": "CYBERMEDIA.NS",
@@ -955,52 +955,52 @@
     {
      "symbol": "BHARTIARTL.NS",
      "name": "Bharti Airtel Limited",
-     "marketCap": 1335679
+     "marketCap": 1330063
     },
     {
      "symbol": "IDEA.NS",
      "name": "Vodafone Idea Limited",
-     "marketCap": 130120
+     "marketCap": 129253
     },
     {
      "symbol": "INDUSTOWER.NS",
      "name": "Indus Towers Limited",
-     "marketCap": 102248
+     "marketCap": 100415
     },
     {
      "symbol": "BHARTIHEXA.NS",
      "name": "Bharti Hexacom Limited",
-     "marketCap": 81625
+     "marketCap": 79865
     },
     {
      "symbol": "TATACOMM.NS",
      "name": "Tata Communications Limited",
-     "marketCap": 50000
+     "marketCap": 49110
     },
     {
      "symbol": "RAILTEL.NS",
      "name": "RailTel Corporation of India Limited",
-     "marketCap": 7907
+     "marketCap": 7899
     },
     {
      "symbol": "TTML.NS",
      "name": "Tata Teleservices (Maharashtra) Limited",
-     "marketCap": 7175
+     "marketCap": 6789
     },
     {
      "symbol": "ROUTE.NS",
      "name": "Route Mobile Limited",
-     "marketCap": 2651
+     "marketCap": 2621
     },
     {
      "symbol": "STLNETWORK.NS",
      "name": "STL Networks Limited",
-     "marketCap": 2123
+     "marketCap": 1901
     },
     {
      "symbol": "MTNL.NS",
      "name": "Mahanagar Telephone Nigam Limited",
-     "marketCap": 1570
+     "marketCap": 1496
     }
    ]
   },
@@ -1008,57 +1008,57 @@
    "kind": "sector",
    "name": "Consumer Cyclical",
    "sector": null,
-   "total": 510,
+   "total": 511,
    "stocks": [
     {
      "symbol": "MARUTI.NS",
      "name": "Maruti Suzuki India Limited",
-     "marketCap": 421142
+     "marketCap": 442396
     },
     {
      "symbol": "M&M.NS",
      "name": "Mahindra & Mahindra Limited",
-     "marketCap": 420435
+     "marketCap": 419066
     },
     {
      "symbol": "TITAN.NS",
      "name": "Titan Company Limited",
-     "marketCap": 413204
+     "marketCap": 415528
     },
     {
      "symbol": "ETERNAL.NS",
      "name": "Eternal Limited",
-     "marketCap": 333318
+     "marketCap": 335069
     },
     {
      "symbol": "BAJAJ-AUTO.NS",
      "name": "Bajaj Auto Limited",
-     "marketCap": 296544
+     "marketCap": 292151
     },
     {
      "symbol": "EICHERMOT.NS",
      "name": "Eicher Motors Limited",
-     "marketCap": 220956
+     "marketCap": 224045
     },
     {
      "symbol": "TVSMOTOR.NS",
      "name": "TVS Motor Company Limited",
-     "marketCap": 217079
-    },
-    {
-     "symbol": "HYUNDAI.NS",
-     "name": "Hyundai Motor India Limited",
-     "marketCap": 177930
+     "marketCap": 215491
     },
     {
      "symbol": "MOTHERSON.NS",
      "name": "Samvardhana Motherson International Limited",
-     "marketCap": 173088
+     "marketCap": 176681
+    },
+    {
+     "symbol": "HYUNDAI.NS",
+     "name": "Hyundai Motor India Limited",
+     "marketCap": 174128
     },
     {
      "symbol": "TRENT.NS",
      "name": "Trent Limited",
-     "marketCap": 170789
+     "marketCap": 170496
     }
    ]
   },
@@ -1066,57 +1066,57 @@
    "kind": "industry",
    "name": "Apparel Manufacturing",
    "sector": "Consumer Cyclical",
-   "total": 31,
+   "total": 32,
    "stocks": [
     {
      "symbol": "PAGEIND.NS",
      "name": "Page Industries Limited",
-     "marketCap": 34689
+     "marketCap": 33685
     },
     {
      "symbol": "PGIL.NS",
      "name": "Pearl Global Industries Limited",
-     "marketCap": 12826
+     "marketCap": 13753
     },
     {
      "symbol": "MANYAVAR.NS",
      "name": "Vedant Fashions Limited",
-     "marketCap": 11207
+     "marketCap": 11047
     },
     {
      "symbol": "GOKEX.NS",
      "name": "Gokaldas Exports Limited",
-     "marketCap": 5433
+     "marketCap": 5615
     },
     {
      "symbol": "ABFRL.NS",
      "name": "Aditya Birla Fashion and Retail Limited",
-     "marketCap": 4490
-    },
-    {
-     "symbol": "RAYMONDLSL.NS",
-     "name": "Raymond Lifestyle Limited",
-     "marketCap": 3440
+     "marketCap": 4614
     },
     {
      "symbol": "LUXIND.NS",
      "name": "Lux Industries Limited",
-     "marketCap": 3441
+     "marketCap": 3428
+    },
+    {
+     "symbol": "RAYMONDLSL.NS",
+     "name": "Raymond Lifestyle Limited",
+     "marketCap": 3304
     },
     {
      "symbol": "SBC.NS",
      "name": "SBC Exports Limited",
-     "marketCap": 3299
+     "marketCap": 3240
     },
     {
      "symbol": "KITEX.NS",
      "name": "Kitex Garments Limited",
-     "marketCap": 2669
+     "marketCap": 2622
     },
     {
      "symbol": "KKCL.NS",
      "name": "Kewal Kiran Clothing Limited",
-     "marketCap": 2586
+     "marketCap": 2526
     }
    ]
   },
@@ -1129,52 +1129,52 @@
     {
      "symbol": "TRENT.NS",
      "name": "Trent Limited",
-     "marketCap": 170789
+     "marketCap": 170496
     },
     {
      "symbol": "METROBRAND.NS",
      "name": "Metro Brands Limited",
-     "marketCap": 22445
+     "marketCap": 22340
     },
     {
      "symbol": "ABLBL.NS",
      "name": "Aditya Birla Lifestyle Brands Limited",
-     "marketCap": 9225
+     "marketCap": 9508
     },
     {
      "symbol": "V2RETAIL.NS",
      "name": "V2 Retail Limited",
-     "marketCap": 5063
+     "marketCap": 5564
     },
     {
      "symbol": "ARVINDFASN.NS",
      "name": "Arvind Fashions Limited",
-     "marketCap": 4794
+     "marketCap": 4746
     },
     {
      "symbol": "STYLEBAAZA.NS",
      "name": "Baazar Style Retail Limited",
-     "marketCap": 4269
+     "marketCap": 3989
     },
     {
      "symbol": "GOCOLORS.NS",
      "name": "Go Fashion (India) Limited",
-     "marketCap": 1492
+     "marketCap": 1406
     },
     {
      "symbol": "KALAMANDIR.NS",
      "name": "Sai Silks (Kalamandir) Limited",
-     "marketCap": 1330
+     "marketCap": 1322
     },
     {
      "symbol": "MUFTI.NS",
      "name": "Credo Brands Marketing Limited",
-     "marketCap": 484
+     "marketCap": 479
     },
     {
      "symbol": "SSDL.NS",
      "name": "Saraswati Saree Depot Limited",
-     "marketCap": 265
+     "marketCap": 253
     }
    ]
   },
@@ -1187,22 +1187,22 @@
     {
      "symbol": "CARTRADE.NS",
      "name": "CarTrade Tech Limited",
-     "marketCap": 12873
+     "marketCap": 12709
     },
     {
      "symbol": "LANDMARK.NS",
      "name": "Landmark Cars Limited",
-     "marketCap": 1913
+     "marketCap": 1930
     },
     {
      "symbol": "PVSL.NS",
      "name": "Popular Vehicles and Services Limited",
-     "marketCap": 640
+     "marketCap": 627
     },
     {
      "symbol": "COMPEAU.NS",
      "name": "Competent Automobiles Company Limited",
-     "marketCap": 224
+     "marketCap": 234
     }
    ]
   },
@@ -1215,52 +1215,52 @@
     {
      "symbol": "MARUTI.NS",
      "name": "Maruti Suzuki India Limited",
-     "marketCap": 421048
+     "marketCap": 442396
     },
     {
      "symbol": "M&M.NS",
      "name": "Mahindra & Mahindra Limited",
-     "marketCap": 420423
+     "marketCap": 419066
     },
     {
      "symbol": "BAJAJ-AUTO.NS",
      "name": "Bajaj Auto Limited",
-     "marketCap": 296544
+     "marketCap": 292151
     },
     {
      "symbol": "EICHERMOT.NS",
      "name": "Eicher Motors Limited",
-     "marketCap": 220942
+     "marketCap": 224045
     },
     {
      "symbol": "TVSMOTOR.NS",
      "name": "TVS Motor Company Limited",
-     "marketCap": 217079
+     "marketCap": 215491
     },
     {
      "symbol": "HYUNDAI.NS",
      "name": "Hyundai Motor India Limited",
-     "marketCap": 177930
+     "marketCap": 174128
     },
     {
      "symbol": "TMCV.NS",
      "name": "Tata Motors Limited",
-     "marketCap": 165157
+     "marketCap": 167016
     },
     {
      "symbol": "HEROMOTOCO.NS",
      "name": "Hero MotoCorp Limited",
-     "marketCap": 110089
+     "marketCap": 110679
     },
     {
      "symbol": "TMPV.NS",
      "name": "Tata Motors Passenger Vehicles Limited",
-     "marketCap": 96496
+     "marketCap": 95575
     },
     {
      "symbol": "ATHERENERG.NS",
      "name": "Ather Energy Limited",
-     "marketCap": 74896
+     "marketCap": 78601
     }
    ]
   },
@@ -1273,52 +1273,52 @@
     {
      "symbol": "MOTHERSON.NS",
      "name": "Samvardhana Motherson International Limited",
-     "marketCap": 173088
+     "marketCap": 176681
     },
     {
      "symbol": "BOSCHLTD.NS",
      "name": "Bosch Limited",
-     "marketCap": 145917
+     "marketCap": 143941
     },
     {
      "symbol": "UNOMINDA.NS",
      "name": "Uno Minda Limited",
-     "marketCap": 80844
+     "marketCap": 78419
     },
     {
      "symbol": "SCHAEFFLER.NS",
      "name": "Schaeffler India Limited",
-     "marketCap": 56485
+     "marketCap": 56541
     },
     {
      "symbol": "SONACOMS.NS",
      "name": "Sona BLW Precision Forgings Limited",
-     "marketCap": 56379
+     "marketCap": 55450
     },
     {
      "symbol": "MRF.NS",
      "name": "MRF Limited",
-     "marketCap": 54817
+     "marketCap": 55033
     },
     {
      "symbol": "BALKRISIND.NS",
      "name": "Balkrishna Industries Limited",
-     "marketCap": 44753
+     "marketCap": 45430
     },
     {
      "symbol": "ENDURANCE.NS",
      "name": "Endurance Technologies Limited",
-     "marketCap": 36235
+     "marketCap": 35939
     },
     {
      "symbol": "EXIDEIND.NS",
      "name": "Exide Industries Limited",
-     "marketCap": 34183
+     "marketCap": 34161
     },
     {
      "symbol": "DHOOTTRANS.NS",
      "name": "Dhoot Transmission Limited",
-     "marketCap": 33176
+     "marketCap": 32384
     }
    ]
   },
@@ -1331,27 +1331,27 @@
     {
      "symbol": "VMM.NS",
      "name": "Vishal Mega Mart Limited",
-     "marketCap": 42379
+     "marketCap": 44360
     },
     {
      "symbol": "VMART.NS",
      "name": "V-Mart Retail Limited",
-     "marketCap": 6199
+     "marketCap": 6045
     },
     {
      "symbol": "SHOPERSTOP.NS",
      "name": "Shoppers Stop Limited",
-     "marketCap": 4164
+     "marketCap": 4131
     },
     {
      "symbol": "PATELRMART.NS",
      "name": "Patel Retail Limited",
-     "marketCap": 770
+     "marketCap": 755
     },
     {
      "symbol": "SPENCERS.NS",
      "name": "Spencer's Retail Limited",
-     "marketCap": 201
+     "marketCap": 185
     },
     {
      "symbol": "FELDVR.NS",
@@ -1361,12 +1361,12 @@
     {
      "symbol": "OSIAHYPER.NS",
      "name": "Osia Hyper Retail Limited",
-     "marketCap": 29
+     "marketCap": 28
     },
     {
      "symbol": "FEL.NS",
      "name": "Future Enterprises Limited",
-     "marketCap": 14
+     "marketCap": 15
     }
    ]
   },
@@ -1379,52 +1379,52 @@
     {
      "symbol": "BATAINDIA.NS",
      "name": "Bata India Limited",
-     "marketCap": 7998
-    },
-    {
-     "symbol": "RELAXO.NS",
-     "name": "Relaxo Footwears Limited",
-     "marketCap": 6710
+     "marketCap": 8090
     },
     {
      "symbol": "SAFARI.NS",
      "name": "Safari Industries (India) Limited",
-     "marketCap": 6677
+     "marketCap": 7259
+    },
+    {
+     "symbol": "RELAXO.NS",
+     "name": "Relaxo Footwears Limited",
+     "marketCap": 6740
     },
     {
      "symbol": "CAMPUS.NS",
      "name": "Campus Activewear Limited",
-     "marketCap": 5901
+     "marketCap": 5830
     },
     {
      "symbol": "REDTAPE.NS",
      "name": "REDTAPE Limited",
-     "marketCap": 5744
+     "marketCap": 5599
     },
     {
      "symbol": "VIPIND.NS",
      "name": "V.I.P. Industries Limited",
-     "marketCap": 3505
+     "marketCap": 3448
     },
     {
      "symbol": "BIL.NS",
      "name": "Bhartiya International Ltd.",
-     "marketCap": 1345
+     "marketCap": 1314
     },
     {
      "symbol": "SREEL.NS",
      "name": "Sreeleathers Limited",
-     "marketCap": 646
+     "marketCap": 602
     },
     {
      "symbol": "KDGREEN.NS",
      "name": "KD Green Industries Limited",
-     "marketCap": 432
+     "marketCap": 436
     },
     {
      "symbol": "LIBERTSHOE.NS",
      "name": "Liberty Shoes Ltd.",
-     "marketCap": 389
+     "marketCap": 391
     }
    ]
   },
@@ -1437,52 +1437,52 @@
     {
      "symbol": "VOLTAS.NS",
      "name": "Voltas Limited",
-     "marketCap": 40007
+     "marketCap": 40153
     },
     {
      "symbol": "AMBER.NS",
      "name": "Amber Enterprises India Limited",
-     "marketCap": 23472
+     "marketCap": 24141
     },
     {
      "symbol": "CROMPTON.NS",
      "name": "Crompton Greaves Consumer Electricals Limited",
-     "marketCap": 13992
+     "marketCap": 14121
     },
     {
      "symbol": "WHIRLPOOL.NS",
      "name": "Whirlpool of India Limited",
-     "marketCap": 10549
+     "marketCap": 10260
     },
     {
      "symbol": "CELLO.NS",
      "name": "Cello World Limited",
-     "marketCap": 8123
+     "marketCap": 8481
     },
     {
      "symbol": "EUREKAFORB.NS",
      "name": "Eureka Forbes Limited",
-     "marketCap": 7705
+     "marketCap": 7327
     },
     {
      "symbol": "TTKPRESTIG.NS",
      "name": "TTK Prestige Limited",
-     "marketCap": 7619
+     "marketCap": 7246
     },
     {
      "symbol": "SFL.NS",
      "name": "Sheela Foam Limited",
-     "marketCap": 6510
+     "marketCap": 6543
     },
     {
      "symbol": "STYLAMIND.NS",
      "name": "Stylam Industries Limited",
-     "marketCap": 5671
+     "marketCap": 5532
     },
     {
      "symbol": "BOSCH-HCIL.NS",
      "name": "Bosch Home Comfort India Limited",
-     "marketCap": 4745
+     "marketCap": 4750
     }
    ]
   },
@@ -1495,12 +1495,12 @@
     {
      "symbol": "BUILDPRO.NS",
      "name": "Shankara Buildpro Limited",
-     "marketCap": 2246
+     "marketCap": 2202
     },
     {
      "symbol": "SHANKARA.NS",
      "name": "Shankara Building Products Limited",
-     "marketCap": 279
+     "marketCap": 283
     }
    ]
   },
@@ -1513,52 +1513,52 @@
     {
      "symbol": "ETERNAL.NS",
      "name": "Eternal Limited",
-     "marketCap": 333180
+     "marketCap": 335069
     },
     {
      "symbol": "MEESHO.NS",
      "name": "Meesho Limited",
-     "marketCap": 119341
+     "marketCap": 117178
     },
     {
      "symbol": "NYKAA.NS",
      "name": "FSN E-Commerce Ventures Limited",
-     "marketCap": 102493
+     "marketCap": 102579
     },
     {
      "symbol": "SWIGGY.NS",
      "name": "Swiggy Limited",
-     "marketCap": 47843
+     "marketCap": 46375
     },
     {
      "symbol": "INDIAMART.NS",
      "name": "IndiaMART InterMESH Limited",
-     "marketCap": 9347
+     "marketCap": 9300
     },
     {
      "symbol": "FIRSTCRY.NS",
      "name": "Brainbees Solutions Limited",
-     "marketCap": 8457
+     "marketCap": 8201
     },
     {
      "symbol": "RTNINDIA.NS",
      "name": "RattanIndia Enterprises Limited",
-     "marketCap": 3411
+     "marketCap": 3351
     },
     {
      "symbol": "ACEVECTOR.NS",
      "name": "AceVector Limited",
-     "marketCap": 1125
+     "marketCap": 1048
     },
     {
      "symbol": "ISFT.NS",
      "name": "IntraSoft Technologies Limited",
-     "marketCap": 188
+     "marketCap": 197
     },
     {
      "symbol": "DIGIDRIVE.NS",
      "name": "Digidrive Distributors Limited",
-     "marketCap": 67
+     "marketCap": 66
     }
    ]
   },
@@ -1571,7 +1571,7 @@
     {
      "symbol": "WONDERLA.NS",
      "name": "Wonderla Holidays Limited",
-     "marketCap": 3213
+     "marketCap": 3149
     },
     {
      "symbol": "NICCOPAR.NS",
@@ -1581,12 +1581,12 @@
     {
      "symbol": "CRAVATEX.NS",
      "name": "Cravatex Limited",
-     "marketCap": 90
+     "marketCap": 87
     },
     {
      "symbol": "ATLASCYCLE.NS",
      "name": "Atlas Cycles (Haryana) Limited",
-     "marketCap": 60
+     "marketCap": 58
     }
    ]
   },
@@ -1599,52 +1599,52 @@
     {
      "symbol": "INDHOTEL.NS",
      "name": "The Indian Hotels Company Limited",
-     "marketCap": 126871
+     "marketCap": 129248
     },
     {
      "symbol": "THELEELA.NS",
      "name": "Leela Palaces Hotels & Resorts Limited",
-     "marketCap": 23025
+     "marketCap": 22823
     },
     {
      "symbol": "EIHOTEL.NS",
      "name": "EIH Limited",
-     "marketCap": 19468
+     "marketCap": 20925
     },
     {
      "symbol": "VENTIVE.NS",
      "name": "Ventive Hospitality Limited",
-     "marketCap": 12549
+     "marketCap": 12661
     },
     {
      "symbol": "LEMONTREE.NS",
      "name": "Lemon Tree Hotels Limited",
-     "marketCap": 9797
+     "marketCap": 10109
     },
     {
      "symbol": "ITDC.NS",
      "name": "India Tourism Development Corporation Limited",
-     "marketCap": 5687
+     "marketCap": 5692
     },
     {
      "symbol": "ELEVATE.NS",
      "name": "Elevate Campuses Limited",
-     "marketCap": 5221
+     "marketCap": 5230
     },
     {
      "symbol": "JUNIPER.NS",
      "name": "Juniper Hotels Limited",
-     "marketCap": 4309
+     "marketCap": 4411
     },
     {
      "symbol": "SAMHI.NS",
      "name": "SAMHI Hotels Limited",
-     "marketCap": 3513
+     "marketCap": 3475
     },
     {
      "symbol": "ORIENTHOT.NS",
      "name": "Oriental Hotels Limited",
-     "marketCap": 3156
+     "marketCap": 3213
     }
    ]
   },
@@ -1657,52 +1657,52 @@
     {
      "symbol": "TITAN.NS",
      "name": "Titan Company Limited",
-     "marketCap": 413310
+     "marketCap": 415528
     },
     {
      "symbol": "KALYANKJIL.NS",
      "name": "Kalyan Jewellers India Limited",
-     "marketCap": 66747
+     "marketCap": 67625
     },
     {
      "symbol": "LALITHAA.NS",
      "name": "Lalithaa Jewellery Mart Limited",
-     "marketCap": 17533
-    },
-    {
-     "symbol": "SKYGOLD.NS",
-     "name": "Sky Gold and Diamonds Limited",
-     "marketCap": 14428
+     "marketCap": 17331
     },
     {
      "symbol": "PCJEWELLER.NS",
      "name": "PC Jeweller Limited",
-     "marketCap": 14260
+     "marketCap": 13731
+    },
+    {
+     "symbol": "SKYGOLD.NS",
+     "name": "Sky Gold and Diamonds Limited",
+     "marketCap": 12679
     },
     {
      "symbol": "THANGAMAYL.NS",
      "name": "Thangamayil Jewellery Limited",
-     "marketCap": 12327
+     "marketCap": 11719
     },
     {
      "symbol": "BLUESTONE.NS",
      "name": "BlueStone Jewellery and Lifestyle Limited",
-     "marketCap": 10190
+     "marketCap": 10163
     },
     {
      "symbol": "PNGJL.NS",
      "name": "P N Gadgil Jewellers Limited",
-     "marketCap": 8502
+     "marketCap": 8204
     },
     {
      "symbol": "ETHOSLTD.NS",
      "name": "Ethos Limited",
-     "marketCap": 7599
+     "marketCap": 7150
     },
     {
      "symbol": "KDDL.NS",
      "name": "KDDL Limited",
-     "marketCap": 5871
+     "marketCap": 5651
     }
    ]
   },
@@ -1715,52 +1715,52 @@
     {
      "symbol": "TIMETECHNO.NS",
      "name": "Time Technoplast Limited",
-     "marketCap": 9421
+     "marketCap": 9451
     },
     {
      "symbol": "EPL.NS",
      "name": "EPL Limited",
-     "marketCap": 7539
+     "marketCap": 7335
     },
     {
      "symbol": "UFLEX.NS",
      "name": "Uflex Limited",
-     "marketCap": 4539
+     "marketCap": 4320
     },
     {
      "symbol": "AGI.NS",
      "name": "AGI Greenpac Limited",
-     "marketCap": 4295
+     "marketCap": 4201
     },
     {
      "symbol": "TCPLPACK.NS",
      "name": "TCPL Packaging Limited",
-     "marketCap": 4131
+     "marketCap": 3916
     },
     {
      "symbol": "JINDALPOLY.NS",
      "name": "Jindal Poly Films Limited",
-     "marketCap": 2910
+     "marketCap": 2789
     },
     {
      "symbol": "KNACK.NS",
      "name": "Knack Packaging Limited",
-     "marketCap": 2509
+     "marketCap": 2517
     },
     {
      "symbol": "MOLDTKPAC.NS",
      "name": "Mold-Tek Packaging Limited",
-     "marketCap": 2321
+     "marketCap": 2293
     },
     {
      "symbol": "COSMOFIRST.NS",
      "name": "Cosmo First Limited",
-     "marketCap": 2140
+     "marketCap": 2076
     },
     {
      "symbol": "HUHTAMAKI.NS",
      "name": "Huhtamaki India Limited",
-     "marketCap": 1615
+     "marketCap": 1614
     }
    ]
   },
@@ -1773,17 +1773,17 @@
     {
      "symbol": "ITCHOTELS.NS",
      "name": "ITC Hotels Limited",
-     "marketCap": 37908
+     "marketCap": 38383
     },
     {
      "symbol": "MHRIL.NS",
      "name": "Mahindra Holidays & Resorts India Limited",
-     "marketCap": 3932
+     "marketCap": 3924
     },
     {
      "symbol": "DELTACORP.NS",
      "name": "Delta Corp Limited",
-     "marketCap": 2113
+     "marketCap": 1982
     }
    ]
   },
@@ -1796,52 +1796,52 @@
     {
      "symbol": "JUBLFOOD.NS",
      "name": "Jubilant FoodWorks Limited",
-     "marketCap": 27682
-    },
-    {
-     "symbol": "TRAVELFOOD.NS",
-     "name": "Travel Food Services Limited",
-     "marketCap": 15367
+     "marketCap": 27721
     },
     {
      "symbol": "DEVYANI.NS",
      "name": "Devyani International Limited",
-     "marketCap": 15166
+     "marketCap": 14782
+    },
+    {
+     "symbol": "TRAVELFOOD.NS",
+     "name": "Travel Food Services Limited",
+     "marketCap": 14623
     },
     {
      "symbol": "WESTLIFE.NS",
      "name": "Westlife Foodworld Limited",
-     "marketCap": 10854
-    },
-    {
-     "symbol": "RBA.NS",
-     "name": "Restaurant Brands Asia Limited",
-     "marketCap": 6667
+     "marketCap": 10130
     },
     {
      "symbol": "SAPPHIRE.NS",
      "name": "Sapphire Foods India Limited",
-     "marketCap": 6428
+     "marketCap": 6229
+    },
+    {
+     "symbol": "RBA.NS",
+     "name": "Restaurant Brands Asia Limited",
+     "marketCap": 6196
     },
     {
      "symbol": "UFBL.NS",
      "name": "United Foodbrands Limited",
-     "marketCap": 2144
+     "marketCap": 2078
     },
     {
      "symbol": "SPECIALITY.NS",
      "name": "Speciality Restaurants Limited",
-     "marketCap": 683
+     "marketCap": 670
     },
     {
      "symbol": "COFFEEDAY.NS",
      "name": "Coffee Day Enterprises Limited",
-     "marketCap": 611
+     "marketCap": 595
     },
     {
      "symbol": "DANGEE.NS",
      "name": "Dangee Dums Limited",
-     "marketCap": 50
+     "marketCap": 49
     }
    ]
   },
@@ -1854,27 +1854,27 @@
     {
      "symbol": "AVL.NS",
      "name": "Aditya Vision Limited",
-     "marketCap": 7020
+     "marketCap": 6845
     },
     {
      "symbol": "EMIL.NS",
      "name": "Electronics Mart India Limited",
-     "marketCap": 5282
+     "marketCap": 5152
     },
     {
      "symbol": "SSRETAIL.NS",
      "name": "SS RETAIL LIMITED",
-     "marketCap": 4939
+     "marketCap": 4845
     },
     {
      "symbol": "PRAXIS.NS",
      "name": "Praxis Home Retail Limited",
-     "marketCap": 89
+     "marketCap": 88
     },
     {
      "symbol": "ARCHIES.NS",
      "name": "Archies Limited",
-     "marketCap": 37
+     "marketCap": 35
     }
    ]
   },
@@ -1887,52 +1887,52 @@
     {
      "symbol": "KPRMILL.NS",
      "name": "K.P.R. Mill Limited",
-     "marketCap": 41651
+     "marketCap": 41322
     },
     {
      "symbol": "WELSPUNLIV.NS",
      "name": "Welspun Living Limited",
-     "marketCap": 23800
+     "marketCap": 25506
     },
     {
      "symbol": "VTL.NS",
      "name": "Vardhman Textiles Limited",
-     "marketCap": 15329
+     "marketCap": 15202
     },
     {
      "symbol": "ARVIND.NS",
      "name": "Arvind Limited",
-     "marketCap": 14194
+     "marketCap": 14556
     },
     {
      "symbol": "TRIDENT.NS",
      "name": "Trident Limited",
-     "marketCap": 11964
+     "marketCap": 11817
     },
     {
      "symbol": "ICIL.NS",
      "name": "Indo Count Industries Limited",
-     "marketCap": 11342
+     "marketCap": 11769
     },
     {
      "symbol": "GARFIBRES.NS",
      "name": "Garware Technical Fibres Limited",
-     "marketCap": 7201
+     "marketCap": 6960
     },
     {
      "symbol": "FILATEX.NS",
      "name": "Filatex India Limited",
-     "marketCap": 4985
+     "marketCap": 4820
     },
     {
      "symbol": "SANATHAN.NS",
      "name": "Sanathan Textiles Limited",
-     "marketCap": 4889
+     "marketCap": 4810
     },
     {
-     "symbol": "JINDWORLD.NS",
-     "name": "Jindal Worldwide Limited",
-     "marketCap": 4020
+     "symbol": "NITINSPIN.NS",
+     "name": "Nitin Spinners Limited",
+     "marketCap": 3919
     }
    ]
   },
@@ -1945,32 +1945,32 @@
     {
      "symbol": "IRCTC.NS",
      "name": "Indian Railway Catering & Tourism Corporation Limited",
-     "marketCap": 35780
+     "marketCap": 35800
     },
     {
      "symbol": "TBOTEK.NS",
      "name": "TBO Tek Limited",
-     "marketCap": 17103
+     "marketCap": 16536
     },
     {
      "symbol": "IXIGO.NS",
      "name": "Le Travenues Technology Limited",
-     "marketCap": 7818
+     "marketCap": 7411
     },
     {
      "symbol": "THOMASCOOK.NS",
      "name": "Thomas Cook (India) Limited",
-     "marketCap": 5225
+     "marketCap": 6075
     },
     {
      "symbol": "EASEMYTRIP.NS",
      "name": "Easy Trip Planners Limited",
-     "marketCap": 2510
+     "marketCap": 2379
     },
     {
      "symbol": "YATRA.NS",
      "name": "Yatra Online Limited",
-     "marketCap": 1414
+     "marketCap": 1352
     }
    ]
   },
@@ -1978,57 +1978,57 @@
    "kind": "sector",
    "name": "Consumer Defensive",
    "sector": null,
-   "total": 188,
+   "total": 189,
    "stocks": [
     {
      "symbol": "HINDUNILVR.NS",
      "name": "Hindustan Unilever Limited",
-     "marketCap": 477578
+     "marketCap": 476591
     },
     {
      "symbol": "ITC.NS",
      "name": "ITC Limited",
-     "marketCap": 373412
+     "marketCap": 377297
     },
     {
      "symbol": "NESTLEIND.NS",
      "name": "Nestlé India Limited",
-     "marketCap": 250623
+     "marketCap": 252802
     },
     {
      "symbol": "DMART.NS",
      "name": "Avenue Supermarts Limited",
-     "marketCap": 228211
+     "marketCap": 222229
     },
     {
      "symbol": "VBL.NS",
      "name": "Varun Beverages Limited",
-     "marketCap": 141710
+     "marketCap": 144196
     },
     {
      "symbol": "MARICO.NS",
      "name": "Marico Limited",
-     "marketCap": 117875
+     "marketCap": 118998
     },
     {
      "symbol": "BRITANNIA.NS",
      "name": "Britannia Industries Limited",
-     "marketCap": 115135
+     "marketCap": 116792
     },
     {
      "symbol": "TATACONSUM.NS",
      "name": "Tata Consumer Products Limited",
-     "marketCap": 112134
+     "marketCap": 112382
     },
     {
      "symbol": "UNITDSPR.NS",
      "name": "United Spirits Limited",
-     "marketCap": 102234
+     "marketCap": 104946
     },
     {
      "symbol": "GODREJCP.NS",
      "name": "Godrej Consumer Products Limited",
-     "marketCap": 94056
+     "marketCap": 93601
     }
    ]
   },
@@ -2041,12 +2041,12 @@
     {
      "symbol": "UBL.NS",
      "name": "United Breweries Limited",
-     "marketCap": 32464
+     "marketCap": 33117
     },
     {
      "symbol": "SDBL.NS",
      "name": "Som Distilleries & Breweries Limited",
-     "marketCap": 1571
+     "marketCap": 1553
     }
    ]
   },
@@ -2059,17 +2059,17 @@
     {
      "symbol": "VBL.NS",
      "name": "Varun Beverages Limited",
-     "marketCap": 141710
+     "marketCap": 144196
     },
     {
      "symbol": "VINCOFE.NS",
      "name": "Vintage Coffee and Beverages Limited",
-     "marketCap": 2232
+     "marketCap": 2165
     },
     {
      "symbol": "RAMANEWS.NS",
      "name": "Shree Rama Newsprint Limited",
-     "marketCap": 399
+     "marketCap": 391
     }
    ]
   },
@@ -2082,52 +2082,52 @@
     {
      "symbol": "UNITDSPR.NS",
      "name": "United Spirits Limited",
-     "marketCap": 102177
+     "marketCap": 104946
     },
     {
      "symbol": "RADICO.NS",
      "name": "Radico Khaitan Limited",
-     "marketCap": 61153
+     "marketCap": 62278
     },
     {
      "symbol": "ABDL.NS",
      "name": "Allied Blenders and Distillers Limited",
-     "marketCap": 22545
+     "marketCap": 22438
     },
     {
      "symbol": "TI.NS",
      "name": "Tilaknagar Industries Ltd.",
-     "marketCap": 13334
+     "marketCap": 13652
     },
     {
      "symbol": "IGLSPIRITS.NS",
      "name": "IGL Spirits Limited",
-     "marketCap": 5691
+     "marketCap": 5337
     },
     {
      "symbol": "PICCADIL.NS",
      "name": "Piccadily Agro Industries Limited",
-     "marketCap": 5279
+     "marketCap": 5306
     },
     {
      "symbol": "GLOBUSSPR.NS",
      "name": "Globus Spirits Limited",
-     "marketCap": 2343
+     "marketCap": 2404
     },
     {
      "symbol": "GMBREW.NS",
      "name": "G.M. Breweries Limited",
-     "marketCap": 1951
+     "marketCap": 1950
     },
     {
      "symbol": "SULA.NS",
      "name": "Sula Vineyards Limited",
-     "marketCap": 1135
+     "marketCap": 1169
     },
     {
      "symbol": "ASALCBR.NS",
      "name": "Associated Alcohols & Breweries Limited",
-     "marketCap": 1085
+     "marketCap": 1062
     }
    ]
   },
@@ -2140,52 +2140,52 @@
     {
      "symbol": "BALRAMCHIN.NS",
      "name": "Balrampur Chini Mills Limited",
-     "marketCap": 13443
+     "marketCap": 13101
     },
     {
      "symbol": "TRIVENI.NS",
      "name": "Triveni Engineering & Industries Limited",
-     "marketCap": 5131
+     "marketCap": 5191
     },
     {
      "symbol": "BAJAJHIND.NS",
      "name": "Bajaj Hindusthan Sugar Limited",
-     "marketCap": 4059
+     "marketCap": 3937
     },
     {
      "symbol": "BANARISUG.NS",
      "name": "Bannari Amman Sugars Limited",
-     "marketCap": 3887
+     "marketCap": 3904
     },
     {
      "symbol": "RENUKA.NS",
      "name": "Shree Renuka Sugars Limited",
-     "marketCap": 3757
+     "marketCap": 3718
     },
     {
      "symbol": "DALMIASUG.NS",
      "name": "Dalmia Bharat Sugar and Industries Limited",
-     "marketCap": 3735
+     "marketCap": 3592
     },
     {
      "symbol": "AVADHSUGAR.NS",
      "name": "Avadh Sugar & Energy Limited",
-     "marketCap": 1639
+     "marketCap": 1689
     },
     {
      "symbol": "UTTAMSUGAR.NS",
      "name": "Uttam Sugar Mills Limited",
-     "marketCap": 1380
+     "marketCap": 1329
     },
     {
      "symbol": "DHAMPURSUG.NS",
      "name": "Dhampur Sugar Mills Limited",
-     "marketCap": 1045
+     "marketCap": 1028
     },
     {
      "symbol": "DWARKESH.NS",
      "name": "Dwarikesh Sugar Industries Limited",
-     "marketCap": 803
+     "marketCap": 786
     }
    ]
   },
@@ -2198,7 +2198,7 @@
     {
      "symbol": "DMART.NS",
      "name": "Avenue Supermarts Limited",
-     "marketCap": 228244
+     "marketCap": 222229
     }
    ]
   },
@@ -2206,57 +2206,57 @@
    "kind": "industry",
    "name": "Education & Training Services",
    "sector": "Consumer Defensive",
-   "total": 21,
+   "total": 22,
    "stocks": [
     {
      "symbol": "PWL.NS",
      "name": "Physicswallah Limited",
-     "marketCap": 39636
+     "marketCap": 40742
     },
     {
      "symbol": "SEIL.NS",
      "name": "Shanti Educational Initiatives Limited",
-     "marketCap": 3126
+     "marketCap": 3228
     },
     {
      "symbol": "CRIZAC.NS",
      "name": "Crizac Limited",
-     "marketCap": 2624
+     "marketCap": 2604
     },
     {
      "symbol": "NIITMTS.NS",
      "name": "NIIT Learning Systems Limited",
-     "marketCap": 2351
+     "marketCap": 2260
+    },
+    {
+     "symbol": "JKSHAH.NS",
+     "name": "J.K. Shah Commerce Education Limited",
+     "marketCap": 1721
     },
     {
      "symbol": "NIITLTD.NS",
      "name": "NIIT Limited",
-     "marketCap": 961
+     "marketCap": 936
     },
     {
      "symbol": "JARO.NS",
      "name": "Jaro Institute of Technology Management and Research Limited",
-     "marketCap": 876
+     "marketCap": 873
     },
     {
      "symbol": "GLOBAL.NS",
      "name": "Global Education Limited",
-     "marketCap": 715
+     "marketCap": 712
     },
     {
      "symbol": "APTECHT.NS",
      "name": "Aptech Limited",
-     "marketCap": 487
+     "marketCap": 492
     },
     {
      "symbol": "CPEDU.NS",
      "name": "Career Point Edutech Ltd.",
-     "marketCap": 333
-    },
-    {
-     "symbol": "CLEDUCATE.NS",
-     "name": "CL Educate Limited",
-     "marketCap": 283
+     "marketCap": 326
     }
    ]
   },
@@ -2269,52 +2269,52 @@
     {
      "symbol": "AEROPLANE.NS",
      "name": "Amir Chand Jagdish Kumar (Exports) Limited",
-     "marketCap": 2421
+     "marketCap": 2443
     },
     {
      "symbol": "VENKEYS.NS",
      "name": "Venky's (India) Limited",
-     "marketCap": 2068
+     "marketCap": 1922
     },
     {
      "symbol": "ANDREWYU.NS",
      "name": "Andrew Yule & Company Limited",
-     "marketCap": 1130
-    },
-    {
-     "symbol": "APEX.NS",
-     "name": "Apex Frozen Foods Limited",
-     "marketCap": 908
+     "marketCap": 1105
     },
     {
      "symbol": "DBOL.NS",
      "name": "Dhampur Bio Organics Limited",
-     "marketCap": 856
+     "marketCap": 936
     },
     {
-     "symbol": "SHINDL.NS",
-     "name": "Sharat Industries Limited",
-     "marketCap": 584
+     "symbol": "APEX.NS",
+     "name": "Apex Frozen Foods Limited",
+     "marketCap": 890
     },
     {
      "symbol": "MGEL.NS",
      "name": "Mangalam Global Enterprise Limited",
-     "marketCap": 582
+     "marketCap": 593
+    },
+    {
+     "symbol": "SHINDL.NS",
+     "name": "Sharat Industries Limited",
+     "marketCap": 580
     },
     {
      "symbol": "KNAGRI.NS",
      "name": "KN Agri Resources Limited",
-     "marketCap": 520
+     "marketCap": 567
     },
     {
      "symbol": "HALDER.NS",
      "name": "Halder Venture Limited",
-     "marketCap": 386
+     "marketCap": 405
     },
     {
      "symbol": "HARRMALAYA.NS",
      "name": "Harrisons Malayalam Limited",
-     "marketCap": 277
+     "marketCap": 266
     }
    ]
   },
@@ -2327,27 +2327,27 @@
     {
      "symbol": "DODLA.NS",
      "name": "Dodla Dairy Limited",
-     "marketCap": 5906
+     "marketCap": 5852
     },
     {
      "symbol": "VADILENT.NS",
      "name": "Vadilal Enterprises Limited",
-     "marketCap": 802
+     "marketCap": 765
     },
     {
      "symbol": "ESSENTIA.NS",
      "name": "Integra Essentia Limited",
-     "marketCap": 160
+     "marketCap": 158
     },
     {
      "symbol": "ANIKINDS.NS",
      "name": "Anik Industries Limited",
-     "marketCap": 110
+     "marketCap": 108
     },
     {
      "symbol": "ASIANTNE.NS",
      "name": "Asian Tea & Exports Limited",
-     "marketCap": 22
+     "marketCap": 23
     }
    ]
   },
@@ -2360,7 +2360,7 @@
     {
      "symbol": "RETAIL.NS",
      "name": "JHS Svendgaard Retail Ventures Limited",
-     "marketCap": 22
+     "marketCap": 21
     }
    ]
   },
@@ -2373,52 +2373,52 @@
     {
      "symbol": "HINDUNILVR.NS",
      "name": "Hindustan Unilever Limited",
-     "marketCap": 477578
+     "marketCap": 476591
     },
     {
      "symbol": "MARICO.NS",
      "name": "Marico Limited",
-     "marketCap": 117875
+     "marketCap": 118998
     },
     {
      "symbol": "GODREJCP.NS",
      "name": "Godrej Consumer Products Limited",
-     "marketCap": 94061
+     "marketCap": 93601
     },
     {
      "symbol": "DABUR.NS",
      "name": "Dabur India Limited",
-     "marketCap": 69393
+     "marketCap": 71167
     },
     {
      "symbol": "CUPID.NS",
      "name": "Cupid Limited",
-     "marketCap": 49221
+     "marketCap": 48831
     },
     {
      "symbol": "COLPAL.NS",
      "name": "Colgate-Palmolive (India) Limited",
-     "marketCap": 47951
-    },
-    {
-     "symbol": "GILLETTE.NS",
-     "name": "Gillette India Limited",
-     "marketCap": 23347
+     "marketCap": 48084
     },
     {
      "symbol": "PGHH.NS",
      "name": "Procter & Gamble Hygiene and Health Care Limited",
-     "marketCap": 22440
+     "marketCap": 23391
+    },
+    {
+     "symbol": "GILLETTE.NS",
+     "name": "Gillette India Limited",
+     "marketCap": 23181
     },
     {
      "symbol": "EMAMILTD.NS",
      "name": "Emami Limited",
-     "marketCap": 17767
+     "marketCap": 17863
     },
     {
      "symbol": "HONASA.NS",
      "name": "Honasa Consumer Limited",
-     "marketCap": 17195
+     "marketCap": 17567
     }
    ]
   },
@@ -2431,52 +2431,52 @@
     {
      "symbol": "NESTLEIND.NS",
      "name": "Nestlé India Limited",
-     "marketCap": 250565
+     "marketCap": 252802
     },
     {
      "symbol": "BRITANNIA.NS",
      "name": "Britannia Industries Limited",
-     "marketCap": 115154
+     "marketCap": 116792
     },
     {
      "symbol": "TATACONSUM.NS",
      "name": "Tata Consumer Products Limited",
-     "marketCap": 112134
+     "marketCap": 112382
     },
     {
      "symbol": "PATANJALI.NS",
      "name": "Patanjali Foods Limited",
-     "marketCap": 43813
+     "marketCap": 44286
     },
     {
      "symbol": "MILKYMIST.NS",
      "name": "Milky Mist Dairy Food Limited",
-     "marketCap": 23669
+     "marketCap": 26159
     },
     {
      "symbol": "HATSUN.NS",
      "name": "Hatsun Agro Product Limited",
-     "marketCap": 23225
+     "marketCap": 23846
     },
     {
      "symbol": "AWL.NS",
      "name": "AWL Agri Business Limited",
-     "marketCap": 22000
-    },
-    {
-     "symbol": "LTFOODS.NS",
-     "name": "LT Foods Limited",
-     "marketCap": 15324
+     "marketCap": 21684
     },
     {
      "symbol": "ZYDUSWELL.NS",
      "name": "Zydus Wellness Limited",
-     "marketCap": 14565
+     "marketCap": 14820
     },
     {
-     "symbol": "CCL.NS",
-     "name": "CCL Products (India) Limited",
-     "marketCap": 12687
+     "symbol": "LTFOODS.NS",
+     "name": "LT Foods Limited",
+     "marketCap": 14708
+    },
+    {
+     "symbol": "BIKAJI.NS",
+     "name": "Bikaji Foods International Limited",
+     "marketCap": 12845
     }
    ]
   },
@@ -2489,27 +2489,27 @@
     {
      "symbol": "ITC.NS",
      "name": "ITC Limited",
-     "marketCap": 373349
+     "marketCap": 377297
     },
     {
      "symbol": "GODFRYPHLP.NS",
      "name": "Godfrey Phillips India Limited",
-     "marketCap": 27575
+     "marketCap": 27141
     },
     {
      "symbol": "VSTIND.NS",
      "name": "VST Industries Limited",
-     "marketCap": 3291
+     "marketCap": 3273
     },
     {
      "symbol": "ELITECON.NS",
      "name": "Elitecon International Limited",
-     "marketCap": 687
+     "marketCap": 751
     },
     {
      "symbol": "NTCIND.NS",
      "name": "ntc industries limited",
-     "marketCap": 206
+     "marketCap": 193
     },
     {
      "symbol": "GOLDENTOBC.NS",
@@ -2527,52 +2527,52 @@
     {
      "symbol": "RELIANCE.NS",
      "name": "Reliance Industries Limited",
-     "marketCap": 1841363
+     "marketCap": 1831079
     },
     {
      "symbol": "ADANIENT.NS",
      "name": "Adani Enterprises Limited",
-     "marketCap": 365370
+     "marketCap": 361972
     },
     {
      "symbol": "ONGC.NS",
      "name": "Oil and Natural Gas Corporation Limited",
-     "marketCap": 282717
+     "marketCap": 280540
     },
     {
      "symbol": "COALINDIA.NS",
      "name": "Coal India Limited",
-     "marketCap": 240593
+     "marketCap": 235724
     },
     {
      "symbol": "IOC.NS",
      "name": "Indian Oil Corporation Limited",
-     "marketCap": 206693
+     "marketCap": 204956
     },
     {
      "symbol": "BPCL.NS",
      "name": "Bharat Petroleum Corporation Limited",
-     "marketCap": 133214
+     "marketCap": 132650
     },
     {
      "symbol": "HINDPETRO.NS",
      "name": "Hindustan Petroleum Corporation Limited",
-     "marketCap": 83049
+     "marketCap": 81921
     },
     {
      "symbol": "OIL.NS",
      "name": "Oil India Limited",
-     "marketCap": 70871
+     "marketCap": 68871
     },
     {
      "symbol": "PETRONET.NS",
      "name": "Petronet LNG Limited",
-     "marketCap": 49170
+     "marketCap": 49275
     },
     {
      "symbol": "AEGISLOG.NS",
      "name": "Aegis Logistics Limited",
-     "marketCap": 44394
+     "marketCap": 44037
     }
    ]
   },
@@ -2598,27 +2598,27 @@
     {
      "symbol": "DEEPINDS.NS",
      "name": "Deep Industries Limited",
-     "marketCap": 4073
-    },
-    {
-     "symbol": "PRABHA.NS",
-     "name": "Prabha Energy Limited",
-     "marketCap": 3046
-    },
-    {
-     "symbol": "ANTELOPUS.NS",
-     "name": "Antelopus Selan Energy Limited",
-     "marketCap": 2975
+     "marketCap": 4067
     },
     {
      "symbol": "HINDOILEXP.NS",
      "name": "Hindustan Oil Exploration Company Limited",
-     "marketCap": 2920
+     "marketCap": 2967
+    },
+    {
+     "symbol": "PRABHA.NS",
+     "name": "Prabha Energy Limited",
+     "marketCap": 2949
+    },
+    {
+     "symbol": "ANTELOPUS.NS",
+     "name": "Antelopus Selan Energy Limited",
+     "marketCap": 2891
     },
     {
      "symbol": "GNRL.NS",
      "name": "Gujarat Natural Resources Limited",
-     "marketCap": 1695
+     "marketCap": 1887
     }
    ]
   },
@@ -2631,37 +2631,37 @@
     {
      "symbol": "AEGISVOPAK.NS",
      "name": "Aegis Vopak Terminals Limited",
-     "marketCap": 30607
+     "marketCap": 31173
     },
     {
      "symbol": "DOLPHIN.NS",
      "name": "Dolphin Offshore Enterprises (India) Limited",
-     "marketCap": 2564
+     "marketCap": 2440
     },
     {
      "symbol": "ASIANENE.NS",
      "name": "Asian Energy Services Limited",
-     "marketCap": 1826
+     "marketCap": 1733
     },
     {
      "symbol": "JINDRILL.NS",
      "name": "Jindal Drilling & Industries Limited",
-     "marketCap": 1485
+     "marketCap": 1434
     },
     {
      "symbol": "LIKHITHA.NS",
      "name": "Likhitha Infrastructure Limited",
-     "marketCap": 787
+     "marketCap": 751
     },
     {
      "symbol": "SOUTHWEST.NS",
      "name": "South West Pinnacle Exploration Limited",
-     "marketCap": 530
+     "marketCap": 544
     },
     {
      "symbol": "OILCOUNTUB.NS",
      "name": "Oil Country Tubular Limited",
-     "marketCap": 355
+     "marketCap": 340
     },
     {
      "symbol": "UNIDT.NS",
@@ -2671,12 +2671,12 @@
     {
      "symbol": "ALPHAGEO.NS",
      "name": "Alphageo (India) Limited",
-     "marketCap": 145
+     "marketCap": 137
     },
     {
      "symbol": "AAKASH.NS",
      "name": "Aakash Exploration Services Limited",
-     "marketCap": 75
+     "marketCap": 76
     }
    ]
   },
@@ -2689,12 +2689,12 @@
     {
      "symbol": "ONGC.NS",
      "name": "Oil and Natural Gas Corporation Limited",
-     "marketCap": 282717
+     "marketCap": 280540
     },
     {
      "symbol": "OIL.NS",
      "name": "Oil India Limited",
-     "marketCap": 70871
+     "marketCap": 68871
     }
    ]
   },
@@ -2707,7 +2707,7 @@
     {
      "symbol": "GSPLTRANS.NS",
      "name": "GSPL Transmission Limited",
-     "marketCap": 3289
+     "marketCap": 3255
     }
    ]
   },
@@ -2720,52 +2720,52 @@
     {
      "symbol": "RELIANCE.NS",
      "name": "Reliance Industries Limited",
-     "marketCap": 1841363
+     "marketCap": 1831079
     },
     {
      "symbol": "IOC.NS",
      "name": "Indian Oil Corporation Limited",
-     "marketCap": 206693
+     "marketCap": 204956
     },
     {
      "symbol": "BPCL.NS",
      "name": "Bharat Petroleum Corporation Limited",
-     "marketCap": 133149
+     "marketCap": 132650
     },
     {
      "symbol": "HINDPETRO.NS",
      "name": "Hindustan Petroleum Corporation Limited",
-     "marketCap": 83049
+     "marketCap": 81921
     },
     {
      "symbol": "PETRONET.NS",
      "name": "Petronet LNG Limited",
-     "marketCap": 49155
+     "marketCap": 49275
     },
     {
      "symbol": "AEGISLOG.NS",
      "name": "Aegis Logistics Limited",
-     "marketCap": 44417
+     "marketCap": 44049
     },
     {
      "symbol": "MRPL.NS",
      "name": "Mangalore Refinery and Petrochemicals Limited",
-     "marketCap": 30914
+     "marketCap": 30749
     },
     {
      "symbol": "CHENNPETRO.NS",
      "name": "Chennai Petroleum Corporation Limited",
-     "marketCap": 21132
+     "marketCap": 21522
     },
     {
      "symbol": "CASTROLIND.NS",
      "name": "Castrol India Limited",
-     "marketCap": 18817
+     "marketCap": 18828
     },
     {
      "symbol": "TRUALT.NS",
      "name": "TruAlt Bioenergy Limited",
-     "marketCap": 2868
+     "marketCap": 2814
     }
    ]
   },
@@ -2778,37 +2778,37 @@
     {
      "symbol": "ADANIENT.NS",
      "name": "Adani Enterprises Limited",
-     "marketCap": 365288
+     "marketCap": 361972
     },
     {
      "symbol": "COALINDIA.NS",
      "name": "Coal India Limited",
-     "marketCap": 240562
+     "marketCap": 235724
     },
     {
      "symbol": "GMDCLTD.NS",
      "name": "Gujarat Mineral Development Corporation Limited",
-     "marketCap": 14518
+     "marketCap": 14841
     },
     {
      "symbol": "GMRP&UI.NS",
      "name": "GMR Power And Urban Infra Limited",
-     "marketCap": 7066
+     "marketCap": 7060
     },
     {
      "symbol": "CMLL.NS",
      "name": "Caliber Mining and Logistics Limited",
-     "marketCap": 3510
+     "marketCap": 3479
     },
     {
      "symbol": "REFEX.NS",
      "name": "Refex Industries Limited",
-     "marketCap": 2998
+     "marketCap": 2893
     },
     {
      "symbol": "ANMOL.NS",
      "name": "Anmol India Limited",
-     "marketCap": 62
+     "marketCap": 60
     }
    ]
   },
@@ -2821,52 +2821,52 @@
     {
      "symbol": "HDFCBANK.NS",
      "name": "HDFC Bank Limited",
-     "marketCap": 1248587
+     "marketCap": 1260316
     },
     {
      "symbol": "ICICIBANK.NS",
      "name": "ICICI Bank Limited",
-     "marketCap": 1145796
+     "marketCap": 1141271
     },
     {
      "symbol": "SBIN.NS",
      "name": "State Bank of India",
-     "marketCap": 1055290
+     "marketCap": 1043475
     },
     {
      "symbol": "BAJFINANCE.NS",
      "name": "Bajaj Finance Limited",
-     "marketCap": 697185
+     "marketCap": 694016
     },
     {
      "symbol": "KOTAKBANK.NS",
      "name": "Kotak Mahindra Bank Limited",
-     "marketCap": 493935
+     "marketCap": 500551
     },
     {
      "symbol": "AXISBANK.NS",
      "name": "Axis Bank Limited",
-     "marketCap": 426076
+     "marketCap": 433738
     },
     {
      "symbol": "BAJAJFINSV.NS",
      "name": "Bajaj Finserv Ltd.",
-     "marketCap": 301214
+     "marketCap": 300846
     },
     {
      "symbol": "LICI.NS",
      "name": "Life Insurance Corporation of India",
-     "marketCap": 254233
+     "marketCap": 258756
     },
     {
      "symbol": "SHRIRAMFIN.NS",
      "name": "Shriram Finance Limited",
-     "marketCap": 227419
+     "marketCap": 233867
     },
     {
      "symbol": "SBILIFE.NS",
      "name": "SBI Life Insurance Company Limited",
-     "marketCap": 181416
+     "marketCap": 180923
     }
    ]
   },
@@ -2879,52 +2879,52 @@
     {
      "symbol": "JIOFIN.NS",
      "name": "Jio Financial Services Limited",
-     "marketCap": 154504
+     "marketCap": 150461
     },
     {
      "symbol": "ICICIAMC.NS",
      "name": "ICICI Prudential Asset Management Company Limited",
-     "marketCap": 145658
+     "marketCap": 144981
     },
     {
      "symbol": "BAJAJHLDNG.NS",
      "name": "Bajaj Holdings & Investment Limited",
-     "marketCap": 126719
+     "marketCap": 128455
     },
     {
      "symbol": "HDFCAMC.NS",
      "name": "HDFC Asset Management Company Limited",
-     "marketCap": 113383
+     "marketCap": 115375
     },
     {
      "symbol": "SBIFUNDS.NS",
      "name": "SBI Funds Management Limited",
-     "marketCap": 105925
+     "marketCap": 106730
     },
     {
      "symbol": "NAM-INDIA.NS",
      "name": "Nippon Life India Asset Management Limited",
-     "marketCap": 67622
+     "marketCap": 66287
     },
     {
      "symbol": "360ONE.NS",
      "name": "360 One Wam Limited",
-     "marketCap": 51733
+     "marketCap": 51037
     },
     {
      "symbol": "ANANDRATHI.NS",
      "name": "Anand Rathi Wealth Limited",
-     "marketCap": 39451
+     "marketCap": 39340
     },
     {
      "symbol": "NUVAMA.NS",
      "name": "Nuvama Wealth Management Limited",
-     "marketCap": 34077
+     "marketCap": 32521
     },
     {
      "symbol": "TATAINVEST.NS",
      "name": "Tata Investment Corporation Limited",
-     "marketCap": 29725
+     "marketCap": 29748
     }
    ]
   },
@@ -2937,52 +2937,52 @@
     {
      "symbol": "HDFCBANK.NS",
      "name": "HDFC Bank Limited",
-     "marketCap": 1248510
+     "marketCap": 1260316
     },
     {
      "symbol": "ICICIBANK.NS",
      "name": "ICICI Bank Limited",
-     "marketCap": 1145796
+     "marketCap": 1141271
     },
     {
      "symbol": "SBIN.NS",
      "name": "State Bank of India",
-     "marketCap": 1055337
+     "marketCap": 1043475
     },
     {
      "symbol": "KOTAKBANK.NS",
      "name": "Kotak Mahindra Bank Limited",
-     "marketCap": 493935
+     "marketCap": 500551
     },
     {
      "symbol": "AXISBANK.NS",
      "name": "Axis Bank Limited",
-     "marketCap": 426076
+     "marketCap": 433738
     },
     {
      "symbol": "PNB.NS",
      "name": "Punjab National Bank",
-     "marketCap": 177865
+     "marketCap": 171325
     },
     {
      "symbol": "UNIONBANK.NS",
      "name": "Union Bank of India",
-     "marketCap": 158909
+     "marketCap": 158894
     },
     {
      "symbol": "BANKBARODA.NS",
      "name": "Bank of Baroda Limited",
-     "marketCap": 145807
+     "marketCap": 142223
     },
     {
      "symbol": "INDIANB.NS",
      "name": "Indian Bank",
-     "marketCap": 126682
+     "marketCap": 125672
     },
     {
      "symbol": "CANBK.NS",
      "name": "Canara Bank",
-     "marketCap": 122726
+     "marketCap": 121347
     }
    ]
   },
@@ -2995,52 +2995,52 @@
     {
      "symbol": "GROWW.NS",
      "name": "Billionbrains Garage Ventures Limited",
-     "marketCap": 139486
+     "marketCap": 134567
     },
     {
      "symbol": "MOTILALOFS.NS",
      "name": "Motilal Oswal Financial Services Limited",
-     "marketCap": 72671
+     "marketCap": 74468
     },
     {
      "symbol": "AIIL.NS",
      "name": "Authum Investment & Infrastructure Limited",
-     "marketCap": 46746
+     "marketCap": 46325
     },
     {
      "symbol": "ANGELONE.NS",
      "name": "Angel One Limited",
-     "marketCap": 31183
+     "marketCap": 30858
     },
     {
      "symbol": "CDSL.NS",
      "name": "Central Depository Services (India) Limited",
-     "marketCap": 29739
+     "marketCap": 29168
     },
     {
      "symbol": "CHOICEIN.NS",
      "name": "Choice International Limited",
-     "marketCap": 15996
+     "marketCap": 16685
     },
     {
      "symbol": "IIFLCAPS.NS",
      "name": "IIFL Capital Services Limited",
-     "marketCap": 12854
+     "marketCap": 11855
     },
     {
      "symbol": "JMFINANCIL.NS",
      "name": "JM Financial Limited",
-     "marketCap": 10574
+     "marketCap": 10539
     },
     {
      "symbol": "IEX.NS",
      "name": "Indian Energy Exchange Limited",
-     "marketCap": 10552
+     "marketCap": 9778
     },
     {
      "symbol": "SGFIN.NS",
      "name": "SG Finserve Limited",
-     "marketCap": 5443
+     "marketCap": 5198
     }
    ]
   },
@@ -3053,52 +3053,52 @@
     {
      "symbol": "BAJFINANCE.NS",
      "name": "Bajaj Finance Limited",
-     "marketCap": 697185
+     "marketCap": 694016
     },
     {
      "symbol": "SHRIRAMFIN.NS",
      "name": "Shriram Finance Limited",
-     "marketCap": 227419
+     "marketCap": 233867
     },
     {
      "symbol": "CHOLAFIN.NS",
      "name": "Cholamandalam Investment and Finance Company Limited",
-     "marketCap": 160137
+     "marketCap": 156327
     },
     {
      "symbol": "TATACAP.NS",
      "name": "Tata Capital Limited",
-     "marketCap": 143389
+     "marketCap": 144675
     },
     {
      "symbol": "PFC.NS",
      "name": "Power Finance Corporation Limited",
-     "marketCap": 109002
+     "marketCap": 107088
     },
     {
      "symbol": "IRFC.NS",
      "name": "Indian Railway Finance Corporation Limited",
-     "marketCap": 108691
+     "marketCap": 105659
     },
     {
      "symbol": "MUTHOOTFIN.NS",
      "name": "Muthoot Finance Limited",
-     "marketCap": 103980
+     "marketCap": 101812
     },
     {
      "symbol": "RECLTD.NS",
      "name": "REC Limited",
-     "marketCap": 77680
+     "marketCap": 77022
     },
     {
      "symbol": "LTF.NS",
      "name": "L&T Finance Limited",
-     "marketCap": 68802
+     "marketCap": 68597
     },
     {
      "symbol": "SBICARD.NS",
      "name": "SBI Cards and Payment Services Limited",
-     "marketCap": 53963
+     "marketCap": 54815
     }
    ]
   },
@@ -3111,42 +3111,42 @@
     {
      "symbol": "BAJAJFINSV.NS",
      "name": "Bajaj Finserv Ltd.",
-     "marketCap": 301230
+     "marketCap": 300846
     },
     {
      "symbol": "ABCAPITAL.NS",
      "name": "Aditya Birla Capital Limited",
-     "marketCap": 113957
+     "marketCap": 113945
     },
     {
      "symbol": "EDELWEISS.NS",
      "name": "Edelweiss Financial Services Limited",
-     "marketCap": 12333
+     "marketCap": 12094
     },
     {
      "symbol": "ARSSBL.NS",
      "name": "Anand Rathi Share and Stock Brokers Limited",
-     "marketCap": 3146
+     "marketCap": 3064
     },
     {
      "symbol": "CREST.NS",
      "name": "Crest Ventures Limited",
-     "marketCap": 1008
+     "marketCap": 995
     },
     {
      "symbol": "CENTRUM.NS",
      "name": "Centrum Capital Limited",
-     "marketCap": 977
+     "marketCap": 956
     },
     {
      "symbol": "DIGISPICE.NS",
      "name": "DiGiSPICE Technologies Limited",
-     "marketCap": 387
+     "marketCap": 334
     },
     {
      "symbol": "IVC.NS",
      "name": "IL&FS Investment Managers Limited",
-     "marketCap": 253
+     "marketCap": 251
     }
    ]
   },
@@ -3159,27 +3159,27 @@
     {
      "symbol": "BSE.NS",
      "name": "BSE Limited",
-     "marketCap": 153484
+     "marketCap": 152380
     },
     {
      "symbol": "MCX.NS",
      "name": "Multi Commodity Exchange of India Limited",
-     "marketCap": 91653
+     "marketCap": 91070
     },
     {
      "symbol": "CRISIL.NS",
      "name": "CRISIL Limited",
-     "marketCap": 30288
+     "marketCap": 29508
     },
     {
      "symbol": "CARERATING.NS",
      "name": "CARE Ratings Limited",
-     "marketCap": 4814
+     "marketCap": 4689
     },
     {
      "symbol": "ICRA.NS",
      "name": "ICRA Limited",
-     "marketCap": 4276
+     "marketCap": 4229
     }
    ]
   },
@@ -3192,7 +3192,7 @@
     {
      "symbol": "POLICYBZR.NS",
      "name": "PB Fintech Limited",
-     "marketCap": 47033
+     "marketCap": 50726
     }
    ]
   },
@@ -3205,12 +3205,12 @@
     {
      "symbol": "ICICIGI.NS",
      "name": "ICICI Lombard General Insurance Company Limited",
-     "marketCap": 83846
+     "marketCap": 87179
     },
     {
      "symbol": "NIACL.NS",
      "name": "The New India Assurance Company Limited",
-     "marketCap": 25074
+     "marketCap": 24644
     }
    ]
   },
@@ -3223,47 +3223,47 @@
     {
      "symbol": "LICI.NS",
      "name": "Life Insurance Corporation of India",
-     "marketCap": 254233
+     "marketCap": 258756
     },
     {
      "symbol": "SBILIFE.NS",
      "name": "SBI Life Insurance Company Limited",
-     "marketCap": 181527
+     "marketCap": 180923
     },
     {
      "symbol": "HDFCLIFE.NS",
      "name": "HDFC Life Insurance Company Limited",
-     "marketCap": 125986
+     "marketCap": 124878
     },
     {
      "symbol": "ICICILIFE.NS",
      "name": "ICICI Life Insurance Limited",
-     "marketCap": 65966
+     "marketCap": 67511
     },
     {
      "symbol": "MFSL.NS",
      "name": "Max Financial Services Limited",
-     "marketCap": 48247
+     "marketCap": 49541
     },
     {
      "symbol": "STARHEALTH.NS",
      "name": "Star Health and Allied Insurance Company Limited",
-     "marketCap": 33030
+     "marketCap": 33192
     },
     {
      "symbol": "NIVABUPA.NS",
      "name": "Niva Bupa Health Insurance Company Limited",
-     "marketCap": 13582
+     "marketCap": 13871
     },
     {
      "symbol": "CANHLIFE.NS",
      "name": "Canara HSBC Life Insurance Company Limited",
-     "marketCap": 11918
+     "marketCap": 11720
     },
     {
      "symbol": "RELIGARE.NS",
      "name": "Religare Enterprises Limited",
-     "marketCap": 7819
+     "marketCap": 7986
     }
    ]
   },
@@ -3276,7 +3276,7 @@
     {
      "symbol": "GODIGIT.NS",
      "name": "Go Digit General Insurance Limited",
-     "marketCap": 22204
+     "marketCap": 21898
     }
    ]
   },
@@ -3289,7 +3289,7 @@
     {
      "symbol": "GICRE.NS",
      "name": "General Insurance Corporation of India",
-     "marketCap": 59737
+     "marketCap": 58527
     }
    ]
   },
@@ -3302,52 +3302,52 @@
     {
      "symbol": "BAJAJHFL.NS",
      "name": "Bajaj Housing Finance Limited",
-     "marketCap": 67457
+     "marketCap": 66790
     },
     {
      "symbol": "LICHSGFIN.NS",
      "name": "LIC Housing Finance Limited",
-     "marketCap": 33551
+     "marketCap": 33515
     },
     {
      "symbol": "PNBHOUSING.NS",
      "name": "PNB Housing Finance Limited",
-     "marketCap": 29955
+     "marketCap": 30717
     },
     {
      "symbol": "AADHARHFC.NS",
      "name": "Aadhar Housing Finance Limited",
-     "marketCap": 18398
+     "marketCap": 18236
     },
     {
      "symbol": "SAMMAANCAP.NS",
      "name": "Sammaan Capital Limited",
-     "marketCap": 15869
+     "marketCap": 15500
     },
     {
      "symbol": "HOMEFIRST.NS",
      "name": "Home First Finance Company India Limited",
-     "marketCap": 11182
+     "marketCap": 10696
     },
     {
      "symbol": "CANFINHOME.NS",
      "name": "Can Fin Homes Limited",
-     "marketCap": 10254
+     "marketCap": 10612
     },
     {
      "symbol": "APTUS.NS",
      "name": "Aptus Value Housing Finance India Limited",
-     "marketCap": 9538
+     "marketCap": 9572
     },
     {
      "symbol": "AAVAS.NS",
      "name": "Aavas Financiers Limited",
-     "marketCap": 8808
+     "marketCap": 8622
     },
     {
      "symbol": "INDIASHLTR.NS",
      "name": "India Shelter Finance Corporation Limited",
-     "marketCap": 7065
+     "marketCap": 6868
     }
    ]
   },
@@ -3360,22 +3360,22 @@
     {
      "symbol": "BLAL.NS",
      "name": "BEML Land Assets Limited",
-     "marketCap": 690
+     "marketCap": 676
     },
     {
      "symbol": "MELSTAR.NS",
      "name": "Melstar Information Technologies Limited",
-     "marketCap": 134
+     "marketCap": 123
     },
     {
      "symbol": "INFOMEDIA.NS",
      "name": "Infomedia Press Limited",
-     "marketCap": 29
+     "marketCap": 27
     },
     {
      "symbol": "TECILCHEM.NS",
      "name": "Tecil Chemicals and Hydro Power Ltd.",
-     "marketCap": 18
+     "marketCap": 17
     },
     {
      "symbol": "UNIVAFOODS.NS",
@@ -3393,57 +3393,57 @@
    "kind": "sector",
    "name": "Healthcare",
    "sector": null,
-   "total": 189,
+   "total": 190,
    "stocks": [
     {
      "symbol": "SUNPHARMA.NS",
      "name": "Sun Pharmaceutical Industries Limited",
-     "marketCap": 454530
+     "marketCap": 446276
     },
     {
      "symbol": "DIVISLAB.NS",
      "name": "Divi's Laboratories Limited",
-     "marketCap": 293144
+     "marketCap": 298626
     },
     {
      "symbol": "TORNTPHARM.NS",
      "name": "Torrent Pharmaceuticals Limited",
-     "marketCap": 176692
-    },
-    {
-     "symbol": "LENSKART.NS",
-     "name": "Lenskart Solutions Limited",
-     "marketCap": 128897
+     "marketCap": 182367
     },
     {
      "symbol": "APOLLOHOSP.NS",
      "name": "Apollo Hospitals Enterprise Limited",
-     "marketCap": 125021
+     "marketCap": 133145
     },
     {
      "symbol": "LAURUSLABS.NS",
      "name": "Laurus Labs Limited",
-     "marketCap": 124450
+     "marketCap": 128486
+    },
+    {
+     "symbol": "LENSKART.NS",
+     "name": "Lenskart Solutions Limited",
+     "marketCap": 123873
     },
     {
      "symbol": "ZYDUSLIFE.NS",
      "name": "Zydus Lifesciences Limited",
-     "marketCap": 119052
+     "marketCap": 119850
     },
     {
      "symbol": "DRREDDY.NS",
      "name": "Dr. Reddy's Laboratories Limited",
-     "marketCap": 116121
+     "marketCap": 115179
     },
     {
      "symbol": "CIPLA.NS",
      "name": "Cipla Limited",
-     "marketCap": 113904
+     "marketCap": 112886
     },
     {
      "symbol": "MANKIND.NS",
      "name": "Mankind Pharma Limited",
-     "marketCap": 108085
+     "marketCap": 108418
     }
    ]
   },
@@ -3456,52 +3456,52 @@
     {
      "symbol": "BIOCON.NS",
      "name": "Biocon Limited",
-     "marketCap": 59500
+     "marketCap": 58304
     },
     {
      "symbol": "ANTHEM.NS",
      "name": "Anthem Biosciences Limited",
-     "marketCap": 52408
+     "marketCap": 53899
     },
     {
      "symbol": "ONESOURCE.NS",
      "name": "OneSource Specialty Pharma Limited",
-     "marketCap": 18313
+     "marketCap": 18363
     },
     {
      "symbol": "CONCORDBIO.NS",
      "name": "Concord Biotech Limited",
-     "marketCap": 11535
+     "marketCap": 11460
     },
     {
      "symbol": "BLUEJET.NS",
      "name": "Blue Jet Healthcare Limited",
-     "marketCap": 8933
+     "marketCap": 8913
     },
     {
      "symbol": "SUPRIYA.NS",
      "name": "Supriya Lifescience Limited",
-     "marketCap": 4934
+     "marketCap": 4906
     },
     {
      "symbol": "ZOTA.NS",
      "name": "Zota Health Care Limited",
-     "marketCap": 4530
+     "marketCap": 4393
     },
     {
      "symbol": "PANACEABIO.NS",
      "name": "Panacea Biotec Limited",
-     "marketCap": 2151
+     "marketCap": 2026
     },
     {
      "symbol": "DCAL.NS",
      "name": "Dishman Carbogen Amcis Limited",
-     "marketCap": 1904
+     "marketCap": 1785
     },
     {
      "symbol": "3BBLACKBIO.NS",
      "name": "3B Blackbio Dx Limited",
-     "marketCap": 1124
+     "marketCap": 1151
     }
    ]
   },
@@ -3514,47 +3514,47 @@
     {
      "symbol": "SAILIFE.NS",
      "name": "Sai Life Sciences Limited",
-     "marketCap": 37803
+     "marketCap": 38504
     },
     {
      "symbol": "LALPATHLAB.NS",
      "name": "Dr. Lal PathLabs Limited",
-     "marketCap": 32773
+     "marketCap": 34066
     },
     {
      "symbol": "SYNGENE.NS",
      "name": "Syngene International Limited",
-     "marketCap": 17525
+     "marketCap": 17833
     },
     {
      "symbol": "VIJAYA.NS",
      "name": "Vijaya Diagnostic Centre Limited",
-     "marketCap": 15583
+     "marketCap": 16246
     },
     {
      "symbol": "METROPOLIS.NS",
      "name": "Metropolis Healthcare Limited",
-     "marketCap": 11655
+     "marketCap": 11687
     },
     {
      "symbol": "THYROCARE.NS",
      "name": "Thyrocare Technologies Limited",
-     "marketCap": 8052
+     "marketCap": 8601
     },
     {
      "symbol": "VIMTALABS.NS",
      "name": "Vimta Labs Limited",
-     "marketCap": 2056
-    },
-    {
-     "symbol": "SURAKSHA.NS",
-     "name": "Suraksha Diagnostic Limited",
-     "marketCap": 1752
+     "marketCap": 2100
     },
     {
      "symbol": "KRSNAA.NS",
      "name": "Krsnaa Diagnostics Limited",
-     "marketCap": 1750
+     "marketCap": 1709
+    },
+    {
+     "symbol": "SURAKSHA.NS",
+     "name": "Suraksha Diagnostic Limited",
+     "marketCap": 1619
     }
    ]
   },
@@ -3567,52 +3567,52 @@
     {
      "symbol": "GLAXO.NS",
      "name": "GlaxoSmithKline Pharmaceuticals Limited",
-     "marketCap": 45052
+     "marketCap": 45755
     },
     {
      "symbol": "RUBICON.NS",
      "name": "Rubicon Research Limited",
-     "marketCap": 28127
+     "marketCap": 27761
     },
     {
      "symbol": "PFIZER.NS",
      "name": "Pfizer Limited",
-     "marketCap": 17599
+     "marketCap": 17541
     },
     {
      "symbol": "MARKSANS.NS",
      "name": "Marksans Pharma Limited",
-     "marketCap": 13411
+     "marketCap": 12575
     },
     {
      "symbol": "SYMBIOTEC.NS",
      "name": "SYMBIOTEC PHARMALAB LTD",
-     "marketCap": 10249
+     "marketCap": 10050
     },
     {
      "symbol": "SANOFICONR.NS",
      "name": "Sanofi Consumer Healthcare India Limited",
-     "marketCap": 8075
+     "marketCap": 7754
     },
     {
      "symbol": "SANOFI.NS",
      "name": "Sanofi India Limited",
-     "marketCap": 7404
+     "marketCap": 7320
     },
     {
      "symbol": "SENORES.NS",
      "name": "Senores Pharmaceuticals Limited",
-     "marketCap": 5004
+     "marketCap": 4918
     },
     {
      "symbol": "SMSPHARMA.NS",
      "name": "SMS Pharmaceuticals Limited",
-     "marketCap": 4468
+     "marketCap": 4360
     },
     {
      "symbol": "SAIPARENT.NS",
      "name": "Sai Parenteral's Limited",
-     "marketCap": 2172
+     "marketCap": 2098
     }
    ]
   },
@@ -3620,57 +3620,57 @@
    "kind": "industry",
    "name": "Drug Manufacturers—Specialty & Generic",
    "sector": "Healthcare",
-   "total": 104,
+   "total": 105,
    "stocks": [
     {
      "symbol": "SUNPHARMA.NS",
      "name": "Sun Pharmaceutical Industries Limited",
-     "marketCap": 454530
+     "marketCap": 446276
     },
     {
      "symbol": "DIVISLAB.NS",
      "name": "Divi's Laboratories Limited",
-     "marketCap": 293104
+     "marketCap": 298626
     },
     {
      "symbol": "TORNTPHARM.NS",
      "name": "Torrent Pharmaceuticals Limited",
-     "marketCap": 176677
+     "marketCap": 182367
     },
     {
      "symbol": "LAURUSLABS.NS",
      "name": "Laurus Labs Limited",
-     "marketCap": 124450
+     "marketCap": 128486
     },
     {
      "symbol": "ZYDUSLIFE.NS",
      "name": "Zydus Lifesciences Limited",
-     "marketCap": 119052
+     "marketCap": 119850
     },
     {
      "symbol": "DRREDDY.NS",
      "name": "Dr. Reddy's Laboratories Limited",
-     "marketCap": 116113
+     "marketCap": 115179
     },
     {
      "symbol": "CIPLA.NS",
      "name": "Cipla Limited",
-     "marketCap": 113904
+     "marketCap": 112886
     },
     {
      "symbol": "MANKIND.NS",
      "name": "Mankind Pharma Limited",
-     "marketCap": 108085
+     "marketCap": 108418
     },
     {
      "symbol": "AUROPHARMA.NS",
      "name": "Aurobindo Pharma Limited",
-     "marketCap": 103505
+     "marketCap": 103441
     },
     {
      "symbol": "LUPIN.NS",
      "name": "Lupin Limited",
-     "marketCap": 90818
+     "marketCap": 90553
     }
    ]
   },
@@ -3683,27 +3683,27 @@
     {
      "symbol": "IKS.NS",
      "name": "Inventurus Knowledge Solutions Limited",
-     "marketCap": 27066
+     "marketCap": 26905
     },
     {
      "symbol": "SAGILITY.NS",
      "name": "Sagility Limited",
-     "marketCap": 21000
+     "marketCap": 21553
     },
     {
      "symbol": "INDGN.NS",
      "name": "Indegene Limited",
-     "marketCap": 15702
+     "marketCap": 15673
     },
     {
      "symbol": "FABTECH.NS",
      "name": "Fabtech Technologies Limited",
-     "marketCap": 596
+     "marketCap": 627
     },
     {
      "symbol": "TAKE.NS",
      "name": "TAKE LIMITED",
-     "marketCap": 186
+     "marketCap": 213
     }
    ]
   },
@@ -3716,7 +3716,7 @@
     {
      "symbol": "MEDIASSIST.NS",
      "name": "Medi Assist Healthcare Services Limited",
-     "marketCap": 2094
+     "marketCap": 2072
     }
    ]
   },
@@ -3729,52 +3729,52 @@
     {
      "symbol": "APOLLOHOSP.NS",
      "name": "Apollo Hospitals Enterprise Limited",
-     "marketCap": 125021
+     "marketCap": 133145
     },
     {
      "symbol": "MAXHEALTH.NS",
      "name": "Max Healthcare Institute Limited",
-     "marketCap": 99411
+     "marketCap": 105650
     },
     {
      "symbol": "MANIPALHOS.NS",
      "name": "Manipal Health Enterprises Limited",
-     "marketCap": 90077
+     "marketCap": 92734
     },
     {
      "symbol": "ASTERDM.NS",
      "name": "Aster DM Quality Care Limited",
-     "marketCap": 63450
+     "marketCap": 68631
     },
     {
      "symbol": "FORTIS.NS",
      "name": "Fortis Healthcare Limited",
-     "marketCap": 59800
+     "marketCap": 61488
     },
     {
      "symbol": "MEDANTA.NS",
      "name": "Global Health Limited",
-     "marketCap": 38761
+     "marketCap": 40270
     },
     {
      "symbol": "NH.NS",
      "name": "Narayana Hrudayalaya Limited",
-     "marketCap": 37620
+     "marketCap": 40124
     },
     {
      "symbol": "KIMS.NS",
      "name": "Krishna Institute of Medical Sciences Limited",
-     "marketCap": 32046
+     "marketCap": 33365
     },
     {
      "symbol": "RAINBOW.NS",
      "name": "Rainbow Children's Medicare Limited",
-     "marketCap": 12591
+     "marketCap": 12788
     },
     {
      "symbol": "YATHARTH.NS",
      "name": "Yatharth Hospital & Trauma Care Services Limited",
-     "marketCap": 10406
+     "marketCap": 10455
     }
    ]
   },
@@ -3787,27 +3787,27 @@
     {
      "symbol": "MOLBIO.NS",
      "name": "Molbio Diagnostics Limited",
-     "marketCap": 17171
+     "marketCap": 16693
     },
     {
      "symbol": "SMT.NS",
      "name": "Sahajanand Medical Technologies Limited",
-     "marketCap": 5581
+     "marketCap": 5681
     },
     {
      "symbol": "FISCHER.NS",
      "name": "Fischer Medical Ventures Limited",
-     "marketCap": 1615
+     "marketCap": 1461
     },
     {
      "symbol": "UNIVPHOTO.NS",
      "name": "Universus Photo Imagings Limited",
-     "marketCap": 493
+     "marketCap": 494
     },
     {
      "symbol": "NURECA.NS",
      "name": "Nureca Limited",
-     "marketCap": 299
+     "marketCap": 318
     }
    ]
   },
@@ -3820,7 +3820,7 @@
     {
      "symbol": "ENTERO.NS",
      "name": "Entero Healthcare Solutions Limited",
-     "marketCap": 8520
+     "marketCap": 8193
     }
    ]
   },
@@ -3833,37 +3833,37 @@
     {
      "symbol": "LENSKART.NS",
      "name": "Lenskart Solutions Limited",
-     "marketCap": 128897
+     "marketCap": 123864
     },
     {
      "symbol": "AGARWALEYE.NS",
      "name": "Dr. Agarwal's Health Care Limited",
-     "marketCap": 17412
+     "marketCap": 18324
     },
     {
      "symbol": "POLYMED.NS",
      "name": "Poly Medicure Limited",
-     "marketCap": 16725
+     "marketCap": 16485
     },
     {
      "symbol": "TARSONS.NS",
      "name": "Tarsons Products Limited",
-     "marketCap": 1604
+     "marketCap": 1594
     },
     {
      "symbol": "LAXMIDENTL.NS",
      "name": "Laxmi Dental Limited",
-     "marketCap": 1079
+     "marketCap": 1039
     },
     {
      "symbol": "QMSMEDI.NS",
      "name": "QMS Medical Allied Services Limited",
-     "marketCap": 330
+     "marketCap": 327
     },
     {
      "symbol": "GKB.NS",
      "name": "GKB Ophthalmics Limited",
-     "marketCap": 30
+     "marketCap": 29
     }
    ]
   },
@@ -3876,17 +3876,17 @@
     {
      "symbol": "MEDPLUS.NS",
      "name": "MedPlus Health Services Limited",
-     "marketCap": 7132
+     "marketCap": 7220
     },
     {
      "symbol": "HEALTHX.NS",
      "name": "Health X Platform Limited",
-     "marketCap": 866
+     "marketCap": 874
     },
     {
      "symbol": "ONEGLOBAL.NS",
      "name": "One Global Service Provider Limited",
-     "marketCap": 778
+     "marketCap": 740
     }
    ]
   },
@@ -3899,52 +3899,52 @@
     {
      "symbol": "LT.NS",
      "name": "Larsen & Toubro Limited",
-     "marketCap": 573126
+     "marketCap": 565187
     },
     {
      "symbol": "ADANIPORTS.NS",
      "name": "Adani Ports and Special Economic Zone Limited",
-     "marketCap": 438213
+     "marketCap": 442130
     },
     {
      "symbol": "HAL.NS",
      "name": "Hindustan Aeronautics Limited",
-     "marketCap": 316210
+     "marketCap": 319674
     },
     {
      "symbol": "BEL.NS",
      "name": "Bharat Electronics Limited",
-     "marketCap": 292976
+     "marketCap": 290162
     },
     {
      "symbol": "INDIGO.NS",
      "name": "InterGlobe Aviation Limited",
-     "marketCap": 215273
-    },
-    {
-     "symbol": "BHEL.NS",
-     "name": "Bharat Heavy Electricals Limited",
-     "marketCap": 149711
+     "marketCap": 213479
     },
     {
      "symbol": "ABB.NS",
      "name": "ABB India Limited",
-     "marketCap": 146916
+     "marketCap": 145581
+    },
+    {
+     "symbol": "BHEL.NS",
+     "name": "Bharat Heavy Electricals Limited",
+     "marketCap": 144784
     },
     {
      "symbol": "POWERINDIA.NS",
      "name": "Hitachi Energy India Limited",
-     "marketCap": 136614
+     "marketCap": 133762
     },
     {
      "symbol": "SIEMENS.NS",
      "name": "Siemens Limited",
-     "marketCap": 126996
+     "marketCap": 128043
     },
     {
      "symbol": "CGPOWER.NS",
      "name": "CG Power and Industrial Solutions Limited",
-     "marketCap": 125771
+     "marketCap": 123991
     }
    ]
   },
@@ -3957,52 +3957,52 @@
     {
      "symbol": "HAL.NS",
      "name": "Hindustan Aeronautics Limited",
-     "marketCap": 316030
+     "marketCap": 319674
     },
     {
      "symbol": "BEL.NS",
      "name": "Bharat Electronics Limited",
-     "marketCap": 292976
+     "marketCap": 290162
     },
     {
      "symbol": "MAZDOCK.NS",
      "name": "Mazagon Dock Shipbuilders Limited",
-     "marketCap": 74339
+     "marketCap": 72794
     },
     {
      "symbol": "BDL.NS",
      "name": "Bharat Dynamics Limited",
-     "marketCap": 37939
+     "marketCap": 37389
     },
     {
      "symbol": "COCHINSHIP.NS",
      "name": "Cochin Shipyard Limited",
-     "marketCap": 29939
-    },
-    {
-     "symbol": "GRSE.NS",
-     "name": "Garden Reach Shipbuilders & Engineers Limited",
-     "marketCap": 23938
+     "marketCap": 28676
     },
     {
      "symbol": "DATAPATTNS.NS",
      "name": "Data Patterns (India) Limited",
-     "marketCap": 23369
+     "marketCap": 23630
+    },
+    {
+     "symbol": "GRSE.NS",
+     "name": "Garden Reach Shipbuilders & Engineers Limited",
+     "marketCap": 23059
     },
     {
      "symbol": "SIGMAADV.NS",
      "name": "Sigma Advanced Systems Limited",
-     "marketCap": 18043
+     "marketCap": 17822
     },
     {
      "symbol": "APOLLO.NS",
      "name": "Apollo Micro Systems Limited",
-     "marketCap": 16657
+     "marketCap": 15795
     },
     {
      "symbol": "ZENTEC.NS",
      "name": "Zen Technologies Limited",
-     "marketCap": 15523
+     "marketCap": 15272
     }
    ]
   },
@@ -4015,7 +4015,7 @@
     {
      "symbol": "INDIGO.NS",
      "name": "InterGlobe Aviation Limited",
-     "marketCap": 215327
+     "marketCap": 213479
     }
    ]
   },
@@ -4028,12 +4028,12 @@
     {
      "symbol": "GMRAIRPORT.NS",
      "name": "GMR Airports Limited",
-     "marketCap": 110160
+     "marketCap": 109222
     },
     {
      "symbol": "TAALTECH.NS",
      "name": "TAAL Tech Limited",
-     "marketCap": 1450
+     "marketCap": 1334
     },
     {
      "symbol": "DREAMFOLKS.NS",
@@ -4043,7 +4043,7 @@
     {
      "symbol": "GLOBALVECT.NS",
      "name": "Global Vectra Helicorp Limited",
-     "marketCap": 180
+     "marketCap": 173
     }
    ]
   },
@@ -4056,52 +4056,52 @@
     {
      "symbol": "CPPLUS.NS",
      "name": "Aditya Infotech Limited",
-     "marketCap": 49023
+     "marketCap": 50034
     },
     {
      "symbol": "SUPREMEIND.NS",
      "name": "The Supreme Industries Limited",
-     "marketCap": 40763
+     "marketCap": 40106
     },
     {
      "symbol": "BLUESTARCO.NS",
      "name": "Blue Star Limited",
-     "marketCap": 35154
+     "marketCap": 36863
     },
     {
      "symbol": "ASTRAL.NS",
      "name": "Astral Limited",
-     "marketCap": 33608
+     "marketCap": 32990
     },
     {
      "symbol": "GRINDWELL.NS",
      "name": "Grindwell Norton Limited",
-     "marketCap": 20460
+     "marketCap": 19699
     },
     {
      "symbol": "KAJARIACER.NS",
      "name": "Kajaria Ceramics Limited",
-     "marketCap": 19032
+     "marketCap": 18917
     },
     {
      "symbol": "FINPIPE.NS",
      "name": "Finolex Industries Limited",
-     "marketCap": 8993
+     "marketCap": 8757
     },
     {
      "symbol": "CERA.NS",
      "name": "Cera Sanitaryware Limited",
-     "marketCap": 6359
+     "marketCap": 6512
     },
     {
      "symbol": "ELECTCAST.NS",
      "name": "Electrosteel Castings Limited",
-     "marketCap": 4142
+     "marketCap": 3989
     },
     {
      "symbol": "PRINCEPIPE.NS",
      "name": "Prince Pipes and Fittings Limited",
-     "marketCap": 3214
+     "marketCap": 3183
     }
    ]
   },
@@ -4114,32 +4114,32 @@
     {
      "symbol": "DOMS.NS",
      "name": "DOMS Industries Limited",
-     "marketCap": 12641
+     "marketCap": 12944
     },
     {
      "symbol": "FLAIR.NS",
      "name": "Flair Writing Industries Limited",
-     "marketCap": 2537
+     "marketCap": 2611
     },
     {
      "symbol": "CONTROLPR.NS",
      "name": "Control Print Limited",
-     "marketCap": 978
+     "marketCap": 964
     },
     {
      "symbol": "KOKUYOCMLN.NS",
      "name": "Kokuyo Camlin Limited",
-     "marketCap": 719
+     "marketCap": 702
     },
     {
      "symbol": "LINC.NS",
      "name": "Linc Limited",
-     "marketCap": 514
+     "marketCap": 512
     },
     {
      "symbol": "KSHITIJPOL.NS",
      "name": "Kshitij Polyline Limited",
-     "marketCap": 52
+     "marketCap": 57
     }
    ]
   },
@@ -4152,52 +4152,52 @@
     {
      "symbol": "SRF.NS",
      "name": "SRF Limited",
-     "marketCap": 73307
+     "marketCap": 74131
     },
     {
      "symbol": "TIINDIA.NS",
      "name": "Tube Investments of India Limited",
-     "marketCap": 43325
+     "marketCap": 42627
     },
     {
      "symbol": "GODREJIND.NS",
      "name": "Godrej Industries Limited",
-     "marketCap": 37262
+     "marketCap": 36252
     },
     {
      "symbol": "3MINDIA.NS",
      "name": "3M India Limited",
-     "marketCap": 31317
+     "marketCap": 31362
     },
     {
      "symbol": "THERMAX.NS",
      "name": "Thermax Limited",
-     "marketCap": 30555
+     "marketCap": 30489
     },
     {
      "symbol": "BEML.NS",
      "name": "BEML Limited",
-     "marketCap": 16784
+     "marketCap": 16724
     },
     {
      "symbol": "NAVA.NS",
      "name": "Nava Limited",
-     "marketCap": 15011
+     "marketCap": 15491
     },
     {
      "symbol": "DCMSHRIRAM.NS",
      "name": "DCM Shriram Limited",
-     "marketCap": 13761
+     "marketCap": 13481
     },
     {
      "symbol": "CYIENT.NS",
      "name": "Cyient Limited",
-     "marketCap": 11446
+     "marketCap": 12075
     },
     {
      "symbol": "MMTC.NS",
      "name": "MMTC Limited",
-     "marketCap": 7710
+     "marketCap": 7609
     }
    ]
   },
@@ -4210,22 +4210,22 @@
     {
      "symbol": "LATENTVIEW.NS",
      "name": "Latent View Analytics Limited",
-     "marketCap": 3985
+     "marketCap": 4077
     },
     {
      "symbol": "EKI.NS",
      "name": "EKI Energy Services Limited",
-     "marketCap": 199
+     "marketCap": 195
     },
     {
      "symbol": "SECMARK.NS",
      "name": "SecMark Consultancy Limited",
-     "marketCap": 170
+     "marketCap": 167
     },
     {
      "symbol": "REPL.NS",
      "name": "Rudrabhishek Enterprises Limited",
-     "marketCap": 101
+     "marketCap": 98
     }
    ]
   },
@@ -4238,52 +4238,52 @@
     {
      "symbol": "POWERINDIA.NS",
      "name": "Hitachi Energy India Limited",
-     "marketCap": 136614
+     "marketCap": 133762
     },
     {
      "symbol": "CGPOWER.NS",
      "name": "CG Power and Industrial Solutions Limited",
-     "marketCap": 125803
+     "marketCap": 123991
     },
     {
      "symbol": "POLYCAB.NS",
      "name": "Polycab India Limited",
-     "marketCap": 111741
+     "marketCap": 112194
     },
     {
      "symbol": "HAVELLS.NS",
      "name": "Havells India Limited",
-     "marketCap": 74372
+     "marketCap": 73883
     },
     {
      "symbol": "APARINDS.NS",
      "name": "APAR Industries Limited",
-     "marketCap": 59773
+     "marketCap": 59291
     },
     {
      "symbol": "KEI.NS",
      "name": "KEI Industries Limited",
-     "marketCap": 36201
+     "marketCap": 36529
     },
     {
      "symbol": "HONAUT.NS",
      "name": "Honeywell Automation India Limited",
-     "marketCap": 26653
+     "marketCap": 26308
     },
     {
      "symbol": "SCHNEIDER.NS",
      "name": "Schneider Electric Infrastructure Limited",
-     "marketCap": 24016
+     "marketCap": 24109
     },
     {
      "symbol": "HBLENGINE.NS",
      "name": "HBL Engineering Limited",
-     "marketCap": 21596
+     "marketCap": 21344
     },
     {
      "symbol": "RRKABEL.NS",
      "name": "R R Kabel Limited",
-     "marketCap": 20613
+     "marketCap": 20626
     }
    ]
   },
@@ -4296,52 +4296,52 @@
     {
      "symbol": "LT.NS",
      "name": "Larsen & Toubro Limited",
-     "marketCap": 573195
+     "marketCap": 565187
     },
     {
      "symbol": "RVNL.NS",
      "name": "Rail Vikas Nigam Limited",
-     "marketCap": 39993
+     "marketCap": 38740
     },
     {
      "symbol": "CEMPRO.NS",
      "name": "Cemindia Projects Limited",
-     "marketCap": 25131
+     "marketCap": 26616
     },
     {
      "symbol": "KPIL.NS",
      "name": "Kalpataru Projects International Limited",
-     "marketCap": 22621
+     "marketCap": 22414
     },
     {
      "symbol": "NBCC.NS",
      "name": "NBCC (India) Limited",
-     "marketCap": 21044
+     "marketCap": 20998
     },
     {
      "symbol": "ENGINERSIN.NS",
      "name": "Engineers India Limited",
-     "marketCap": 17131
+     "marketCap": 16785
     },
     {
      "symbol": "WABAG.NS",
      "name": "VA Tech Wabag Limited",
-     "marketCap": 11754
+     "marketCap": 11512
     },
     {
      "symbol": "LOTUSDEV.NS",
      "name": "Sri Lotus Developers and Realty Limited",
-     "marketCap": 11485
+     "marketCap": 11241
     },
     {
      "symbol": "TECHNOE.NS",
      "name": "Techno Electric & Engineering Company Limited",
-     "marketCap": 10790
+     "marketCap": 10602
     },
     {
      "symbol": "IRCON.NS",
      "name": "Ircon International Limited",
-     "marketCap": 10117
+     "marketCap": 10147
     }
    ]
   },
@@ -4354,52 +4354,52 @@
     {
      "symbol": "ASHOKLEY.NS",
      "name": "Ashok Leyland Limited",
-     "marketCap": 98041
+     "marketCap": 93394
     },
     {
      "symbol": "ESCORTS.NS",
      "name": "Escorts Kubota Limited",
-     "marketCap": 26664
+     "marketCap": 26960
     },
     {
      "symbol": "ACE.NS",
      "name": "Action Construction Equipment Limited",
-     "marketCap": 14021
+     "marketCap": 14139
     },
     {
      "symbol": "OLECTRA.NS",
      "name": "Olectra Greentech Limited",
-     "marketCap": 8256
+     "marketCap": 8175
     },
     {
      "symbol": "AJAXENGG.NS",
      "name": "Ajax Engineering Limited",
-     "marketCap": 7123
+     "marketCap": 7118
     },
     {
      "symbol": "SWARAJENG.NS",
      "name": "Swaraj Engines Limited",
-     "marketCap": 4210
+     "marketCap": 4178
     },
     {
      "symbol": "UNIPARTS.NS",
      "name": "Uniparts India Limited",
-     "marketCap": 3244
+     "marketCap": 3135
     },
     {
      "symbol": "VSTTILLERS.NS",
      "name": "V.S.T. Tillers Tractors Limited",
-     "marketCap": 3164
+     "marketCap": 3002
     },
     {
      "symbol": "HMT.NS",
      "name": "HMT Limited",
-     "marketCap": 1831
+     "marketCap": 1847
     },
     {
      "symbol": "TIL.NS",
      "name": "TIL Limited",
-     "marketCap": 1706
+     "marketCap": 1665
     }
    ]
   },
@@ -4412,7 +4412,7 @@
     {
      "symbol": "SGMART.NS",
      "name": "SG Mart Limited",
-     "marketCap": 12771
+     "marketCap": 13062
     },
     {
      "symbol": "YOGI.NS",
@@ -4422,12 +4422,12 @@
     {
      "symbol": "DCMSIL.NS",
      "name": "DCM Shriram International Limited",
-     "marketCap": 530
+     "marketCap": 492
     },
     {
      "symbol": "JKIPL.NS",
      "name": "Jinkushal Industries Limited",
-     "marketCap": 431
+     "marketCap": 411
     },
     {
      "symbol": "WHBRADY.NS",
@@ -4437,12 +4437,12 @@
     {
      "symbol": "KHAITANLTD.NS",
      "name": "Khaitan (India) Limited",
-     "marketCap": 71
+     "marketCap": 72
     },
     {
      "symbol": "AKG.NS",
      "name": "AKG Exim Limited",
-     "marketCap": 29
+     "marketCap": 30
     }
    ]
   },
@@ -4455,32 +4455,32 @@
     {
      "symbol": "IRB.NS",
      "name": "IRB Infrastructure Developers Limited",
-     "marketCap": 21112
+     "marketCap": 21004
     },
     {
      "symbol": "LCCPROJECT.NS",
      "name": "LCC PROJECTS LIMITED",
-     "marketCap": 3611
+     "marketCap": 3591
     },
     {
      "symbol": "TECHNOCRAF.NS",
      "name": "Technocraft Ventures Limited",
-     "marketCap": 1925
+     "marketCap": 2071
     },
     {
      "symbol": "BFUTILITIE.NS",
      "name": "BF Utilities Limited",
-     "marketCap": 1770
+     "marketCap": 1691
     },
     {
      "symbol": "HILINFRA.NS",
      "name": "Highway Infrastructure Limited",
-     "marketCap": 595
+     "marketCap": 613
     },
     {
      "symbol": "MARKOLINES.NS",
      "name": "Markolines Pavement Technologies Limited",
-     "marketCap": 376
+     "marketCap": 358
     },
     {
      "symbol": "ATLANTAA.NS",
@@ -4490,17 +4490,17 @@
     {
      "symbol": "ANNU.NS",
      "name": "ANNU PROJECTS LIMITED",
-     "marketCap": 254
+     "marketCap": 249
     },
     {
      "symbol": "BRNL.NS",
      "name": "Bharat Road Network Limited",
-     "marketCap": 132
+     "marketCap": 129
     },
     {
      "symbol": "BCPL.NS",
      "name": "BCPL Railway Infrastructure Limited",
-     "marketCap": 108
+     "marketCap": 104
     }
    ]
   },
@@ -4513,52 +4513,52 @@
     {
      "symbol": "DELHIVERY.NS",
      "name": "Delhivery Limited",
-     "marketCap": 34081
+     "marketCap": 34103
     },
     {
      "symbol": "SHADOWFAX.NS",
      "name": "Shadowfax Technologies Limited",
-     "marketCap": 18328
+     "marketCap": 18134
     },
     {
      "symbol": "BLUEDART.NS",
      "name": "Blue Dart Express Limited",
-     "marketCap": 10641
+     "marketCap": 10564
     },
     {
      "symbol": "TCI.NS",
      "name": "Transport Corporation of India Limited",
-     "marketCap": 6111
-    },
-    {
-     "symbol": "TVSSCS.NS",
-     "name": "TVS Supply Chain Solutions Limited",
-     "marketCap": 5901
+     "marketCap": 6022
     },
     {
      "symbol": "LEAPIND.NS",
      "name": "LEAP India Limited",
-     "marketCap": 5843
+     "marketCap": 5747
+    },
+    {
+     "symbol": "TVSSCS.NS",
+     "name": "TVS Supply Chain Solutions Limited",
+     "marketCap": 5743
     },
     {
      "symbol": "MAHLOG.NS",
      "name": "Mahindra Logistics Limited",
-     "marketCap": 3724
+     "marketCap": 3658
     },
     {
      "symbol": "GATEWAY.NS",
      "name": "Gateway Distriparks Limited",
-     "marketCap": 2371
+     "marketCap": 2405
     },
     {
      "symbol": "TCIEXP.NS",
      "name": "TCI Express Limited",
-     "marketCap": 1820
+     "marketCap": 1859
     },
     {
      "symbol": "SKYWAYS.NS",
      "name": "SKYWAYS AIR SERVICES LTD",
-     "marketCap": 1804
+     "marketCap": 1681
     }
    ]
   },
@@ -4571,52 +4571,52 @@
     {
      "symbol": "ADANIPORTS.NS",
      "name": "Adani Ports and Special Economic Zone Limited",
-     "marketCap": 438213
+     "marketCap": 442130
     },
     {
      "symbol": "JSWINFRA.NS",
      "name": "JSW Infrastructure Limited",
-     "marketCap": 78437
+     "marketCap": 82193
     },
     {
      "symbol": "GESHIP.NS",
      "name": "The Great Eastern Shipping Company Limited",
-     "marketCap": 21112
+     "marketCap": 19827
     },
     {
      "symbol": "SHREEJISPG.NS",
      "name": "Shreeji Shipping Global Limited",
-     "marketCap": 14449
+     "marketCap": 14835
     },
     {
      "symbol": "SCI.NS",
      "name": "The Shipping Corporation of India Limited",
-     "marketCap": 11631
+     "marketCap": 11958
     },
     {
      "symbol": "KMEW.NS",
      "name": "Knowledge Marine & Engineering Works Limited",
-     "marketCap": 9461
+     "marketCap": 9012
     },
     {
      "symbol": "GPPL.NS",
      "name": "Gujarat Pipavav Port Limited",
-     "marketCap": 8605
+     "marketCap": 8436
     },
     {
      "symbol": "CORDELIA.NS",
      "name": "Waterways Leisure Tourism Limited",
-     "marketCap": 6256
+     "marketCap": 6100
     },
     {
      "symbol": "SEAMECLTD.NS",
      "name": "Seamec Limited",
-     "marketCap": 3937
+     "marketCap": 3734
     },
     {
      "symbol": "TRANSWORLD.NS",
      "name": "Transworld Shipping Lines Limited",
-     "marketCap": 386
+     "marketCap": 371
     }
    ]
   },
@@ -4629,32 +4629,32 @@
     {
      "symbol": "BHARATFORG.NS",
      "name": "Bharat Forge Limited",
-     "marketCap": 84222
+     "marketCap": 84296
     },
     {
      "symbol": "INDOMIM.NS",
      "name": "INDO-MIM Limited",
-     "marketCap": 61330
+     "marketCap": 63313
     },
     {
      "symbol": "PTCIL.NS",
      "name": "PTC Industries Limited",
-     "marketCap": 37796
+     "marketCap": 38778
     },
     {
      "symbol": "ZETWERK.NS",
      "name": "Zetwerk Manufacturing Businesses Limited",
-     "marketCap": 28704
+     "marketCap": 30895
     },
     {
      "symbol": "HAPPYFORGE.NS",
      "name": "Happy Forgings Limited",
-     "marketCap": 17025
+     "marketCap": 16706
     },
     {
      "symbol": "RKFORGE.NS",
      "name": "Ramkrishna Forgings Limited",
-     "marketCap": 14250
+     "marketCap": 13844
     },
     {
      "symbol": "GRAVITA.NS",
@@ -4664,17 +4664,17 @@
     {
      "symbol": "RHIM.NS",
      "name": "RHI Magnesita India Limited",
-     "marketCap": 7252
+     "marketCap": 7318
+    },
+    {
+     "symbol": "KIRLFER.NS",
+     "name": "Kirloskar Ferrous Industries Limited",
+     "marketCap": 6495
     },
     {
      "symbol": "AEROFLEX.NS",
      "name": "Aeroflex Industries Limited",
-     "marketCap": 6470
-    },
-    {
-     "symbol": "BALUFORGE.NS",
-     "name": "Balu Forge Industries Limited",
-     "marketCap": 6433
+     "marketCap": 6137
     }
    ]
   },
@@ -4687,12 +4687,12 @@
     {
      "symbol": "SFCTECH.NS",
      "name": "SFC Environmental Technologies Limited",
-     "marketCap": 4113
+     "marketCap": 4271
     },
     {
      "symbol": "BANKA.NS",
      "name": "Banka BioLoo Limited",
-     "marketCap": 85
+     "marketCap": 79
     }
    ]
   },
@@ -4705,32 +4705,32 @@
     {
      "symbol": "CONCOR.NS",
      "name": "Container Corporation of India Limited",
-     "marketCap": 33222
+     "marketCap": 32597
     },
     {
      "symbol": "TITAGARH.NS",
      "name": "Titagarh Rail Systems Limited",
-     "marketCap": 9925
+     "marketCap": 9664
     },
     {
      "symbol": "JWL.NS",
      "name": "Jupiter Wagons Limited",
-     "marketCap": 8323
+     "marketCap": 7921
     },
     {
      "symbol": "TEXRAIL.NS",
      "name": "Texmaco Rail & Engineering Limited",
-     "marketCap": 4448
+     "marketCap": 4567
     },
     {
      "symbol": "QUADFUTURE.NS",
      "name": "Quadrant Future Tek Limited",
-     "marketCap": 1690
+     "marketCap": 1573
     },
     {
      "symbol": "ORIRAIL.NS",
      "name": "Oriental Rail Infrastructure Limited",
-     "marketCap": 770
+     "marketCap": 775
     }
    ]
   },
@@ -4743,22 +4743,22 @@
     {
      "symbol": "SANGHVIMOV.NS",
      "name": "Sanghvi Movers Limited",
-     "marketCap": 3205
+     "marketCap": 3251
     },
     {
      "symbol": "AWFIS.NS",
      "name": "Awfis Space Solutions Limited",
-     "marketCap": 2027
+     "marketCap": 1983
     },
     {
      "symbol": "ECOSMOBLTY.NS",
      "name": "Ecos (India) Mobility & Hospitality Limited",
-     "marketCap": 734
+     "marketCap": 705
     },
     {
      "symbol": "CROWN.NS",
      "name": "Crown Lifters Limited",
-     "marketCap": 102
+     "marketCap": 110
     }
    ]
   },
@@ -4771,12 +4771,12 @@
     {
      "symbol": "SIS.NS",
      "name": "SIS Limited",
-     "marketCap": 5002
+     "marketCap": 5000
     },
     {
      "symbol": "MALLCOM.NS",
      "name": "Mallcom (India) Limited",
-     "marketCap": 533
+     "marketCap": 503
     }
    ]
   },
@@ -4789,17 +4789,17 @@
     {
      "symbol": "BLS.NS",
      "name": "BLS International Services Limited",
-     "marketCap": 9409
+     "marketCap": 9068
     },
     {
      "symbol": "PDSL.NS",
      "name": "PDS Limited",
-     "marketCap": 5779
+     "marketCap": 5838
     },
     {
      "symbol": "FUSIONCX.NS",
      "name": "Fusion CX Limited",
-     "marketCap": 3968
+     "marketCap": 3925
     },
     {
      "symbol": "CMSINFO.NS",
@@ -4809,32 +4809,32 @@
     {
      "symbol": "JAYKAY.NS",
      "name": "Jaykay Enterprises Limited",
-     "marketCap": 2706
+     "marketCap": 2737
     },
     {
      "symbol": "BLSE.NS",
      "name": "BLS E-Services Limited",
-     "marketCap": 2682
+     "marketCap": 2671
     },
     {
      "symbol": "BLUSPRING.NS",
      "name": "Bluspring Enterprises Limited",
-     "marketCap": 2399
+     "marketCap": 2309
     },
     {
      "symbol": "ONEPOINT.NS",
      "name": "One Point One Solutions Limited",
-     "marketCap": 1845
+     "marketCap": 1789
     },
     {
      "symbol": "GYFTR.NS",
      "name": "Gyftr Limited",
-     "marketCap": 1699
+     "marketCap": 1700
     },
     {
      "symbol": "KAPSTON.NS",
      "name": "Kapston Services Limited",
-     "marketCap": 1631
+     "marketCap": 1643
     }
    ]
   },
@@ -4845,54 +4845,54 @@
    "total": 89,
    "stocks": [
     {
-     "symbol": "BHEL.NS",
-     "name": "Bharat Heavy Electricals Limited",
-     "marketCap": 149711
-    },
-    {
      "symbol": "ABB.NS",
      "name": "ABB India Limited",
-     "marketCap": 146916
+     "marketCap": 145581
+    },
+    {
+     "symbol": "BHEL.NS",
+     "name": "Bharat Heavy Electricals Limited",
+     "marketCap": 144784
     },
     {
      "symbol": "SIEMENS.NS",
      "name": "Siemens Limited",
-     "marketCap": 127085
+     "marketCap": 128043
     },
     {
      "symbol": "CUMMINSIND.NS",
      "name": "Cummins India Limited",
-     "marketCap": 113968
+     "marketCap": 112654
     },
     {
      "symbol": "GVT&D.NS",
      "name": "GE Vernova T&D India Limited",
-     "marketCap": 109923
+     "marketCap": 107496
     },
     {
      "symbol": "SUZLON.NS",
      "name": "Suzlon Energy Limited",
-     "marketCap": 50588
+     "marketCap": 49419
     },
     {
      "symbol": "AIAENG.NS",
      "name": "AIA Engineering Limited",
-     "marketCap": 31158
+     "marketCap": 31764
     },
     {
      "symbol": "KIRLOSENG.NS",
      "name": "Kirloskar Oil Engines Limited",
-     "marketCap": 24587
+     "marketCap": 25040
     },
     {
      "symbol": "JYOTICNC.NS",
      "name": "Jyoti CNC Automation Limited",
-     "marketCap": 23948
+     "marketCap": 23726
     },
     {
      "symbol": "DIACABS.NS",
      "name": "Diamond Power Infrastructure Limited",
-     "marketCap": 21563
+     "marketCap": 21662
     }
    ]
   },
@@ -4905,22 +4905,22 @@
     {
      "symbol": "QUESS.NS",
      "name": "Quess Corp Limited",
-     "marketCap": 4911
+     "marketCap": 4901
     },
     {
      "symbol": "TEAMLEASE.NS",
      "name": "TeamLease Services Limited",
-     "marketCap": 1496
+     "marketCap": 1589
     },
     {
      "symbol": "INNOVISION.NS",
      "name": "Innovision Limited",
-     "marketCap": 602
+     "marketCap": 564
     },
     {
      "symbol": "AARVI.NS",
      "name": "Aarvi Encon Limited",
-     "marketCap": 184
+     "marketCap": 182
     },
     {
      "symbol": "ACEINTEG.NS",
@@ -4938,52 +4938,52 @@
     {
      "symbol": "TIMKEN.NS",
      "name": "Timken India Limited",
-     "marketCap": 23356
+     "marketCap": 23092
     },
     {
      "symbol": "CARBORUNIV.NS",
      "name": "Carborundum Universal Limited",
-     "marketCap": 19146
+     "marketCap": 18721
     },
     {
      "symbol": "SKFINDUS.NS",
      "name": "SKF India (Industrial) Limited",
-     "marketCap": 12328
-    },
-    {
-     "symbol": "KENNAMET.NS",
-     "name": "Kennametal India Limited",
-     "marketCap": 8292
+     "marketCap": 12224
     },
     {
      "symbol": "ESABINDIA.NS",
      "name": "ESAB India Limited",
-     "marketCap": 7962
+     "marketCap": 7887
+    },
+    {
+     "symbol": "KENNAMET.NS",
+     "name": "Kennametal India Limited",
+     "marketCap": 7886
     },
     {
      "symbol": "SKFINDIA.NS",
      "name": "SKF India Limited",
-     "marketCap": 7178
+     "marketCap": 7118
     },
     {
      "symbol": "TIIL.NS",
      "name": "Technocraft Industries (India) Limited",
-     "marketCap": 6294
+     "marketCap": 6306
     },
     {
      "symbol": "HARSHA.NS",
      "name": "Harsha Engineers International Limited",
-     "marketCap": 4117
+     "marketCap": 3987
     },
     {
      "symbol": "WENDT.NS",
      "name": "Wendt (India) Limited",
-     "marketCap": 1414
+     "marketCap": 1392
     },
     {
      "symbol": "STERTOOLS.NS",
      "name": "Sterling Tools Limited",
-     "marketCap": 751
+     "marketCap": 734
     }
    ]
   },
@@ -4996,22 +4996,22 @@
     {
      "symbol": "VRLLOG.NS",
      "name": "VRL Logistics Limited",
-     "marketCap": 5694
+     "marketCap": 5586
     },
     {
      "symbol": "SVLL.NS",
      "name": "Shree Vasu Logistics Limited",
-     "marketCap": 907
+     "marketCap": 853
     },
     {
      "symbol": "NECCLTD.NS",
      "name": "North Eastern Carrying Corporation Limited",
-     "marketCap": 236
+     "marketCap": 260
     },
     {
      "symbol": "OBCL.NS",
      "name": "OBCL Limited",
-     "marketCap": 127
+     "marketCap": 124
     }
    ]
   },
@@ -5024,27 +5024,27 @@
     {
      "symbol": "NRL.NS",
      "name": "Nupur Recyclers Limited",
-     "marketCap": 1356
+     "marketCap": 1259
     },
     {
      "symbol": "AWHCL.NS",
      "name": "Antony Waste Handling Cell Limited",
-     "marketCap": 899
+     "marketCap": 857
     },
     {
      "symbol": "RACE.NS",
      "name": "Race Eco Chain Limited",
-     "marketCap": 181
+     "marketCap": 177
     },
     {
      "symbol": "HRYNSHP.NS",
      "name": "Hariyana Ship Breakers Limited",
-     "marketCap": 57
+     "marketCap": 56
     },
     {
      "symbol": "CEREBRAINT.NS",
      "name": "Cerebra Integrated Technologies Limited",
-     "marketCap": 23
+     "marketCap": 22
     }
    ]
   },
@@ -5057,52 +5057,52 @@
     {
      "symbol": "DLF.NS",
      "name": "DLF Limited",
-     "marketCap": 189423
+     "marketCap": 195661
     },
     {
      "symbol": "LODHA.NS",
      "name": "Lodha Developers Limited",
-     "marketCap": 119380
+     "marketCap": 121899
     },
     {
      "symbol": "PHOENIXLTD.NS",
      "name": "The Phoenix Mills Limited",
-     "marketCap": 79846
+     "marketCap": 81835
     },
     {
      "symbol": "PRESTIGE.NS",
      "name": "Prestige Estates Projects Limited",
-     "marketCap": 71755
+     "marketCap": 72397
     },
     {
      "symbol": "OBEROIRLTY.NS",
      "name": "Oberoi Realty Limited",
-     "marketCap": 66114
+     "marketCap": 67485
     },
     {
      "symbol": "GODREJPROP.NS",
      "name": "Godrej Properties Limited",
-     "marketCap": 56456
+     "marketCap": 58095
     },
     {
      "symbol": "BRIGADE.NS",
      "name": "Brigade Enterprises Limited",
-     "marketCap": 18489
+     "marketCap": 18948
     },
     {
      "symbol": "ANANTRAJ.NS",
      "name": "Anant Raj Limited",
-     "marketCap": 16455
-    },
-    {
-     "symbol": "HORIZONIND.NS",
-     "name": "Horizon Industrial Parks Limited",
-     "marketCap": 14103
+     "marketCap": 15899
     },
     {
      "symbol": "ABREL.NS",
      "name": "Aditya Birla Real Estate Limited",
-     "marketCap": 13568
+     "marketCap": 13947
+    },
+    {
+     "symbol": "HORIZONIND.NS",
+     "name": "Horizon Industrial Parks Limited",
+     "marketCap": 13792
     }
    ]
   },
@@ -5115,27 +5115,27 @@
     {
      "symbol": "ABREL.NS",
      "name": "Aditya Birla Real Estate Limited",
-     "marketCap": 13568
+     "marketCap": 13937
     },
     {
      "symbol": "WEWORK.NS",
      "name": "WeWork India Management Limited",
-     "marketCap": 9537
+     "marketCap": 9633
     },
     {
      "symbol": "SMARTWORKS.NS",
      "name": "Smartworks Coworking Spaces Limited",
-     "marketCap": 5824
+     "marketCap": 5880
     },
     {
      "symbol": "NIRLON.NS",
      "name": "Nirlon Limited",
-     "marketCap": 5794
+     "marketCap": 5772
     },
     {
      "symbol": "INDIQUBE.NS",
      "name": "IndiQube Spaces Limited",
-     "marketCap": 3858
+     "marketCap": 3653
     },
     {
      "symbol": "ELPROINTL.NS",
@@ -5145,22 +5145,22 @@
     {
      "symbol": "EFCIL.NS",
      "name": "EFC (I) Limited",
-     "marketCap": 2385
+     "marketCap": 2368
     },
     {
      "symbol": "AURUM.NS",
      "name": "Aurum PropTech Limited",
-     "marketCap": 2086
+     "marketCap": 2062
     },
     {
      "symbol": "SCILAL.NS",
      "name": "Shipping Corporation of India Land and Assets Limited",
-     "marketCap": 1662
+     "marketCap": 1637
     },
     {
      "symbol": "TEXINFRA.NS",
      "name": "Texmaco Infrastructure & Holdings Limited",
-     "marketCap": 1505
+     "marketCap": 1511
     }
    ]
   },
@@ -5173,52 +5173,52 @@
     {
      "symbol": "DLF.NS",
      "name": "DLF Limited",
-     "marketCap": 189411
+     "marketCap": 195661
     },
     {
      "symbol": "LODHA.NS",
      "name": "Lodha Developers Limited",
-     "marketCap": 119380
+     "marketCap": 121899
     },
     {
      "symbol": "OBEROIRLTY.NS",
      "name": "Oberoi Realty Limited",
-     "marketCap": 66099
+     "marketCap": 67485
     },
     {
      "symbol": "GODREJPROP.NS",
      "name": "Godrej Properties Limited",
-     "marketCap": 56459
+     "marketCap": 58095
     },
     {
      "symbol": "BRIGADE.NS",
      "name": "Brigade Enterprises Limited",
-     "marketCap": 18489
+     "marketCap": 18944
     },
     {
      "symbol": "ANANTRAJ.NS",
      "name": "Anant Raj Limited",
-     "marketCap": 16459
+     "marketCap": 15903
     },
     {
      "symbol": "HORIZONIND.NS",
      "name": "Horizon Industrial Parks Limited",
-     "marketCap": 14115
+     "marketCap": 13792
     },
     {
      "symbol": "SOBHA.NS",
      "name": "Sobha Limited",
-     "marketCap": 13494
+     "marketCap": 13391
     },
     {
      "symbol": "SIGNATURE.NS",
      "name": "Signatureglobal (India) Limited",
-     "marketCap": 11986
+     "marketCap": 12091
     },
     {
      "symbol": "MAXESTATES.NS",
      "name": "Max Estates Limited",
-     "marketCap": 9259
+     "marketCap": 9751
     }
    ]
   },
@@ -5231,42 +5231,42 @@
     {
      "symbol": "PHOENIXLTD.NS",
      "name": "The Phoenix Mills Limited",
-     "marketCap": 79846
+     "marketCap": 81835
     },
     {
      "symbol": "PRESTIGE.NS",
      "name": "Prestige Estates Projects Limited",
-     "marketCap": 71755
+     "marketCap": 72397
     },
     {
      "symbol": "EMBDL.NS",
      "name": "Embassy Developments Limited",
-     "marketCap": 7032
+     "marketCap": 7086
     },
     {
      "symbol": "HEMIPROP.NS",
      "name": "Hemisphere Properties India Limited",
-     "marketCap": 3114
+     "marketCap": 3027
     },
     {
      "symbol": "UNITECH.NS",
      "name": "Unitech Limited",
-     "marketCap": 1018
+     "marketCap": 965
     },
     {
      "symbol": "PROZONER.NS",
      "name": "Prozone Realty Limited",
-     "marketCap": 847
+     "marketCap": 839
     },
     {
      "symbol": "VIPULLTD.NS",
      "name": "Vipul Limited",
-     "marketCap": 125
+     "marketCap": 120
     },
     {
      "symbol": "HDIL.NS",
      "name": "Housing Development and Infrastructure Limited",
-     "marketCap": 74
+     "marketCap": 71
     },
     {
      "symbol": "MEDICAPQ.NS",
@@ -5284,52 +5284,52 @@
     {
      "symbol": "JPL.NS",
      "name": "Jio Platforms Limited",
-     "marketCap": 1270294
+     "marketCap": 1261085
     },
     {
      "symbol": "TCS.NS",
      "name": "Tata Consultancy Services Limited",
-     "marketCap": 852892
+     "marketCap": 887553
     },
     {
      "symbol": "INFY.NS",
      "name": "Infosys Limited",
-     "marketCap": 438980
+     "marketCap": 448377
     },
     {
      "symbol": "HCLTECH.NS",
      "name": "HCL Technologies Limited",
-     "marketCap": 358736
+     "marketCap": 369833
     },
     {
      "symbol": "WIPRO.NS",
      "name": "Wipro Limited",
-     "marketCap": 181146
+     "marketCap": 185711
     },
     {
      "symbol": "TECHM.NS",
      "name": "Tech Mahindra Limited",
-     "marketCap": 152528
+     "marketCap": 157993
     },
     {
      "symbol": "LTM.NS",
      "name": "LTM Limited",
-     "marketCap": 119512
+     "marketCap": 125122
     },
     {
      "symbol": "LGEINDIA.NS",
      "name": "LG Electronics India Limited",
-     "marketCap": 115921
+     "marketCap": 120238
     },
     {
      "symbol": "PAYTM.NS",
      "name": "One97 Communications Limited",
-     "marketCap": 110367
+     "marketCap": 111071
     },
     {
      "symbol": "PERSISTENT.NS",
      "name": "Persistent Systems Limited",
-     "marketCap": 95875
+     "marketCap": 103817
     }
    ]
   },
@@ -5342,52 +5342,52 @@
     {
      "symbol": "STLTECH.NS",
      "name": "Sterlite Technologies Limited",
-     "marketCap": 32909
+     "marketCap": 30380
     },
     {
      "symbol": "HFCL.NS",
      "name": "HFCL Limited",
-     "marketCap": 29096
+     "marketCap": 27331
     },
     {
      "symbol": "ITI.NS",
      "name": "ITI Limited",
-     "marketCap": 23821
+     "marketCap": 26257
     },
     {
      "symbol": "ASTRAMICRO.NS",
      "name": "Astra Microwave Products Limited",
-     "marketCap": 15965
+     "marketCap": 15411
     },
     {
      "symbol": "TEJASNET.NS",
      "name": "Tejas Networks Limited",
-     "marketCap": 7196
+     "marketCap": 7107
     },
     {
      "symbol": "AVANTEL.NS",
      "name": "Avantel Limited",
-     "marketCap": 4343
+     "marketCap": 3941
     },
     {
      "symbol": "PACEDIGITK.NS",
      "name": "Pace Digitek Limited",
-     "marketCap": 3756
+     "marketCap": 3608
     },
     {
      "symbol": "PARACABLES.NS",
      "name": "Paramount Communications Limited",
-     "marketCap": 1975
+     "marketCap": 1868
     },
     {
      "symbol": "NELCO.NS",
      "name": "Nelco Limited",
-     "marketCap": 1797
+     "marketCap": 1732
     },
     {
      "symbol": "DLINKINDIA.NS",
      "name": "D-Link (India) Limited",
-     "marketCap": 1473
+     "marketCap": 1437
     }
    ]
   },
@@ -5400,17 +5400,17 @@
     {
      "symbol": "NETWEB.NS",
      "name": "Netweb Technologies India Limited",
-     "marketCap": 25194
+     "marketCap": 23888
     },
     {
      "symbol": "EBGNG.NS",
      "name": "GNG Electronics Limited",
-     "marketCap": 5884
+     "marketCap": 5527
     },
     {
      "symbol": "TVSELECT.NS",
      "name": "TVS Electronics Limited",
-     "marketCap": 710
+     "marketCap": 697
     }
    ]
   },
@@ -5423,27 +5423,27 @@
     {
      "symbol": "LGEINDIA.NS",
      "name": "LG Electronics India Limited",
-     "marketCap": 115921
+     "marketCap": 120238
     },
     {
      "symbol": "DIXON.NS",
      "name": "Dixon Technologies (India) Limited",
-     "marketCap": 79418
+     "marketCap": 82103
     },
     {
      "symbol": "VOEPL.NS",
      "name": "Virtuoso Optoelectronics Limited",
-     "marketCap": 1680
+     "marketCap": 1718
     },
     {
      "symbol": "BPL.NS",
      "name": "BPL Limited",
-     "marketCap": 203
+     "marketCap": 200
     },
     {
      "symbol": "PALREDTEC.NS",
      "name": "Palred Technologies Limited",
-     "marketCap": 51
+     "marketCap": 53
     }
    ]
   },
@@ -5456,42 +5456,42 @@
     {
      "symbol": "SYRMA.NS",
      "name": "Syrma SGS Technology Limited",
-     "marketCap": 29273
+     "marketCap": 28717
     },
     {
      "symbol": "KAYNES.NS",
      "name": "Kaynes Technology India Limited",
-     "marketCap": 19497
+     "marketCap": 18883
     },
     {
      "symbol": "PGEL.NS",
      "name": "PG Electroplast Limited",
-     "marketCap": 16308
+     "marketCap": 16732
     },
     {
      "symbol": "AVALON.NS",
      "name": "Avalon Technologies Limited",
-     "marketCap": 11981
-    },
-    {
-     "symbol": "CENTUM.NS",
-     "name": "Centum Electronics Limited",
-     "marketCap": 6626
+     "marketCap": 11224
     },
     {
      "symbol": "KRN.NS",
      "name": "KRN Heat Exchanger and Refrigeration Limited",
-     "marketCap": 6250
+     "marketCap": 6220
+    },
+    {
+     "symbol": "CENTUM.NS",
+     "name": "Centum Electronics Limited",
+     "marketCap": 6091
     },
     {
      "symbol": "IKIO.NS",
      "name": "IKIO Technologies Limited",
-     "marketCap": 1541
+     "marketCap": 1477
     },
     {
      "symbol": "MICEL.NS",
      "name": "MIC Electronics Limited",
-     "marketCap": 1072
+     "marketCap": 1085
     }
    ]
   },
@@ -5504,32 +5504,32 @@
     {
      "symbol": "OPTIEMUS.NS",
      "name": "Optiemus Infracom Limited",
-     "marketCap": 7424
+     "marketCap": 7042
     },
     {
      "symbol": "RPTECH.NS",
      "name": "Rashi Peripherals Limited",
-     "marketCap": 4128
+     "marketCap": 4304
     },
     {
      "symbol": "CNL.NS",
      "name": "Creative Newtech Limited",
-     "marketCap": 2083
+     "marketCap": 2060
     },
     {
      "symbol": "DCI.NS",
      "name": "DC Infotech and Communication Limited",
-     "marketCap": 600
+     "marketCap": 609
     },
     {
      "symbol": "HCL-INSYS.NS",
      "name": "HCL Infosystems Limited",
-     "marketCap": 313
+     "marketCap": 375
     },
     {
      "symbol": "EMPOWER.NS",
      "name": "Empower India Limited",
-     "marketCap": 118
+     "marketCap": 116
     },
     {
      "symbol": "COMPINFO.NS",
@@ -5547,52 +5547,52 @@
     {
      "symbol": "TCS.NS",
      "name": "Tata Consultancy Services Limited",
-     "marketCap": 852928
+     "marketCap": 887553
     },
     {
      "symbol": "INFY.NS",
      "name": "Infosys Limited",
-     "marketCap": 438980
+     "marketCap": 448377
     },
     {
      "symbol": "HCLTECH.NS",
      "name": "HCL Technologies Limited",
-     "marketCap": 358736
+     "marketCap": 369833
     },
     {
      "symbol": "WIPRO.NS",
      "name": "Wipro Limited",
-     "marketCap": 181077
+     "marketCap": 185711
     },
     {
      "symbol": "TECHM.NS",
      "name": "Tech Mahindra Limited",
-     "marketCap": 152466
+     "marketCap": 157993
     },
     {
      "symbol": "LTM.NS",
      "name": "LTM Limited",
-     "marketCap": 119565
+     "marketCap": 125122
     },
     {
      "symbol": "PERSISTENT.NS",
      "name": "Persistent Systems Limited",
-     "marketCap": 95875
+     "marketCap": 103817
     },
     {
      "symbol": "COFORGE.NS",
      "name": "Coforge Limited",
-     "marketCap": 90252
+     "marketCap": 95227
     },
     {
      "symbol": "MPHASIS.NS",
      "name": "Mphasis Limited",
-     "marketCap": 45036
+     "marketCap": 47454
     },
     {
      "symbol": "LTTS.NS",
      "name": "L&T Technology Services Limited",
-     "marketCap": 42756
+     "marketCap": 44817
     }
    ]
   },
@@ -5605,12 +5605,12 @@
     {
      "symbol": "RISHABH.NS",
      "name": "Rishabh Instruments Limited",
-     "marketCap": 2286
+     "marketCap": 2310
     },
     {
      "symbol": "NITIRAJ.NS",
      "name": "Nitiraj Engineers Limited",
-     "marketCap": 195
+     "marketCap": 200
     }
    ]
   },
@@ -5623,7 +5623,7 @@
     {
      "symbol": "MOSCHIP.NS",
      "name": "MosChip Technologies Limited",
-     "marketCap": 3204
+     "marketCap": 3151
     }
    ]
   },
@@ -5636,12 +5636,12 @@
     {
      "symbol": "RIR.NS",
      "name": "Rir Power Electronics Limited",
-     "marketCap": 1119
+     "marketCap": 1064
     },
     {
      "symbol": "SPELS.NS",
      "name": "SPEL Semiconductor Limited",
-     "marketCap": 341
+     "marketCap": 375
     }
    ]
   },
@@ -5654,52 +5654,52 @@
     {
      "symbol": "URBANCO.NS",
      "name": "Urban Company Limited",
-     "marketCap": 26127
+     "marketCap": 27692
     },
     {
      "symbol": "TATAELXSI.NS",
      "name": "Tata Elxsi Limited",
-     "marketCap": 23091
+     "marketCap": 23912
     },
     {
      "symbol": "KFINTECH.NS",
      "name": "KFin Technologies Limited",
-     "marketCap": 16169
+     "marketCap": 16048
     },
     {
      "symbol": "BBOX.NS",
      "name": "Black Box Limited",
-     "marketCap": 16056
+     "marketCap": 15171
     },
     {
      "symbol": "KPITTECH.NS",
      "name": "KPIT Technologies Limited",
-     "marketCap": 14169
+     "marketCap": 14374
     },
     {
      "symbol": "AMAGI.NS",
      "name": "Amagi Media Labs Limited",
-     "marketCap": 12325
+     "marketCap": 12231
     },
     {
      "symbol": "MONEYVIEW.NS",
      "name": "Moneyview Limited",
-     "marketCap": 9966
+     "marketCap": 9699
     },
     {
      "symbol": "BLACKBUCK.NS",
      "name": "BlackBuck Limited",
-     "marketCap": 9395
+     "marketCap": 9323
     },
     {
      "symbol": "TANLA.NS",
      "name": "Tanla Platforms Limited",
-     "marketCap": 8814
+     "marketCap": 8987
     },
     {
-     "symbol": "SHIPROCKET.NS",
-     "name": "Shiprocket Limited",
-     "marketCap": 8703
+     "symbol": "INTELLECT.NS",
+     "name": "Intellect Design Arena Limited",
+     "marketCap": 8051
     }
    ]
   },
@@ -5712,52 +5712,52 @@
     {
      "symbol": "JPL.NS",
      "name": "Jio Platforms Limited",
-     "marketCap": 1270109
+     "marketCap": 1260716
     },
     {
      "symbol": "PAYTM.NS",
      "name": "One97 Communications Limited",
-     "marketCap": 110354
+     "marketCap": 111071
     },
     {
      "symbol": "OFSS.NS",
      "name": "Oracle Financial Services Software Limited",
-     "marketCap": 84967
+     "marketCap": 84674
     },
     {
      "symbol": "PINELABS.NS",
      "name": "Pine Labs Limited",
-     "marketCap": 18568
+     "marketCap": 18512
     },
     {
      "symbol": "FRACTAL.NS",
      "name": "Fractal Analytics Limited",
-     "marketCap": 14266
+     "marketCap": 14058
     },
     {
      "symbol": "E2E.NS",
      "name": "E2E Networks Limited",
-     "marketCap": 10524
+     "marketCap": 9302
     },
     {
      "symbol": "NEWGEN.NS",
      "name": "Newgen Software Technologies Limited",
-     "marketCap": 5813
-    },
-    {
-     "symbol": "STYL.NS",
-     "name": "Seshaasai Technologies Limited",
-     "marketCap": 4960
+     "marketCap": 5800
     },
     {
      "symbol": "MAPMYINDIA.NS",
      "name": "C. E. Info Systems Limited",
-     "marketCap": 4631
+     "marketCap": 4519
+    },
+    {
+     "symbol": "STYL.NS",
+     "name": "Seshaasai Technologies Limited",
+     "marketCap": 4518
     },
     {
      "symbol": "CCAVENUE.NS",
      "name": "AvenuesAI Limited",
-     "marketCap": 4178
+     "marketCap": 3856
     }
    ]
   },
@@ -5770,52 +5770,52 @@
     {
      "symbol": "WAAREEENER.NS",
      "name": "Waaree Energies Limited",
-     "marketCap": 69712
+     "marketCap": 69108
     },
     {
      "symbol": "PREMIERENE.NS",
      "name": "Premier Energies Limited",
-     "marketCap": 37477
+     "marketCap": 36779
     },
     {
      "symbol": "EMMVEE.NS",
      "name": "Emmvee Photovoltaic Power Limited",
-     "marketCap": 18554
+     "marketCap": 18105
     },
     {
      "symbol": "UTLSOLAR.NS",
      "name": "Fujiyama Power Systems Limited",
-     "marketCap": 9726
+     "marketCap": 9067
     },
     {
      "symbol": "BORORENEW.NS",
      "name": "Borosil Renewables Limited",
-     "marketCap": 5614
+     "marketCap": 5389
     },
     {
      "symbol": "VIKRAMSOLR.NS",
      "name": "Vikram Solar Limited",
-     "marketCap": 5043
+     "marketCap": 4815
     },
     {
      "symbol": "SAATVIKGL.NS",
      "name": "Saatvik Green Energy Limited",
-     "marketCap": 4342
+     "marketCap": 4519
     },
     {
      "symbol": "SWSOLAR.NS",
      "name": "Sterling and Wilson Renewable Energy Limited",
-     "marketCap": 3689
+     "marketCap": 3776
     },
     {
      "symbol": "WEBELSOLAR.NS",
      "name": "Websol Energy System Limited",
-     "marketCap": 2819
+     "marketCap": 2764
     },
     {
      "symbol": "RELTD.NS",
      "name": "Ravindra Energy Limited",
-     "marketCap": 2620
+     "marketCap": 2661
     }
    ]
   },
@@ -5828,52 +5828,52 @@
     {
      "symbol": "ADANIPOWER.NS",
      "name": "Adani Power Limited",
-     "marketCap": 397708
+     "marketCap": 400350
     },
     {
      "symbol": "NTPC.NS",
      "name": "NTPC Limited",
-     "marketCap": 312427
+     "marketCap": 307675
     },
     {
      "symbol": "POWERGRID.NS",
      "name": "Power Grid Corporation of India Limited",
-     "marketCap": 242839
+     "marketCap": 245582
     },
     {
      "symbol": "ADANIGREEN.NS",
      "name": "Adani Green Energy Limited",
-     "marketCap": 233570
+     "marketCap": 229798
     },
     {
      "symbol": "ADANIENSOL.NS",
      "name": "Adani Energy Solutions Limited",
-     "marketCap": 182061
+     "marketCap": 180459
     },
     {
      "symbol": "GAIL.NS",
      "name": "GAIL (India) Limited",
-     "marketCap": 125531
-    },
-    {
-     "symbol": "TATAPOWER.NS",
-     "name": "The Tata Power Company Limited",
-     "marketCap": 109265
+     "marketCap": 122244
     },
     {
      "symbol": "ENRIN.NS",
      "name": "Siemens Energy India Limited",
-     "marketCap": 105857
+     "marketCap": 105412
+    },
+    {
+     "symbol": "TATAPOWER.NS",
+     "name": "The Tata Power Company Limited",
+     "marketCap": 105047
     },
     {
      "symbol": "JSWENERGY.NS",
      "name": "JSW Energy Limited",
-     "marketCap": 93960
+     "marketCap": 92237
     },
     {
      "symbol": "NHPC.NS",
      "name": "NHPC Limited",
-     "marketCap": 75870
+     "marketCap": 75850
     }
    ]
   },
@@ -5886,52 +5886,52 @@
     {
      "symbol": "ADANIPOWER.NS",
      "name": "Adani Power Limited",
-     "marketCap": 397824
+     "marketCap": 400350
     },
     {
      "symbol": "ADANIENSOL.NS",
      "name": "Adani Energy Solutions Limited",
-     "marketCap": 182061
+     "marketCap": 180459
     },
     {
      "symbol": "TATAPOWER.NS",
      "name": "The Tata Power Company Limited",
-     "marketCap": 109265
+     "marketCap": 105047
     },
     {
      "symbol": "JSWENERGY.NS",
      "name": "JSW Energy Limited",
-     "marketCap": 93960
+     "marketCap": 92237
     },
     {
      "symbol": "TORNTPOWER.NS",
      "name": "Torrent Power Limited",
-     "marketCap": 61894
+     "marketCap": 60166
     },
     {
      "symbol": "VEDPOWER.NS",
      "name": "Vedanta Power Limited",
-     "marketCap": 13665
+     "marketCap": 13075
     },
     {
      "symbol": "JPPOWER.NS",
      "name": "Jaiprakash Power Ventures Limited",
-     "marketCap": 9170
+     "marketCap": 9067
     },
     {
      "symbol": "RPOWER.NS",
      "name": "Reliance Power Limited",
-     "marketCap": 7324
+     "marketCap": 7138
     },
     {
      "symbol": "PTC.NS",
      "name": "PTC India Limited",
-     "marketCap": 4061
+     "marketCap": 4063
     },
     {
      "symbol": "RTNPOWER.NS",
      "name": "RattanIndia Power Limited",
-     "marketCap": 3491
+     "marketCap": 3389
     }
    ]
   },
@@ -5944,42 +5944,42 @@
     {
      "symbol": "NTPC.NS",
      "name": "NTPC Limited",
-     "marketCap": 312427
+     "marketCap": 307675
     },
     {
      "symbol": "POWERGRID.NS",
      "name": "Power Grid Corporation of India Limited",
-     "marketCap": 242746
+     "marketCap": 245582
     },
     {
      "symbol": "NLCINDIA.NS",
      "name": "NLC India Limited",
-     "marketCap": 31618
+     "marketCap": 31514
     },
     {
      "symbol": "CESC.NS",
      "name": "CESC Limited",
-     "marketCap": 16457
+     "marketCap": 16680
     },
     {
      "symbol": "GIPCL.NS",
      "name": "Gujarat Industries Power Company Limited",
-     "marketCap": 2437
+     "marketCap": 2387
     },
     {
      "symbol": "BAJEL.NS",
      "name": "Bajel Projects Limited",
-     "marketCap": 1833
+     "marketCap": 1807
     },
     {
      "symbol": "DPSCLTD.NS",
      "name": "India Power Corporation Limited",
-     "marketCap": 695
+     "marketCap": 757
     },
     {
      "symbol": "ENERGYDEV.NS",
      "name": "Energy Development Company Limited",
-     "marketCap": 71
+     "marketCap": 69
     }
    ]
   },
@@ -5992,37 +5992,37 @@
     {
      "symbol": "GAIL.NS",
      "name": "GAIL (India) Limited",
-     "marketCap": 125545
+     "marketCap": 122244
     },
     {
      "symbol": "ATGL.NS",
      "name": "Adani Total Gas Limited",
-     "marketCap": 62029
+     "marketCap": 60501
     },
     {
      "symbol": "GUJENERGY.NS",
      "name": "Gujarat Energy Limited",
-     "marketCap": 21121
+     "marketCap": 21579
     },
     {
      "symbol": "IGL.NS",
      "name": "Indraprastha Gas Limited",
-     "marketCap": 21014
+     "marketCap": 21382
     },
     {
      "symbol": "MGL.NS",
      "name": "Mahanagar Gas Limited",
-     "marketCap": 10923
+     "marketCap": 10754
     },
     {
      "symbol": "IRMENERGY.NS",
      "name": "IRM Energy Limited",
-     "marketCap": 1021
+     "marketCap": 1032
     },
     {
      "symbol": "CFEL.NS",
      "name": "Confidence Futuristic Energetech Limited",
-     "marketCap": 85
+     "marketCap": 82
     }
    ]
   },
@@ -6035,7 +6035,7 @@
     {
      "symbol": "CEWATER.NS",
      "name": "Concord Enviro Systems Limited",
-     "marketCap": 442
+     "marketCap": 438
     }
    ]
   },
@@ -6048,52 +6048,52 @@
     {
      "symbol": "ADANIGREEN.NS",
      "name": "Adani Green Energy Limited",
-     "marketCap": 233553
+     "marketCap": 229798
     },
     {
      "symbol": "ENRIN.NS",
      "name": "Siemens Energy India Limited",
-     "marketCap": 105857
+     "marketCap": 105412
     },
     {
      "symbol": "NHPC.NS",
      "name": "NHPC Limited",
-     "marketCap": 75870
+     "marketCap": 75850
     },
     {
      "symbol": "NTPCGREEN.NS",
      "name": "NTPC Green Energy Limited",
-     "marketCap": 69138
+     "marketCap": 69349
     },
     {
      "symbol": "ACMESOLAR.NS",
      "name": "ACME Solar Holdings Limited",
-     "marketCap": 28772
+     "marketCap": 29020
     },
     {
      "symbol": "SJVN.NS",
      "name": "SJVN Limited",
-     "marketCap": 21755
+     "marketCap": 21618
     },
     {
      "symbol": "CLEANMAX.NS",
      "name": "Clean Max Enviro Energy Solutions Limited",
-     "marketCap": 14914
+     "marketCap": 14701
     },
     {
      "symbol": "JNPR.NS",
      "name": "Juniper Green Energy Limited",
-     "marketCap": 13831
+     "marketCap": 14009
     },
     {
      "symbol": "KPIGREEN.NS",
      "name": "KPI Green Energy Limited",
-     "marketCap": 6487
+     "marketCap": 6262
     },
     {
      "symbol": "INOXGREEN.NS",
      "name": "Inox Green Energy Services Limited",
-     "marketCap": 4693
+     "marketCap": 4520
     }
    ]
   }
