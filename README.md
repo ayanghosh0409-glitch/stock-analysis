@@ -107,9 +107,38 @@ Search for a name that matches none of the listed stocks and the page offers to 
 - Banks and lenders usually have no ROCE from Yahoo, so they get no verdict.
 - The workflow **Live check: Yahoo lookup** runs the real fetch for a spread of companies and prints a report in its run summary. It is the only place the real Yahoo calls are exercised, because the build environment cannot reach Yahoo.
 
+## Accounts and sign-in
+
+Anyone can open the site as a **guest** and look at everything. Building a sector, entering a figure and watching a stock need an account, and the only way to get one is **Continue with Google** (no passwords are stored). The header shows "Sign in" for a guest and the person's initial and name for someone signed in, with a small menu and Sign out. `/sign-in` explains what an account is for and is where a cancelled or failed sign-in lands. The guest prompts follow the wireframes (boards 16 to 24); the account menu has only Sign out for now, because the watchlist and "Sectors I built" pages arrive with the per-account watchlist.
+
+| Who | Can |
+| --- | --- |
+| Guest | Browse every page, search, look up a company that is not on the list, see built sectors |
+| Signed in | All of the above, plus build a sector (kept for everyone), enter a missing ROE or ROCE figure, and watch stocks (the star and the bell) |
+
+How it works (all in `src/lib/oidc.ts`, `src/lib/auth.ts`, `src/lib/authServer.ts` and `src/app/api/auth/`):
+
+- **Own sign-in, no library.** It is the standard OpenID Connect "authorization code" flow with PKCE, a `state` and a `nonce`. The ID token is read straight from Google's token endpoint over HTTPS with the client secret, and its issuer, audience, expiry, nonce and verified email are checked. A one-time cookie (`sa_oauth`, signed with `AUTH_SECRET`, ten minutes, only for `/api/auth`) ties a sign-in attempt to the browser that started it.
+- **Sessions.** A random token in an `HttpOnly`, `SameSite=Lax` cookie (`sa_session`, 30 days, `Secure` on https). The database keeps only its SHA-256 hash, so a copy of the database cannot be used to sign in. Sign out deletes the row, so a copied cookie stops working at once. Accounts are matched on Google's id for the person, not on email.
+- **The server is the real check.** `POST /api/sectors` and `POST /api/figures` answer a guest with `401 {"reason":"sign-in"}` before they read anything else. Hiding a button is only a courtesy. Reading (`GET`s, `/api/lookup`, `/api/stock`, `/api/sector`) stays open, so looking up a company works for guests.
+- **Fails closed.** If Google sign-in is not set up, nobody can sign in, so those actions stay switched off and the page says sign-in is not set up. It never lets a guest through.
+- **Return to where you were.** After signing in you land on the page you left, including a `#/sector/IT` page. The return address must be a path inside the site (`src/lib/returnTo.ts`); anything that could leave it is replaced with `/`.
+- **Pages stay static.** Who is signed in is asked from `GET /api/auth/session` when the page opens, so the pages are still built once and shared.
+
+**Setup (once, before the first sign-in works).**
+
+1. In Google Cloud Console: APIs and Services, OAuth consent screen (External, add yourself as a test user while it is in testing), then Credentials, Create credentials, OAuth client ID, type **Web application**.
+2. Under **Authorised redirect URIs** add exactly `https://stock-analysis-lemon-five.vercel.app/api/auth/callback` (your live address) and, for local work, `http://localhost:3000/api/auth/callback`. Preview deployments have changing addresses, so they cannot sign in; test sign-in locally or on the live site.
+3. In Vercel, Settings, Environment Variables, add `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` and `AUTH_SECRET` (any random string of 32 or more characters, for example from `openssl rand -base64 32`). Optionally `AUTH_URL` (the site's own address, no trailing slash) if the address the browser sees differs from the one registered with Google. Redeploy.
+4. A database is needed too (the same `DATABASE_URL` as the shared sectors). The `users` and `sessions` tables are created on first use (`db/schema.sql`).
+
+`AUTH_TEST_OIDC` points sign-in at a stand-in for Google for end-to-end tests. It is ignored on Vercel's production site, so it cannot weaken the live one.
+
+**Until the per-account watchlist lands,** stars and notifications still live in the browser (as before), shown only while signed in. Anyone sharing a browser profile shares those stars.
+
 ## Build a sector from Yahoo Finance
 
-Type a sector or industry (banks, pharma, real estate) into the box at the top of the page. The site checks the name against
+Signed-in people can type a sector or industry (banks, pharma, real estate) into the box at the top of the page (guests see a Sign in button there instead). The site checks the name against
 Yahoo's own list, offers a choice if several match or the nearest names if none does, then fetches the ten largest NSE
 companies in it by market cap and screens them with the same rules as the listed sectors. The new sector appears as a tab, and
 is then kept for every visitor (see below). If it could not be kept, it stays for that visit only and "Remove this sector" takes it away.
@@ -132,7 +161,7 @@ is then kept for every visitor (see below). If it could not be kept, it stays fo
 
 ## Figures visitors enter (shared database)
 
-When Yahoo Finance has no ROE or ROCE for a company (banks usually have no ROCE), the preview shows a box beside the missing figure. Whatever a visitor types is saved in a shared Postgres database and shown to everyone who previews that company, marked "entered by visitors" and unverified.
+When Yahoo Finance has no ROE or ROCE for a company (banks usually have no ROCE), the preview shows a box beside the missing figure (for signed-in people; a guest sees "Sign in to add a figure"). Whatever a signed-in visitor types is saved in a shared Postgres database and shown to everyone who previews that company, marked "entered by visitors" and unverified.
 
 Rules that keep an open form safe (all in `src/lib/figures.ts`, covered by tests that run the real SQL on an in-process Postgres):
 

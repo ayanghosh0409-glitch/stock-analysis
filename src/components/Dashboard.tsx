@@ -22,6 +22,8 @@ import SectorStocks from "./SectorStocks";
 import NewsPanel from "./NewsPanel";
 import type { NewsFile } from "@/lib/news";
 import SectorCards, { OverviewStats, type SectorSummary } from "./SectorCards";
+import AccountMenu from "./AccountMenu";
+import { useAuth } from "./AuthProvider";
 import LookupPanel from "./LookupPanel";
 import SectorBuilder from "./SectorBuilder";
 import BuiltBanner from "./BuiltBanner";
@@ -59,7 +61,12 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
   const [menuOpen, setMenuOpen] = useState(false);
   const pendingPick = useRef<string | null>(null);
   // The stocks this visitor watches and the notifications about them, kept in this browser.
-  const { watch, notices, now, toggle: toggleWatch, unwatch, dismiss, clearNotices } = useWatchNotify();
+  const { watch: savedWatch, notices: savedNotices, now, toggle: toggleWatch, unwatch, dismiss, clearNotices } = useWatchNotify();
+  // Watching belongs to an account: a guest sees no stars filled and no bell (what this browser kept earlier returns when they sign in).
+  const auth = useAuth();
+  const signedIn = auth.status === "ready" && !!auth.user;
+  const watch = useMemo(() => (signedIn ? savedWatch : []), [signedIn, savedWatch]);
+  const notices = useMemo(() => (signedIn ? savedNotices : []), [signedIn, savedNotices]);
   const menuButton = useRef<HTMLButtonElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
   const [overrides, setOverrides] = useState<Overrides>({});
@@ -109,6 +116,11 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
     try {
       const res = await fetch("/api/sectors", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: y }) });
       const body = await res.json().catch(() => ({}));
+      if (res.status === 401) {
+        setShare(y, "your session has ended, so it was not shared. Sign in and build it again.");
+        void auth.refresh(); // the header now shows Sign in
+        return;
+      }
       if (!res.ok || !body?.sector) {
         setShare(y, typeof body?.error === "string" ? body.error : "it could not be saved.");
         return;
@@ -424,7 +436,10 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
             </svg>
           </button>
           <span className="truncate text-base font-bold tracking-tight">{tab}</span>
-          <div className="ml-auto">{bell}</div>
+          <div className="ml-auto flex items-center gap-1.5">
+            {signedIn && bell}
+            <AccountMenu />
+          </div>
         </div>
 
         <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-4 sm:px-6 lg:pt-6">
@@ -447,7 +462,10 @@ export default function Dashboard({ data, news }: { data: Dataset; news: NewsFil
                 }}
               />
             </div>
-            <div className="ml-auto hidden lg:block">{bell}</div>
+            <div className="ml-auto hidden items-center gap-2 lg:flex">
+              {signedIn && bell}
+              <AccountMenu />
+            </div>
           </div>
 
           {tab === OVERVIEW && (

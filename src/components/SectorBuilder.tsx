@@ -6,6 +6,7 @@ import type { SectorList } from "@/lib/sectorLists";
 import type { ListSummary } from "@/lib/sectorMatch";
 import type { Sector } from "@/lib/types";
 import type { Preview } from "@/lib/yahoo";
+import { useAuth } from "./AuthProvider";
 
 type Found = { status: "found"; list: SectorList; fetchedAt: string | null };
 type Choose = { status: "choose"; options: ListSummary[] };
@@ -66,6 +67,7 @@ export default function SectorBuilder({
   /** Shows a sector that is already shared and fresh, and says so by returning true: nothing needs fetching then. */
   onExisting: (yahooName: string) => boolean;
 }) {
+  const auth = useAuth();
   const [text, setText] = useState("");
   const [st, setSt] = useState<State>({ s: "idle" });
   const ctrl = useRef<AbortController | null>(null);
@@ -140,6 +142,33 @@ export default function SectorBuilder({
 
   const busy = st.s === "searching" || st.s === "building";
 
+  // Guests can look at every sector; building one uses Yahoo Finance and is shared with every visitor, so it needs an account.
+  // (The server refuses a guest's build as well. This only spares them typing something that cannot be kept.)
+  if (auth.status === "ready" && !auth.user) {
+    return (
+      <section aria-label="Build a sector" className="mb-5 rounded-xl border border-line bg-surface p-4 shadow-sm">
+        <h2 className="text-base font-semibold tracking-tight">Build a sector from Yahoo Finance</h2>
+        <p className="mt-1 max-w-3xl text-sm text-muted">
+          {auth.configured
+            ? "Building a sector uses Yahoo Finance and is shared with every visitor, so it needs an account. Everything else on the site stays open."
+            : "Building a sector needs an account, and sign-in is not set up on this site yet. Everything else on the site stays open."}
+        </p>
+        {auth.configured && (
+          <a
+            href={auth.signInPage()}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.assign(auth.signInPage());
+            }}
+            className="mt-3 inline-flex min-h-11 items-center rounded-full border border-primary bg-primary px-4 text-sm font-semibold text-on-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:min-h-9"
+          >
+            Sign in to build a sector
+          </a>
+        )}
+      </section>
+    );
+  }
+
   return (
     <section aria-label="Build a sector" className="mb-5 rounded-xl border border-line bg-surface p-4 shadow-sm">
       <h2 className="text-base font-semibold tracking-tight">Build a sector from Yahoo Finance</h2>
@@ -166,7 +195,7 @@ export default function SectorBuilder({
           autoComplete="off"
           className="w-full max-w-xs rounded-full border border-line bg-surface px-4 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary sm:w-72"
         />
-        <button type="submit" disabled={busy} className="rounded-full border border-primary bg-primary px-4 py-1.5 text-sm font-semibold text-on-primary disabled:opacity-60">
+        <button type="submit" disabled={busy || auth.status === "loading"} className="rounded-full border border-primary bg-primary px-4 py-1.5 text-sm font-semibold text-on-primary disabled:opacity-60">
           {busy ? "Working…" : "Build sector"}
         </button>
       </form>

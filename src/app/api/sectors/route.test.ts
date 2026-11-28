@@ -6,6 +6,7 @@ import type { SectorList } from "@/lib/sectorLists";
 
 const state = vi.hoisted(() => ({
   db: null as Db | null,
+  user: { id: "u1", email: "a@b.test", name: "A" } as { id: string; email: string; name: string | null } | null,
   fetchPreview: vi.fn(),
   list: {
     kind: "industry",
@@ -20,6 +21,8 @@ const state = vi.hoisted(() => ({
   } as SectorList,
 }));
 vi.mock("@/lib/db", () => ({ getDb: () => state.db }));
+// The sign-in itself is tested in auth.test.ts and api/auth; here a person is either signed in or a guest.
+vi.mock("@/lib/authServer", async (orig) => ({ ...(await orig<typeof import("@/lib/authServer")>()), currentUser: async () => state.user }));
 vi.mock("../../../../data/sector-lists.json", () => ({ default: { fetchedAt: "2026-11-19T00:00:00Z", lists: [state.list] } }));
 vi.mock("@/lib/yahoo-client", () => {
   class NotIndianListing extends Error {}
@@ -51,6 +54,7 @@ beforeAll(() => {
 });
 afterAll(async () => pg.close());
 beforeEach(async () => {
+  state.user = { id: "u1", email: "a@b.test", name: "A" };
   await pg.query("drop table if exists shared_sectors");
   await pg.query("drop table if exists preview_cache");
   state.db = { query: async <T>(sql: string, params?: unknown[]) => ({ rows: (await pg.query(sql, params)).rows as T[] }) };
@@ -59,6 +63,15 @@ beforeEach(async () => {
 });
 
 describe("POST /api/sectors", () => {
+  it("asks a guest to sign in, before reading the body or touching Yahoo or the database", async () => {
+    state.user = null;
+    const res = await post({ name: "Banks—Regional" });
+    expect(res.status).toBe(401);
+    expect(await res.json()).toEqual({ error: "Sign in to build a sector.", reason: "sign-in" });
+    expect(state.fetchPreview).not.toHaveBeenCalled();
+    expect((await get().then((r) => r.json())).sectors).toEqual([]);
+  });
+
   it("builds the sector on the server, keeps it, and then GET shows it to everyone", async () => {
     yahooOk();
     const res = await post({ name: "Banks—Regional" });

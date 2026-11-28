@@ -3,6 +3,7 @@
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { searchSite, type SiteSector, type SiteStock } from "@/lib/siteSearch";
 import { WATCH_MAX } from "@/lib/watchlist";
+import { useAuth } from "./AuthProvider";
 import { Star } from "./WatchButton";
 
 type Option =
@@ -42,6 +43,7 @@ export default function GlobalSearch({
 }) {
   const id = useId();
   const listId = `${id}-list`;
+  const auth = useAuth();
   const input = useRef<HTMLInputElement>(null);
   const wrap = useRef<HTMLDivElement>(null);
   const [value, setValue] = useState("");
@@ -85,7 +87,13 @@ export default function GlobalSearch({
   };
 
   // The star on a result, or Shift+Enter on the highlighted stock, watches it without leaving the search.
-  const toggleWatch = (stock: SiteStock) => {
+  const toggleWatch = (stock: SiteStock, anchor?: HTMLElement | null) => {
+    if (auth.status === "loading") return;
+    const where = anchor ?? input.current;
+    if (!auth.user) {
+      if (where) auth.ask(where, "watch a stock"); // a guest's star asks them to sign in; nothing is saved
+      return;
+    }
     const r = onToggleWatch(stock);
     setNote(r === "added" ? `Now watching ${stock.name}.` : r === "removed" ? `Stopped watching ${stock.name}.` : `You can watch ${WATCH_MAX} stocks. Stop watching one to add another.`);
   };
@@ -149,10 +157,10 @@ export default function GlobalSearch({
               tabIndex={-1}
               aria-hidden="true"
               disabled={watchFull && !watched.has(o.stock.symbol)}
-              title={watched.has(o.stock.symbol) ? "Stop watching" : "Watch for notifications"}
+              title={!auth.user ? "Sign in to watch" : watched.has(o.stock.symbol) ? "Stop watching" : "Watch for notifications"}
               onClick={(e) => {
                 e.stopPropagation();
-                toggleWatch(o.stock);
+                toggleWatch(o.stock, e.currentTarget);
               }}
               className={`-my-1 flex size-9 shrink-0 items-center justify-center rounded-lg hover:bg-surface ${watched.has(o.stock.symbol) ? "text-accent" : "text-muted"} disabled:opacity-50`}
             >

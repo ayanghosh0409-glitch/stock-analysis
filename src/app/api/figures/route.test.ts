@@ -5,8 +5,10 @@ import type { Db } from "@/lib/db";
 import { HOURLY_LIMIT } from "@/lib/figures";
 
 // The route runs against an in-process Postgres, or against "no database", or against a database that is down.
-const state = vi.hoisted(() => ({ db: null as Db | null }));
+const state = vi.hoisted(() => ({ db: null as Db | null, user: { id: "u1", email: "a@b.test", name: "A" } as { id: string; email: string; name: string | null } | null }));
 vi.mock("@/lib/db", () => ({ getDb: () => state.db }));
+// The sign-in itself is tested in auth.test.ts and api/auth; here a person is either signed in or a guest.
+vi.mock("@/lib/authServer", async (orig) => ({ ...(await orig<typeof import("@/lib/authServer")>()), currentUser: async () => state.user }));
 
 import { GET, POST } from "./route";
 
@@ -24,6 +26,7 @@ beforeAll(() => {
 });
 afterAll(async () => pg.close());
 beforeEach(async () => {
+  state.user = { id: "u1", email: "a@b.test", name: "A" };
   state.db = { query: async <T>(sql: string, params?: unknown[]) => ({ rows: (await pg.query(sql, params)).rows as T[] }) };
   await pg.query("drop table if exists entered_figures");
   vi.spyOn(console, "error").mockImplementation(() => {});
@@ -57,6 +60,14 @@ describe("GET /api/figures", () => {
 });
 
 describe("POST /api/figures", () => {
+  it("asks a guest to sign in and saves nothing, while reading stays open", async () => {
+    state.user = null;
+    const res = await post(entry(12));
+    expect(res.status).toBe(401);
+    expect(await res.json()).toEqual({ error: "Sign in to add a figure.", reason: "sign-in" });
+    expect(await (await get("?ticker=BANK.NS")).json()).toEqual({ configured: true, entered: {} });
+  });
+
   it("saves a figure and then GET returns it for everyone", async () => {
     const res = await post(entry(18.5));
     expect(res.status).toBe(201);
