@@ -1,4 +1,4 @@
--- The shared database holds three tables: figures that visitors enter when Yahoo Finance has none, a cache of what
+-- The shared database holds these tables: figures that visitors enter when Yahoo Finance has none, a cache of what
 -- Yahoo returned for each company (preview_cache), and the sectors visitors built (shared_sectors), both at the end of this file.
 -- The site creates this itself the first time it needs it (src/lib/figures.ts, ensureSchema), so running this by hand is optional.
 -- Rows are only ever added. To remove a bad entry, delete its row.
@@ -30,3 +30,23 @@ create table if not exists shared_sectors (
   payload    jsonb not null,
   built_at   timestamptz not null default now()
 );
+
+-- Accounts (src/lib/auth.ts). One row per person who signed in with Google, found by Google's own id for them.
+-- sessions holds only the SHA-256 hash of the cookie token, never the token itself. Expired sessions are removed at the next sign-in.
+create table if not exists users (
+  id            text primary key,
+  google_sub    text not null unique,
+  email         text not null,
+  name          text,
+  created_at    timestamptz not null default now(),
+  last_login_at timestamptz not null default now()
+);
+
+create table if not exists sessions (
+  token_hash text primary key,
+  user_id    text not null references users(id) on delete cascade,
+  created_at timestamptz not null default now(),
+  expires_at timestamptz not null
+);
+
+create index if not exists sessions_user on sessions (user_id);

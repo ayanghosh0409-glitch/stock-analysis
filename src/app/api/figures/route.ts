@@ -1,12 +1,13 @@
 import { createHash } from "node:crypto";
 import type { NextRequest } from "next/server";
+import { currentUser, signInRequired } from "@/lib/authServer";
 import { getDb } from "@/lib/db";
 import { HOURLY_LIMIT, addEntry, enteredFor, recentCount, validateEntry } from "@/lib/figures";
 import { callerKey, createLimiter } from "@/lib/rateLimit";
 import { cleanTicker } from "@/lib/yahoo";
 
 // Figures that visitors enter when Yahoo Finance has none (ROE or ROCE), shared by everyone who previews that company.
-// GET reads them, POST adds one. Without a database both say so and the page hides the entry boxes.
+// GET reads them, POST (signed-in people only) adds one. Without a database both say so and the page hides the entry boxes.
 const allow = createLimiter(40, 60_000);
 const SALT = process.env.FIGURES_SALT || "stock-analysis";
 
@@ -30,6 +31,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   // A browser form on another site cannot send JSON without our consent, so requiring it blocks cross-site posts.
   if (!req.headers.get("content-type")?.includes("application/json")) return json({ error: "Send JSON." }, 415);
+  if (!(await currentUser(req))) return signInRequired("add a figure");
   const body = await req.json().catch(() => null);
   const v = validateEntry(body);
   if (!v.ok) return json({ error: v.error }, 400);

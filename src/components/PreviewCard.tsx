@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { applyEntered, validateEntry, type Field } from "@/lib/figures";
 import { BORDERLINE_BAND, explain, isBorderline, profitTrend, roeMargin, verdict, type Benchmarks } from "@/lib/screen";
 import { completeness, type Preview } from "@/lib/yahoo";
+import { useAuth } from "./AuthProvider";
 import { ConsistencyBadge, NearCutoffBadge, VerdictBadge } from "./Badges";
 import { eyebrow } from "./SectorCards";
 import type { Shared } from "./LookupPanel";
@@ -179,6 +180,33 @@ function EnterFigure({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const id = `enter-${field}`;
+  const auth = useAuth();
+
+  // Looking a company up is open to everyone; adding a figure for every visitor to see needs an account.
+  if (auth.status === "loading") return null;
+  if (!auth.user) {
+    return (
+      <p className="mt-1 text-xs text-muted">
+        {auth.configured ? (
+          <>
+            <a
+              href={auth.signInPage()}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.assign(auth.signInPage());
+              }}
+              className="text-primary underline underline-offset-2"
+            >
+              Sign in
+            </a>{" "}
+            to add a {label} figure.
+          </>
+        ) : (
+          <>Adding a {label} figure needs an account, and sign-in is not set up on this site yet.</>
+        )}
+      </p>
+    );
+  }
 
   if (!open) {
     return (

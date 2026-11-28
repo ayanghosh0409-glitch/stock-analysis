@@ -2,6 +2,7 @@ import type { NextRequest } from "next/server";
 import stocks from "../../../../data/stocks.json";
 import stored from "../../../../data/sector-lists.json";
 import { buildSector, type Fetched, type Skipped } from "@/lib/builtSector";
+import { currentUser, signInRequired } from "@/lib/authServer";
 import { getDb, type Db } from "@/lib/db";
 import { readPreview, savePreview } from "@/lib/previewCache";
 import { callerKey, createLimiter } from "@/lib/rateLimit";
@@ -13,7 +14,7 @@ import { fetchPreview } from "@/lib/yahoo-client";
 // Sectors built from Yahoo that every visitor sees.
 //
 //   GET   the shared sectors.
-//   POST  { name: "<Yahoo sector or industry name>" } makes the server build that sector and keep it for everyone.
+//   POST  (signed-in people only) { name: "<Yahoo sector or industry name>" } makes the server build that sector and keep it for everyone.
 //
 // The server builds it itself, from the Yahoo cache (which the visitor's own build has just filled) and from Yahoo for
 // whatever is missing. Nothing in the request body becomes part of the sector except the name, and the name must be one of
@@ -59,6 +60,8 @@ async function figuresFor(db: Db, ticker: string): Promise<Fetched> {
 
 export async function POST(req: NextRequest) {
   if (!allowWrite(callerKey(req.headers))) return fail(429, "Too many sectors saved in a short time. Try again in a minute.");
+  // Guests can look at every sector, but building one for the site needs an account. This is the real check; hiding the button is a courtesy.
+  if (!(await currentUser(req))) return signInRequired("build a sector");
   const body = (await req.json().catch(() => null)) as { name?: unknown } | null;
   const name = typeof body?.name === "string" ? body.name.trim() : "";
   const list = name ? lists.find((l) => l.name === name) : undefined;

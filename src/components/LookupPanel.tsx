@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { EnteredMap, Field } from "@/lib/figures";
 import type { Benchmarks } from "@/lib/screen";
 import type { Candidate, Preview } from "@/lib/yahoo";
+import { useAuth } from "./AuthProvider";
 import PreviewCard from "./PreviewCard";
 
 type State =
@@ -46,6 +47,7 @@ export default function LookupPanel({
   benchFor: (sector: string) => Benchmarks | null;
   onShowExisting: (symbol: string) => void;
 }) {
+  const auth = useAuth();
   const [st, setSt] = useState<State>({ s: "idle" });
   const ctrl = useRef<AbortController | null>(null);
   useEffect(() => () => ctrl.current?.abort(), []);
@@ -94,6 +96,10 @@ export default function LookupPanel({
         body: JSON.stringify({ ticker, field, percent }),
       });
       const body = await res.json().catch(() => ({}));
+      if (res.status === 401) {
+        void auth.refresh(); // the session ended: the form is replaced by a "Sign in" line
+        return "Your session has ended. Sign in and enter it again.";
+      }
       if (!res.ok) return typeof body?.error === "string" ? body.error : "Could not save that. Try again.";
       setSt((cur) => (cur.s === "preview" && cur.preview.ticker === ticker ? { ...cur, shared: { configured: true, entered: body.entered ?? {} } } : cur));
       return null;
